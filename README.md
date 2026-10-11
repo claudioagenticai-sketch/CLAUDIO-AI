@@ -12,7 +12,9 @@ Claudio is a fork of [Claudia](https://github.com/claudia-onchain) by [@anabolog
 | `claudio-local/` | The desktop edition: a private agent and creator studio that runs on your own computer |
 | `claudio-skills/` | The library of Agent Skills (create, grow, build) |
 | `packages/` | The `@useclaudio/*` SDK, CLI, MCP server, media and social packages |
-| `immagini/` | Claudio's images: the 13 source photos, the cover and the face |
+| `images/` | Claudio's images: the 13 source photos, the cover and the face |
+
+What's still to do is in [TODO.md](TODO.md).
 
 ## Run it
 
