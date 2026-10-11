@@ -1,6 +1,6 @@
 ---
 name: lifestyle-scene-prompts
-description: Prompts and a method for candid lifestyle scenes that make an AI influencer's feed feel like one lived life — Claudio's sunset NYC bedroom, desk at night with the butterfly-sticker laptop and grey tabby cat, rooftop dusk, club wide shots, rain warehouse lot, Santorini, airplane window, city-night balcony, mirror selfies and photo-dump carousels — with recurring props, candid-realism cues, caption-safe composition for 9:16 and 4:5, Seedream batch sets, per-model variants and fixes for logos, crowds, hands and text. Use when making feed photos, carousels, photo dumps, story frames, collage tiles or scene plates for video first frames.
+description: Prompts and a method for candid lifestyle scenes that make an AI influencer's feed feel like one lived life — Claudio's sunset NYC bedroom, desk at night with the laptop and grey tabby cat, rooftop dusk, club wide shots, rain warehouse lot, Santorini, airplane window, city-night balcony, mirror selfies and photo-dump carousels — with recurring props, candid-realism cues, caption-safe composition for 9:16 and 4:5, Seedream batch sets, per-model variants and fixes for logos, crowds, hands and text. Use when making feed photos, carousels, photo dumps, story frames, collage tiles or scene plates for video first frames.
 license: MIT
 metadata:
   title: "Lifestyle scene prompts"
@@ -18,7 +18,7 @@ metadata:
 
 Portraits prove who he is; lifestyle scenes prove he has a life. This skill gives you a scene library of Claudio's
 recurring worlds with copy-ready prompts, the candid cues that stop scenes looking staged, the props that must stay
-identical (the cat, the laptop sticker, the pendant), and a batch method for photo-dump carousels.
+identical (the cat, the laptop sticker, the bracelet), and a batch method for photo-dump carousels.
 
 ## When to use this
 
@@ -31,7 +31,7 @@ identical (the cat, the laptop sticker, the pendant), and a batch method for pho
 
 - ID block, wardrobe and settings from [../claudio-character-bible/SKILL.md](../claudio-character-bible/SKILL.md);
   ref pack from [../character-consistency/SKILL.md](../character-consistency/SKILL.md).
-- A prop pack (step 3): `refs/props/cat.jpg`, `refs/props/laptop-butterfly.jpg`, `refs/props/pendant.jpg`.
+- A prop pack (step 3): `refs/props/cat.jpg`, `refs/props/laptop.jpg`, `refs/props/bracelet.jpg`.
 - Image keys you bring (`google`, `byteplus`, `openai`, `fal`).
 - [references/scene-library.md](references/scene-library.md) — the full prompts for 16 scenes. Read it when you need a
   scene; the steps below show the method with four of them.
@@ -71,14 +71,14 @@ Generate each recurring prop once, approve it, and pass it as a ref whenever it'
 
 | Prop | Canonical description | Ref |
 |---|---|---|
-| The cat | grey tabby with white paws and a white chest, green eyes, medium build | `refs/props/cat.jpg` |
-| The laptop | silver-grey unbranded laptop, one pink butterfly sticker in the centre of the lid | `refs/props/laptop-butterfly.jpg` |
-| The mug | matte black mug with a small pink butterfly print | `refs/props/mug.jpg` |
-| The pendant | five-point silver star pendant on a fine chain, layered with a curb chain | `refs/props/pendant.jpg` |
+| The cat | grey tabby with a white muzzle and a white chest, green eyes, medium build | `refs/props/cat.jpg` |
+| The laptop | silver-grey unbranded laptop, one rose-pink sticker in the centre of the lid | `refs/props/laptop.jpg` |
+| The mug | matte black mug  | `refs/props/mug.jpg` |
+| The bracelet | chunky silver curb-chain bracelet, worn on one wrist | `refs/props/bracelet.jpg` |
 | The film camera | black-and-silver 35mm rangefinder-style camera, no visible brand | `refs/props/camera.jpg` |
 
 ```sh
-claudio generate image "Product-style photo of a silver-grey unbranded laptop, lid closed, one pink butterfly sticker in \
+claudio generate image "Product-style photo of a silver-grey unbranded laptop, lid closed, one rose-pink sticker in \
 the centre of the lid, on a dark wood desk, soft window light, no logos, no text" \
   --model google/nano-banana-2.1 --aspect 1:1 --resolution 1K --max-usd 0.05
 ```
@@ -90,7 +90,7 @@ the centre of the lid, on a dark wood desk, soft window light, no logos, no text
 ```text
 [CLAUDIO ID v1] … Image 1 is his face; image 2 is the laptop; image 3 is the cat. Moment: late at night he leans back
 in his chair laughing because the grey tabby has just stretched across the keyboard. He wears an oversized fuzzy black
-knit jumper. Place: a desk with the silver laptop with one pink butterfly sticker, a black mug with a butterfly print,
+knit jumper. Place: a desk with the silver laptop with one rose-pink sticker, a black mug,
 two monitors behind with blurred candlestick charts (no readable numbers), a tangle of cables, sticky notes. Camera:
 taken by a friend on a phone from across the room, 26mm, eye level. Light: cool screen glow on his face, a rose-pink desk
 lamp rim behind him. Candid, slight noise, natural skin texture. 4:5. No readable text or logos.
@@ -118,8 +118,7 @@ window frame and grey plastic surround fill the left half; a corner of a seat-ba
 
 ```text
 [CLAUDIO ID v1] … Image 1 is his face; image 2 his full-body proportions. Moment: mirror selfie before going out, phone
-held at chest height covering the lower edge of his chin, a playful pout breaking into a smile. Signature look: olive
-crop cami with orange stars, layered chains with a star pendant, tartan mini skirt with a studded belt and hanging chains.
+held at chest height covering the lower edge of his chin, a playful pout breaking into a smile. Signature look: olive t-shirt, the chunky silver chain bracelet, tartan trousers with a studded belt and hanging chains.
 Place: a tall mirror leaning on a white bedroom wall, a few instant photos tucked into the frame, clothes on a chair.
 Camera: the phone's main camera seen in the mirror, plain black phone case (no logo). Light: warm bedroom lamp plus
 on-camera flash flare in the mirror. 9:16, his face in the upper third.
@@ -131,13 +130,13 @@ A photo dump works when every slide shares light and outfit. Seedream's sequenti
 outputs ≤ 15 per batch; checked 2026-10). Prompt:
 
 ```text
-A candid photo dump of one evening with the same man: [CLAUDIO ID v1]. Same outfit in every frame: black ribbed cami,
-layered silver chains with a star pendant. Same night in New York, warm practical light, CineStill 800T look, phone camera.
+A candid photo dump of one evening with the same man: [CLAUDIO ID v1]. Same outfit in every frame: black t-shirt,
+the chunky silver chain bracelet. Same night in New York, warm practical light, CineStill 800T look, phone camera.
 Frame 1: close-up of his clinking a glass of sparkling water at a candle-lit bar, winking.
 Frame 2: his hand holding a slice of pizza on a street corner, his face blurred in the background laughing.
 Frame 3: on a rooftop, back to the camera, looking at the skyline.
 Frame 4: in a taxi back seat, city lights streaking through the window, head on the window.
-Frame 5: his pink fuzzy slippers on a white rug at home, no face.
+Frame 5: his worn black slides on a white rug at home, no face.
 Frame 6: the grey tabby asleep on his black jumper on the bed.
 ```
 

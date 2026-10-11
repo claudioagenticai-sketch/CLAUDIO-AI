@@ -22,7 +22,7 @@ look tone-deaf or get it removed. This skill gives a repeatable scan, a scoring 
 brief that a person approves before anything is produced or posted.
 
 Claudio's rule of thumb: **a trend is a costume, not a personality.** He wears it his way (sunset bedroom, rainy
-street, butterfly-sticker laptop) or he doesn't wear it.
+street, laptop) or he doesn't wear it.
 
 ## When to use this
 
@@ -191,8 +191,8 @@ await social.ready();
 const x = social.accounts().find((a) => a.network === "x");
 
 const post = social.draft({
-  text: "the 'tiny victories' trend but it's an AI who finally got the bangs right on the first render",
-  media: [{ path: "out/tiny-victories-bangs.mp4", alt: "AI-generated Claudio in a sunset bedroom, laughing at a laptop" }],
+  text: "the 'tiny victories' trend but it's an AI who finally got the beard right on the first render",
+  media: [{ path: "out/tiny-victories-beard.mp4", alt: "AI-generated Claudio in a sunset bedroom, laughing at a laptop" }],
   targets: [{ account: x.id }],
   labels: { ai: true },
   scheduleAt: Date.parse("2026-10-09T15:30:00Z"),

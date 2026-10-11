@@ -210,7 +210,7 @@ const th = social.accounts().find((a) => a.network === "threads")!;
 
 const post = social.draft({
   text: "POV: you said one drink 🪩\n\nsend this to the friend who always says that\n\n#nightout #citynights #djset",
-  media: [{ path: "./club-0412.mp4", alt: "Animated AI character with a black bob and sunglasses dancing at a DJ set" }],
+  media: [{ path: "./club-0412.mp4", alt: "Animated AI character with a black shaved head and sunglasses dancing at a DJ set" }],
   targets: [
     { account: ig.id },
     { account: th.id, text: "said one drink. the DJ had other plans" }, // native Threads line, not the IG caption

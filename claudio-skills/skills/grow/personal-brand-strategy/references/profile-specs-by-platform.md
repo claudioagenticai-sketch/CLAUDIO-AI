@@ -32,7 +32,7 @@ Sources for limits: socialk.it, wordcountertool.net, replug.io (2026 character-l
 | Discord | 512×512 (icon); server banner 960×540 (16:9) | Invite splash 1920×1080 |
 
 For Claudio: the avatar is the same face crop of his everywhere (never a monogram). The X header uses the 3:1 banner
-family (sunset bedroom with skyline window, laptop with butterfly hub, travel collage) and gets the same AI label in the
+family (sunset bedroom with skyline window, laptop and network hub, travel collage) and gets the same AI label in the
 pinned post. Banners: [banner-and-collage-design](../../../create/banner-and-collage-design/SKILL.md).
 
 ## Bio patterns that fit the limits

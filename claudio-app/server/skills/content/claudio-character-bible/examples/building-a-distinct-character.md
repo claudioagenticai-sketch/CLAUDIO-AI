@@ -7,12 +7,12 @@ on-camera character. They start from `templates/character-bible-template.yaml`.
 
 | Anchor | Claudio | Mara | Changed? |
 |---|---|---|---|
-| Hair shape + colour | black jaw bob, heavy bangs, copper panels | silver-white cropped curls, shaved undercut on one side, no bangs | yes |
-| Signature accessory | small orange hair clip | a single long brass ear cuff climbing the left ear | yes |
-| Second accessory | thin gold hoops | round wire-frame glasses with pale amber lenses | yes |
-| Face | freckles, brown eyes, half-smile | deep brown skin, grey-green eyes, a small mole above the lip, calm neutral expression | yes |
+| Head and hair | clean shaved head, full dark-brown beard | silver-white cropped curls, shaved undercut on one side, no bangs | yes |
+| Signature accessory | chunky silver chain bracelet | a single long brass ear cuff climbing the left ear | yes |
+| Second accessory | dark rectangular sunglasses | round wire-frame glasses with pale amber lenses | yes |
+| Face | light blue-grey eyes, light freckles, half-smile | deep brown skin, grey-green eyes, a small mole above the lip, calm neutral expression | yes |
 | Wardrobe palette | olive, tartan red, black | cobalt work jacket, cream turtleneck, charcoal cargo trousers | yes |
-| Settings | NYC bedroom, lounge, club, rain lot | sleeper-train compartment, synth studio with patch cables, station platforms at night | yes |
+| Settings | home with plants, lounge, club, rain lot, trading desk | sleeper-train compartment, synth studio with patch cables, station platforms at night | yes |
 
 6 of 6 changed — passes (the rule is ≥ 4). Accent colour: **cobalt `#3d6bff`** (not rose).
 
@@ -25,7 +25,7 @@ brass ear cuff climbing his left ear; a small mole above the upper lip; calm, am
 texture.
 ```
 
-Negative: `teenager, childlike face, long hair, bangs, black bob, copper streaks, hair clip, plastic skin, text, watermark`
+Negative: `teenager, childlike face, long hair, shaved head, full beard, silver chain bracelet, plastic skin, text, watermark`
 
 Notice the negative explicitly blocks Claudio's anchors — models that saw Claudio refs in the same session can leak them.
 

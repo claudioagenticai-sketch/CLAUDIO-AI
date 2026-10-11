@@ -46,7 +46,7 @@ const posts = [
 for (const p of posts) {
   const d = social.draft({
     text: p.text,
-    media: [{ path: `./out/chartweek-${p.at.slice(8, 10)}.jpg`, alt: "AI-generated image of Claudio, black bob with copper streaks, sketching a chart on a window at dusk" }],
+    media: [{ path: `./out/chartweek-${p.at.slice(8, 10)}.jpg`, alt: "AI-generated image of Claudio, black shaved head with dark brows, sketching a chart on a window at dusk" }],
     targets: [{ account: x.id }],
     labels: { ai: true },
     scheduleAt: Date.parse(p.at),

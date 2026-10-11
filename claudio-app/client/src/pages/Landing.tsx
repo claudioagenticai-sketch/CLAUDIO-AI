@@ -129,7 +129,7 @@ function WhatClaudioIs() {
           src={`${M}/banner-network-2000.jpg`}
           srcSet={`${M}/banner-network-800.jpg 800w, ${M}/banner-network-1200.jpg 1200w, ${M}/banner-network-2000.jpg 2000w`}
           sizes="(max-width: 1680px) 100vw, 1680px"
-          alt="Claudio at his laptop. On one side, his posts on X, Instagram, TikTok and YouTube; on the other, a glowing butterfly hub wired to MCP, an API, social networks and chains"
+          alt="Claudio at his desk at night in thin round glasses, chin on his hand, trading screens with candle charts and token lists behind him"
           ratio="3 / 1"
           brackets
           className="lp-banner"

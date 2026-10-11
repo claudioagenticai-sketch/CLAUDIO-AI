@@ -13,9 +13,12 @@
     "approveAboveUsd": 0.5
   },
   "blocks": {
-    "ID": "[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun).",
-    "SIGNATURE": "wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains, a chunky silver chain bracelet",
-    "COSY": "wearing an oversized fuzzy black knit jumper with sleeves pulled over his hands"
+    "ID": "[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist.",
+    "SIGNATURE": "wearing an olive-green crew-neck cotton t-shirt, red-and-green tartan trousers, a chunky silver chain-link bracelet",
+    "COSY": "wearing an chunky dark-brown knit jumper with the sleeves pushed up"
   },
   "items": [
     {
@@ -95,7 +98,7 @@
       "stage": 1,
       "kind": "image",
       "model": "google/nano-banana-2.1",
-      "prompt": "A grey tabby cat with white paws asleep across a laptop keyboard at night; the laptop has a single pink butterfly sticker; a black mug with a butterfly print; monitors with soft candlestick charts out of focus; purple-rose glow. 35mm, f/2, cosy, no readable text.",
+      "prompt": "A grey tabby cat with a white muzzle asleep across a laptop keyboard at night; the laptop has a single rose-pink sticker; a black mug; monitors with soft candlestick charts out of focus; purple-rose glow. 35mm, f/2, cosy, no readable text.",
       "aspect": "9:16",
       "resolution": "2K",
       "refs": [

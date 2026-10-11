@@ -161,8 +161,8 @@ the final word on bills. Errors and statuses: [references/jobs-and-errors.md](re
 Prompt skeleton that survives model switches:
 
 ```text
-[format] vertical 9:16 film still | [subject] Claudio (adult, late twenties; glossy black jaw-length bob, heavy bangs,
-copper-red streaks, small orange clip, gold hoops, light freckles) | [action] … | [setting] … | [light] … |
+[format] vertical 9:16 film still | [subject] Claudio (adult, mid-thirties; clean shaved head, full dark-brown beard,
+strong dark brows, silver chain bracelet, broad build, light freckles) | [action] … | [setting] … | [light] … |
 [camera] 35mm, eye level, shallow depth of field | [constraints] no text, no logos, no real people, natural skin texture
 ```
 

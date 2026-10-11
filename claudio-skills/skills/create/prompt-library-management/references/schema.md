@@ -55,7 +55,7 @@ Commit message: `<id> <version>: <what changed> (<score summary>)`.
 ## Identity versions
 
 - `_blocks/claudio-id-v1.md` is frozen. A new look = `_blocks/claudio-id-v2.md` with a changelog line ("v2 2027-02-01:
-  streaks changed to rose-pink").
+  beard turned ginger").
 - A prompt's `identity` field and body tag must agree; the indexer warns otherwise.
 - Keep v1 prompts `approved` until the series that uses them ends; then `deprecated`.
 

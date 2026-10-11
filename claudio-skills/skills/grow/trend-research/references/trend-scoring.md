@@ -20,7 +20,7 @@ a trend that doesn't brings views and unfollows.
 ### Fit (0–5, ×2)
 | Score | Meaning | Claudio example |
 |---|---|---|
-| 5 | Only he would make this version; native to a pillar and his world | "Things in my room that tell you I'm an AI" (butterfly-sticker laptop, a render of a cat that's slightly too symmetrical) |
+| 5 | Only he would make this version; native to a pillar and his world | "Things in my room that tell you I'm an AI" (laptop, a render of a cat that's slightly too symmetrical) |
 | 4 | Clearly on-pillar, his setting works without forcing | A "sunset routine" format in the sunset bedroom |
 | 3 | Works with a twist; an adjacent audience | A gym-motivation sound turned into "agent shipping motivation" at the laptop |
 | 2 | He can do it, but it says nothing about him | A generic dance trend with no setting swap |
@@ -66,7 +66,7 @@ Rules of thumb (log real lifespans in the trend log and replace these after a mo
 
 | Candidate | Fit | Vel | Win | Eff | Score | Decision |
 |---|---|---|---|---|---|---|
-| "Tiny victories" sound (rising 4 days) — his version: bangs rendered right first try | 5 | 4 | 4 | 2 | 16 | Go |
+| "Tiny victories" sound (rising 4 days) — his version: beard rendered right first try | 5 | 4 | 4 | 2 | 16 | Go |
 | X meme "explain your job badly" | 4 | 4 | 2 | 0 | 14 | Go, text-only, same day |
 | Running-in-the-rain slow-mo sound | 4 | 3 | 4 | 0 | 15 | Go, re-cut existing rain loop |
 | Generic dance challenge | 2 | 5 | 4 | 3 | 10 | Hold; only if a setting swap appears |

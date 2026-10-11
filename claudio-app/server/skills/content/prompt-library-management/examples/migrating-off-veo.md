@@ -20,7 +20,7 @@ $ node scripts/index-prompts.mjs prompts --warn-days 45 > index.csv
 | Veo 3.1 habit | Omni Flash equivalent |
 |---|---|
 | `durationSec: 8` fixed (4/6/8 s) | the model picks 3–10 s; write the length and timed beats in the prompt |
-| `meta.refMode: "reference"` with up to 3 asset refs | refs tagged in the prompt as `<IMAGE_REF_0>`…; give each one job ("<IMAGE_REF_0> is her face") |
+| `meta.refMode: "reference"` with up to 3 asset refs | refs tagged in the prompt as `<IMAGE_REF_0>`…; give each one job ("<IMAGE_REF_0> is his face") |
 | first frame via `refs[0]` | through `@useclaudio/media` still `refs[0]` (sent as the first frame); in Google's own prompt syntax `<FIRST_FRAME>` / `<LAST_FRAME>` |
 | audio: dialogue in quotes, `SFX:`, `Ambient noise:` lines | same idea; ask for "no music, just room tone" explicitly or Omni may add music |
 | re-run on drift | re-anchor: "keep all character details exactly as in <IMAGE_REF_0>" — identity drifts after ~4 conversational edits |
@@ -30,7 +30,7 @@ $ node scripts/index-prompts.mjs prompts --warn-days 45 > index.csv
 Before (Veo):
 
 ```text
-Handheld front-camera selfie vlog. The woman from the reference images talks to camera in her bedroom and laughs. 8 seconds.
+Handheld front-camera selfie vlog. The man from the reference images talks to camera in his bedroom and laughs. 8 seconds.
 Ambient noise: quiet room tone.
 ```
 

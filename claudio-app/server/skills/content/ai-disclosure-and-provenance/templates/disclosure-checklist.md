@@ -7,7 +7,7 @@ Post: `________`  Networks: `________`  Approver: `________`
 - [ ] Contains AI-generated or AI-altered visuals / voice / music? → **yes = AI label on every network** (house rule).
 - [ ] Depicts a real person, a real brand's product or a real event? → if yes, stop: rewrite without the real person/event,
       or remove the post. (Background extras anonymous and generic only.)
-- [ ] Character reads as an adult (late twenties for Claudio); nothing sexualised.
+- [ ] Character reads as an adult (mid-thirties for Claudio); nothing sexualised.
 - [ ] Mentions a coin, ticker, price or contract address? → "Not financial advice." (added automatically); **not for TikTok**.
 - [ ] Paid, gifted, affiliate, or a collab with value exchanged? → `labels.ad: true` (`#ad` + paid-partnership flag).
 - [ ] Any promise of price or returns? → remove (the library blocks it anyway).

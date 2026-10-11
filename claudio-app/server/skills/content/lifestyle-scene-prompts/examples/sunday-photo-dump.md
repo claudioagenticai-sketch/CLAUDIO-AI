@@ -1,35 +1,32 @@
 # Worked example: "slow sunday" photo dump (6 slides, Instagram)
 
-Theme: a slow Sunday at home. Outfit: grey hoodie + pink fuzzy slippers. Light: soft cool daylight through rain-streaked
+Theme: a slow Sunday at home. Outfit: grey hoodie + worn black slides. Light: soft cool daylight through rain-streaked
 windows, warming to golden hour on the last slide. Budget cap $0.40. Approver: the account owner.
 
 ## Plan
 
 | Slide | Frame | Moment | Refs |
 |---|---|---|---|
-| 1 | close-up | on the windowsill, butterfly mug in both hands, looking at the lens over the rim | 01, props/mug |
-| 2 | detail | his hands with fine-line star tattoos turning a vinyl record (unbranded label) | — |
+| 1 | close-up | on the windowsill, black mug in both hands, looking at the lens over the rim | 01, props/mug |
+| 2 | detail | his strong hands turning a vinyl record (unbranded label) | — |
 | 3 | wide | the whole room: unmade bed, photo wall, rain on the window, his small in the chair | 01 |
 | 4 | candid | laughing on the bed as the cat bats at his hoodie strings | 01, 05, props/cat |
-| 5 | no-face | pink fuzzy slippers on a white rug next to a stack of film photos | — |
+| 5 | no-face | worn black slides on a white rug next to a stack of film photos | — |
 | 6 | closer | the grey tabby asleep on the black jumper, golden light arriving | props/cat |
 
 ## Batch prompt (Seedream 4.5)
 
 ```text
-A candid photo dump of one slow Sunday at home with the same man: [CLAUDIO ID v1] Claudio, a 28-year-old man
-(adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid
-copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs;
-small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing
-closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun).
-Same outfit in every frame: grey hoodie and pink fuzzy slippers. Same New York apartment, soft cool daylight through
-rain-streaked windows, Fujifilm Pro 400H look, phone camera, candid and unposed. The cat is always the same grey tabby
-with white paws and a white chest. No readable logos or text.
-Frame 1: close-up on the windowsill, holding a matte black mug with a small pink butterfly print in both hands, looking at the lens over the rim.
-Frame 2: detail of his tattooed hands lowering a needle onto a vinyl record with a plain cream label.
+A candid photo dump of one slow Sunday at home with the same man: [CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and a full, thick dark-brown beard; a full, thick, dark-brown beard; a chunky silver chain bracelet;
+broad build; light freckles across the nose and cheeks; light blue-grey eyes; straight dark brows; a knowing
+closed-lip half-smile; natural skin texture with visible pores; strong forearms.
+Same outfit in every frame: grey hoodie and worn black slides. Same New York apartment, soft cool daylight through
+rain-streaked windows, Fujifilm Pro 400H look, phone camera, candid and unposed. The cat is always the same grey tabby with a white muzzle and a white chest. No readable logos or text.
+Frame 1: close-up on the windowsill, holding a matte black mug  in both hands, looking at the lens over the rim.
+Frame 2: detail of his hands lowering a needle onto a vinyl record with a plain cream label.
 Frame 3: wide shot of the room — unmade white bed, wall of pinned instant photos, rain on the window — he is small in an armchair reading.
 Frame 4: laughing on the bed while the grey tabby bats at his hoodie strings.
-Frame 5: pink fuzzy slippers on a white rug beside a loose stack of printed photos, no face.
+Frame 5: worn black slides on a white rug beside a loose stack of printed photos, no face.
 Frame 6: the grey tabby asleep on an oversized black knit jumper on the bed, the first golden light across the duvet.
 ```
 

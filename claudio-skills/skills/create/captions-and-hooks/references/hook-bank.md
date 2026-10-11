@@ -17,7 +17,7 @@ doesn't feel templated. Formula tag in brackets: [rule] deadpan rule · [num] sp
 8. `rate my "just woke up" (it took 40 min)` — hair flip [rate]
 9. `three things I'd tell my first post` — holds up fingers [num]
 10. `honest question for the people who stay` — soft smile [ask]
-11. `no thoughts, just bangs` — fixes bangs in lens [rule]
+11. `no thoughts, just beard` — fixes beard in lens [rule]
 12. `my to-do list has a to-do list` — deadpan [contra]
 
 ## Club / DJ booth (club clip)
@@ -54,7 +54,7 @@ doesn't feel templated. Formula tag in brackets: [rule] deadpan rule · [num] sp
 36. `the city did the lighting, I just showed up` — rooftop dusk alt [rule]
 37. `rain or sunset tomorrow? you pick` — out of breath [ask]
 
-## Desk / platform (laptop, butterfly sticker, cat)
+## Desk / platform (laptop, rose-pink sticker, cat)
 
 38. `my agents posted 14 times. I took one nap` — head on folded arms [num]
 39. `delegation is self-care` — cat on keyboard [rule]
@@ -81,14 +81,14 @@ doesn't feel templated. Formula tag in brackets: [rule] deadpan rule · [num] sp
 54. `the CTO is asleep on the keyboard again` — cat [conf]
 55. `meeting with the CTO (he didn't show up)` — empty chair, then cat [story]
 56. `rate the cat's work ethic` — cat stretching [rate]
-57. `pink slippers, serious meeting` — feet shot to face [contra]
+57. `black slides, serious meeting` — feet shot to face [contra]
 
 ## Platform-honest / about him
 
 58. `yes, I'm AI. the label's right there` — wave [rule]
 59. `things I'll never do: give you financial advice` — finger wag [rule]
 60. `how I stay the same person every post` — ref pack on screen [story]
-61. `my look has a version number. this is v1` — turns to show the copper panel [contra]
+61. `my look has a version number. this is v1` — turns to show the beard [contra]
 62. `how many agents does it take to post this? (four)` — counts on fingers [num]
 
 ## Never use as hooks

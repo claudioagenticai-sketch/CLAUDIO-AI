@@ -25,7 +25,10 @@ updated: 2026-10-08
 retires: none
 ---
 ## First frame
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun). In this shot he is mid-laugh with his tongue just touching his teeth, eyes bright. wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains, a chunky silver chain bracelet.
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. In this shot he is mid-laugh with his tongue just touching his teeth, eyes bright. wearing an olive-green crew-neck cotton t-shirt, red-and-green tartan trousers, a chunky silver chain-link bracelet.
 Vertical 9:16 front-camera phone frame in his bedroom by day: plain white walls, a round ceiling smoke detector, a recessed
 ceiling light, an open white doorway behind him on the left, a grey blanket on a chair at the edge of frame. Soft overcast
 window light from camera left, gentle fill from the white walls. He leans slightly toward the lens, framed from mid-torso
@@ -37,11 +40,11 @@ Handheld front-facing phone selfie vlog, 9:16. The man from the first frame talk
 amused. [0-3s] he leans in and starts a story, small head tilt, eyebrows up; [3-6s] he glances toward the open doorway and
 back to the lens, a little shrug; [6-10s] he laughs openly, shoulders shaking, then settles into a knowing half-smile. Slight
 handheld micro-shake, auto-exposure breathing, no cuts. Keep all character details exactly as in the first frame: jaw-length
-black bob, heavy straight bangs, copper-orange streaks only in the bangs and one side, orange clip, thin gold hoops. Natural
+black shaved head, a full, thick dark-brown beard, strong dark brows, silver chain bracelet, broad build. Natural
 room tone only, no music.
 
 ## Negative
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee, moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo
 
 ## Notes
 - 2.0.0 (2026-10-08): migrated from the Veo 3.1 Fast variant (retiring 2026-10-22) to Omni Flash — see ../migrating-off-veo.md.

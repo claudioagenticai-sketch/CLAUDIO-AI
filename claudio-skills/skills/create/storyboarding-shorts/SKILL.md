@@ -131,9 +131,9 @@ stretch? Does the payoff have room to breathe? Fix the board, not the video.
 - **Hair state:** dry in the bedroom, damp in the rain and still damp in the next rain shot; sunglasses on/off state
   carries across cuts.
 - **Light and time:** golden hour doesn't become noon between shots; club blue-violet stays blue-violet.
-- **Props and companions:** the same grey tabby, the same butterfly-sticker laptop, the same star pendant.
+- **Props and companions:** the same grey tabby, the same laptop, the same silver chain bracelet.
 - **Screen direction:** if he runs left-to-right in s1, he runs left-to-right in s2 (the 180° rule; see the reference).
-- **Copper panel side:** mirror and selfie shots flip it — keep all shots in a scene the same type (all selfie or all
+- **Bracelet wrist:** mirror and selfie shots flip it — keep all shots in a scene the same type (all selfie or all
   "camera") so the panel doesn't jump sides between cuts.
 
 ### 8. Design the transitions in the board

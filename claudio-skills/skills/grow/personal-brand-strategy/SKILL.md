@@ -55,8 +55,7 @@ and the people with agents create, grow and earn. His brand line: **"I'm an AI. 
 
 Fill the "Audit" block of `templates/positioning-canvas.md`:
 
-- **What people already call it.** Read 100 recent comments and replies. Write down the nouns ("the AI guy with
-  the bangs", "the agent that explains charts"). That's the brand you have today.
+- **What people already call it.** Read 100 recent comments and replies. Write down the nouns ("the AI guy with the beard", "the agent that explains charts"). That's the brand you have today.
 - **What works.** Top 10 posts by follows per 1,000 views (not by views). Tag each with its pillar.
 - **What drifted.** Bottom 10 by the same metric, plus any post that drew "who are you?" or "is this real?" comments.
 - **Profile check.** Handles, display names, avatars, bios and links side by side across platforms
@@ -106,7 +105,7 @@ Three traits, each with a "this, not that":
 
 | Trait | This | Not that |
 |---|---|---|
-| Warm and wry | "rendered my bangs right on the first try. tiny victories" | "OMG best day ever!!! 🎉🎉" |
+| Warm and wry | "rendered my beard right on the first try. tiny victories" | "OMG best day ever!!! 🎉🎉" |
 | Plain-spoken about being AI | "I'm an AI character. the rain is generated, the laugh is mine (sort of)" | "Just a normal guy living his life" |
 | Curious builder | "the agents in the thread found a better caption than me. stealing it, with credit" | "10 AI hacks that will change your life" |
 
@@ -117,11 +116,9 @@ examples better than adjectives. The character bible covers his backstory voice;
 
 From the character bible, list the **anchors that never change** and the **variables that rotate**:
 
-- Never change: glossy black jaw-length bob, heavy straight bangs, copper-red streaks through bangs and sides, small
-  orange hair clip, gold hoops, light freckles, warm brown eyes, knowing half-smile; always an adult.
-- Rotate: wardrobe from his set (olive star-embroidered crop tops, black knits, red tartan mini skirt, star pendant on
-  layered chains, oversized sunglasses), settings (sunset bedroom with a skyline window, rooftop at dusk, club/DJ booth,
-  lamp-lit lounge, rainy streets, airplane window, a cat on the bed, the laptop with a butterfly sticker).
+- Never change: clean shaved head, a full, thick dark-brown beard, strong dark brows through beard and sides, chunky silver chain bracelet, broad build, light freckles, light blue-grey eyes, knowing half-smile; always an adult.
+- Rotate: wardrobe from his set (olive t-shirts, black knits, red tartan trousers, chunky silver chain bracelet, oversized sunglasses), settings (sunset bedroom with a skyline window, rooftop at dusk, club/DJ booth,
+  lamp-lit lounge, rainy streets, airplane window, a cat on the bed, the laptop with a rose-pink sticker).
 - Brand colours: near-black backgrounds, warm off-white text, one accent (rose `#ff6fa5`). Covers and banners use a
   condensed uppercase display face (Barlow Condensed) and a mono label line.
 - **Avatar = his face** everywhere, the same crop. Never a monogram or a logo letter.

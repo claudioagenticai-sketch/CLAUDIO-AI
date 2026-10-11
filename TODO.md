@@ -16,19 +16,18 @@ What's left to finish Claudio, most important first.
 
 5. **Video loops**: the four home-page loops (room, club, lounge, rain) are still images.
    The `.mp4` files belong in `claudio-app/client/public/claudio/media/` as `<name>.mp4` (9:16) and `<name>-sq.mp4` (1:1).
-   The posters are already in place.
-6. **Character bible skill**: `claudio-character-bible` (in `claudio-skills/` and `claudio-app/server/skills/content/`) still describes Claudia's look.
-7. **claudio-local**: not yet installed and tested.
-   ```sh
-   cd claudio-local
-   npm install
-   npm run build
-   npm start
-   ```
+   The posters are already in place, and `claudio-character-bible/references/owner-reference-set.md` describes each loop's framing and beats.
 
 ## Hosting
 
-8. The site runs locally only. To publish it you need a Node host with Postgres and the keys listed in `claudio-app/.env.example`.
+6. The site runs locally only. To publish it you need a Node host with Postgres and the keys listed in `claudio-app/.env.example`.
+
+## Done
+
+- The `claudio-character-bible` skill and every other skill describe Claudio's look (54 skills pass `node scripts/validate.mjs`).
+  The skills are synced into the site with `node scripts/sync-site.mjs ../claudio-app`.
+- The default `claudio` brand kit in `@useclaudio/media` uses Claudio's identity.
+- `claudio-local` installs, builds and starts. Its `.npmrc` sets `install-links=true` so the local `packages/` install with their dependencies.
 
 ## Images
 

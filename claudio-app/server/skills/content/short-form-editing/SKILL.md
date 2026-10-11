@@ -53,7 +53,7 @@ AI video fails in a few predictable places. Scrub each clip at 0.25× (or dump f
 | "Settling" — frozen face, then motion starts | first 0.3–0.8 s | trim the head |
 | Morph / melt / freeze | last 0.5–1 s, and during fast turns | trim the tail; cut before the turn |
 | Hand or phone melting | arm-length selfies, waves | cut on the motion, punch in to crop it out |
-| Face drift (eyes, age, streaks) | mid-clip after a big head turn | cut out those frames; score with [../character-consistency/SKILL.md](../character-consistency/SKILL.md) |
+| Face drift (eyes, age, beard) | mid-clip after a big head turn | cut out those frames; score with [../character-consistency/SKILL.md](../character-consistency/SKILL.md) |
 | Garbled text/logos | screens, signs, shirts | crop, blur (`boxblur` on a region) or cut |
 | Flicker | neon/club scenes | `deflicker=mode=pm:size=5` |
 
@@ -166,7 +166,7 @@ A person approves the final file before anything is published ([../../build/soci
 ## Check before you finish
 
 - [ ] No settling frames at the start, no morph/freeze at the end, no melted hands or garbled text on screen.
-- [ ] Every shot scores ≥ 6/7 on the drift check; he reads as a man in his late twenties throughout.
+- [ ] Every shot scores ≥ 6/7 on the drift check; he reads as a man in his mid-thirties throughout.
 - [ ] One frame rate, 1080×1920, yuv420p, `+faststart`; plays in QuickTime/VLC and on a phone.
 - [ ] Mix measured at about -14 LUFS, true peak ≤ -1 dBTP; music ducked under speech.
 - [ ] Captions inside the safe zone; nothing important under the right-hand buttons or bottom caption bar.

@@ -6,7 +6,7 @@ Pick the length, fill each beat in one line, then turn each beat into one shot.
 
 | Time | Beat | Fill |
 |---|---|---|
-| 0–2 s | **Hook:** she's already doing the surprising thing | |
+| 0–2 s | **Hook:** he's already doing the surprising thing | |
 | 2–6 s | **Context:** where/why in one image | |
 | 6–12 s | **Turn:** the twist or escalation | |
 | 12–15 s | **Payoff + loop:** the line/laugh, last frame rhymes with the first | |
@@ -16,7 +16,7 @@ Pick the length, fill each beat in one line, then turn each beat into one shot.
 | Time | Beat | Fill |
 |---|---|---|
 | 0–2 s | **Hook** (motion + on-screen hook text) | |
-| 2–7 s | **Setup:** the premise in her world | |
+| 2–7 s | **Setup:** the premise in his world | |
 | 7–12 s | **Build 1:** new information/image | |
 | 12–18 s | **Build 2:** escalate (bigger, funnier, closer) | |
 | 18–22 s | **Payoff + loop** | |

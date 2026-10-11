@@ -1,6 +1,6 @@
 ---
 name: video-prompting
-description: Writes and runs AI video prompts that keep a recurring character (Claudio or your own) on-model in 9:16 shorts — model choice per shot (Gemini Omni Flash, Veo 3.1 until its 2026-10-22 shutdown, Kling 2.6/3, Seedance 2.0, Hailuo 2.3, Wan 2.6, Runway Gen-4.5 and Aleph 2 edits), the image-to-video first-frame workflow, a six-slot prompt formula, camera-move and timing syntax per model, native audio vs. added audio, extension and stitching with ffmpeg, frame QA, and fixes for face drift, melting hands, streak flicker, teenage-looking drift and garbled text. Use when generating any video clip with a character in it, choosing a video model, or repairing a clip that drifted.
+description: Writes and runs AI video prompts that keep a recurring character (Claudio or your own) on-model in 9:16 shorts — model choice per shot (Gemini Omni Flash, Veo 3.1 until its 2026-10-22 shutdown, Kling 2.6/3, Seedance 2.0, Hailuo 2.3, Wan 2.6, Runway Gen-4.5 and Aleph 2 edits), the image-to-video first-frame workflow, a six-slot prompt formula, camera-move and timing syntax per model, native audio vs. added audio, extension and stitching with ffmpeg, frame QA, and fixes for face drift, melting hands, beard flicker, age drift and garbled text. Use when generating any video clip with a character in it, choosing a video model, or repairing a clip that drifted.
 license: MIT
 metadata:
   title: "Video prompting"
@@ -24,7 +24,7 @@ using Claudio's four reference clips (lounge sunglasses reveal, DJ-booth dance, 
 
 - Generating any clip where Claudio (or your character) appears.
 - Deciding which video model to pay for on a given shot.
-- A clip came back with a different face, extra fingers, flickering streaks or a younger-looking him.
+- A clip came back with a different face, extra fingers, a flickering beard or a younger-looking him.
 - Planning a clip longer than one generation (extension or stitching).
 
 For phone-camera UGC formats (talking to camera, selfie walks, GRWM) go deeper in
@@ -82,7 +82,7 @@ Text-to-video of a recurring face drifts every time. The workflow:
 ### 3. Write the prompt in six slots
 
 ```text
-1 IDENTITY   Same man as the first frame: <short ID block> + "his face, bob, copper bang streaks and orange clip stay identical"
+1 IDENTITY   Same man as the first frame: <short ID block> + "his face, shaved head, dark brows and silver chain bracelet stay identical"
 2 ACTION     2–3 timed beats, one verb each (sways → slides sunglasses down → holds eye contact)
 3 SCENE      the setting string from the bible, 1 sentence
 4 CAMERA     ONE move + framing + height ("static medium shot at chest height, very slow push-in")
@@ -94,8 +94,8 @@ Keep it 60–120 words for Kling/Wan/Seedance (instructions near the end of long
 40–70 for Hailuo, and use the timecoded form for Omni/Veo. Short identity block for video:
 
 ```text
-Claudio, 28-year-old man (adult), glossy black jaw-length bob, heavy straight bangs with copper-orange streak panels,
-small orange hair clip, thin gold hoops, light freckles, warm brown eyes
+Claudio, 35-year-old man (adult), clean shaved head, a full, thick dark-brown beard,
+chunky silver chain bracelet, broad build, light freckles, light blue-grey eyes
 ```
 
 ### 4. Use each model's timing syntax
@@ -186,8 +186,8 @@ streaks, hands passing in front of the face, and anything text-like in the backg
 | Failure | Cause | Fix |
 |---|---|---|
 | Face drifts mid-clip | big head turns, long duration, weak first frame | shorter clip (≤ 8 s), keep his facing camera ±30°, add the last frame as `--ref first,last`, or split into two stitched beats |
-| Looks younger as he moves | bob + bangs + wide-angle, laughing | "28-year-old man (adult)" in slot 1, a first frame that clearly reads late twenties, avoid fisheye/ultra-wide; reject and reroll |
-| Streak flicker / streaks spread | hair motion, coloured light | "his copper bang streaks stay fixed in place" in slot 1; less hair motion ("hair moves slightly"); in coloured light add "copper streaks remain orange under blue light" |
+| Looks younger as he moves | wide-angle, laughing, soft light | "35-year-old man (adult)" in slot 1, a first frame that clearly reads mid-thirties, avoid fisheye/ultra-wide; reject and reroll |
+| Beard flicker / beard spreads | hair motion, coloured light | "his beard and head stay fixed in place" in slot 1; less hair motion ("hair moves slightly"); in coloured light add "beard stays dark brown under the blue light" |
 | Melting hands or phone | hands crossing the face, fast gestures | one gesture per beat, "one hand, five relaxed fingers", keep hands below chin or out of frame; Aleph 2 to repaint a bad second |
 | Crowd faces merge (club) | many background people | "crowd softly out of focus, shallow depth of field"; fewer, darker silhouettes; never prompt identifiable people |
 | Garbled signs/screens | models can't hold text | "no readable text, no logos"; add text in edit |

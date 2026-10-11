@@ -33,14 +33,14 @@ async function run(label, req) {
 try {
   const still = await run("Keyframe", {
     kind: "image", model: "google/nano-banana-2.1", aspect: "9:16", brand: "claudio",
-    prompt: "Vertical film still: Claudio in his lamp-lit bedroom at dusk, sitting cross-legged on the bed with a laptop that has a butterfly sticker, city lights through the window, warm practical light, 35mm, shallow depth of field. Adult. No text, no logos.",
+    prompt: "Vertical film still: Claudio in his lamp-lit bedroom at dusk, sitting cross-legged on the bed with a laptop that has a rose-pink sticker, city lights through the window, warm practical light, 35mm, shallow depth of field. Adult. No text, no logos.",
   });
   if (!DRY && still && !(await ask("Keyframe looks right (face, wardrobe, hands)? Animate it?"))) process.exit(0);
 
   await run("Clip", {
     kind: "video", model: "fal/kling-2.6-pro", aspect: "9:16", durationSec: 5, meta: { audio: false },
     refs: still ? [still.outputs[0].path] : [],
-    prompt: "He looks up from the laptop, laughs softly, tucks his bangs behind his ear; slight handheld sway; natural skin texture.",
+    prompt: "He looks up from the laptop, laughs softly, runs a hand over his head; slight handheld sway; natural skin texture.",
   });
 
   if (VOICE || DRY) await run("Voiceover", {

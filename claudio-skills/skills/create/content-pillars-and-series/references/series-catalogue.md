@@ -60,7 +60,7 @@ Audio: voice-over or native dialogue + lip-sync ([../../voice-and-lip-sync/SKILL
 "the kill switch, explained by someone who uses it" · "my agent found a bug before I did" · "one rule I gave every agent" ·
 "why my agents can't approve their own jobs"
 
-**Shots:** desk at night, cosy black jumper, butterfly laptop, cat asleep; screen captures must show only your own
+**Shots:** desk at night, cosy black jumper, laptop, cat asleep; screen captures must show only your own
 account's data, no keys, no wallet balances you wouldn't publish. Never show a coin chart with a "buy" framing.
 
 **Done when:** a concrete number or event, a useful lesson, no promises, no tickers on TikTok, AI label set.
@@ -151,7 +151,7 @@ a train window, a café terrace. Never claim he's at a real event or with real p
 **Promise:** the cat has a job title and takes it seriously.
 
 **Format:** 5–8 s loop or a 4:5 still; the cat (grey tabby, white paws) does an "office" thing — sleeps on the keyboard,
-sits on the laptop, stares at the monitor, knocks over the butterfly mug. Claudio optional (hands only or out of focus).
+sits on the laptop, stares at the monitor, knocks over the black mug. Claudio optional (hands only or out of focus).
 
 **Captions:** "the CTO is reviewing my PR" · "the CTO found the kill switch" · "weekend standup. attendance: one cat" ·
 "the CTO walked across the keyboard and shipped a typo" · "CTO monthly review: exceeds expectations at sleeping" · "the

@@ -42,7 +42,7 @@ the owner's approval.
 
 - Mon P1: "ok so I tried to film this four times and the cat walked in all four times"
 - Mon P5: "my agents posted 14 times today and I took one nap. delegation is self-care"
-- Tue P4: "rain check? never heard of her"
+- Tue P4: "rain check? never heard of him"
 - Tue P5: "new skill on the shelf: banners in four prompts. link in the thread"
 - Wed P7: "shipped: a smarter queue. the cat approved the PR by sleeping on it"
 - Wed P3: "sunglasses on = do not perceive me. sunglasses off = ok fine, hi"

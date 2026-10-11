@@ -53,7 +53,7 @@ typo can't fork his identity across 30 prompts. Every item names an explicit `mo
   "approver": "@owner",
   "budget": { "perBatchUsd": 16, "rerollPct": 30 },
   "limits": { "perJobUsd": 3.5, "perDayUsd": 8, "perMonthUsd": 60, "approveAboveUsd": 0.5 },
-  "blocks": { "ID": "[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) …" },
+  "blocks": { "ID": "[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) …" },
   "items": [
     { "id": "w42-rain-ep1-still", "stage": 1, "kind": "image", "model": "google/nano-banana-2.1",
       "prompt": "{{ID}} … running selfie in the rain at a warehouse lot …", "aspect": "9:16", "resolution": "2K",
@@ -168,13 +168,13 @@ node scripts/batch.mjs run batch.json --yes --stage 2   # refuses if a stage-2 r
 
 ### 8. QA gate 2 — clips and audio
 
-- Score first, middle and last frames (`ffmpeg -ss 5 -i clip.mp4 -frames:v 1 mid.jpg`): face, age, hands, phone, streaks.
+- Score first, middle and last frames (`ffmpeg -ss 5 -i clip.mp4 -frames:v 1 mid.jpg`): face, age, hands, phone, beard.
 - Watch at full speed with sound: lip-sync drift, music where you asked for "no music", garbled on-screen text.
 - Then stage 3 (lip-sync) and the edit ([../short-form-editing/SKILL.md](../short-form-editing/SKILL.md)).
 
 ### 9. QA gate 3 — safety and disclosure
 
-- [ ] Adult, late twenties, nothing sexualised; background people anonymous; no real-person likeness or readable logos.
+- [ ] Adult, mid-thirties, nothing sexualised; background people anonymous; no real-person likeness or readable logos.
 - [ ] Music licensed for this account type ([../music-and-sound-for-shorts/SKILL.md](../music-and-sound-for-shorts/SKILL.md)).
 - [ ] Sidecar kept next to the final file; AI label planned per network ([../ai-disclosure-and-provenance/SKILL.md](../ai-disclosure-and-provenance/SKILL.md)).
 - [ ] No price/return promises; coin mentions carry "not financial advice"; nothing coin-related for TikTok.

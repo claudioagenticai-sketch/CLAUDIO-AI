@@ -15,14 +15,14 @@ claudio generate image "$(cat banners/sunset@v2.txt)" --model openai/gpt-image-2
 ```
 
 The dry run showed `size: "3840x1280"` and two data-URI images. Output at this size is "more variable" per OpenAI
-(checked 2026-10); the first result had a second copper streak on the right side (5/7).
+(checked 2026-10); the first result had a grey streak in the beard (5/7).
 
 ## 2. Fix (Sunburst edit, preserve list)
 
 ```text
-Edit image 1. Preserve exactly: his face, freckles, eye colour, expression, the copper panel in the front bangs, the
-orange clip, earrings, black jumper, pose, the bedroom, the skyline window, the sunset light and the composition.
-Change only: make the hair on the right side of his head fully glossy jet-black (remove the second copper streak there).
+Edit image 1. Preserve exactly: his face, freckles, eye colour, expression, the beard, the
+silver chain bracelet, earrings, black jumper, pose, the bedroom, the skyline window, the sunset light and the composition.
+Change only: make the hair on the right side of his head fully glossy dark-brown (remove the grey there).
 Do not change anything else.
 ```
 

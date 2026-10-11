@@ -11,7 +11,7 @@ the physical set-up (so you can describe it like a photographer), the prompt sen
 | **Rembrandt** | key 45° side, higher; triangle of light on the far cheek | "Rembrandt lighting: key high at 45 degrees left, a small triangle of light on his shadowed cheek" | moody editorial, B&W |
 | **Butterfly / paramount** | key straight ahead and above; butterfly shadow under the nose | "large beauty dish directly above the lens, a small butterfly shadow under the nose, white bounce below the chin" | beauty close-ups, avatars |
 | **Split** | key 90° side | "hard side light from camera left splitting his face in half" | dramatic posters only; reads harsh for his brand |
-| **Broad vs short** | light the side of the face toward / away from camera | "short lighting: the side of his face turned away from the lens is lit" | short lighting slims and adds age — useful against teenage drift |
+| **Broad vs short** | light the side of the face toward / away from camera | "short lighting: the side of his face turned away from the lens is lit" | short lighting slims and adds age — useful against age drift |
 | **Clamshell** | key above + fill below | "clamshell lighting with a softbox above and a silver reflector below" | glossy press shots |
 
 ## Natural and practical light
@@ -19,7 +19,7 @@ the physical set-up (so you can describe it like a photographer), the prompt sen
 | Recipe | Prompt sentence | Scenes |
 |---|---|---|
 | Window daylight | "soft overcast daylight from a large window at camera left, gentle falloff to the right, no fill" | his day room, desk mornings |
-| Golden-hour backlight | "the low sun behind his rims his hair in copper, a soft flare, window bounce lights his face" | sunset bedroom, rooftop |
+| Golden-hour backlight | "the low sun behind his rims his head in copper, a soft flare, window bounce lights his face" | sunset bedroom, rooftop |
 | Blue hour | "cool ambient sky light, city windows glowing behind, a warm practical lamp on his face" | balcony, rooftop |
 | Tungsten lamp key | "a brass table lamp with a pleated shade lights him from the left, warm 2700K glow, deep soft shadows" | vintage lounge |
 | Screen glow | "the laptop screen lights his face from below in cool white, a rose-pink desk lamp rim behind him" | desk at night, network banner |
@@ -49,7 +49,7 @@ silver/white/gold reflector · negative fill (black flag) · gel (CTO for warm, 
 |---|---|---|
 | Cobalt seamless | "seamless saturated cobalt-blue paper backdrop" | the owner's portrait; contrasts the copper hair |
 | Warm grey | "warm mid-grey seamless backdrop" | neutral ref-pack shots |
-| Olive | "muted olive-green painted canvas backdrop" | matches the cami |
+| Olive | "muted olive-green painted canvas backdrop" | matches the t-shirt |
 | Near-black | "near-black backdrop with a faint gradient" | press dark mode, matches site #0a0b0d |
 
 ## Colour temperature cheat sheet

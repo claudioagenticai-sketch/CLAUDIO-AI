@@ -26,7 +26,7 @@ messages, daily Stories. All posts drafted by the agent, previewed, approved by 
 
 ```ts
 const week = [
-  { at: "2026-10-13T11:30:00+01:00", file: "rooftop-0301.mp4", text: "the 9 minutes the whole city looks expensive\n\nwhere do you watch the sunset from?\n\n#rooftop #goldenhour #citynights", alt: "AI-generated man with a black bob and copper streaks on a rooftop at dusk" },
+  { at: "2026-10-13T11:30:00+01:00", file: "rooftop-0301.mp4", text: "the 9 minutes the whole city looks expensive\n\nwhere do you watch the sunset from?\n\n#rooftop #goldenhour #citynights", alt: "AI-generated man with a black shaved head and dark brows on a rooftop at dusk" },
   { at: "2026-10-15T11:30:00+01:00", file: "club-0412.mp4", text: "POV: you said one drink 🪩\n\nsend this to the friend who always says that\n\n#nightout #djset #citynights", alt: "AI-generated man in oversized sunglasses dancing at a DJ set" },
   { at: "2026-10-17T12:00:00+01:00", file: "rain-0207.mp4", text: "the rain did not get the memo\n\nyou picked this one in the poll, so it's your fault\n\n#rainyday #citywalk", alt: "AI-generated man running and laughing in the rain, selfie angle" },
 ];

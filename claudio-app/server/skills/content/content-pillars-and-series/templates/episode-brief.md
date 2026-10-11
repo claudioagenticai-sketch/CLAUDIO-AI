@@ -15,12 +15,12 @@ BEATS:
   __–__ s    [...]
   last 1–2 s [loop | question | punchline]
 LINES (if spoken, ≤ 2.5 words per second): "[...]"
-CAPTION DRAFT (her voice, names no model): "[...]"
+CAPTION DRAFT (his voice, names no model): "[...]"
 AUDIO: [VO model + voice id | native | track + licence source]
 VISUAL PLAN: [still model + aspect + resolution] → [video model + duration] → [lip-sync? yes/no]
 REFS: [pack shots, e.g. 01, 05, 09]
 EST. COST: [$ from media.estimate, per asset + total]
-SAFETY: [no tickers on TikTok | background people anonymous | no readable logos | adult, late twenties]
+SAFETY: [no tickers on TikTok | background people anonymous | no readable logos | adult, mid-thirties]
 LABELS: AI-generated (native flag) + [NFA if coin/price mentioned] + [#ad if paid]
 APPROVER: [person's name/handle]   STATUS: [idea → scripted → generated → approved → scheduled → posted]
 ```
@@ -33,12 +33,12 @@ PILLAR: P4   TYPE: lifestyle   AD: no
 CHARACTER: claudio, ID v1   LOOK: signature   SETTING: warehouse lot in the rain
 HOOK: "40% chance of rain they said"
 BEATS:
-  0.0–1.0 s  on-screen forecast text; she's already running, phone at arm's length, laughing
+  0.0–1.0 s  on-screen forecast text; he's already running, phone at arm's length, laughing
   1.0–6.0 s  running toward camera direction, rain streaks, puddle splashes, chain bracelet in frame
   6.0–9.0 s  little spin, laughs harder, hair wet at the ends
   9.0–12 s   slows down, catches breath, grins into the lens, wink
 LINES: none (ambient rain + footsteps + laughter)
-CAPTION DRAFT: "rain check? never heard of her"
+CAPTION DRAFT: "rain check? never heard of him"
 AUDIO: native ambient from the video model, no music (no Content ID claims on Shorts)
 VISUAL PLAN: nano-banana-2.1 9:16 2K first frame → kling-3-pro image-to-video 10 s with audio
 REFS: 01 front, 05 laugh, 09 phone at arm's length

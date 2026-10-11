@@ -11,9 +11,9 @@ length_s: 22
 hook_text: "forecast said stay in"
 caption: "rain check? never heard of him"   # + AI label per platform
 continuity:
-  look: "signature — olive star cami, star pendant, red-and-green tartan mini, studded belt, chunky silver chain bracelet, pink fuzzy slippers"
-  hair_state: "s1 dry-ish, damp from s2 on; bangs stay straight; clip in"
-  accessories: "no sunglasses; gold hoops"
+  look: "signature — olive t-shirt, silver chain bracelet, red-and-green tartan trousers, studded belt, chunky silver chain bracelet, worn black slides"
+  beard_state: "s1 dry-ish, damp from s2 on; beard keeps its shape"
+  accessories: "no sunglasses; silver chain bracelet"
   light: "overcast blue-grey dusk, wet asphalt reflections"
   props: "phone in his right hand (selfie), nothing else"
   direction: "he moves toward camera and to frame-left"
@@ -29,7 +29,7 @@ audio: { line: "rain-01-L1", music: "licensed lo-fi house bed at -18 dB under th
 | s2 | build | 2.5–7.5 | 5 / 6 s | MCU selfie · arm | turns his head to show the loading docks, then back | rain, breath | `fal/kling-3-pro` | $1.01 |
 | s3 | build | 7.5–10.0 | 2.5 / 6 s | insert, low · static | pink fuzzy slipper lands in a puddle, splash | splash SFX | `fal/hailuo-2.3` | $0.28 |
 | s4 | build | 10.0–16.0 | 6 / 6 s | MS selfie · arm, wider | he spins once under the rain, arm out, laughing | rain, laugh | `fal/hailuo-2.3` | $0.28 |
-| s5 | payoff | 16.0–22.0 | 6 / 7 s | CU selfie · arm slowing to still | stops, catches breath, pushes wet bangs aside with one finger, grins, says the line | line + rain | `fal/kling-3-pro` silent → lip-sync | $0.78 + $0.35 |
+| s5 | payoff | 16.0–22.0 | 6 / 7 s | CU selfie · arm slowing to still | stops, catches breath, wipes the rain off his head with one hand, grins, says the line | line + rain | `fal/kling-3-pro` silent → lip-sync | $0.78 + $0.35 |
 
 Video $3.19 · stills (board $0.17 + 5 first frames at 2K $0.25) $0.42 · voice < $0.01 · lip-sync (7 s at $3/min) $0.35
 → **$3.96, budget with 50 % rerolls: $6.00** (package prices, checked 2026-10).
@@ -37,10 +37,10 @@ Video $3.19 · stills (board $0.17 + 5 first frames at 2K $0.25) $0.42 · voice 
 ## Board frame prompts (Nano Banana Lite, 1K, $0.0336 each)
 
 - s1: `[CLAUDIO ID v1] … signature look, running toward the phone held at arm's length, laughing, light rain, warehouse lot with roll-up doors behind, overcast dusk, selfie MCU, vertical 9:16, storyboard frame`
-- s2: `… same, head turned to his left looking at loading docks and yellow bollards, damp bangs …`
+- s2: `… same, head turned to his left looking at loading docks and yellow bollards, damp beard …`
 - s3: `close low shot of a pink fuzzy slipper landing in a puddle on wet asphalt, splash frozen mid-air, overcast light, vertical 9:16, storyboard frame`
 - s4: `… wider selfie, he spins with one arm out, rain streaks, laughing, damp hair …`
-- s5: `… close-up selfie, breathless grin, one finger pushing wet bangs aside, raindrops on skin …`
+- s5: `… close-up selfie, breathless grin, one hand wiping the rain off his head, raindrops on skin …`
 
 ## Animatic notes (after watching on a phone)
 
@@ -53,8 +53,7 @@ Video $3.19 · stills (board $0.17 + 5 first frames at 2K $0.25) $0.42 · voice 
 **s1** (Kling 3 Pro, 5 s, audio on):
 
 ```text
-Same man as the first frame: Claudio, 28-year-old man (adult), black jaw-length bob with heavy bangs and copper-orange
-streak panels, orange clip, gold hoops. He runs toward the phone he holds at arm's length, laughing, light rain falling
+Same man as the first frame: Claudio, 35-year-old man (adult), clean shaved head with full dark-brown beard and strong dark brows, silver chain bracelet, broad build. He runs toward the phone he holds at arm's length, laughing, light rain falling
 on a wet warehouse lot. The camera moves with his arm, bouncing with each step; he moves slightly toward frame-left.
 Overcast blue-grey dusk, wet asphalt reflections. SFX: footsteps splashing, rain on concrete, his laugh. No music.
 ```
@@ -62,8 +61,8 @@ Overcast blue-grey dusk, wet asphalt reflections. SFX: footsteps splashing, rain
 **s5** (Kling 3 Pro, 7 s, `meta.audio: false`, he talks so the mouth moves):
 
 ```text
-Same man as the first frame … He slows to a stop, catches his breath, pushes his wet bangs aside with one finger — the
-copper streak panel stays in place — then grins and talks to the lens. Handheld selfie arm settling to almost still.
+Same man as the first frame … He slows to a stop, catches his breath, wipes the rain off his head with one hand — the
+beard stays in place — then grins and talks to the lens. Handheld selfie arm settling to almost still.
 Light rain, overcast dusk. His hand has five relaxed fingers.
 ```
 

@@ -1,22 +1,21 @@
 # Claudio identity blocks — copy exactly
 
-Version: **CLAUDIO ID v1** (2026-10-08). If the owner changes his look, add v2 below and keep v1 for old series.
+Version: **CLAUDIO ID v1** (2026-10-12). If the owner changes his look, add v2 below and keep v1 for old series.
 
 ## Long (photoreal image + video, most models)
 
 ```text
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy
-straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange
-hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown
-eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on
-his arms (small stars, a rose, a sun).
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist.
 ```
 
 ## Short (tight budgets: Hailuo, Midjourney, SFX-style fields)
 
 ```text
-Claudio, 28-year-old man, glossy black jaw-length bob, heavy straight bangs, copper-orange streaks in the bangs, small
-orange hair clip, thin gold hoops, light freckles, warm brown eyes, knowing half-smile
+Claudio, 35-year-old man, clean shaved head, full thick dark-brown beard, light blue-grey eyes, strong dark brows,
+light freckles, broad build, chunky silver chain bracelet, calm half-smile
 ```
 
 ## Midjourney (use with an omni reference of an approved ref image)
@@ -25,8 +24,8 @@ Omni Reference (`--oref`, weight `--ow` 0–1000, default 100) is a **V7** featu
 rendered by V7 or not at all, so pin `--v 7` for identity work (checked 2026-10). `--cref` is legacy and ignored.
 
 ```text
-photo of a 28-year-old man, glossy jet-black jaw-length blunt bob with heavy straight bangs and copper-orange streak
-panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes, knowing half-smile --oref <ref-url> --ow 250 --style raw --v 7
+photo of a 35-year-old man, clean shaved head, full thick groomed dark-brown beard, light blue-grey eyes, strong dark
+brows, light freckles, broad build, chunky silver chain bracelet, calm half-smile --oref <ref-url> --ow 250 --style raw --v 7
 ```
 
 ## JSON (FLUX.2 structured prompt subject)
@@ -35,11 +34,12 @@ panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes
 {
   "subject": {
     "name": "Claudio",
-    "age": "28-year-old adult man",
-    "hair": "glossy jet-black jaw-length blunt bob, heavy straight bangs just above the brows, vivid copper-orange streak panels through the front bangs and one side, rest jet-black",
-    "accessories": ["small orange hair clip at the side of the bangs", "small thin gold hoop earrings", "star pendant on layered silver chains"],
-    "face": "light freckles across nose and cheeks, warm brown almond eyes, straight dark brows, knowing closed-lip half-smile, natural skin texture",
-    "tattoos": "fine-line black tattoos on his arms: small stars, a rose, a sun"
+    "age": "35-year-old adult man",
+    "head": "clean shaved head with light stubble, no hair on top",
+    "beard": "full, thick, groomed dark-brown beard of medium length, slightly lighter moustache",
+    "accessories": ["chunky silver chain-link bracelet on one wrist"],
+    "face": "light blue-grey eyes, strong straight dark-brown brows, angular face with defined cheekbones, light freckles, calm closed-lip half-smile, natural skin texture",
+    "build": "broad, strong, gym-fit"
   }
 }
 ```
@@ -48,16 +48,17 @@ panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes
 
 | Look | String |
 |---|---|
-| Signature | `wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains, a chunky silver chain bracelet` |
-| Cosy black | `wearing an oversized fuzzy black knit jumper with sleeves pulled over his hands` |
-| Studio | `wearing a soft green unstructured blazer over an olive ribbed top` |
-| Night out | `wearing a black ribbed cami, layered silver chains with a star pendant, oversized black oval sunglasses` |
-| Travel | `wearing a white linen shirt open over a black top, large cream over-ear headphones, sunglasses pushed up into his hair` |
-| Home | `wearing a grey hoodie and pink fuzzy slippers` |
+| Signature | `wearing an olive-green crew-neck cotton t-shirt, red-and-green tartan trousers, a chunky silver chain-link bracelet` |
+| Cosy black | `wearing a chunky dark-brown ribbed knit jumper with the sleeves pushed up` |
+| Studio | `wearing a sage-green unstructured blazer over a navy-black crew-neck t-shirt` |
+| Night out | `wearing an olive t-shirt, dark rectangular sunglasses, a chunky silver chain-link bracelet` |
+| Desk | `wearing a black long-sleeve t-shirt and thin metal round glasses` |
+| Travel | `wearing an off-white linen overshirt open over a black t-shirt, dark over-ear headphones around his neck` |
+| Home | `wearing a navy hoodie` |
 
 ## Negative block
 
 ```text
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept
-bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee,
+moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo
 ```

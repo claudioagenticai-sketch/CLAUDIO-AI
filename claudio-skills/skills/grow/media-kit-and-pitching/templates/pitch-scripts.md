@@ -15,7 +15,7 @@ Hi {{first_name}},
 Full disclosure up front: {{character}} is AI-generated, every post is labelled as AI and as #ad when paid, and a
 person approves each sponsored post.
 
-Idea: {{format}} on {{platform}}, {{scene_description}}, live in {{timing}}. Your claims stay yours; she doesn't pretend
+Idea: {{format}} on {{platform}}, {{scene_description}}, live in {{timing}}. Your claims stay yours; he doesn't pretend
 to have used the product.
 
 Packages start at {{from_price}}. Media kit: {{kit_link}}
@@ -62,9 +62,9 @@ Hi {{first_name}}, thanks! Kit attached ({{kit_link}}). Two options that usually
 Usage rights and exclusivity are quoted separately. What's the goal (awareness, sign-ups, sales) and the go-live window?
 Then I can tighten the quote within 2 business days.
 
-## 8. Reply to "Is she real?"
+## 8. Reply to "Is he real?"
 
-She's an AI character. Every image, video and voice of {{character}} is generated, and every post carries the platform's
+He's an AI character. Every image, video and voice of {{character}} is generated, and every post carries the platform's
 AI label. {{operator_company}} operates the account and a person approves every sponsored post. Happy to jump on a call
 with you to walk through how we make and review content.
 

@@ -32,7 +32,7 @@ length, slightly above eye level (UGC) · mirror selfie, phone covering part of 
 | 50 mm | "human eye", flattering | medium shots |
 | 85 mm | compression, creamy background | portraits, headshots |
 | 100–135 mm | strong compression, isolates face | studio beauty, telephoto candid |
-| macro 100 mm | texture detail | jewellery, pendant, freckles |
+| macro 100 mm | texture detail | silver chain bracelet, beard texture, freckles |
 
 Aperture: f/1.4–2 (very shallow, dreamy) · f/2.8 (portrait default) · f/5.6–8 (group, scene sharpness) · f/11+ (landscape).
 Focus words: "focus on his eyes", "background softly out of focus", "rack focus" (video), "deep focus".

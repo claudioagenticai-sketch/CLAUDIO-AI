@@ -3,13 +3,13 @@
 Theme: ____________________   Outfit (one): ____________________   Light (one): ____________________
 Model: Seedream batch / Nano Banana singles   Budget cap: $____   Approver: ____________
 
-| Slide | Frame type | Moment (mid-action) | Her face visible? | Refs | Score |
+| Slide | Frame type | Moment (mid-action) | His face visible? | Refs | Score |
 |---|---|---|---|---|---|
 | 1 | hook: close-up, eyes to lens | | yes | 01, 05 | /7 |
 | 2 | detail (hands, prop, drink) | | no | props/… | n/a |
 | 3 | wide place shot | | small | 01 | /7 |
 | 4 | candid laugh / off-frame look | | yes | 01, 05 | /7 |
-| 5 | no-face texture (slippers, window, food) | | no | — | n/a |
+| 5 | no-face texture (sneakers, window, food) | | no | — | n/a |
 | 6 | closer: the cat / soft ending | | optional | props/cat | /7 |
 
 Rules
@@ -19,7 +19,7 @@ Rules
 - One outfit and one light across all slides; change only angle and distance.
 - No readable logos; drinks incidental; no real-person likeness in backgrounds.
 
-Caption (her voice, ≤ 120 chars) + soft question:
+Caption (his voice, ≤ 120 chars) + soft question:
 `________________________________________________`
 
 Labels: platform AI toggle on · "AI-generated" in alt text · #ad only if a brand paid or gifted anything.

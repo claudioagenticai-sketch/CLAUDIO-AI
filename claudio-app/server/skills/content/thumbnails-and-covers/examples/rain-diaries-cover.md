@@ -35,7 +35,7 @@ claudio generate image "<rain diaries prompt>" --model google/nano-banana-2.1 \
   --aspect 16:9 --resolution 2K --n 3 --max-usd 0.20
 ```
 
-≈ $0.15 for three. Scores: 7/7, 6/7 (clip missing), 5/7 (streak on both sides). Kept #1 as `work/cover-still.jpg`
+≈ $0.15 for three. Scores: 7/7, 6/7 (bracelet missing), 5/7 (beard turned grey). Kept #1 as `work/cover-still.jpg`
 (face right third, empty wet lot on the left).
 
 Template values for 16:9: defaults (`--fade: 90deg`, `--text-bottom: 64px`, `--title-size: 132px`), `--img-pos: 70% 35%`.
@@ -62,5 +62,5 @@ judges by watch-time share; we'll log the winner in the prompt library with the 
 
 - YouTube: "altered or synthetic content" = yes at upload (the video and thumbnail show a realistic AI character).
 - Reels: AI info label on; TikTok: AIGC label on.
-- Alt text: `Claudio, an AI-generated character with a black bob and copper streaks, laughing into his phone while running
+- Alt text: `Claudio, an AI-generated character with a black shaved head and dark brows, laughing into his phone while running
   through a rainy warehouse lot. Title: "Rain check? Never".`

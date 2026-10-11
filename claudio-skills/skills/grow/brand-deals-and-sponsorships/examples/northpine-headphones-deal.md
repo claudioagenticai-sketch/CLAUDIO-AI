@@ -56,7 +56,7 @@ Signed by the operator's company on 14 Oct. Deposit $1,163 received 16 Oct.
 
 ## Day 10–20 — production and approvals
 
-Concept (approved first round): *Night bus home in the rain. Claudio, black bob with copper streaks and gold hoops,
+Concept (approved first round): *Night bus home in the rain. Claudio, black shaved head with dark brows and broad build,
 olive star-embroidered knit, pulls the Arc headphones on as the bus pulls away; the city noise drops out (sound
 design does the work); text overlay: "31 h battery · folds flat". Last shot: real product packshot.*
 

@@ -37,7 +37,7 @@ follow reliably; "risky" moves cause face drift or warping on a recurring charac
 Use one strong verb per beat and a speed word:
 
 - Small: "glances away and back", "tilts his head", "a slow knowing half-smile", "bites his lip, then laughs" (keep tasteful),
-  "pushes his bangs aside with one finger" (risky for the streak shape).
+  "wipes the rain off his head" (risky for the beard shape).
 - Medium: "slides his sunglasses down his nose with one finger", "leans back against the dresser", "raises one arm
   high", "spins once slowly".
 - Large: "runs toward the camera laughing", "dances, shoulders loose, bouncing on the beat".
@@ -54,6 +54,6 @@ Speed words: "slowly", "in one smooth motion", "a beat later", "suddenly" (use s
 ## Words to avoid
 
 - "Cinematic" alone (generic glossy look), "8K", "masterpiece", "ultra-detailed" — no effect or worse.
-- "Beautiful young man", "guy" — pulls his younger. Say "28-year-old man".
+- "Beautiful young man", "guy" — pulls his younger. Say "35-year-old man".
 - Brand and person names, "in the style of <living director>".
 - Two moves at once ("orbit while pushing in and craning up").

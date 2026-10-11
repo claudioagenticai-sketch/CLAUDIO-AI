@@ -50,7 +50,7 @@ Models weight early words more (FLUX.2's own guide says so; checked 2026-10), so
 
 | Block | What it says | Example (Claudio) |
 |---|---|---|
-| 1 Subject / identity | who, with the locked ID block | `[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) …` |
+| 1 Subject / identity | who, with the locked ID block | `[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) …` |
 | 2 Wardrobe + action | one look, one action, one expression | `wearing an oversized fuzzy black knit jumper; lying on his front, chin resting on folded arms, looking into the lens with a knowing half-smile` |
 | 3 Setting | place, props, time, weather | `on an unmade white duvet in a New York bedroom, floor-to-ceiling window behind him with the Manhattan skyline and a low orange sun` |
 | 4 Camera | shot size, angle, lens, aperture, focus | `close-up at mattress height, 35mm lens at f/2, shallow depth of field, focus on his eyes` |
@@ -111,7 +111,7 @@ plain constraints ("Do not add any text or logos").
 
 ```json
 {
-  "subject": "Claudio from image 1: 28-year-old adult man, glossy jet-black jaw-length blunt bob, heavy straight bangs, copper-orange streak panels, small orange hair clip, thin gold hoops, light freckles",
+  "subject": "Claudio from image 1: 35-year-old adult man, clean shaved head, a full, thick dark-brown beard, strong dark brows, chunky silver chain bracelet, broad build, light freckles",
   "action": "lying on his front on a bed, chin on folded arms, knowing half-smile to camera",
   "wardrobe": "oversized fuzzy black knit jumper",
   "background": "floor-to-ceiling window, Manhattan skyline at sunset, low orange sun, trailing pothos",
@@ -125,8 +125,7 @@ plain constraints ("Do not add any text or logos").
 **Midjourney V7 — comma phrases first, parameters last.** Negatives with `--no`; identity with `--oref` on V7 only.
 
 ```text
-close-up photo of a 28-year-old man lying on a bed, glossy jet-black jaw-length bob, heavy straight bangs, copper-orange
-streak panels, small orange hair clip, thin gold hoops, freckles, black fuzzy knit jumper, Manhattan skyline window at
+close-up photo of a 35-year-old man lying on a bed, clean shaved head, a full, thick dark-brown beard, strong dark brows, chunky silver chain bracelet, broad build, freckles, black fuzzy knit jumper, Manhattan skyline window at
 sunset, golden backlight, 35mm, Kodak Portra 400 --ar 4:5 --style raw --oref <approved-ref-url> --ow 200 --no text, teen --v 7
 ```
 
@@ -181,12 +180,12 @@ honours it. Log each round (prompt version, model, seed, verdict) — see [../pr
 
 | Symptom | Fix |
 |---|---|
-| He looks like a teenager | Keep "28-year-old man (adult, late twenties)"; use 50–85 mm instead of wide; add "adult facial proportions, defined cheekbones"; remove "cute", "guy", "petite", "school" |
+| He looks like a teenager | Keep "35-year-old man (adult, mid-thirties)"; use 50–85 mm instead of wide; add "adult facial proportions, defined cheekbones"; remove "cute", "guy", "petite", "school" |
 | Plastic skin | "natural skin texture with visible pores, subtle film grain"; drop "flawless", "perfect skin", "8k" |
-| Extra copper streaks / red hair all over | "copper-orange streak panels through the front bangs and one side; the rest jet-black" |
+| Grey or ginger beard | "a full, thick, dark-brown beard" |
 | Garbled text in signs/screens | Don't ask for text you don't need ("blank screen glow"); add real text in the edit step |
 | Hands warped | Give hands a job ("holding a mug with both hands"); avoid interlaced fingers; fix with an edit (see [../character-consistency/templates/edit-fix-prompts.md](../character-consistency/templates/edit-fix-prompts.md)) |
-| Readable brand logos appear | "unbranded", "plain black laptop lid with one butterfly sticker" |
+| Readable brand logos appear | "unbranded", "plain black laptop lid with one rose-pink sticker" |
 | Composition ignores your framing | Put shot size and angle earlier; state the aspect in words |
 | Too glossy / "AI look" | Name a film stock, add "available light", lower stylisation (`--stylize 50` on Midjourney) |
 
@@ -207,7 +206,7 @@ natural skin texture. [ASPECT] frame. [CONSTRAINTS: no text, no logos, no extra 
 ## Check before you finish
 
 - [ ] Brief sentence written; aspect and resolution chosen for the destination.
-- [ ] Identity block first and verbatim (if Claudio is in it); age stated as an adult in his late twenties.
+- [ ] Identity block first and verbatim (if Claudio is in it); age stated as an adult in his mid-thirties.
 - [ ] One wardrobe, one action, one setting — no contradictions.
 - [ ] Negatives only on models that support them; positive wording elsewhere.
 - [ ] Estimate checked, `--max-usd` set; nothing above the approval threshold run without a person's OK.

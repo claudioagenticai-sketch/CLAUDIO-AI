@@ -10,7 +10,7 @@ Numbers: {{window}} to {{pulled_on}}, from each platform's own analytics. Median
 
 ## About {{character_name}}
 
-{{character_name}} is an AI character: every image, video and voice of her is generated, and every post is labelled as
+{{character_name}} is an AI character: every image, video and voice of him is generated, and every post is labelled as
 AI-generated on-platform. The account is operated by {{operator_legal_name}}, {{operator_country}}. A person reviews and
 approves every sponsored post before it goes live. {{character_name}} doesn't claim to have personally used a product;
 sponsored content shows your product in generated scenes, quotes your claims as yours, or shares what our team found when
@@ -34,7 +34,7 @@ included in the medians above.
 - As reported by the platform: {{gender_split_as_reported}}
 - {{audience_note}}
 
-## What she makes
+## What he makes
 
 | Pillar | Format | Example (why it worked) |
 |---|---|---|

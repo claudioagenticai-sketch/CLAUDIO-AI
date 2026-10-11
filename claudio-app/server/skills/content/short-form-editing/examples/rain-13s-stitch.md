@@ -15,9 +15,8 @@ clips and stitch them. Prices are the package's list figures (checked 2026-10); 
 ## 1. First frame (image)
 
 ```sh
-claudio generate image "[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) … wearing an olive-green \
-fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on \
-layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt, a chunky silver chain bracelet. \
+claudio generate image "[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) … wearing an olive-green crew-neck t-shirt with a scalloped copper-orange edged neckline and small orange embroidered stars, a silver chain bracelet on \
+the chunky silver chain bracelet, red-and-green tartan trousers with a dark belt, a chunky silver chain bracelet. \
 Front-camera phone selfie at arm's length, his arm reaching toward the lens, mid-stride, laughing with his mouth open, \
 light rain, wet asphalt warehouse lot with roll-up loading-dock doors and yellow bollards, overcast blue-grey dusk sky, \
 24mm phone lens, slight motion blur, natural skin texture, 9:16" \
@@ -31,8 +30,8 @@ light rain, wet asphalt warehouse lot with roll-up loading-dock doors and yellow
 
 ```sh
 claudio generate video "Handheld front-facing phone selfie, he runs forward through light rain holding the phone at \
-arm's length, laughing, bangs bouncing, raindrops streaking past the lens, puddles splashing under his steps, the camera \
-bobs with each stride, warehouse doors sliding past behind him. Keep his face, hair, copper streaks and outfit exactly as \
+arm's length, laughing, rain running down his head, raindrops streaking past the lens, puddles splashing under his steps, the camera \
+bobs with each stride, warehouse doors sliding past behind him. Keep his face, hair, dark brows and outfit exactly as \
 in the first frame. Sound: rain on asphalt, his laughter, footsteps splashing, no music." \
   --model fal/kling-3-pro --ref frames/rain-first.jpg --aspect 9:16 --duration 8 --max-usd 1.50
 ```
@@ -45,7 +44,7 @@ in the first frame. Sound: rain on asphalt, his laughter, footsteps splashing, n
 ffmpeg -ss 6.9 -i raw/rain-a.mp4 -frames:v 1 -q:v 2 frames/rain-a-last.jpg
 claudio generate video "Continuous motion from the first frame, same pace: he keeps running through light rain with the \
 phone at arm's length, spins once to show the empty warehouse lot behind him, laughs, slows to a stop and grins at the lens. \
-Same face, hair, copper streaks and outfit. Sound: rain, footsteps slowing, breathless laugh, no music." \
+Same face, hair, dark brows and outfit. Sound: rain, footsteps slowing, breathless laugh, no music." \
   --model fal/kling-3-pro --ref frames/rain-a-last.jpg --aspect 9:16 --duration 7 --max-usd 1.50
 ```
 
@@ -82,5 +81,5 @@ ffmpeg -ss 1.2 -i out/rain-0412-vertical.mp4 -frames:v 1 -q:v 3 out/rain-0412-po
 - Approved by the owner before scheduling.
 
 Why stitch instead of one 13 s generation: long single generations with fast motion are where identity drifts most
-(rounder, younger face; extra streaks in the last seconds). Two shorter clips, each starting from an approved frame,
+(rounder, younger face; a grey beard in the last seconds). Two shorter clips, each starting from an approved frame,
 give you two chances to check him and a cut point to hide any bad frames.

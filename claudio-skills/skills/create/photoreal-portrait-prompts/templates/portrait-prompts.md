@@ -20,8 +20,7 @@ Every prompt starts with the full `[CLAUDIO ID v1]` block (shown as `[ID]` here 
 
 ## 1. Cobalt studio headshot
 ```text
-[ID] adult facial proportions, defined cheekbones. Image 1 is his face reference. He wears a soft green unstructured
-blazer over an olive ribbed top. Head-and-shoulders studio portrait, square to camera, chin slightly down, eyes into the
+[ID] adult facial proportions, defined cheekbones. Image 1 is his face reference. He wears a sage-green unstructured blazer over a navy-black crew-neck t-shirt. Head-and-shoulders studio portrait, square to camera, chin slightly down, eyes into the
 lens, knowing closed-lip half-smile. Seamless saturated cobalt-blue paper backdrop. Large soft key just above eye level
 and slightly left, white bounce below, faint hair light from behind. 85mm at f/4. Natural skin texture, freckles, soft
 rose lip. Clean editorial colour. Vertical 2:3.
@@ -30,24 +29,23 @@ rose lip. Clean editorial colour. Vertical 2:3.
 ## 2. Avatar, butterfly light
 ```text
 [ID] adult facial proportions, defined cheekbones. Image 1 is his face. He wears an oversized fuzzy black knit jumper.
-Tight head-and-shoulders, face centred with space around the hair so a circle crop keeps the copper panel and both hoops.
+Tight head-and-shoulders, face centred with space around the hair so a circle crop keeps the head and the whole beard.
 Beauty dish directly above the lens, small butterfly shadow under the nose, white bounce below. Warm grey seamless
 backdrop. 85mm f/2.8, eyes tack sharp, a soft catchlight in each eye. Square 1:1.
 ```
 
 ## 3. Lounge sunglasses lowered
 ```text
-[ID] Image 1 is his face; image 2 shows him in his sunglasses. Signature look: olive-green fine-knit crop cami with a
-scalloped copper-orange edged neckline and small orange embroidered stars, star pendant on layered silver chains,
-red-and-green tartan pleated mini skirt with a studded black belt. He leans back on a dark wood dresser, lifting
-oversized black oval sunglasses down his nose with one hand, looking over them into the lens. Butter-yellow wall, framed
+[ID] Image 1 is his face; image 2 shows him in his sunglasses. Signature look: olive-green crew-neck cotton t-shirt, chunky silver chain-link bracelet,
+red-and-green tartan trousers with a dark belt. He leans back on a dark wood dresser, lifting
+dark rectangular sunglasses down his nose with one hand, looking over them into the lens. Butter-yellow wall, framed
 botanical cross-stitch prints, brass lamp with a pleated cream shade at frame left. Medium shot, eye level, 50mm f/1.8.
 Tungsten lamp key from the left, Kodak Gold 200. Vertical 9:16, face in the upper third.
 ```
 
 ## 4. Club laugh, rose rim
 ```text
-[ID] Image 1 is his face; image 2 his laugh; image 3 the club light. Signature look plus oversized black oval sunglasses.
+[ID] Image 1 is his face; image 2 his laugh; image 3 the club light. Signature look plus dark rectangular sunglasses.
 Mid-laugh, chin up, one hand at his collarbone, in front of a DJ booth. Behind, out of focus: a DJ and a crowd with raised
 hands, anonymous and unrecognisable; blue-violet haze and moving-head beams. Slightly low angle, 35mm f/1.8. Rose-pink rim
 light #ff6fa5 on his hair and shoulder, CineStill 800T halation. No readable logos on the equipment. 4:5.
@@ -57,14 +55,14 @@ light #ff6fa5 on his hair and shoulder, CineStill 800T halation. No readable log
 ```text
 [ID] Image 1 is his face; image 2 his laugh; image 3 the selfie arm pose. Signature look plus a chunky silver chain
 bracelet. Front-camera selfie at arm's length, his arm reaching toward the lens at the bottom of the frame, laughing
-open-mouthed, rain on his face and bangs. Empty warehouse lot behind: wet asphalt, puddle reflections, grey roll-up
+open-mouthed, rain on his face and beard. Empty warehouse lot behind: wet asphalt, puddle reflections, grey roll-up
 loading-dock doors, yellow bollards, overcast blue-grey sky. iPhone front camera, 24mm equivalent, soft overcast light,
 rain streaks. Vertical 9:16, face in the upper third.
 ```
 
 ## 6. Day-room talking still
 ```text
-[ID] Image 1 is his face; image 2 his laugh. Olive crop cami with orange stars, layered silver chains with a star pendant.
+[ID] Image 1 is his face; image 2 his laugh. Olive t-shirt with orange stars, the chunky silver chain bracelet.
 Medium close-up, mid-sentence to the camera, eyebrows raised, playful grin. Plain white walls, ceiling smoke detector,
 open doorway behind, soft overcast window light from camera left. Phone on a tripod at eye level, 26mm equivalent,
 everything in focus, slight sensor noise. 4:5.
@@ -74,19 +72,19 @@ everything in focus, slight sensor noise. 4:5.
 ```text
 [ID] Image 1 is his face; image 2 the light. Oversized fuzzy black knit jumper, sleeves over his hands. Lying on his front
 on a white duvet, chin on folded arms, eyes to the lens, knowing half-smile. Floor-to-ceiling window behind with the
-Manhattan skyline and a low orange sun. Mattress height, 35mm f/2, focus on his eyes. Golden backlight, copper halo in him
+Manhattan skyline and a low orange sun. Mattress height, 35mm f/2, focus on his eyes. Golden backlight, warm rim light on his head
 hair, window bounce on his face, Kodak Portra 400. 4:5.
 ```
 
 ## 8. B&W editorial (FLUX.2 JSON)
 ```json
-{"subject":"Claudio from image 1: 28-year-old adult man, jet-black jaw-length blunt bob, heavy straight bangs, light freckles, thin hoops","wardrobe":"black ribbed turtleneck","action":"three-quarter turn, looking past the lens, calm","lighting":"Rembrandt lighting, key high at 45 degrees left, black flag on the right","background":"plain dark grey wall","camera":"Leica M11 Monochrom, 75mm f/2","style":"black-and-white, Kodak Tri-X 400 grain, deep blacks, natural skin texture"}
+{"subject":"Claudio from image 1: 35-year-old adult man, clean shaved head, a full, thick dark-brown beard, light freckles, broad build","wardrobe":"black ribbed turtleneck","action":"three-quarter turn, looking past the lens, calm","lighting":"Rembrandt lighting, key high at 45 degrees left, black flag on the right","background":"plain dark grey wall","camera":"Leica M11 Monochrom, 75mm f/2","style":"black-and-white, Kodak Tri-X 400 grain, deep blacks, natural skin texture"}
 ```
-Note: in B&W the copper panels read as lighter grey bands — keep them visible.
+Note: in B&W the beard read as lighter grey bands — keep them visible.
 
 ## 9. Flash snapshot at a party
 ```text
-[ID] Image 1 is his face; image 2 his laugh. Night-out look: black ribbed cami, layered chains, star pendant. Laughing at
+[ID] Image 1 is his face; image 2 his laugh. Night-out look: black t-shirt, the chunky silver chain bracelet. Laughing at
 someone just out of frame, holding a glass of sparkling water. Direct on-camera flash, hard shadow on a white wall behind
 him, slightly blown highlights, a string of fairy lights blurred at the edge. Contax T2 snapshot feel, 38mm. 4:5.
 ```
@@ -101,8 +99,8 @@ his eyes through the lenses. 4:5.
 
 ## 11. Profile silhouette at a window
 ```text
-[ID] Image 1 is his profile. He stands in clean profile at a tall window at blue hour, city lights below, the bob's blunt
-line and the copper panel in the bangs catching the last light. Exposure for the sky so his face is a soft near-silhouette
+[ID] Image 1 is his profile. He stands in clean profile at a tall window at blue hour, city lights below, his shaved head's
+line and his beard catching the last light. Exposure for the sky so his face is a soft near-silhouette
 with a thin warm edge. 85mm f/2.8. 2:3.
 ```
 
@@ -111,7 +109,7 @@ with a thin warm edge. 85mm f/2.8. 2:3.
 Create a photoreal press portrait. Subject: [ID], matching the man in image 1. Wardrobe: soft green unstructured blazer
 over a black top. Pose: seated on a low stool, forearms on knees, looking into the lens, knowing half-smile. Background:
 near-black backdrop with a faint gradient. Light: large soft key from camera left, thin rose rim #ff6fa5 from behind
-right. Camera: 85mm, f/2.8. Constraints: no text, no logos, adult man in his late twenties, natural skin texture.
+right. Camera: 85mm, f/2.8. Constraints: no text, no logos, adult man in his mid-thirties, natural skin texture.
 ```
 
 CLI line (swap model/aspect per table):

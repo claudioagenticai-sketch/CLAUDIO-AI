@@ -5,11 +5,11 @@ and nothing is "naturally" consistent.
 
 ## Continuity
 
-**The 180° rule.** Draw an imaginary line through the action (her running direction, or between her and the DJ). Keep
-every camera on one side. In prompts: "she runs from left to right of frame" in every shot of the sequence. Breaking it
-makes viewers think she turned around.
+**The 180° rule.** Draw an imaginary line through the action (his running direction, or between him and the DJ). Keep
+every camera on one side. In prompts: "he runs from left to right of frame" in every shot of the sequence. Breaking it
+makes viewers think he turned around.
 
-**Eyeline.** If she glances "off to the right" in s2 at the cat, the cat insert in s3 is framed as if seen from her
+**Eyeline.** If he glances "off to the right" in s2 at the cat, the cat insert in s3 is framed as if seen from him
 left-facing-right position. Write the direction into both prompts.
 
 **State tracking.** Keep a state table per scene and copy it into every prompt:
@@ -17,20 +17,20 @@ left-facing-right position. Write the direction into both prompts.
 | State | Values to track |
 |---|---|
 | Wardrobe | look name + any change (jumper sleeves up/down) |
-| Hair | dry / damp / wet; bangs neat / pushed aside; clip in / out |
+| Hair | dry / damp / wet; beard neat / wet |
 | Accessories | sunglasses on face / pushed up / in hand / off |
 | Light | time of day, main source, colour |
 | Props | phone hand, mug full/empty, laptop open/closed, cat position |
 | Weather | none / light rain / heavier rain |
 
-**Selfie vs camera.** A scene shot "on her phone" and a scene shot "by a camera" have mirrored hair (the copper panel
+**Selfie vs camera.** A scene shot "on his phone" and a scene shot "by a camera" have mirrored hair (the beard
 switches sides). Don't intercut them inside a scene.
 
 ## Pacing
 
 - New visual event every 2–4 s. Talking shots can hold 4–6 s if the face is animated.
 - Hook ≤ 2 s; payoff gets 2–4 s of room; a 0.3–0.5 s beat of silence before the punchline helps.
-- Average shot length for her shorts: 3–5 s. More cuts expose AI inconsistencies; fewer feel slow.
+- Average shot length for his shorts: 3–5 s. More cuts expose AI inconsistencies; fewer feel slow.
 - Text on screen changes at most every 2 s; one idea per text card.
 
 ## Transitions that hide AI seams
@@ -43,11 +43,11 @@ switches sides). Don't intercut them inside a scene.
 | Location change | match cut on a prop (sunglasses, mug), sound bridge (next scene's audio starts 0.5 s early) |
 
 **Sound bridges** (J-cuts and L-cuts) are the cheapest seam-hider: let the rain start under the end of the bedroom shot,
-or let her laugh carry over the cut.
+or let his laugh carry over the cut.
 
 ## Shot size progression
 
-Start wide or medium to place her, go tighter for emotion, go back out for the payoff or keep tight for a punchline.
+Start wide or medium to place him, go tighter for emotion, go back out for the payoff or keep tight for a punchline.
 Typical: MS (hook, moving) → MCU (build) → insert (prop/cat) → CU (line) → MCU (loop back).
 
 ## Duration math

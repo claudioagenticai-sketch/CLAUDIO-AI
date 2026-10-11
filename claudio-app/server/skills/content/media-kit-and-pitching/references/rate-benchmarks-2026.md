@@ -48,7 +48,7 @@ software) sit at the top; broad lifestyle at the bottom.
 | Organic usage rights, 30 days | +20–30 % | Brand reposts on its own channels |
 | Organic usage, 90 days | +40–60 % | |
 | Paid usage / whitelisting, 30 days | +30–50 % | Brand runs it as an ad (Spark Ads, Partnership Ads, X Amplify) |
-| Perpetual usage | +100 % or decline | Avoid for an AI character: the brand would own her likeness in an ad forever |
+| Perpetual usage | +100 % or decline | Avoid for an AI character: the brand would own his likeness in an ad forever |
 | Category exclusivity, 30 days | +15–25 % | No competitor deals in that category |
 | Category exclusivity, 90 days | +40–60 % | |
 | Rush (< 5 business days) | +25 % | |
@@ -67,7 +67,7 @@ Example bundle "City Night": 1 Reel + same video on TikTok and Shorts + 1 X thre
 
 - Do not discount "because it's AI". The brand buys attention and fit; the cost of generation is the operator's problem.
 - Do charge for likeness control: a clause that the brand may not alter the character's face, voice or body, or put new
-  words in her mouth, and that usage ends when the term ends.
+  words in his mouth, and that usage ends when the term ends.
 - Do budget review time: every sponsored asset needs an approval pass for labels, claims and product accuracy (generated
   products can come out wrong; logos and text in renders often need fixing).
 - Platform income programmes treat AI accounts differently (TikTok Creator Rewards reportedly excludes fully AI-generated

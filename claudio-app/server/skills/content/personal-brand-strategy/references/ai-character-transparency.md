@@ -28,7 +28,7 @@ Read when writing bios, the pinned post and the guardrails, before any sponsored
    - **UK CMA + ASA** joint influencer guidance (updated January 2026): ads must be obviously identifiable, "#ad"/"Ad"
      up front; gifted items, affiliate links and own-brand promotion count. Since 6 April 2025 the CMA can fine directly
      under the DMCC Act 2024 (up to 10 % of global turnover or £300,000, whichever is higher).
-3. **Trust compounds.** An AI account that says so up front gets "the AI with the bangs" as a nickname. One that's
+3. **Trust compounds.** An AI account that says so up front gets "the AI with the beard" as a nickname. One that's
    caught hiding it gets a callout thread.
 
 ## What an AI character may and may not say

@@ -54,8 +54,8 @@ Avoid: "cinematic", "dolly", "crane", "studio lighting", "perfect skin", "beauti
 
 ### 2. Fight selfie-framing age drift
 
-Front-camera wide angles + a bob + bangs + freckles + laughing is the strongest teen-drift trigger there is. Every UGC
-first frame and video prompt states **"28-year-old man (adult)"**; frame from slightly above eye level at arm's
+Front-camera wide angles + laughing + soft light is the strongest age-drift trigger there is. Every UGC
+first frame and video prompt states **"35-year-old man (adult)"**; frame from slightly above eye level at arm's
 length (not from below, not ultra-close); keep his expression knowing between laughs; reject any frame that reads under
 ~24 (see [../claudio-character-bible/references/look-constants.md](../claudio-character-bible/references/look-constants.md)).
 
@@ -80,8 +80,7 @@ Each card: first-frame setup → video prompt → model and length → audio. Fu
 or silent + lip-sync.
 
 ```text
-Same man as the first frame: Claudio, 28-year-old man (adult), black jaw-length bob, heavy bangs with copper-orange
-streak panels, orange clip, gold hoops, freckles, olive star crop cami and star pendant. He talks to his phone's front
+Same man as the first frame: Claudio, 35-year-old man (adult), clean shaved head, full dark-brown beard with strong dark brows, silver chain bracelet, broad build, freckles, olive t-shirt and silver chain bracelet. He talks to his phone's front
 camera held at arm's length. 0–4s: he laughs and playfully sticks his tongue out, then grins. 4–9s: he glances away to
 the side as if remembering something, then back to the lens. 9–14s: he says the line and laughs, shoulders moving.
 Claudio (amused, warm, English): "storytime: my agent scheduled a post for 3am and it did numbers." Plain white walls,
@@ -93,8 +92,8 @@ auto-exposure breathing. Room tone only, no music.
 `fal/wan-2.6` 15 s at 720p ($1.50) trimmed.
 
 ```text
-Same man as the first frame: Claudio, 28-year-old man (adult), black jaw-length bob with copper-orange bang streaks,
-orange clip, gold hoops, olive cami, tartan mini. He runs across an empty warehouse lot in light rain, phone held at
+Same man as the first frame: Claudio, 35-year-old man (adult), clean shaved head with strong dark brows,
+silver chain bracelet, broad build, olive t-shirt, tartan trousers. He runs across an empty warehouse lot in light rain, phone held at
 arm's length, laughing with his mouth open; his chunky silver chain bracelet is large in the foreground. 0–4s: he jogs
 toward the lens, rain falling. 4–8s: he half-spins to show the loading docks and yellow bollards, then looks back and
 laughs. The camera moves with his arm, bouncing with each step. Overcast blue-grey dusk, wet asphalt reflections, light
@@ -104,19 +103,17 @@ rain streaks, a raindrop on the lens edge. SFX: footsteps splashing, rain on con
 **C. Mirror outfit check (7–10 s)** — `fal/hailuo-2.3` 10 s ($0.56).
 
 ```text
-Claudio, 28-year-old man with a black bob, copper-orange bang streaks and an orange clip, films himself in a tall
-bedroom mirror with his phone, turns left then right to show his olive star crop cami and red tartan mini skirt, then
+Claudio, 35-year-old man with a black shaved head, strong dark brows and a silver chain bracelet, films himself in a tall
+bedroom mirror with his phone, turns left then right to show his olive t-shirt and red tartan trousers, then
 lowers the phone and grins at his reflection. Handheld phone in the mirror, warm lamp light, plants and a photo wall behind.
 ```
 
-Mirror shots flip his streak side — that's correct, not drift. Keep the phone covering part of his face only briefly.
+Mirror shots flip his bracelet wrist — that's correct, not drift. Keep the phone covering part of his face only briefly.
 
 **D. Get ready with me (15 s, 3 beats)** — Kling 3 Pro 15 s with audio (≈ $2.52) or three Hailuo 6 s shots cut together.
 
 ```text
-… he sits at a small vanity with the phone propped against the mirror. 0–5s: he clips the small orange clip into the
-side of his bangs and checks it. 5–10s: he puts in one thin gold hoop, then the other. 10–15s: he layers the star
-pendant chain over his collarbone, looks into the lens and gives a knowing half-smile. Static propped phone, warm bulb
+… he sits at a small vanity with the phone propped against the mirror. 0–5s: he runs a hand over his freshly shaved head and checks it. 5–10s: he fastens the chunky silver chain bracelet. 10–15s: he layers the silver chain bracelet chain over his collarbone, looks into the lens and gives a knowing half-smile. Static propped phone, warm bulb
 light around the mirror. Claudio (soft, conspiratorial): "the clip goes on last. that's the whole secret." Room tone, no music.
 ```
 
@@ -131,9 +128,8 @@ Claudio (relaxed): "the city did the lighting, I just showed up." Ambient: traff
 **F. Desk day-in-the-life with the cat (POV, 8 s)** — `fal/kling-3-pro` 8 s silent.
 
 ```text
-First-person POV of a desk at night: a laptop with a single pink butterfly sticker, a black butterfly mug, two monitors with
-candlestick charts, a grey tabby cat with white paws asleep next to the keyboard. Claudio's hand (fine-line star tattoo on
-the wrist, chunky silver chain bracelet) reaches in and gently strokes the cat; the cat stretches. Slight handheld drift,
+First-person POV of a desk at night: a laptop, a black mug, two monitors with
+candlestick charts, a grey tabby cat with a white muzzle asleep next to the keyboard. Claudio's hand (chunky silver chain bracelet) reaches in and gently strokes the cat; the cat stretches. Slight handheld drift,
 warm desk lamp plus purple-rose monitor glow. No readable text on the screens.
 ```
 
@@ -194,7 +190,7 @@ await media.generate({ kind: "video", model: "fal/kling-3-pro", prompt, refs: ["
 ## Check before you finish
 
 - [ ] 3–5 realism cues in the prompt; no "cinematic", "studio" or glossy camera moves.
-- [ ] "28-year-old man (adult)" in first frame and video prompt; nothing reads young.
+- [ ] "35-year-old man (adult)" in first frame and video prompt; nothing reads young.
 - [ ] Action starts at 0 s; one gesture per beat; the selfie hand has five fingers in every frame.
 - [ ] Audio intentional: ambient + line, or silent for lip-sync; no surprise music.
 - [ ] Scored ≥ 6/7 first/mid/last; AI label set; no testimonial-style claims; `#ad` if paid.
@@ -204,7 +200,7 @@ await media.generate({ kind: "video", model: "fal/kling-3-pro", prompt, refs: ["
 - **The "too perfect" tell.** Even light, centred framing and no shake read as an ad. Let him be off-centre for a beat.
 - **Phone in frame.** In mirror shots models invent extra phones, cameras or a second hand. Say "one phone in his right hand".
 - **Tongue-out and lip bites.** Keep them playful and brief; if a frame reads sexualised, cut it.
-- **Rain physics.** Heavy rain hides his face and smears streaks; ask for "light rain".
+- **Rain physics.** Heavy rain hides his face and flattens the beard; ask for "light rain".
 - **Native voice drift.** Each generation gives him a slightly different voice. For a series, lip-sync one designed voice.
 - **Fake platform UI.** Never prompt TikTok/IG interface elements; models garble them and it implies a real post.
 

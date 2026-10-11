@@ -25,7 +25,10 @@ updated: 2026-10-08
 retires: none
 ---
 ## First frame
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun). wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains, a chunky silver chain bracelet, plus small black oval sunglasses. Full-length vertical 9:16 shot at a club DJ booth at 1am: he stands in front
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. wearing an olive-green crew-neck cotton t-shirt, red-and-green tartan trousers, a chunky silver chain-link bracelet, plus small dark rectangular sunglasses. Full-length vertical 9:16 shot at a club DJ booth at 1am: he stands in front
 of the booth, body turned three-quarters to camera, one hand at his hip, smiling with his chin slightly raised. Behind him a
 generic male DJ in a dark t-shirt leans over the mixer, soft focus; CDJs and a mixer with glowing buttons but no readable
 brand names; a crowd behind with raised hands and phone lights, anonymous and out of focus. Blue-violet haze, moving-head
@@ -36,10 +39,10 @@ crowd, high-ISO grain. Image 1 is his face reference, image 2 shows him in sungl
 He dances on the beat in front of the DJ booth: [0-3s] sways his hips and shoulders, smiling; [3-6s] raises his right arm
 straight up with a loose wrist as a light beam sweeps across him; [6-10s] brings the arm down, laughs, turns his head toward
 the DJ and back to camera. The DJ keeps mixing in soft focus; the crowd behind bounces with hands up. Locked-off camera with a
-very slight sway, no cuts, no zoom. His face, sunglasses, bob, copper bangs and outfit stay exactly as in the first frame.
+very slight sway, no cuts, no zoom. His face, sunglasses, shaved head, beard and outfit stay exactly as in the first frame.
 
 ## Negative
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo, readable brand logos, celebrity DJ, distorted hands, merged crowd faces
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee, moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo, readable brand logos, celebrity DJ, distorted hands, merged crowd faces
 
 ## Notes
 - Audio off (`meta.audio: false`, $0.07/s): the track is added in edit from a licensed library (music-and-sound-for-shorts).

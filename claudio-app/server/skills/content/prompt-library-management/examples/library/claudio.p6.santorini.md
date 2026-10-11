@@ -24,14 +24,17 @@ updated: 2026-10-08
 retires: none
 ---
 ## Prompt
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun). wearing a white linen shirt open over a black top, large cream over-ear headphones around his neck, sunglasses pushed up into his hair. Vertical 4:5 travel
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. wearing a white linen shirt open over a black top, large cream over-ear headphones around his neck, sunglasses pushed up into his hair. Vertical 4:5 travel
 photograph in Oia, Santorini at golden hour: he sits sideways on a whitewashed wall, knees up, looking over his shoulder at
 the lens with a relaxed smile; behind him, white cubic houses cascade down the cliff to a deep blue caldera, a blue dome soft
-in the distance, the sun low and warm on his face. Warm backlight rims his bob and makes the copper streaks glow. 50mm, f/2,
+in the distance, the sun low and warm on his face. Warm backlight rims his head and makes the light rims his beard. 50mm, f/2,
 eye level, Kodak Portra 400 colour, fine grain, gentle haze. No other people in focus, no text.
 
 ## Negative
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo, crowds of tourists in focus
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee, moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo, crowds of tourists in focus
 
 ## Notes
 - Seedream: send the refs and generate the whole "window seat" set as one sequential batch so identity holds across tiles

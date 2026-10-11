@@ -24,13 +24,13 @@ CineStill 800T for night tiles. Every tile: "candid, natural skin texture, no re
 | Tile | Cell | Gen aspect | Refs | Prompt (after `[ID]`) |
 |---|---|---|---|---|
 | A Santorini headphones | 594×494 | 1:1 | 01 | "Sitting on a whitewashed wall at golden hour wearing cream over-ear headphones, eyes half-closed, smiling at a song; white linen shirt open over a black top; blue-domed village and caldera sea behind; 35mm; Kodak Portra 400." |
-| B Wine-glass wink | 594×494 | 1:1 | 01, 05 | "Raising a glass of white wine toward the lens and winking, elbow on a marble bar, candle in the foreground, warm bokeh; black ribbed cami; 50mm f/1.8; Kodak Gold 200." |
+| B Wine-glass wink | 594×494 | 1:1 | 01, 05 | "Raising a glass of white wine toward the lens and winking, elbow on a marble bar, candle in the foreground, warm bokeh; black t-shirt; 50mm f/1.8; Kodak Gold 200." |
 | C Airplane window | 444×994 | 9:16 | 01 | "Temple resting against an airplane window, looking out at sunset clouds, faint reflection in the glass, curved window frame filling the upper half; black knit jumper; 35mm." |
 | D Centre close-up (hero) | 894×994 | 4:5 | 01, 08, 11 | "Close-up, head resting on his folded arms in an oversized black knit jumper, eyes to the lens, knowing closed-lip half-smile, a laptop corner with stickers soft in the foreground, warm low light from the left; 35mm f/2; Kodak Portra 400." |
 | E Trading screen + glasses | 594×494 | 1:1 | 01, 02 | "Thin black rectangular glasses, chin on one hand, thoughtful half-smile, a monitor behind with blurred green and red candlestick charts (no readable numbers); screen glow; 50mm." |
-| F City-night balcony | 594×494 | 1:1 | 12 | "Seen from behind on a high-rise balcony, hair half-up with bangs down, a glowing city grid below at blue hour, a glass of sparkling water on the ledge; CineStill 800T." |
+| F City-night balcony | 594×494 | 1:1 | 12 | "Seen from behind on a high-rise balcony, head freshly shaved, a glowing city grid below at blue hour, a glass of sparkling water on the ledge; CineStill 800T." |
 | G Mirror selfie | 444×594 | 2:3 | 01, 07 | "Mirror selfie in a bathroom with warm vanity lights, black sports top, holding a plain black phone (no logo) at chest height, slight smile; on-camera flash flare; non-sexual, everyday gym wear." |
-| H Cat on bed | 444×394 | 1:1 | 01, props/cat | "Lying on a white duvet cheek-to-cheek with the grey tabby with white paws, eyes half-closed, soft morning light; grey hoodie; 35mm." |
+| H Cat on bed | 444×394 | 1:1 | 01, props/cat | "Lying on a white duvet cheek-to-cheek with the grey tabby with a white muzzle, eyes half-closed, soft morning light; grey hoodie; 35mm." |
 
 ## Assembly checks
 

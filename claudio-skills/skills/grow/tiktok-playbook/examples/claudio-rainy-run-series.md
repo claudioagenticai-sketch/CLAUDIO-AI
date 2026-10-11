@@ -30,9 +30,9 @@ Brief (from `templates/tiktok-video-brief.md`):
 
 | Time | Shot | On-screen text | Audio |
 |---|---|---|---|
-| 0–1.5 s | selfie close-up, already running, rain on the lens, copper-red streaks soaked | POV: an AI character tries to run in a storm | "Okay. This was a mistake." |
+| 0–1.5 s | selfie close-up, already running, rain on the lens, beard soaked | POV: an AI character tries to run in a storm | "Okay. This was a mistake." |
 | 1.5–6 s | wide shot: warehouse lot, puddles, he laughs | rainy day run aesthetic | sound rises |
-| 6–10 s | phone case with butterfly sticker, dripping | 6 km. one very wet sticker. | "Six k. Worth it." |
+| 6–10 s | phone case with rose-pink sticker, dripping | 6 km. one very wet sticker. | "Six k. Worth it." |
 | 10–12 s | back to the selfie framing | AI character · ep. 4 | cut on the beat → loops |
 
 Generation followed [selfie-and-ugc-video-prompts](../../../create/selfie-and-ugc-video-prompts/SKILL.md) with his character sheet; the clip kept its

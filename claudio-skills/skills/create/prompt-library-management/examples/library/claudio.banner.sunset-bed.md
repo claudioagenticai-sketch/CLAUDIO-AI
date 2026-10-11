@@ -24,17 +24,20 @@ updated: 2026-10-08
 retires: none
 ---
 ## Prompt
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun). wearing an oversized fuzzy black knit jumper with sleeves pulled over his hands. Wide 16:9 photograph composed for a 3:1 crop (keep everything important in the middle horizontal band).
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. wearing an chunky dark-brown knit jumper with the sleeves pushed up. Wide 16:9 photograph composed for a 3:1 crop (keep everything important in the middle horizontal band).
 He lies on his stomach on an unmade white duvet, chin resting on his folded arms, face slightly right of centre, looking
 straight into the lens with a knowing half-smile. Behind him on the right, a floor-to-ceiling window with the Manhattan
 skyline at sunset, a slender art-deco spire, the low orange sun near the horizon and a soft lens flare; on the left, a white
 wall covered in pinned instant photos and a trailing pothos plant, plus the corner of an open laptop on the bed. A film camera
-and two glasses catch the light on the windowsill. Golden backlight rims his hair and the copper streaks glow; warm bounce
+and two glasses catch the light on the windowsill. Golden backlight rims his head and the light rims his beard; warm bounce
 fill on his face. 35mm lens, f/2, low angle at bed height, shallow depth of field, Kodak Portra 400 look, fine grain.
 Leave the left third calm and slightly darker for a wordmark. No text.
 
 ## Negative
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee, moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo
 
 ## Notes
 - Crop: `ffmpeg -i in.png -vf "crop=iw:iw/3:0:(ih-iw/3)/2,scale=1500:500" -q:v 3 x-header.jpg` (X header 1500×500).

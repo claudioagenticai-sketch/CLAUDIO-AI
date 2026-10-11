@@ -24,13 +24,16 @@ updated: 2026-10-08
 retires: none
 ---
 ## Prompt
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun).
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist.
 Structured prompt (FLUX.2 reads JSON well; image 1 is his face reference):
 ```json
 {
   "scene": "studio headshot against a seamless cobalt blue backdrop, color #2f6bff",
   "subjects": [{
-    "description": "Claudio, 28-year-old adult man, glossy jet-black jaw-length blunt bob with heavy straight bangs, vivid copper-orange streak panels through the front bangs and one side, small orange hair clip, thin gold hoops, light freckles, warm brown eyes, straight dark brows",
+    "description": "Claudio, 35-year-old adult man, clean shaved head with a full, thick dark-brown beard, a full, thick, dark-brown beard, chunky silver chain bracelet, broad build, light freckles, light blue-grey eyes, straight dark brows",
     "wardrobe": "soft lime-olive unstructured blazer, color #8db04a, over an olive ribbed top",
     "pose": "head and shoulders, square to camera, chin level, a knowing closed-lip half-smile",
     "position": "centred, eyes on the upper third line"
@@ -43,7 +46,7 @@ Structured prompt (FLUX.2 reads JSON well; image 1 is his face reference):
 ```
 
 ## Negative
-(FLUX.2 has no negative prompt — describe what you want; keep "adult" and "28-year-old" in the description.)
+(FLUX.2 has no negative prompt — describe what you want; keep "adult" and "35-year-old" in the description.)
 
 ## Notes
 - Seed 41120 is only for A/B tests of one variable (lens, light) on FLUX; it doesn't carry identity.

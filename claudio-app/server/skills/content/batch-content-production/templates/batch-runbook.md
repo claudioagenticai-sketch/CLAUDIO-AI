@@ -25,7 +25,7 @@ Batch: `________`  Week: `________`  Approver: `________`  Operator (person or a
 
 - [ ] `node scripts/batch.mjs run batch.json --yes --stage 2` (refuses if a picked still is missing)
 - [ ] Approvals done by the approver.
-- [ ] First / middle / last frames scored; hands, phone, streaks, age checked; audio checked ("no music" respected).
+- [ ] First / middle / last frames scored; hands, phone, beard, age checked; audio checked ("no music" respected).
 
 ## Stage 3 — lip-sync / avatar
 
@@ -33,7 +33,7 @@ Batch: `________`  Week: `________`  Approver: `________`  Operator (person or a
 
 ## Sign-off 2 — content (approver)
 
-- [ ] Adult, late twenties; no sexualised framing; no real-person likeness; background people anonymous.
+- [ ] Adult, mid-thirties; no sexualised framing; no real-person likeness; background people anonymous.
 - [ ] No readable third-party logos; on-screen text spelled right.
 - [ ] Music/fonts licensed for this account type.
 - [ ] Sidecars kept next to finals; labels planned per network.

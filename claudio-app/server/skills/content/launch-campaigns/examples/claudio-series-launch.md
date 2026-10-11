@@ -24,11 +24,10 @@ The operator: "Claudio's rain videos do well. Turn them into a series and launch
 
 ## T-12 → T-8: assets (G2)
 
-- Episodes 1–3, each 55–70 s, 9:16, from the character bible: black jaw-length bob, copper-red streaks, orange clip, gold
-  hoops, olive star-embroidered crop top under a raincoat; scenes: bus window at dusk, a running selfie through a warehouse
+- Episodes 1–3, each 55–70 s, 9:16, from the character bible: clean shaved head, strong dark brows, silver chain bracelet, broad build, olive t-shirt under a raincoat; scenes: bus window at dusk, a running selfie through a warehouse
   lot in the rain, back home in the sunset bedroom with the cat. Burned-in captions. "AI-generated" in each caption.
 - Trailer 14 s. Square crops. A 3:1 banner. Alt text for each image.
-- G2 review: the operator rejected one frame where the hair streaks read as orange-blonde (off-model) and one caption that
+- G2 review: the operator rejected one frame where the beard read as ginger (off-model) and one caption that
   said "I got soaked today" without context. Kept the line but added the series framing so it reads as a character diary.
 
 ## T-7: Trial Reel

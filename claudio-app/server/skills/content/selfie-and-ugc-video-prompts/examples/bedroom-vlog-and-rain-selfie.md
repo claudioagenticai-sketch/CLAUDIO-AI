@@ -12,9 +12,8 @@ Budget cap for the session: $10. Limits in `~/.claudio/config.json`:
 ### First frame
 
 ```sh
-claudio generate image "[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black \
-jaw-length blunt bob … wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small \
-orange embroidered stars, a star pendant on layered silver chains. A paused frame from a front-camera phone video: he \
+claudio generate image "[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head … wearing an olive-green crew-neck t-shirt with a scalloped copper-orange edged neckline and small \
+orange embroidered stars, a chunky silver chain-link bracelet. A paused frame from a front-camera phone video: he \
 holds the phone at arm's length, mid-laugh. Plain white walls, round ceiling smoke detector, open doorway behind him on \
 the left, soft overcast window light from the right. 24mm phone front camera look, slightly above eye level, slight \
 sensor noise, vertical 9:16, natural skin texture with visible pores, no text, no UI overlay." \
@@ -27,7 +26,7 @@ Results (2 × $0.0504):
 - `#2` — 6/7. The clip is hidden behind the hand — acceptable. Ships as `frames/room-07-first.jpg`.
 
 Fix tried on #1 instead of reroll (GPT Image 2.5 Sunburst edit, ≈ $0.05): "Edit image 1. Preserve exactly … Change only:
-adult facial proportions of a man in his late twenties, camera slightly higher." Result passed, but #2 was already
+adult facial proportions of a man in his mid-thirties, camera slightly higher." Result passed, but #2 was already
 better, so #1-fixed went into the ref pool as a spare.
 
 ### Clip
@@ -39,8 +38,8 @@ const job = await media.generate({
   kind: "video", model: "fal/kling-3-pro", aspect: "9:16", durationSec: 14, refs: ["frames/room-07-first.jpg"],
   meta: { audio: false },
   negativePrompt: "teenager, childlike face, extra fingers, warped hands, morphing face, text, logo",
-  prompt: `Same man as the first frame: Claudio, 28-year-old man (adult), black jaw-length bob, heavy bangs with
-copper-orange streak panels, orange clip, gold hoops, freckles, olive star crop cami and star pendant. He talks to him
+  prompt: `Same man as the first frame: Claudio, 35-year-old man (adult), clean shaved head, full dark-brown beard with
+strong dark brows, silver chain bracelet, broad build, freckles, olive t-shirt and silver chain bracelet. He talks to him
 phone's front camera held at arm's length. 0-4s: he laughs and playfully sticks his tongue out, then grins. 4-9s: he
 glances away to the side toward the doorway, then back to the lens with a mock-exasperated look. 9-14s: he talks and
 laughs, shoulders moving. Plain white walls, ceiling smoke detector, doorway behind him, soft overcast window light.
@@ -69,8 +68,8 @@ Refs 01 + 05 + 09, same model. Prompt from the `rain-run` card in `templates/ugc
 
 | Beat | Model | Length | Cost | Result |
 |---|---|---|---|---|
-| A: jog toward lens, half-spin | `fal/kling-3-pro`, audio on | 8 s | $1.34 | 6/7 — copper panel flickered to red for 4 frames during the spin |
-| A (reroll) | same, + "his copper bang streaks stay fixed and orange as he turns" and "half-spin" → "turns his head to look back" | 8 s | $1.34 | 7/7 |
+| A: jog toward lens, half-spin | `fal/kling-3-pro`, audio on | 8 s | $1.34 | 6/7 — beard flickered to ginger for 4 frames during the spin |
+| A (reroll) | same, + "his beard stays the same shape and colour as he turns" and "half-spin" → "turns his head to look back" | 8 s | $1.34 | 7/7 |
 | B: slow to a stop, catch breath | `fal/kling-3-pro --ref a-last.jpg`, audio on | 5 s | $0.84 | 7/7 |
 
 ```sh

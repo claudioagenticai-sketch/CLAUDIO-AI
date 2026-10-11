@@ -16,7 +16,7 @@ RECORDING:        close-mic, studio-clean, no background noise, no music
 ## Claudio (filled)
 
 ```text
-A man in his late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light
+A man in his mid-thirties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light
 New York lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night.
 Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean
 recording with no background noise, no music.
@@ -38,7 +38,7 @@ my agents posted fourteen times today. [whispers] I took one nap. [normal] deleg
 
 | Criterion | What to listen for | P1 | P2 | P3 |
 |---|---|---|---|---|
-| Age read | sounds late twenties, not teen, not 40 | | | |
+| Age read | sounds mid-thirties, not teen, not 40 | | | |
 | Warmth | smiles through the words | | | |
 | Clarity on a phone speaker | play it on a phone at 50 % volume | | | |
 | Laugh | short, light, natural — not cartoonish | | | |

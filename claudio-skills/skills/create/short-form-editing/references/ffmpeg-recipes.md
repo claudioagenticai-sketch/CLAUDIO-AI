@@ -60,7 +60,7 @@ ffmpeg -i wide.mp4 -filter_complex \
 ffmpeg -i in.mp4 -vf "deflicker=mode=pm:size=5,crop=iw/1.15:ih/1.15,scale=1080:1920,setsar=1" -c:v libx264 -crf 18 punch.mp4
 ```
 
-`crop` without x/y centres the crop. Shift it with `crop=iw/1.15:ih/1.15:(iw-ow)/2:(ih-oh)/2-60` to keep her eyes on the
+`crop` without x/y centres the crop. Shift it with `crop=iw/1.15:ih/1.15:(iw-ow)/2:(ih-oh)/2-60` to keep his eyes on the
 upper third.
 
 ## R6 — L-cut (A's audio carries 0.6 s over B's picture)
@@ -93,7 +93,7 @@ ffmpeg -i in.mp4 -filter_complex \
 
 ## R8 — Duck music under voice
 
-Voice starts at 1.0 s; music drops ~8:1 when she talks.
+Voice starts at 1.0 s; music drops ~8:1 when he talks.
 
 ```sh
 ffmpeg -i music.wav -i voice.wav -filter_complex \

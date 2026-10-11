@@ -9,7 +9,7 @@
 
 ## 0.2.1 — 2026-10-08
 
-- The default `claudio` brand kit now describes her accurately (black bob with copper-red streaks, orange clip, gold hoops) and always as an adult in her late twenties, so image models don't drift younger.
+- The default `claudio` brand kit now describes him accurately (shaved head, full dark-brown beard, blue-grey eyes, silver chain bracelet) and always as an adult in his mid-thirties, so image models don't drift in age.
 
 ## 0.2.0 — 2026-10-08
 

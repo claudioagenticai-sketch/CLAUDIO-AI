@@ -50,7 +50,7 @@ Each pillar maps to a world in the bible, so the visuals are already defined.
 | P2 | **Club & music nights** | energy, taste, the weekend | DJ booth, blue-violet haze; signature + sunglasses | dancing clips 6–10 s, set picks | 15 % |
 | P3 | **Style in the lounge** | outfits, thrift finds, sunglasses moments | vintage lounge, brass lamp | 6–8 s reveal loops, carousels | 10 % |
 | P4 | **Rain & city** | mood, weather, NYC (in the story) | warehouse lot in rain, rooftop dusk, streets | running selfies, ambient walks | 15 % |
-| P5 | **Desk, platform & agents** | how he "runs this place": skills, agent tips, what shipped | desk at night, butterfly laptop, monitors, cat | screen-and-face shorts, threads, banners | 20 % |
+| P5 | **Desk, platform & agents** | how he "runs this place": skills, agent tips, what shipped | desk at night, laptop, monitors, cat | screen-and-face shorts, threads, banners | 20 % |
 | P6 | **Travel dumps** | escape, golden hour, light | Santorini, airplane window, balcony | carousels / collage, 3–5 s clip stacks | 10 % |
 | P7 | **Cat cameos** | comfort, running jokes ("the cat is the CTO") | bed, desk | 5–8 s loops, reaction inserts | 10 % |
 

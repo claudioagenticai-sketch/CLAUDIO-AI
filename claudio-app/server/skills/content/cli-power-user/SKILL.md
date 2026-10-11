@@ -153,7 +153,7 @@ the person's OpenRouter credits. `--auto` posts without asking: only after a sup
 
 ```sh
 claudio generate models video                                   # models, prices, which have your key
-claudio generate image "Claudio at a laptop with a butterfly sticker, sunset window" --aspect 4:5 --max-usd 0.10
+claudio generate image "Claudio at a laptop with a rose-pink sticker, sunset window" --aspect 4:5 --max-usd 0.10
 claudio generate video "slow dolly-in, rain on neon" --model google/omni-flash --duration 8 --dry-run
 claudio connect bluesky · claudio accounts --all
 claudio post bluesky "New coin on the board today" --media art.png --dry-run

@@ -14,8 +14,7 @@ nose, eyes over the rims; mock-shocked hand over mouth; deadpan stare with a sli
 
 **Rain diaries (Nano Banana 2.1, refs 01 + 05 + 09)**
 ```text
-[CLAUDIO ID v1] … wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small
-orange embroidered stars, a star pendant on layered silver chains. Cover composition: arm's-length front-camera selfie,
+[CLAUDIO ID v1] … wearing an olive-green crew-neck cotton t-shirt, a chunky silver chain-link bracelet. Cover composition: arm's-length front-camera selfie,
 his face on the right third filling half the frame height, eyes to lens, laughing with his mouth open, raindrops on the
 lens. The left 45 percent is an out-of-focus wet warehouse lot with roll-up doors under a blue-grey dusk sky, quiet and
 dark enough for a title. 24mm phone lens look, slight motion blur at the edges, natural skin texture, 16:9.
@@ -24,19 +23,17 @@ No text, no letters, no logos.
 
 **Desk nights (GPT Image 2.5 Flare, quality high, refs 01 + 08)**
 ```text
-Use image 1 as the identity reference for Claudio and keep his face, hair, copper streaks, orange clip and gold hoops
-exactly. Preserve list: face, freckles, warm brown eyes, jet-black jaw-length bob, heavy straight bangs, copper panels.
-Scene: late night at his desk, he rests his chin on his folded arms behind an open laptop with a single pink butterfly
-sticker, looking straight into the lens with a sleepy knowing half-smile; a grey tabby cat asleep beside the keyboard;
+Use image 1 as the identity reference for Claudio and keep his face, hair, dark brows, silver chain bracelet and broad build
+exactly. Preserve list: face, freckles, light blue-grey eyes, clean shaved head, a full, thick dark-brown beard, beard.
+Scene: late night at his desk, he rests his chin on his folded arms behind an open laptop with a single rose-pink sticker, looking straight into the lens with a sleepy knowing half-smile; a grey tabby cat asleep beside the keyboard;
 the right 45 percent is dark purple-rose bokeh from monitors, empty for a title. Soft rose rim light, warm key from the
-laptop screen, 35mm lens, f/2, photographic, natural skin texture. He is a 28-year-old adult man. 16:9. No text, no
+laptop screen, 35mm lens, f/2, photographic, natural skin texture. He is a 35-year-old adult man. 16:9. No text, no
 letters, no logos, no readable screen content.
 ```
 
 **After hours (FLUX.2 Pro, refs 01 + 06 + 10; FLUX ignores negatives, so describe the clean result)**
 ```text
-Claudio from image 1, a 28-year-old man with a glossy jet-black jaw-length bob, heavy straight bangs, copper-orange
-streak panels, small orange hair clip, thin gold hoops, wearing oversized black oval sunglasses and a black ribbed cami.
+Claudio from image 1, a 35-year-old man with a clean shaved head, a full, thick dark-brown beard, strong dark brows, chunky silver chain bracelet, broad build, wearing dark rectangular sunglasses and a black t-shirt.
 Close-up on the left third, chin slightly raised, eyes closed in bliss behind the sunglasses, one hand up in the air.
 Blue-violet club haze with moving-head light beams and a soft rose rim light; the right half is clean dark haze, an
 empty area for a title. 50mm, f/1.8, film grain, photographic. Plain unbranded DJ equipment, clean surfaces without
@@ -45,8 +42,8 @@ lettering. 16:9.
 
 **Lamp light (Nano Banana 2.1, refs 01 + 06)**
 ```text
-[CLAUDIO ID v1] … wearing an olive-green crop cami and a star pendant on layered silver chains. Cover composition:
-medium close-up, his face on the right third, he pulls oversized black oval sunglasses halfway down his nose and looks
+[CLAUDIO ID v1] … wearing an olive-green t-shirt and a chunky silver chain-link bracelet. Cover composition:
+medium close-up, his face on the right third, he pulls dark rectangular sunglasses halfway down his nose and looks
 over the rims straight into the lens with a knowing half-smile. Behind him: warm butter-yellow wall, framed botanical
 cross-stitch prints and a brass table lamp with a pleated cream shade glowing on the left; the left 45 percent is the soft
 wall and lamp glow, calm enough for a title. Tungsten lamplight, 85mm, f/2, 35mm film look, natural skin texture, 16:9.
@@ -55,8 +52,7 @@ No text, no letters, no logos.
 
 **Out of office (Midjourney V7, omni reference)**
 ```text
-photo of a 28-year-old man, glossy jet-black jaw-length blunt bob with heavy straight bangs and copper-orange streak
-panels, small orange hair clip, thin gold hoops, light freckles, wearing large cream over-ear headphones and a white
+photo of a 35-year-old man, clean shaved head with a full, thick dark-brown beard and strong dark brows, chunky silver chain bracelet, broad build, light freckles, wearing large cream over-ear headphones and a white
 linen shirt, leaning on a whitewashed Santorini terrace wall at golden hour, face on the right third, eyes to lens,
 relaxed half-smile, the left half is sea and sky haze, editorial film still, 50mm --ar 16:9 --oref <url-of-ref-01>
 --ow 200 --style raw --v 7 --no text, letters, logo, watermark

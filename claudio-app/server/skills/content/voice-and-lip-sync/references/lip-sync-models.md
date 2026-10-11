@@ -14,7 +14,7 @@ voice to a character natively — useful later, but they use the model's voice h
 ## Getting good results
 
 **Source clip for `lipsync-2`:**
-- Generate it with her talking (mouth moving) — "she talks to the camera, animated, natural mouth movement".
+- Generate it with his talking (mouth moving) — "he talks to the camera, animated, natural mouth movement".
 - Face visible and mostly frontal (±30°) during speech; no hand over the mouth; no cuts inside the clip.
 - At least as long as the audio; trim extra after syncing.
 - 24–30 fps, ≥ 720p. Normalise first: `ffmpeg -i in.mp4 -vf "fps=30,scale=1080:-2" -an src.mp4`.
@@ -22,7 +22,7 @@ voice to a character natively — useful later, but they use the model's voice h
 **Still for OmniHuman:**
 - MCU or CU, mouth closed or relaxed, eyes open, even light, simple background.
 - No sunglasses (eyes drive expression), no hands near the face.
-- Prompt: "medium close-up, she smiles knowingly, small head tilts, one slow blink, relaxed shoulders, static camera".
+- Prompt: "medium close-up, he smiles knowingly, small head tilts, one slow blink, relaxed shoulders, static camera".
 
 **Audio:**
 - Mastered WAV, 48 kHz, -14 LUFS, no music under it (add music after syncing).

@@ -206,7 +206,7 @@ ${IDENTITY_PROMPT}
 
 ## 02 His looks
 
-The face never changes; the outfits always do. Home (olive star-knit crop top, star pendant, orange clip) · Studio (green blazer on cobalt) · Away (headphones above the sea) · Out (sunglasses and a tartan mini at a DJ set) · Candlelight · Desk (glasses, glowing screens) · Lounge (lamp light, sunglasses off) · Sunset (black knit) · Mirror · Window seat · Rain (a running selfie) · The cat · Late (a balcony at night).
+The face never changes; the outfits always do. Home (olive t-shirt, plants, a laugh at the camera) · Studio (sage blazer on cobalt) · Away (headphones round his neck above the sea) · Out (sunglasses and an olive tee at a DJ set) · Candlelight · Desk (glasses, glowing screens) · Lounge (lamp light, sunglasses off) · Sunset (black knit) · Mirror (after the gym) · Window seat · Rain (a running selfie) · The cat · Late (a balcony at night).
 
 ## 03 His voice
 

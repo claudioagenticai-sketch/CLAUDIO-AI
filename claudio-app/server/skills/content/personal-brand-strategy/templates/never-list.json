@@ -35,7 +35,7 @@
     },
     {
       "level": "review",
-      "reason": "model or lab name in her voice",
+      "reason": "model or lab name in his voice",
       "pattern": "\\b(gpt|gemini|claude|llama|grok|midjourney|flux|veo|sora|kling|seedance)\\b"
     },
     {

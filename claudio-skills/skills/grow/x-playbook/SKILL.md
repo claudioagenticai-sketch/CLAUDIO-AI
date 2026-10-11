@@ -112,7 +112,7 @@ Rules of thumb that match the ranking signals:
 - **Character consistency:** same voice, same look, recurring series names (for example "Rainy Run Diaries", "Desk at
   Dusk"). See [personal-brand-strategy](../personal-brand-strategy/SKILL.md).
 - **Alt text on every image**, describing the scene and saying it is AI-generated:
-  `AI-generated image: Claudio, black bob with copper-red streaks, laughing at a laptop with a butterfly sticker, sunset window.`
+  `AI-generated image: Claudio, black shaved head with strong dark brows, laughing at a laptop with a rose-pink sticker, sunset window.`
 - **Coins:** mention a coin only as news or education. No price targets, no "buy", no "next 100x". The package adds
   "Not financial advice." automatically and blocks return promises. Max one `$cashtag` per API post. Don't invite UK users
   to buy a coin (FCA). See [crypto-marketing-compliance](../crypto-marketing-compliance/SKILL.md).
@@ -129,7 +129,7 @@ npm i -g @useclaudio/cli @useclaudio/social
 claudio keys set x                  # OAuth 2.0 client id (or JSON {"clientId":"…","clientSecret":"…"})
 claudio connect x                   # opens the browser; callback must be http://127.0.0.1:3939/oauth/callback
 claudio accounts                    # confirm the X account is listed
-claudio post x "Rain run, 6 km, one very wet butterfly sticker. What's your weather today?" \
+claudio post x "Rain run, 6 km, one very wet rose-pink sticker. What's your weather today?" \
   --media ./rain-still.jpg --dry-run
 ```
 
@@ -160,7 +160,7 @@ const post = social.draft({
     "3/ So the new week is 60% 'show the work', 25% questions I'll actually answer, 15% news.",
     "4/ The calendar template I use is on the site: https://useclaudio.xyz/skills",
   ],
-  media: [{ path: "./desk-dusk.jpg", alt: "AI-generated image: Claudio at his desk at dusk, laptop with butterfly sticker." }],
+  media: [{ path: "./desk-dusk.jpg", alt: "AI-generated image: Claudio at his desk at dusk, laptop with rose-pink sticker." }],
   targets: [{ account: x.id }],
   labels: { ai: true },
 });

@@ -24,10 +24,12 @@ updated: 2026-10-08
 retires: none
 ---
 ## Prompt
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun). wearing a white linen shirt open over a black top, large cream over-ear headphones on. Vertical 4:5 photograph in an airplane window seat at sunset: he leans
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. wearing a white linen shirt open over a black top, large cream over-ear headphones on. Vertical 4:5 photograph in an airplane window seat at sunset: he leans
 his temple against the cabin wall, three-quarter profile toward the oval window, eyes soft, a quiet half-smile. Through the
-window a sea of pink and orange clouds and a thin gold horizon; warm window light falls across his freckles and the copper
-streaks in his bangs; the cabin is dim and cool blue-grey. Image 1 is his face reference. Fujifilm X-T5, 35mm f/1.4 at f/2,
+window a sea of pink and orange clouds and a thin gold horizon; warm window light falls across his freckles and the dark brows in his beard; the cabin is dim and cool blue-grey. Image 1 is his face reference. Fujifilm X-T5, 35mm f/1.4 at f/2,
 shallow depth of field, Kodachrome-warm colour, fine grain. No logos on the seat or headrest, no text.
 
 ## Negative

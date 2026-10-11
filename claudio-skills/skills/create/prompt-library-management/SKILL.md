@@ -149,7 +149,7 @@ next minor version.
 
 ### 7. Version the identity block
 
-When the owner changes his look (new streak colour, new cut), create `_blocks/claudio-id-v2.md`, never edit v1. Then:
+When the owner changes his look (new beard length, new glasses), create `_blocks/claudio-id-v2.md`, never edit v1. Then:
 
 1. New prompts use `[CLAUDIO ID v2]`; `identity: CLAUDIO ID v2`; bump them to the next major version.
 2. Ongoing series keep v1 until a planned "new look" episode — audiences notice mid-series changes.

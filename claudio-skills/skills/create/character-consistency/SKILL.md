@@ -1,6 +1,6 @@
 ---
 name: character-consistency
-description: Keeps an AI character (Claudio or your own) recognisably the same person across hundreds of images and videos and across different models — identity blocks, a 12-shot reference pack, per-model reference mechanics (Nano Banana refs, GPT Image edits, FLUX.2 multi-reference, Seedream batches, Midjourney omni reference, image-to-video first frames), seeds, drift scoring, and edit-based fixes for face drift, teenage-looking drift, extra hair streaks, hands and text artifacts. Use when starting a new character, when outputs start to drift, when switching models, or before a batch run.
+description: Keeps an AI character (Claudio or your own) recognisably the same person across hundreds of images and videos and across different models — identity blocks, a 12-shot reference pack, per-model reference mechanics (Nano Banana refs, GPT Image edits, FLUX.2 multi-reference, Seedream batches, Midjourney omni reference, image-to-video first frames), seeds, drift scoring, and edit-based fixes for face drift, age drift, hair on his head, hands and text artifacts. Use when starting a new character, when outputs start to drift, when switching models, or before a batch run.
 license: MIT
 metadata:
   title: "Character consistency"
@@ -16,14 +16,14 @@ metadata:
 
 # Character consistency
 
-An AI influencer only works if the audience recognises his instantly. This skill turns "a man with a black bob" into
+An AI influencer only works if the audience recognises his instantly. This skill turns "a man with a shaved head and a beard" into
 "Claudio, every time": one fixed identity block, one approved reference pack, the right reference mechanism for each
 model, a 7-point drift score, and fast edit-based fixes instead of rerolls.
 
 ## When to use this
 
 - You are creating a character's first reference pack (Claudio or a new one).
-- Generations have started to look like his cousin: different eyes, longer hair, younger face, more streaks.
+- Generations have started to look like his cousin: different eyes, longer hair, younger face, hair on his head.
 - You are moving a series to another image or video model.
 - Before any batch run (see [../batch-content-production/SKILL.md](../batch-content-production/SKILL.md)).
 
@@ -45,11 +45,10 @@ Consistency starts in words. Paste the versioned identity block **first** in eve
 more — FLUX.2's guide says so explicitly, checked 2026-10), then the scene. Never paraphrase it; never "summarise" him.
 
 ```text
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy
-straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange
-hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown
-eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on
-his arms (small stars, a rose, a sun).
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist.
 ```
 
 Then add **one** wardrobe string and **one** setting string from the bible. Three blocks, always in that order:
@@ -64,9 +63,9 @@ generate the other 11 **with the anchor as a reference**, keep only 7/7 scores, 
 | # | Shot | Why it's in the pack |
 |---|---|---|
 | 01 | front, neutral, plain backdrop, 85 mm | the face anchor — every model gets this one |
-| 02 | ¾ left, half-smile | cheekbones, streak panel side |
+| 02 | ¾ left, half-smile | cheekbones, beard line |
 | 03 | ¾ right, half-smile | the other side (no second panel!) |
-| 04 | clean profile | nose, bangs depth, bob length at the jaw |
+| 04 | clean profile | nose, beard depth, head shape |
 | 05 | open laugh, teeth visible | UGC clips laugh a lot; teaches the model his laugh |
 | 06 | sunglasses on | lounge/club identity without eyes |
 | 07 | full body, signature look, standing | wardrobe proportions |
@@ -74,7 +73,7 @@ generate the other 11 **with the anchor as a reference**, keep only 7/7 scores, 
 | 09 | holding a phone at arm's length | selfie arm + hands |
 | 10 | blue-violet club light | identity under coloured light |
 | 11 | golden-hour backlight | sunset banner light |
-| 12 | back/side of head, hair detail | the exact copper panel shape and the clip |
+| 12 | back/side of head, hair detail | the shape of the head and the beard line |
 
 ```sh
 # anchor → 3/4 left, estimate first (Nano Banana 2.1, ~$0.05 per 2K image, checked 2026-10)
@@ -124,11 +123,11 @@ sh scripts/contact-sheet.sh refs/claudio/01-front-neutral.jpg out/candidates/*.j
 
 | Point | Pass when |
 |---|---|
-| 1 Hair | jaw-length blunt bob, heavy straight bangs, jet-black base |
-| 2 Copper | chunky panels in the bangs + one side, nowhere else |
-| 3 Clip | one small orange clip (may be hidden in wide shots) |
-| 4 Hoops | small thin gold hoops |
-| 5 Face/age | freckles, brown eyes, his smile; reads 26–30 |
+| 1 Head | clean shaved head, light stubble, no hair on top |
+| 2 Beard | full, thick, groomed dark brown, never grey |
+| 3 Chain | one chunky silver chain bracelet (may be hidden in wide shots) |
+| 4 Eyes | light blue-grey eyes, strong dark brows |
+| 5 Face/age | freckles, angular face, his smile; reads 32–38 |
 | 6 Wardrobe | matches the requested look and colours |
 | 7 Clean | hands, eyes, teeth, text, background all artifact-free |
 
@@ -139,7 +138,7 @@ sh scripts/contact-sheet.sh refs/claudio/01-front-neutral.jpg out/candidates/*.j
 1. Make the first frame as an image (steps 1–5) at the video's aspect (9:16).
 2. Image-to-video with that frame as `refs[0]` (Kling, Seedance, Hailuo, Wan, Runway, Omni) — or, on Veo 3.1 until its
    2026-10-22 shutdown, `meta.refMode: "reference"` with up to 3 pack images.
-3. Keep motion modest: big head turns and hair-whipping are where faces and streaks drift.
+3. Keep motion modest: big head turns and hair-whipping are where faces and beards drift.
 4. Score the middle and last frames too (`ffmpeg -ss 4 -i clip.mp4 -frames:v 1 mid.jpg`).
 
 Details: [../video-prompting/SKILL.md](../video-prompting/SKILL.md), [../selfie-and-ugc-video-prompts/SKILL.md](../selfie-and-ugc-video-prompts/SKILL.md).
@@ -151,9 +150,7 @@ list. Fix prompts for every common failure are in [templates/edit-fix-prompts.md
 most important one:
 
 ```text
-Edit image 1. Preserve exactly: his face, freckles, eye colour, expression, hair shape, bangs, the copper panel in the
-front bangs, the orange clip, earrings, outfit, pose, background and lighting. Change only: make his look like a man in
-his late twenties — slightly more defined cheekbones and jawline, adult facial proportions, a calm knowing expression.
+Edit image 1. Preserve exactly: his face, freckles, eye colour, expression, hair shape, beard, the beard, the silver chain bracelet, earrings, outfit, pose, background and lighting. Change only: make his look like a man in his mid-thirties — slightly more defined cheekbones and jawline, adult facial proportions, a calm knowing expression.
 Do not change anything else.
 ```
 
@@ -186,7 +183,7 @@ you'll see it in the scores before the audience does.
 - **Long edit chains.** Nano Banana and GPT Image drift after many sequential edits (checked 2026-10). Restart from the
   anchor every 3–4 edits.
 - **Refs at the wrong aspect.** A 1:1 face ref into a 9:16 video makes models invent the body. Use pack shot 07 or 09.
-- **Mirror flip panic.** Selfie and mirror shots flip the streak side. That's fine; two panels is not.
+- **Mirror flip panic.** Selfie and mirror shots flip the bracelet wrist. That's fine; two bracelets are not.
 - **Stylised refs for photoreal jobs.** One illustrated ref pulls the whole output toward illustration.
 - **Midjourney V8 + `--oref`.** It silently falls back or ignores it; pin `--v 7`.
 

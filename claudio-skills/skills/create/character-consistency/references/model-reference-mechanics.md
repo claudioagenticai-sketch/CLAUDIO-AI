@@ -13,7 +13,7 @@ unless you pass extra fields through `meta.providerOptions`.
   inputs" — don't use it for identity.
 - How to write it: narrative sentences, not tag lists. Label refs by job: "Image 1 is Claudio's face reference. Image 2
   is his full-body outfit reference. Keep his identical to image 1."
-- Negatives: no parameter. Use positive "semantic negatives": "his hair is jet-black except the copper panels" instead
+- Negatives: no parameter. Use positive "semantic negatives": "his beard is dark brown with no grey" instead
   of "no red hair".
 - Resolutions 1K/2K/4K (2.1 defaults to 1K); 21:9 and extreme ratios exist at the model level, but the package's `aspect`
   list is 1:1, 16:9, 9:16, 4:5, 3:2, 2:3 — crop for 3:1 banners.
@@ -40,7 +40,7 @@ unless you pass extra fields through `meta.providerOptions`.
 - Model: pro/max/flex take up to 8 refs via BFL's API (10 in their playground); 9 MP input+output budget on pro.
 - How to write it: Subject → Action → Style → Context; 30–80 words; early words weigh most. Refer to refs as
   "image 1", "image 2". JSON structured prompts work well for production; HEX colours bound to an object
-  ("a hair clip in color #FF7A1A").
+  ("a silver chain bracelet in color #C0C0C0").
 - Negatives: not supported. Describe the wanted state.
 - Price: $0.03 first megapixel + $0.015 per extra MP (package table).
 

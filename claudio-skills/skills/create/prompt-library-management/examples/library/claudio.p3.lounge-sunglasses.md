@@ -25,7 +25,10 @@ updated: 2026-10-14
 retires: none
 ---
 ## First frame
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on his arms (small stars, a rose, a sun). wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains, a chunky silver chain bracelet, plus oversized black oval sunglasses with dark lenses, worn on his face. Vertical 9:16 medium shot in a lamp-lit
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. wearing an olive-green crew-neck cotton t-shirt, red-and-green tartan trousers, a chunky silver chain-link bracelet, plus dark rectangular sunglasses with dark lenses, worn on his face. Vertical 9:16 medium shot in a lamp-lit
 vintage lounge: he leans back against a dark polished wood dresser with brass drop handles, one elbow resting on it, head
 tilted slightly, a calm half-smile with a soft rose lip. Warm butter-yellow walls, three framed botanical cross-stitch prints
 (red poppies, green leaves) behind him, a brass table lamp with a pleated cream shade on the left glowing tungsten-warm.
@@ -34,12 +37,12 @@ his face reference, image 2 shows him in sunglasses. No text, no logos.
 
 ## Prompt
 Slow, confident sunglasses reveal. [0-1s] he holds still with the sunglasses on, half-smile; [1-3s] he lifts his right hand
-and slowly lowers the sunglasses down his nose with two fingers, revealing warm brown eyes looking straight into the lens;
+and slowly lowers the sunglasses down his nose with two fingers, revealing light blue-grey eyes looking straight into the lens;
 [3-5s] the half-smile widens slightly, a tiny eyebrow raise. Locked-off camera with an almost imperceptible push-in. Lamp
-light flickers very gently. His face, freckles, bob, copper bangs, orange clip and tattoos stay exactly as in the first frame.
+light flickers very gently. His face, freckles, shaved head, beard, silver chain bracelet and bracelet stay exactly as in the first frame.
 
 ## Negative
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo, aviator sunglasses, coloured lenses, extra fingers on the glasses hand
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee, moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo, aviator sunglasses, coloured lenses, extra fingers on the glasses hand
 
 ## Notes
 - v1.1.0 (A/B 2026-10-14): 50mm beat 35mm — 35mm widened his jaw and read younger.

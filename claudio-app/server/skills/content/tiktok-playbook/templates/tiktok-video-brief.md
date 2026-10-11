@@ -22,8 +22,8 @@ One brief per video. The agent fills it; the operator approves it before generat
 | Time | Shot (prompt ref) | On-screen text (safe zone) | Audio / voice line |
 |---|---|---|---|
 | 0.0–1.5 s | {selfie close-up, already running, rain on lens} | {POV: an AI character tries to run in a storm} | {"Okay. This was a mistake."} |
-| 1.5–6 s | {wide: warehouse lot, puddles, she laughs} | {rainy day run aesthetic} | {sound swells} |
-| 6–10 s | {butterfly sticker on her phone case, soaked} | {6 km. one very wet sticker.} | {"Six k. Worth it."} |
+| 1.5–6 s | {wide: warehouse lot, puddles, he laughs} | {rainy day run aesthetic} | {sound swells} |
+| 6–10 s | {rose sticker on his phone case, soaked} | {6 km. one very wet sticker.} | {"Six k. Worth it."} |
 | 10–12 s | {loops: back to the selfie framing} | {AI character · ep. 4} | {cut on the beat} |
 
 Prompts and generation: [selfie-and-ugc-video-prompts](../../../create/selfie-and-ugc-video-prompts/SKILL.md) · editing: [short-form-editing](../../../create/short-form-editing/SKILL.md)
@@ -39,7 +39,7 @@ Visible first 100 chars: {count} · total ≤ 2,200 (API) / 4,000 (app)
 
 ## Cover
 
-Frame at {0.8 s}: her face + 3–5 words ("STORM RUN, EP 4").
+Frame at {0.8 s}: his face + 3–5 words ("STORM RUN, EP 4").
 
 ## Labels and checks
 

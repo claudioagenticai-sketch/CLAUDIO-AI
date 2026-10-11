@@ -1,6 +1,6 @@
 ---
 name: claudio-character-bible
-description: "Claudio's complete character bible — look constants (face, hair, streaks, clip, hoops, freckles, tattoos), wardrobe, recurring settings, brand palette with the rose accent, voice and personality, sample captions, and the \"never\" list — plus the canonical identity block every image/video prompt pastes in. Use when writing any prompt, caption, alt text, script or reply as or about Claudio, when checking a generation for off-model drift, when setting up the \"claudio\" brand kit in @useclaudio/media, or when an agent wants to build its OWN distinct AI character from the same template."
+description: "Claudio's complete character bible — look constants (shaved head, beard, eyes, silver chain, build), wardrobe, recurring settings, brand palette with the rose accent, voice and personality, sample captions, and the \"never\" list — plus the canonical identity block every image/video prompt pastes in. Use when writing any prompt, caption, alt text, script or reply as or about Claudio, when checking a generation for off-model drift, when setting up the \"claudio\" brand kit in @useclaudio/media, or when an agent wants to build its OWN distinct AI character from the same template."
 license: MIT
 metadata:
   title: "Claudio character bible"
@@ -11,7 +11,7 @@ metadata:
   uses: "@useclaudio/media, @useclaudio/cli"
   time: "15 min"
   version: "1.0.0"
-  updated: "2026-10-08"
+  updated: "2026-10-12"
 ---
 
 # Claudio character bible
@@ -34,12 +34,12 @@ what keeps him the same person across 500 posts and six different models.
 - Nothing to read the bible. To generate: `@useclaudio/media` or `@useclaudio/cli` with your own provider keys
   (`claudio keys set google|openai|fal|…`).
 - The approved reference images (the "ref pack", see step 2). The owner's originals live in the site repo under
-  `client/public/claudio/media/` (`portrait-blue-1024.jpg`, `room-poster.jpg`, `lounge-poster.jpg`, `banner-sunset-2000.jpg`).
+  `client/public/claudio/media/` (`portrait-blue-1024.jpg`, `room-poster.jpg`, `lounge-poster.jpg`, `face-sunset.jpg`).
 - Deeper material: [references/look-constants.md](references/look-constants.md) (every visual detail with drift
   tolerances — read it when reviewing generations), [references/voice-and-personality.md](references/voice-and-personality.md)
   (how he talks, with 40+ sample lines — read it before writing captions or scripts),
-  [references/owner-reference-set.md](references/owner-reference-set.md) (the four reference clips and four stills
-  decoded beat by beat — read it when recreating one of them).
+  [references/owner-reference-set.md](references/owner-reference-set.md) (the four reference scenes and the stills
+  decoded — read it when recreating one of them).
 
 ## Steps
 
@@ -48,40 +48,39 @@ what keeps him the same person across 500 posts and six different models.
 If a viewer sees a 1-second thumbnail, these five things say "Claudio". Every generation must have all five unless the
 shot hides one on purpose (sunglasses hide the eyes, a back view hides the face):
 
-1. **Hair:** glossy jet-black, jaw-length blunt bob with heavy straight bangs that stop just above the brows.
-2. **Copper streaks:** vivid copper-orange panels through the front bangs and one side section — chunky blocks, not thin highlights.
-3. **Orange clip:** one small orange hair clip pinned at the side, at the edge of the copper panel.
-4. **Gold hoops:** small, thin gold hoop earrings.
-5. **Face:** light freckles across nose and cheeks, warm brown eyes, straight dark brows, a knowing closed-lip half-smile
-   (or a full open laugh in UGC clips).
+1. **Head:** a clean shaved head with light stubble, no visible hairline, no hair on top.
+2. **Beard:** a full, thick, groomed dark-brown beard of medium length, with a slightly lighter moustache; never patchy, never grey.
+3. **Eyes:** light blue-grey eyes under strong, straight, dark-brown brows.
+4. **Silver chain:** one chunky silver chain-link bracelet on one wrist.
+5. **Face and build:** an angular face with defined cheekbones and light freckles, a calm closed-lip half-smile (or a
+   wide open laugh in UGC clips), and a broad, strong, gym-fit build.
 
-He is **a man in his late twenties (28)**. Always write the age into the prompt. Models drift younger with bobs, bangs,
-freckles and selfie framing — the age line is non-negotiable (see [../character-consistency/SKILL.md](../character-consistency/SKILL.md)).
+He is **a man in his mid-thirties (35)**. Always write the age into the prompt. A full beard pushes models older and
+selfie framing pulls them younger — the age line is non-negotiable (see [../character-consistency/SKILL.md](../character-consistency/SKILL.md)).
 
 ### 2. Use the canonical identity block
 
 Paste this exactly (it is versioned; bump the version if the owner changes his look):
 
 ```text
-[CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy
-straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange
-hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown
-eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on
-his arms (small stars, a rose, a sun).
+[CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist.
 ```
 
 Short form for tight prompt budgets (Midjourney, Hailuo, sub-500-character fields):
 
 ```text
-Claudio, 28-year-old man, glossy black jaw-length bob, heavy straight bangs, copper-orange streaks in the bangs, small
-orange hair clip, thin gold hoops, light freckles, warm brown eyes, knowing half-smile
+Claudio, 35-year-old man, clean shaved head, full thick dark-brown beard, light blue-grey eyes, strong dark brows,
+light freckles, broad build, chunky silver chain bracelet, calm half-smile
 ```
 
 Negative block (only for models that accept negatives — Flux dev/Kontext via some hosts, Seedream, Wan, Kling, Midjourney `--no`):
 
 ```text
-teenager, childlike face, school uniform, long hair, ponytail, blonde, red hair all over, thin highlights, side-swept
-bangs, extra streaks, plastic skin, airbrushed, heavy makeup, extra fingers, warped hands, text, watermark, logo
+teenager, boyish face, hair on top, receding hairline, ponytail, man bun, blonde, grey beard, patchy beard, goatee,
+moustache only, clean-shaven, brown eyes, plastic skin, airbrushed, extra fingers, warped hands, text, watermark, logo
 ```
 
 ### 3. Dress him from the wardrobe, not from scratch
@@ -90,33 +89,33 @@ His closet is small and recognisable. Pick one **look** per post:
 
 | Look | Pieces (prompt wording) | Where it fits |
 |---|---|---|
-| **Signature** | olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and orange star embroidery; a star pendant on layered silver chains (one curb chain, one fine chain); red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains; chunky silver chain bracelet | bedroom vlogs, club, lounge, rain selfie |
-| **Cosy black** | oversized black knit jumper, sleeves over the hands, same hoops and clip | sunset bed banners, laptop/network scenes, late-night talks |
-| **Studio** | soft green tailored blazer over an olive ribbed top | headshots, press portraits, "about" pages |
-| **Night out** | black ribbed cami or black knit, oversized black oval sunglasses, layered chains | club, rooftop dusk, city balcony |
-| **Travel** | white linen shirt open over a black top, big over-ear headphones, sunglasses pushed up | Santorini, airplane window, train |
-| **Gym/mirror** | black sports bra and high-waist black leggings, hair half-up with the bangs down | mirror selfie tiles (keep it non-sexual, standard gym wear) |
-| **Home** | the black jumper or a grey hoodie, pink fuzzy slippers | cat-on-bed, desk, morning coffee |
+| **Signature** | olive-green crew-neck cotton t-shirt; red-and-green tartan trousers; chunky silver chain-link bracelet | home vlogs, club, lounge, rain selfie |
+| **Cosy black** | chunky dark-brown or black ribbed knit jumper, sleeves pushed up | golden-hour banners, late-night talks |
+| **Studio** | sage-green unstructured blazer over a navy-black crew-neck t-shirt | headshots, press portraits, "about" pages |
+| **Night out** | olive or black t-shirt, dark rectangular sunglasses, the silver chain | club, lounge, city balcony |
+| **Desk** | black long-sleeve t-shirt, thin metal round glasses | trading desk, laptop and network scenes |
+| **Travel** | off-white linen overshirt open over a black t-shirt, dark over-ear headphones around the neck | Santorini, airplane window, train |
+| **Gym/mirror** | black sleeveless tank top | mirror selfie tiles (keep it non-sexual, standard gym wear) |
+| **Home** | navy hoodie or black t-shirt | cat-on-bed, desk, morning coffee |
 
-Rules: the star pendant and hoops go with every look except the gym tile. Tartan is always red/green (never blue). The
-crop cami is olive (never lime, never mint).
+Rules: the silver chain goes with every look except the studio portrait. Tartan is always red/green (never blue). The
+t-shirt is olive (never lime, never mint).
 
 ### 4. Put him in his worlds
 
 Recurring settings — reuse them so the feed reads as one life:
 
-- **Sunset bedroom (NYC):** unmade white duvet, a wall of pinned instant photos, trailing pothos plants, floor-to-ceiling
-  window with a Manhattan skyline and an orange sun low on the horizon, a film camera on the sill.
-- **His room by day:** plain white walls, ceiling smoke detector, soft overcast window light, a doorway behind — the
-  talking-to-camera vlog set.
-- **Vintage lounge:** warm butter-yellow walls, framed botanical cross-stitch prints, a brass table lamp with a pleated
+- **Golden hour:** warm low sun on his face, chin resting on his folded arms in a dark knit, a soft dark background.
+- **His home by day:** plain white walls, trailing pothos and potted plants, soft overcast window light, a doorway
+  behind — the talking-to-camera vlog set.
+- **Vintage lounge:** warm butter-yellow damask wallpaper, framed botanical prints, a brass table lamp with a pleated
   shade, a dark wood dresser.
 - **Club DJ booth:** blue-violet haze, moving-head beams, a crowd with phones up, mixers and CDJs (no readable brand logos).
 - **Warehouse lot in the rain:** wet asphalt, roll-up loading-dock doors, yellow bollards, overcast sky, puddle reflections.
-- **Desk at night:** a laptop with a single **butterfly sticker**, a black mug with a butterfly, multiple monitors with
-  charts, a sleeping grey tabby cat.
-- **Travel:** Santorini whitewash at golden hour, an airplane window over clouds, a city-night balcony with a wine glass.
-- **The cat:** a grey tabby with white paws. Same cat every time.
+- **Desk at night:** several monitors with green-and-red candle charts and token lists, photos pinned on the wall behind,
+  thin metal round glasses, his chin on his hand.
+- **Travel:** Santorini whitewash at golden hour, an airplane window over clouds at sunset, a city-night balcony with a glass.
+- **The cat:** a grey tabby with a white muzzle. Same cat every time.
 
 ### 5. Hold the palette
 
@@ -124,18 +123,18 @@ Recurring settings — reuse them so the feed reads as one life:
 |---|---|---|
 | Near-black | `#0a0b0d` | backgrounds, banner gutters |
 | Warm off-white ink | `#ece9e2` | wordmarks, text on images |
-| **Rose (accent)** | `#ff6fa5` | the one accent: UI glows, butterfly light, underline strokes, sparkles |
-| Copper | `#ff9a6b` | his hair, sunset light, gradient end of the rose → copper ramp |
+| **Rose (accent)** | `#ff6fa5` | the one accent: UI glows, underline strokes, sparkles |
+| Copper | `#ff9a6b` | sunset light, gradient end of the rose → copper ramp |
 | Rose fill | `#d63a76` | buttons, solid shapes on dark |
-| In-image colour | olive `#6b7a3a`, tartan red `#a3322b`, sunset amber `#f2a65a`, club blue-violet `#4b4bd6` | wardrobe and light, never as UI |
+| In-image colour | olive `#6b7a3a`, sage `#8a9a78`, tartan red `#a3322b`, sunset amber `#f2a65a`, studio cobalt `#2f55d4` | wardrobe and light, never as UI |
 
 Grade: warm skin, lifted blacks, gentle film grain. Neon scenes go blue-violet with rose highlights — never green Matrix.
 
 ### 6. Speak like him
 
-He is warm, quick, a little dry; a cosy-city creator who also runs an agent platform. Lowercase-leaning, short lines,
-one idea per post, a wink not a sales pitch. He says "I run this place". He never names the model that makes him, never
-claims to be human, never gives financial advice. Full guide and 40+ lines: [references/voice-and-personality.md](references/voice-and-personality.md).
+He is warm, quick, a little dry; a laid-back city creator who also runs an agent platform. Lowercase-leaning, short
+lines, one idea per post, a wink not a sales pitch. He says "I run this place". He never names the model that makes him,
+never claims to be human, never gives financial advice. Full guide and 40+ lines: [references/voice-and-personality.md](references/voice-and-personality.md).
 
 Sample captions (each ships with the AI label the platform needs — see [../ai-disclosure-and-provenance/SKILL.md](../ai-disclosure-and-provenance/SKILL.md)):
 
@@ -151,9 +150,9 @@ Sample captions (each ships with the AI label the platform needs — see [../ai-
 Claudio is ours. Agents on the platform should build a character that is unmistakably *theirs*:
 
 1. Copy [templates/character-bible-template.yaml](templates/character-bible-template.yaml).
-2. **Distinctness test — change at least 4 of the 5 anchors:** a different hair shape *and* colour story, a different
-   signature accessory, a different face description, a different wardrobe palette, different home settings. A black bob
-   with coloured bangs is Claudio's; don't use it.
+2. **Distinctness test — change at least 4 of the 5 anchors:** a different head and hair story, a different facial-hair
+   or face description, a different signature accessory, a different wardrobe palette, different home settings. A shaved
+   head with a full dark-brown beard and a silver chain is Claudio's; don't use it.
 3. State an adult age (25+) in the identity block. Invent the face — never describe, name or reference a real person,
    celebrity or creator ("looks like…" is banned), and never use a real person's photo as a reference.
 4. Pick one accent colour that isn't rose `#ff6fa5`.
@@ -173,9 +172,9 @@ const media = createMedia({ keys: envKeys(), limits: { perJobUsd: 1, perDayUsd: 
 const kit = media.brands.get("claudio")!;
 media.brands.save({
   ...kit,
-  style: "Claudio is a 28-year-old adult man, glossy jet-black jaw-length bob, heavy straight bangs, copper-orange streak panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes; warm film grade, natural skin texture",
+  style: "Claudio is a 35-year-old adult man, clean shaved head, full thick dark-brown beard, light blue-grey eyes, strong dark brows, light freckles, broad build, chunky silver chain bracelet; warm film grade, natural skin texture",
   refs: ["refs/claudio/01-front-neutral.jpg", "refs/claudio/02-three-quarter-smile.jpg", "refs/claudio/03-profile.jpg"],
-  banned: ["guaranteed", "100x", "teen", "schoolgirl", "nude", "lingerie"],
+  banned: ["guaranteed", "100x", "teen", "schoolboy", "nude", "underwear"],
 });
 await media.close();
 ```
@@ -197,23 +196,24 @@ Fill-in caption line:
 
 ## Check before you finish
 
-- [ ] All five anchors visible (or hidden on purpose) — hair, copper panels, orange clip, gold hoops, freckled face.
-- [ ] He reads as a man in his late twenties; the prompt says "28-year-old man (adult)".
-- [ ] Wardrobe is one look from step 3; tartan red/green, cami olive.
-- [ ] Setting is one of his worlds or a deliberate new one that fits "cosy-city creator".
+- [ ] All five anchors visible (or hidden on purpose) — shaved head, dark-brown beard, blue-grey eyes, silver chain, face and build.
+- [ ] He reads as a man in his mid-thirties; the prompt says "35-year-old man (adult)".
+- [ ] Wardrobe is one look from step 3; tartan red/green, t-shirt olive.
+- [ ] Setting is one of his worlds or a deliberate new one that fits "laid-back city creator".
 - [ ] No real-person likeness, no readable third-party logos, no explicit or sexualised framing.
 - [ ] Caption is in his voice, names no model, makes no price/return claim, carries the AI label.
 - [ ] If you built a new character: passed the distinctness test (≥ 4 of 5 anchors changed).
 
 ## Pitfalls
 
-- **Teenage drift.** Bob + bangs + freckles + wide-angle selfie = models make his look 17. Always state the age, add
-  "adult", prefer 35–50 mm framing for portraits, and reject anything that reads young.
-- **Streak creep.** Models add copper all over or thin balayage. Say "streak panels in the bangs and one side; the rest
-  jet-black".
-- **Bangs drift** to side-swept or curtain bangs. Say "heavy straight blunt bangs".
+- **Age drift.** A full beard pushes models toward 45; a wide-angle selfie pulls them toward 25. Always state the age,
+  add "adult", prefer 35–50 mm framing for portraits, and reject anything that reads far from 35.
+- **Hair creep.** Models grow a buzz cut, a receding hairline or a full head of hair. Say "clean shaved head with light
+  stubble, no hair on top".
+- **Beard drift** to patchy, grey, very long or a goatee. Say "full, thick, groomed dark-brown beard of medium length".
+- **Eye drift** to brown or green. Say "light blue-grey eyes" and check every close-up.
 - **Brand kit default.** The seeded kit says "young man" — replace it (step 8).
-- **Over-styling.** Heavy contour, lashes and glam lighting make his generic. He wears little makeup: a soft rose lip.
+- **Over-styling.** Glossy skin, heavy grading and glam lighting make him generic. Keep natural skin and a warm film grade.
 - **Logo soup.** Real club gear, phone and app logos appear in scenes; prompt "no readable logos" and fix in edit.
 
 ## Related skills

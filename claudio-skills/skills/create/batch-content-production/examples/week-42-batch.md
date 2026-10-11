@@ -43,7 +43,7 @@ All stage-1 jobs were under `approveAboveUsd: 0.5`, so they queued directly. 4 m
 | Item | Score | Decision |
 |---|---|---|
 | talk-ep1-still | 7/7 | picked |
-| rain-ep1-still | 5/7 — two copper panels (both sides) and a melted bracelet | fixed with GPT Image 2.5 Sunburst preserve-list edit ($0.013) → 7/7 |
+| rain-ep1-still | 5/7 — two beard (both sides) and a melted bracelet | fixed with GPT Image 2.5 Sunburst preserve-list edit ($0.013) → 7/7 |
 | cto-ep1-still | 7/7 | picked (no Claudio; cat matches cat-01) |
 | window-seat ×6 | 6, 7, 7, 4, 7, 6 | tile 4 rejected (looked young — rounder face, braces). Rerolled once ($0.05) → 7/7 |
 

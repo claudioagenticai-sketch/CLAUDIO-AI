@@ -58,7 +58,7 @@ In ElevenLabs → Voices → Voice Design (or its text-to-voice API: a 20–1000
 ElevenLabs app or API, then use the saved id everywhere.
 
 ```text
-A man in his late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light
+A man in his mid-thirties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light
 New York lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night.
 Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean
 recording with no background noise, no music.
@@ -131,7 +131,7 @@ Gemini TTS alternative (prebuilt voice, style prompt; generate 3 and pick):
 ```ts
 await media.generate({ kind: "speech", model: "google/gemini-3.8-flash-tts", voice: "Leda",
   text: "storytime. my agent scheduled a post for three a m, and it did numbers.",
-  meta: { style: "a man in his late twenties, warm and amused, relaxed pace, a smile in the voice, quiet aside at the end" } });
+  meta: { style: "a man in his mid-thirties, warm and amused, relaxed pace, a smile in the voice, quiet aside at the end" } });
 ```
 
 A Gemini prebuilt voice will not match the ElevenLabs design — pick one engine per series.

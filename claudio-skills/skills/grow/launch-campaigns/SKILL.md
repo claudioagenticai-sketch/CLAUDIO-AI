@@ -82,8 +82,8 @@ Work from `templates/asset-checklist.md`. Minimum kit:
 - A landing page or pinned post that answers: what is it, who runs it, that it is AI, what it costs, where to ask questions.
 - UTM links per platform: `?utm_source=x&utm_medium=social&utm_campaign=<slug>&utm_content=<post-id>`.
 
-For Claudio, every visual follows the character bible (black jaw-length bob, copper-red streaks, orange clip, gold hoops,
-star pendant) and carries the AI label. Generate with `claudio generate image|video … --dry-run` first to see the price; see
+For Claudio, every visual follows the character bible (clean shaved head, strong dark brows, silver chain bracelet, broad build,
+silver chain bracelet) and carries the AI label. Generate with `claudio generate image|video … --dry-run` first to see the price; see
 [batch-content-production](../../create/batch-content-production/SKILL.md) and
 [ai-disclosure-and-provenance](../../create/ai-disclosure-and-provenance/SKILL.md).
 

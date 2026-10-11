@@ -455,7 +455,7 @@
   visibility: visible;
   transition: opacity 1.1s ease, visibility 0s;
 }
-/* Emulates object-fit: cover with a box, so the vision box (in % of the image) stays on her face. */
+/* Emulates object-fit: cover with a box, so the vision box (in % of the image) stays on his face. */
 .lp-cover {
   --cw: max(100cqw, 100cqh * var(--ar));
   --ch: max(100cqh, 100cqw / var(--ar));
@@ -566,7 +566,7 @@
 .lp .lp-handle:hover {
   color: var(--lp-accent);
 }
-/* 02 who created her */
+/* 02 who created him */
 .lp-creator__p {
   max-width: 54ch;
   margin-top: 18px;

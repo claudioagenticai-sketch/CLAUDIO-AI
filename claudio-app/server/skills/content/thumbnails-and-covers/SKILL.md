@@ -120,7 +120,7 @@ A series cover is a template plus one variable. Fix these per series and change 
 | Series | Label | Still | Title colour word |
 |---|---|---|---|
 | Rain diaries | `01 · rain diaries` | arm's-length selfie, laughing, wet lot | weather word in rose |
-| Desk nights | `02 · desk nights` | laptop glow, butterfly sticker, cat | the shipped thing in rose |
+| Desk nights | `02 · desk nights` | laptop glow, rose-pink sticker, cat | the shipped thing in rose |
 | After hours | `03 · after hours` | club haze, sunglasses | the track/time in rose |
 | Lamp light | `04 · lamp light` | lounge, sunglasses half-down | the reveal word in rose |
 | Out of office | `05 · out of office` | travel window/balcony | the place in rose |
@@ -139,7 +139,7 @@ See [../content-pillars-and-series/SKILL.md](../content-pillars-and-series/SKILL
 
 ### 7. Write alt text
 
-`Claudio, an AI-generated character with a black bob and copper streaks, laughing into his phone in the rain at a
+`Claudio, an AI-generated character with a black shaved head and dark brows, laughing into his phone in the rain at a
 warehouse lot. Title: "Rain check? Never".` — describe him, the scene and the title; say AI-generated.
 
 ## Templates
@@ -151,7 +151,7 @@ warehouse lot. Title: "Rain check? Never".` — describe him, the scene and the 
 
 ## Check before you finish
 
-- [ ] Still scores 7/7 on the drift check; he reads as a man in his late twenties; nothing sexualised in the crop.
+- [ ] Still scores 7/7 on the drift check; he reads as a man in his mid-thirties; nothing sexualised in the crop.
 - [ ] No model-rendered text; title set in Barlow Condensed/DM fonts (OFL) or other fonts licensed for commercial use.
 - [ ] 1–4 words; readable at 168×94; one rose accent at most.
 - [ ] Face + title inside the 3:4 and 4:5 centred crops and outside the app-UI zones (vertical).

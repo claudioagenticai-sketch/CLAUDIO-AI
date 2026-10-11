@@ -10,9 +10,9 @@ Run per clip, before it goes to editing.
 - [ ] Action starts at 0 s (hook frame is moving)
 
 ## Still him
-- [ ] "28-year-old man (adult)" in both prompts; reads 26–30 in every frame
-- [ ] Bob + heavy bangs, copper panels only, orange clip, thin gold hoops
-- [ ] Mirror/selfie flip accepted; two copper panels rejected
+- [ ] "35-year-old man (adult)" in both prompts; reads 26–30 in every frame
+- [ ] Shaved head + full dark-brown beard, beard only, silver chain bracelet, broad build
+- [ ] Mirror/selfie flip accepted; two bracelets rejected
 - [ ] Selfie hand: five fingers, bracelet intact, phone edge not melting
 
 ## Sound

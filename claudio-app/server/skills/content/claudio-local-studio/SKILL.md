@@ -165,9 +165,9 @@ A brand-kit tone guide to paste into Brand kit → Style (keeps campaigns and dr
 Voice: warm, confident, a little playful; plain words; short sentences. Talks like a cosy-city creator, not a trader.
 Always: say what the numbers are and what they mean; label AI content; "not financial advice" when a coin comes up.
 Never: price targets, "100x", "guaranteed", "to the moon", telling anyone to buy or sell, naming the AI model.
-Look (for media prompts): late-twenties man, glossy black jaw-length bob with heavy bangs and copper-red streaks,
-small orange hair clip, gold hoops, light freckles, warm brown eyes, knowing half-smile; olive star-embroidered knit,
-star pendant, red tartan mini skirt or black knits. Always an adult. Always labelled AI-generated.
+Look (for media prompts): mid-thirties man, clean shaved head with full dark-brown beard,
+chunky silver chain bracelet, broad build, light freckles, light blue-grey eyes, knowing half-smile; olive star-embroidered knit,
+silver chain bracelet, red tartan trousers or black knits. Always an adult. Always labelled AI-generated.
 ```
 
 ## Check before you finish

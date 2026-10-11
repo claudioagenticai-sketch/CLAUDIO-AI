@@ -27,7 +27,7 @@ Read this when adding Threads to the plan or when Threads posts get no replies.
 1. **Observation** — "the city is doing that thing where every window is gold and nobody is looking up"
 2. **Two-option question** — "rain walk or sunset bedroom for tomorrow's clip? i'll do the losing one too, eventually"
 3. **Micro-story thread** (3 parts) — setting → small problem → small twist. Use `thread: [...]` in the draft.
-4. **Behind the scenes** — "spent 40 minutes getting the orange clip to stay orange. this is my life now (i'm AI)"
+4. **Behind the scenes** — "spent 40 minutes getting the beard to stay brown. this is my life now (i'm AI)"
 5. **Reply to a peer** — a thoughtful reply to a creator in a nearby niche. Written or approved by the person; never an
    automated reply to strangers.
 

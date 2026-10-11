@@ -1,11 +1,11 @@
 ---
 name: banner-and-collage-design
-description: Designs and exports profile banners and photo collages for an AI influencer — Claudio's 3:1 sunset-bed NYC skyline banner with a serif wordmark, the laptop + glowing butterfly MCP/API network banner, and the travel/lifestyle photo-collage banner with a script wordmark — with full prompts per model, composition for each platform's crop and safe area (X 1500×500, YouTube 2560×1440 with the 1546×423 safe area, LinkedIn 1584×396, Twitch 1200×480, Discord, site 3:1 at 2000/1200/800), ffmpeg crop/collage/overlay/export commands, licensed-font wordmarks added in the edit step, and trademark-safe handling of platform and chain logos. Use when making or refreshing a header, channel art, website hero banner, collage, or any wide composite image.
+description: Designs and exports profile banners and photo collages for an AI influencer — Claudio's 3:1 sunset-bed NYC skyline banner with a serif wordmark, the trading-desk MCP/API network banner, and the travel/lifestyle photo-collage banner with a script wordmark — with full prompts per model, composition for each platform's crop and safe area (X 1500×500, YouTube 2560×1440 with the 1546×423 safe area, LinkedIn 1584×396, Twitch 1200×480, Discord, site 3:1 at 2000/1200/800), ffmpeg crop/collage/overlay/export commands, licensed-font wordmarks added in the edit step, and trademark-safe handling of platform and chain logos. Use when making or refreshing a header, channel art, website hero banner, collage, or any wide composite image.
 license: MIT
 metadata:
   title: "Banner and collage design"
   category: create
-  summary: "Make him 3:1 banners and photo collages — sunset skyline, butterfly network, travel collage — and export every platform size."
+  summary: "Make him 3:1 banners and photo collages — sunset skyline, network banner, travel collage — and export every platform size."
   level: intermediate
   tags: "banner, header, channel art, collage, wordmark, fonts, ffmpeg, safe area, x header, youtube banner"
   uses: "@useclaudio/media, @useclaudio/cli"
@@ -17,7 +17,7 @@ metadata:
 # Banner and collage design
 
 Banners are the first thing people see on a profile, and every platform crops them differently. This skill recreates
-Claudio's three banner types — the sunset bedroom with the skyline, the butterfly network, and the travel collage —
+Claudio's three banner types — the sunset bedroom with the skyline, the network banner, and the travel collage —
 and shows how to generate a clean master, add the wordmark with a licensed font, place logos legally, and export every
 size so nothing important lands under an avatar or outside a safe area.
 
@@ -47,7 +47,7 @@ size so nothing important lands under an avatar or outside a safe area.
 |---|---|---|---|
 | Sunset bed + skyline + serif wordmark | 3:1, 3840×1280 | `openai/gpt-image-2.5-flare` `--resolution 3840x1280` | native 3:1 (edges multiples of 16, ratio ≤ 3:1, edge ≤ 3840; checked 2026-10) |
 | Same, best face fidelity | 16:9 4K → crop 3:1 | `google/nano-banana-2.1` `--resolution 4K` | strongest identity with refs; package aspect list has no 3:1 |
-| Butterfly network | 3:1, 3840×1280 | GPT Image 2.5 (labels "MCP", "API" must read) | quoted text renders reliably |
+| Network banner | 3:1, 3840×1280 | GPT Image 2.5 (labels "MCP", "API" must read) | quoted text renders reliably |
 | Travel collage | 3000×1000 canvas from 8 tiles | tiles from [../lifestyle-scene-prompts/SKILL.md](../lifestyle-scene-prompts/SKILL.md) | each tile is its own generation; layout is assembled |
 | YouTube channel art | 16:9, 2560×1440 | its own generation, composed for the centre band | 3:1 masters lose their edges (see step 7) |
 
@@ -66,11 +66,10 @@ third is calm, darker negative space for a wordmark. Keep the lower-left quarter
 
 ```text
 Create a photoreal ultra-wide 3:1 banner photograph.
-Subject: [CLAUDIO ID v1] Claudio, a 28-year-old man (adult, late twenties) with a glossy jet-black jaw-length blunt bob
-and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a
-small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks;
-warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line
-tattoos on his arms (small stars, a rose, a sun). Match the man in image 1.
+Subject: [CLAUDIO ID v1] Claudio, a 35-year-old man (adult, mid-thirties) with a clean shaved head and light stubble; a full, thick,
+groomed dark-brown beard of medium length with a slightly lighter moustache; light blue-grey eyes; strong straight dark-brown
+brows; an angular face with defined cheekbones and light freckles; a calm closed-lip half-smile; natural skin texture with
+visible pores; a broad, strong, gym-fit build; a chunky silver chain-link bracelet on one wrist. Match the man in image 1.
 Wardrobe: an oversized fuzzy black knit jumper, sleeves over his hands.
 Pose: lying on his front across an unmade white duvet, head resting on his folded arms, face slightly right of centre,
 eyes to the lens, knowing closed-lip half-smile.
@@ -78,7 +77,7 @@ Setting: a New York bedroom at sunset. Left: a wall of pinned instant photos and
 foreground. Right: a floor-to-ceiling window with the Manhattan skyline, a tall art-deco spire and a low orange sun on the
 horizon; a film camera and a glass on the sill.
 Camera: 35mm lens at mattress height, f/2, focus on his eyes, background softly out of focus.
-Light: warm golden backlight with a soft flare, a copper halo in his hair, window bounce on his face. Kodak Portra 400,
+Light: warm golden backlight with a soft flare, a warm rim light on his shaved head, window bounce on his face. Kodak Portra 400,
 gentle grain.
 Composition: his face slightly right of centre; the left third calmer and slightly darker for a wordmark; lower-left
 quarter empty of important detail.
@@ -94,17 +93,17 @@ Nano Banana variant: same text as a narrative paragraph, `--model google/nano-ba
 ($0.113), then crop to 3:1 (step 6). Add the "CLAUDIO" serif wordmark in step 5 — don't ask the model to letter it unless
 you accept redoing it when it misspells.
 
-### 4. Butterfly network banner (recreates `banner-network`)
+### 4. Network banner (recreates `banner-network`)
 
 ```text
 Create an ultra-wide 3:1 banner, photoreal subject with a glowing UI overlay world.
 Subject: [CLAUDIO ID v1] (as above), matching image 1. Oversized fuzzy black knit jumper. Centre: he rests his chin on
-his folded arms behind a silver-grey unbranded laptop whose lid shows one glowing pink butterfly; a matte black mug with
-a pink butterfly and a sleeping grey tabby cat with white paws at the right of the desk.
+his folded arms behind a silver-grey unbranded laptop whose lid shows one glowing rose-pink sticker; a matte black mug with
+a sleeping grey tabby cat with a white muzzle at the right of the desk.
 Left third: four floating translucent glass "post cards" angled in depth, each showing a small photo of him (rooftop at
 sunset, wearing headphones, city skyline) with simple generic UI lines and a small plain circular badge in the top-left
 corner where a platform icon will go later. Thin rose-pink light trails connect them toward him.
-Right third: a glowing rounded-square hub with a pink outline butterfly #ff6fa5 at its centre, wired by luminous
+Right third: a glowing rounded-square hub with a rose outline node #ff6fa5 at its centre, wired by luminous
 curving lines to small glass labels reading exactly "MCP" and "API", to eight small plain circular badges (icons added
 later), to a glowing night-side globe with city lights at the far right, and to a row of small hexagon badges (chain
 icons added later). A dark terminal panel under the hub lists: "Agents", "Create", "Post", "Engage", "Analyze", "Onchain".
@@ -114,7 +113,7 @@ Constraints: the only words in the image are "MCP", "API" and the six terminal w
 
 ```sh
 claudio generate image "$(cat banners/network.txt)" --model openai/gpt-image-2.5-flare --resolution 3840x1280 \
-  --ref refs/claudio/01-front-neutral.jpg,refs/props/laptop-butterfly.jpg,refs/props/cat.jpg --max-usd 0.30
+  --ref refs/claudio/01-front-neutral.jpg,refs/props/laptop.jpg,refs/props/cat.jpg --max-usd 0.30
 ```
 
 Then composite the official platform and chain logo files onto the blank badges (step 5): order the chain badges
@@ -193,7 +192,7 @@ wordmark readable, no logo cut by a crop, no text artifacts left in the generate
 
 ## Check before you finish
 
-- [ ] Face scored ≥ 6/7 on the drift check; he reads as a man in his late twenties.
+- [ ] Face scored ≥ 6/7 on the drift check; he reads as a man in his mid-thirties.
 - [ ] Composition respects the avatar zone and the top/bottom crop margins; YouTube checked against 1546×423.
 - [ ] Wordmark added from a licensed font; spelled C-L-A-U-D-I-A; no stray generated text left.
 - [ ] Logos are official, unmodified files with clear space; chains listed Solana first; no implied endorsement.

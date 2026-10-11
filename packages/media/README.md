@@ -318,7 +318,7 @@ media.brands.save({
 await media.generate({ kind: "image", prompt: "mascot on a rocket", brand: "my-coin" });
 ```
 
-Kits are stored in `<dataDir>/media/brands.json`. A default `claudio` kit is seeded the first time. It describes her look: an adult woman in her late twenties with a black bob, one peach-orange streak in the bangs, a peach star clip and a thin headset mic, with a rose accent. Its reference images start empty; add your own approved images with `brands.save({ ...media.brands.get("claudio")!, refs: [...] })`. Pass `defaultBrand: false` to skip seeding it.
+Kits are stored in `<dataDir>/media/brands.json`. A default `claudio` kit is seeded the first time. It describes his look: an adult man in his mid-thirties with a clean shaved head, a full dark-brown beard, light blue-grey eyes and a chunky silver chain bracelet, with a rose accent. Its reference images start empty; add your own approved images with `brands.save({ ...media.brands.get("claudio")!, refs: [...] })`. Pass `defaultBrand: false` to skip seeding it.
 
 ## Dry runs
 

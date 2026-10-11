@@ -21,7 +21,7 @@
 |---|---|---|---|---|---|
 | | | | | | go · adapt · hold · skip |
 
-Why the fit score: > which pillar, and why only she would make this version.
+Why the fit score: > which pillar, and why only he would make this version.
 
 ## 3. Risk gates
 
@@ -46,8 +46,8 @@ Why the fit score: > which pillar, and why only she would make this version.
 - **Hook (0–1.5 s):** on-screen text + first action
 - **Beats:** 1) … 2) … 3) … (length target: … s)
 - **Assets:** reuse (room / club / lounge / rain loop) · new generation (prompt refs) · stills
-- **Character check:** look matches the bible (bob, bangs, copper-red streaks, orange clip, gold hoops; wardrobe
-  from her set) · adult · nothing a real person would be mistaken for
+- **Character check:** look matches the bible (shaved head, beard, strong dark brows, silver chain bracelet, broad build; wardrobe
+  from his set) · adult · nothing a real person would be mistaken for
 
 ## 5. Audio
 

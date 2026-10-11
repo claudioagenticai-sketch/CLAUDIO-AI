@@ -9,15 +9,14 @@ FIRST FRAME:    <path to approved 9:16 still>    LAST FRAME (optional): <path>
 DURATION:       <s, valid for the model>         ASPECT: 9:16   RESOLUTION: 720p|1080p
 AUDIO:          native | silent (meta.audio=false) | added in edit
 
-1 IDENTITY  Same man as the first frame: Claudio, 28-year-old man (adult), glossy black jaw-length bob, heavy straight
-            bangs with copper-orange streak panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes.
-            His face, bob, copper bang streaks and orange clip stay identical throughout.
+1 IDENTITY  Same man as the first frame: Claudio, 35-year-old man (adult), clean shaved head, a full, thick dark-brown beard, chunky silver chain bracelet, broad build, light freckles, light blue-grey eyes.
+            His face, shaved head, dark brows and silver chain bracelet stay identical throughout.
 2 ACTION    0–<a>s: <verb + detail>. <a>–<b>s: <verb + detail>. <b>–<end>s: <verb + detail>.
 3 SCENE     <setting string from the bible>
 4 CAMERA    <framing>, <camera height>, <ONE move>
 5 LIGHT     <source, colour>, <grade/texture>
 6 AUDIO     <"line" or no dialogue>; SFX: <…>; Ambient: <…>; no music
-NEGATIVE    (Kling/Wan only) teenager, childlike face, extra fingers, warped hands, morphing face, flicker, extra hair streaks, text, logo
+NEGATIVE    (Kling/Wan only) teenager, childlike face, extra fingers, warped hands, morphing face, flicker, hair on his head, text, logo
 ```
 
 ## Wrappers
