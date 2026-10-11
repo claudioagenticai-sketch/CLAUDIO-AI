@@ -1,0 +1,16 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+*.zip
+# Skills library downloads are synced from claudio-skills (scripts/sync-site.mjs) and committed.
+!client/public/skills/*.zip
+uploads/
+*.log
+.env
+.env.testnet
+.env.local
+.env.devnet
+.keys/

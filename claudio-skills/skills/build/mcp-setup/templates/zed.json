@@ -1,0 +1,6 @@
+{
+  "context_servers": {
+    "claudio": { "url": "https://useclaudio.xyz/mcp/data" },
+    "claudio-local": { "command": "npx", "args": ["-y", "@useclaudio/mcp", "--server", "data"] }
+  }
+}

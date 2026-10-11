@@ -1,0 +1,6 @@
+{
+  "servers": {
+    "claudio": { "type": "http", "url": "https://useclaudio.xyz/mcp/data" },
+    "claudio-local": { "type": "stdio", "command": "npx", "args": ["-y", "@useclaudio/mcp", "--server", "data"] }
+  }
+}

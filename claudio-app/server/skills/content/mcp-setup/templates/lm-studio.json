@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "claudio-local": { "command": "npx", "args": ["-y", "@useclaudio/mcp", "--server", "data"] },
+    "claudio": { "url": "https://useclaudio.xyz/mcp/data" },
+    "claudio-trade": {
+      "url": "https://useclaudio.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer REPLACE_WITH_YOUR_CMK_KEY_IN_LM_STUDIO_ONLY" }
+    }
+  }
+}

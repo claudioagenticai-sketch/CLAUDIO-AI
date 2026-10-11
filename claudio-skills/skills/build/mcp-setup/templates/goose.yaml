@@ -1,0 +1,15 @@
+# ~/.config/goose/config.yaml — or: goose configure → Add Extension → Remote Extension (Streamable HTTP). Checked 2026-10.
+extensions:
+  claudio:
+    type: streamable_http
+    name: claudio
+    enabled: true
+    uri: https://useclaudio.xyz/mcp/data
+    timeout: 300
+  claudio-local:
+    type: stdio
+    name: claudio-local
+    enabled: false          # switch on while the online server isn't live
+    cmd: npx
+    args: ["-y", "@useclaudio/mcp", "--server", "data"]
+    timeout: 300

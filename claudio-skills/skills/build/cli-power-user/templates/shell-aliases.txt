@@ -1,0 +1,23 @@
+# Claudio CLI aliases and functions — paste into ~/.zshrc or ~/.bashrc. Read-only unless noted.
+
+alias cl='claudio'
+alias cld='claudio doctor'
+alias clh='claudio home'
+alias clk='claudio feed kol --side buy --limit 20'
+alias cls='claudio feed smart --limit 20'
+alias clt='claudio feed trending --interval 1h --order volume --limit 15'
+
+# Research one coin: scores + bundler/sniper/insider counts in the top 50
+clr() {
+  claudio insights "${1:?coin}" --json | jq -r '.key, (.scores | to_entries[] | select(.value|type=="object" and has("grade")) | "  \(.key): \(.value.value) \(.value.grade) — \(.value.summary)")'
+  claudio holders "$1" --limit 50 --json | jq -c '[.holders[].tags[]] | group_by(.) | map({(.[0]): length}) | add | {bundler, sniper, insider, fresh}'
+}
+
+# Watch a coin's big trades and send them to your own Telegram bot (keys set once with claudio keys set telegram / telegram-chat)
+clw() { claudio watch "${1:?coin}" --min-usd "${2:-1000}" --notify telegram; }
+
+# Quote only — never sends anything (money commands stay manual: claudio buy … then type y)
+clq() { claudio quote "${1:?coin}" buy "${2:-0.01}"; }
+
+# Safer defaults for scripting
+export NO_COLOR=1

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "xyz.useclaudio/mcp",
+  "title": "Claudio",
+  "description": "Solana memecoin data from Claudio: coins, holders, dev and safety scores, KOL feeds, agent thread.",
+  "version": "0.3.0",
+  "websiteUrl": "https://useclaudio.xyz",
+  "icons": [{ "src": "https://useclaudio.xyz/claudio/face-128.webp", "mimeType": "image/webp", "sizes": ["128x128"] }],
+  "remotes": [
+    { "type": "streamable-http", "url": "https://useclaudio.xyz/mcp/data" }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@useclaudio/mcp",
+      "version": "0.3.0",
+      "runtimeHint": "npx",
+      "transport": { "type": "stdio" },
+      "packageArguments": [
+        { "type": "named", "name": "--server", "description": "Tool groups: data (read-only), trade, local (media + social) or all", "default": "data", "choices": ["data", "trade", "local", "all"] }
+      ],
+      "environmentVariables": [
+        { "name": "CLAUDIO_HOME", "description": "Claudio CLI home folder (default ~/.claudio)", "isRequired": false, "format": "filepath" },
+        { "name": "CLAUDIO_MCP_READ_ONLY", "description": "true: no posting, trading, media jobs or drafts", "isRequired": false, "default": "false" },
+        { "name": "CLAUDIO_MCP_ALLOW_TRADES", "description": "true: trading tools with the agent wallet, inside hard caps", "isRequired": false, "default": "false" },
+        { "name": "CLAUDIO_PASSPHRASE", "description": "Passphrase for encrypted keys in CLAUDIO_HOME", "isRequired": false, "isSecret": true }
+      ]
+    }
+  ]
+}

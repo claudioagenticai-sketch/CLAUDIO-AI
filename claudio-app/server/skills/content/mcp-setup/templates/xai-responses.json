@@ -1,0 +1,13 @@
+{
+  "model": "grok-4.7",
+  "input": "What's trending on Claudio in the last hour? Name the top 5 by volume with their safety grade. Research only.",
+  "tools": [
+    { "type": "mcp", "server_label": "claudio", "server_url": "https://useclaudio.xyz/mcp/data" },
+    {
+      "type": "mcp",
+      "server_label": "claudio-trade",
+      "server_url": "https://useclaudio.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer SET_FROM_ENV_CLAUDIO_MCP_KEY" }
+    }
+  ]
+}

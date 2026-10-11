@@ -1,0 +1,36 @@
+/* LoopVideo frame: hairline border, radius ≤ 4 px, optional 8 px corner brackets. */
+.loopvideo {
+  overflow: hidden;
+  border-radius: 3px;
+  background: #111317;
+}
+.loopvideo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(236, 233, 226, 0.09);
+  pointer-events: none;
+}
+.loopvideo > video,
+.loopvideo > img {
+  border-radius: inherit;
+}
+.loopvideo--brackets {
+  overflow: visible;
+}
+.loopvideo__brackets {
+  position: absolute;
+  inset: -7px;
+  pointer-events: none;
+}
+.loopvideo__brackets i {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 0 solid rgba(236, 233, 226, 0.5);
+}
+.loopvideo__brackets i:nth-child(1) { left: 0; top: 0; border-left-width: 1px; border-top-width: 1px; }
+.loopvideo__brackets i:nth-child(2) { right: 0; top: 0; border-right-width: 1px; border-top-width: 1px; }
+.loopvideo__brackets i:nth-child(3) { left: 0; bottom: 0; border-left-width: 1px; border-bottom-width: 1px; }
+.loopvideo__brackets i:nth-child(4) { right: 0; bottom: 0; border-right-width: 1px; border-bottom-width: 1px; }

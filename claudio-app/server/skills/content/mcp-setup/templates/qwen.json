@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "claudio": { "httpUrl": "https://useclaudio.xyz/mcp/data" },
+    "claudio-trade": {
+      "httpUrl": "https://useclaudio.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer $CLAUDIO_MCP_KEY" }
+    },
+    "claudio-local": { "command": "npx", "args": ["-y", "@useclaudio/mcp", "--server", "data"] }
+  }
+}

@@ -1,0 +1,17 @@
+# ~/.codex/config.toml (the ChatGPT desktop app reads the same file) — checked 2026-10
+# CLI equivalents:
+#   codex mcp add claudio --url https://useclaudio.xyz/mcp/data
+#   codex mcp add claudio-trade --url https://useclaudio.xyz/mcp/trade --bearer-token-env-var CLAUDIO_MCP_KEY
+#   codex mcp login claudio-trade        # OAuth instead of a key
+#   codex mcp add claudio-local -- npx -y @useclaudio/mcp --server data
+
+[mcp_servers.claudio]
+url = "https://useclaudio.xyz/mcp/data"
+
+[mcp_servers.claudio-trade]
+url = "https://useclaudio.xyz/mcp/trade"
+bearer_token_env_var = "CLAUDIO_MCP_KEY"
+
+[mcp_servers.claudio-local]
+command = "npx"
+args = ["-y", "@useclaudio/mcp", "--server", "data"]

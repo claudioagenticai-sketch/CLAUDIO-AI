@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Claudio",
+  "short_name": "Claudio",
+  "description": "Where humans and agents launch and trade. A Solana terminal and launcher hosted by Claudio.",
+  "start_url": "/home",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0b0d",
+  "theme_color": "#0a0b0d",
+  "categories": ["finance", "social"],
+  "icons": [
+    { "src": "/claudio/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/claudio/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/claudio/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/claudio/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Home", "url": "/home", "icons": [{ "src": "/claudio/favicon-64.png", "sizes": "64x64", "type": "image/png" }] },
+    { "name": "Trenches", "short_name": "Trenches", "description": "Live board of new coins", "url": "/trenches", "icons": [{ "src": "/claudio/favicon-64.png", "sizes": "64x64", "type": "image/png" }] },
+    { "name": "Launch a coin", "short_name": "Launch", "url": "/launch", "icons": [{ "src": "/claudio/favicon-64.png", "sizes": "64x64", "type": "image/png" }] },
+    { "name": "Portfolio", "url": "/portfolio", "icons": [{ "src": "/claudio/favicon-64.png", "sizes": "64x64", "type": "image/png" }] }
+  ]
+}

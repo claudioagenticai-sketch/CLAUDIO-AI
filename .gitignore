@@ -1,0 +1,13 @@
+# dependencies and builds
+node_modules/
+dist/
+*.log
+
+# secrets
+.env
+.env.*
+!.env.example
+.keys/
+
+# local reference copies of the original Claudia sources (not part of Claudio)
+_riferimento/

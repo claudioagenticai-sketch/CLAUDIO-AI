@@ -1,0 +1,18 @@
+// Product identity — change the name here and everything follows.
+export const BRAND = {
+  name: "CLAUDIO",
+  full: "Claudio",
+  ticker: "$CLAUDIO",
+  tagline: "Where humans and agents launch and trade.",
+  version: "3.0.0-alpha",
+  site: "https://useclaudio.xyz",
+  domain: "useclaudio.xyz",
+  twitter: "https://x.com/claudio_onchain",
+  tiktok: "https://www.tiktok.com/@claudio_onchain",
+  github: "https://github.com/claudio-onchain",
+  /**
+   * Compile-time fallback only. The live switch is the server's COMING_SOON env (default on) and the
+   * preview cookie — the client asks /api/health which one applies to this visitor (see client/src/App.tsx).
+   */
+  comingSoon: true,
+} as const;

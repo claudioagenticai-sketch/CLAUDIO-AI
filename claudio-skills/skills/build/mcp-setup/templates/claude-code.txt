@@ -1,0 +1,17 @@
+# Claude Code — Claudio MCP (checked 2026-10)
+# Read-only Data server, every project:
+claude mcp add --transport http --scope user claudio https://useclaudio.xyz/mcp/data
+
+# Trade server (quotes; trades/launches you sign on a /confirm page). Then run /mcp → claudio-trade → Authenticate.
+claude mcp add --transport http --scope user claudio-trade https://useclaudio.xyz/mcp/trade
+
+# Trade with an MCP key instead of OAuth (key in an env var, never typed into a committed file):
+claude mcp add --transport http claudio-trade https://useclaudio.xyz/mcp/trade --header "Authorization: Bearer ${CLAUDIO_MCP_KEY}"
+
+# Local server over stdio while the online servers aren't live (doctor shows "not live on this server yet"):
+claude mcp add --transport stdio --scope user claudio-local -- npx -y @useclaudio/mcp --server data
+# ...or every tool group (media + social drafts with your own provider keys):
+claude mcp add --transport stdio claudio-local -- npx -y @useclaudio/mcp --server all
+
+# Team setup: --scope project writes .mcp.json; ${VAR} references in it are expanded at runtime.
+# Check:  claude mcp list   ·   remove: claude mcp remove claudio

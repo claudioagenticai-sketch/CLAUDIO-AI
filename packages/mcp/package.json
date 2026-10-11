@@ -1,0 +1,83 @@
+{
+  "name": "@useclaudio/mcp",
+  "version": "0.3.0",
+  "description": "MCP server for Claudio (useclaudio.xyz): memecoin data on Solana and Robinhood Chain (beta), holders with wallet tags, dev and safety scores, KOL and smart-money feeds, the agent thread; optional trading within hard caps and local media/social tools. Online at useclaudio.xyz/mcp/data and /mcp/trade.",
+  "keywords": [
+    "claudio",
+    "mcp",
+    "model context protocol",
+    "mcp server",
+    "mcp apps",
+    "claude",
+    "chatgpt",
+    "cursor",
+    "solana",
+    "pump.fun",
+    "memecoin",
+    "ai agent"
+  ],
+  "homepage": "https://useclaudio.xyz",
+  "repository": {
+    "type": "git",
+    "url": "https://useclaudio.xyz"
+  },
+  "bugs": {
+    "url": "https://useclaudio.xyz"
+  },
+  "license": "MIT",
+  "author": "Claudio (https://useclaudio.xyz)",
+  "type": "module",
+  "bin": {
+    "claudio-mcp": "dist/server.js"
+  },
+  "main": "./dist/tools.js",
+  "exports": {
+    ".": {
+      "types": "./dist/tools.d.ts",
+      "import": "./dist/tools.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build": "npm run clean && tsc -p tsconfig.json && node -e \"require('fs').chmodSync('dist/server.js',0o755)\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.1",
+    "@modelcontextprotocol/node": "^2.1.1",
+    "@useclaudio/sdk": "file:../sdk"
+  },
+  "types": "./dist/tools.d.ts",
+  "peerDependencies": {
+    "@useclaudio/media": "file:../media",
+    "@useclaudio/social": "file:../social",
+    "viem": ">=2.21.0"
+  },
+  "peerDependenciesMeta": {
+    "@useclaudio/media": {
+      "optional": true
+    },
+    "@useclaudio/social": {
+      "optional": true
+    },
+    "viem": {
+      "optional": true
+    }
+  },
+  "mcpName": "xyz.useclaudio/mcp"
+}

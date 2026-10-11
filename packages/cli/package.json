@@ -1,0 +1,71 @@
+{
+  "name": "@useclaudio/cli",
+  "version": "0.3.0",
+  "description": "The Claudio command line (useclaudio.xyz): coin insights and holder labels on Solana and Robinhood Chain (beta), live trades and feeds, an AI agent on your own model key, MCP install for 13 AI apps, media and social posting with your own keys, and trading/launching with local safety caps.",
+  "keywords": [
+    "claudio",
+    "cli",
+    "solana",
+    "robinhood chain",
+    "pump.fun",
+    "ai agent",
+    "agents",
+    "openrouter",
+    "memecoin",
+    "launchpad",
+    "mcp",
+    "insights",
+    "gmgn",
+    "terminal"
+  ],
+  "homepage": "https://useclaudio.xyz",
+  "repository": {
+    "type": "git",
+    "url": "https://useclaudio.xyz"
+  },
+  "bugs": {
+    "url": "https://useclaudio.xyz"
+  },
+  "license": "MIT",
+  "author": "Claudio (https://useclaudio.xyz)",
+  "type": "module",
+  "bin": {
+    "claudio": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build": "npm run clean && tsc -p tsconfig.json && node -e \"require('fs').chmodSync('dist/cli.js',0o755)\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@useclaudio/sdk": "file:../sdk",
+    "@useclaudio/media": "file:../media",
+    "@useclaudio/social": "file:../social"
+  },
+  "peerDependencies": {
+    "ws": ">=8",
+    "viem": ">=2.21.0"
+  },
+  "peerDependenciesMeta": {
+    "ws": {
+      "optional": true
+    },
+    "viem": {
+      "optional": true
+    }
+  }
+}

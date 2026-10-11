@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "claudio": { "serverUrl": "https://useclaudio.xyz/mcp/data" },
+    "claudio-trade": {
+      "serverUrl": "https://useclaudio.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer ${env:CLAUDIO_MCP_KEY}" }
+    }
+  }
+}

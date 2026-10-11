@@ -1,0 +1,1031 @@
+{
+ "address": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+ "metadata": {
+  "name": "pump_fees",
+  "version": "0.1.0",
+  "spec": "0.1.0",
+  "description": "Created with Anchor"
+ },
+ "_note": "Trimmed from research/repos/pump-public-docs/idl (HEAD 8109141). Reference only: server/launch/pump/ixs.ts hard-codes the verified discriminators/account orders.",
+ "instructions": [
+  {
+   "name": "create_fee_sharing_config",
+   "docs": [
+    "Create Fee Sharing Config"
+   ],
+   "discriminator": [
+    195,
+    78,
+    86,
+    76,
+    111,
+    52,
+    251,
+    213
+   ],
+   "accounts": [
+    {
+     "name": "event_authority",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         95,
+         95,
+         101,
+         118,
+         101,
+         110,
+         116,
+         95,
+         97,
+         117,
+         116,
+         104,
+         111,
+         114,
+         105,
+         116,
+         121
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "program",
+     "address": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ"
+    },
+    {
+     "name": "payer",
+     "writable": true,
+     "signer": true
+    },
+    {
+     "name": "global",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         103,
+         108,
+         111,
+         98,
+         97,
+         108
+        ]
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "mint"
+    },
+    {
+     "name": "sharing_config",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         115,
+         104,
+         97,
+         114,
+         105,
+         110,
+         103,
+         45,
+         99,
+         111,
+         110,
+         102,
+         105,
+         103
+        ]
+       },
+       {
+        "kind": "account",
+        "path": "mint"
+       }
+      ]
+     }
+    },
+    {
+     "name": "system_program",
+     "address": "11111111111111111111111111111111"
+    },
+    {
+     "name": "bonding_curve",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         98,
+         111,
+         110,
+         100,
+         105,
+         110,
+         103,
+         45,
+         99,
+         117,
+         114,
+         118,
+         101
+        ]
+       },
+       {
+        "kind": "account",
+        "path": "mint"
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "pump_program",
+     "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P"
+    },
+    {
+     "name": "pump_event_authority",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         95,
+         95,
+         101,
+         118,
+         101,
+         110,
+         116,
+         95,
+         97,
+         117,
+         116,
+         104,
+         111,
+         114,
+         105,
+         116,
+         121
+        ]
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "pool",
+     "writable": true,
+     "optional": true
+    },
+    {
+     "name": "pump_amm_program",
+     "optional": true,
+     "address": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+    },
+    {
+     "name": "pump_amm_event_authority",
+     "optional": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         95,
+         95,
+         101,
+         118,
+         101,
+         110,
+         116,
+         95,
+         97,
+         117,
+         116,
+         104,
+         111,
+         114,
+         105,
+         116,
+         121
+        ]
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        12,
+        20,
+        222,
+        252,
+        130,
+        94,
+        198,
+        118,
+        148,
+        37,
+        8,
+        24,
+        187,
+        101,
+        64,
+        101,
+        244,
+        41,
+        141,
+        49,
+        86,
+        213,
+        113,
+        180,
+        212,
+        248,
+        9,
+        12,
+        24,
+        233,
+        168,
+        99
+       ]
+      }
+     }
+    }
+   ],
+   "args": []
+  },
+  {
+   "name": "update_fee_shares_v2",
+   "docs": [
+    "Update Fee Shares, make sure to distribute all the fees before calling this"
+   ],
+   "discriminator": [
+    111,
+    251,
+    49,
+    6,
+    78,
+    78,
+    106,
+    18
+   ],
+   "accounts": [
+    {
+     "name": "event_authority",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         95,
+         95,
+         101,
+         118,
+         101,
+         110,
+         116,
+         95,
+         97,
+         117,
+         116,
+         104,
+         111,
+         114,
+         105,
+         116,
+         121
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "program",
+     "address": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ"
+    },
+    {
+     "name": "authority",
+     "writable": true,
+     "signer": true
+    },
+    {
+     "name": "global",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         103,
+         108,
+         111,
+         98,
+         97,
+         108
+        ]
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "mint",
+     "relations": [
+      "sharing_config"
+     ]
+    },
+    {
+     "name": "sharing_config",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         115,
+         104,
+         97,
+         114,
+         105,
+         110,
+         103,
+         45,
+         99,
+         111,
+         110,
+         102,
+         105,
+         103
+        ]
+       },
+       {
+        "kind": "account",
+        "path": "mint"
+       }
+      ]
+     }
+    },
+    {
+     "name": "bonding_curve",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         98,
+         111,
+         110,
+         100,
+         105,
+         110,
+         103,
+         45,
+         99,
+         117,
+         114,
+         118,
+         101
+        ]
+       },
+       {
+        "kind": "account",
+        "path": "mint"
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "pump_creator_vault",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         99,
+         114,
+         101,
+         97,
+         116,
+         111,
+         114,
+         45,
+         118,
+         97,
+         117,
+         108,
+         116
+        ]
+       },
+       {
+        "kind": "account",
+        "path": "sharing_config"
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "pump_creator_vault_ata",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "account",
+        "path": "pump_creator_vault"
+       },
+       {
+        "kind": "account",
+        "path": "token_program"
+       },
+       {
+        "kind": "account",
+        "path": "quote_mint"
+       }
+      ],
+      "program": {
+       "kind": "account",
+       "path": "associated_token_program"
+      }
+     }
+    },
+    {
+     "name": "system_program",
+     "address": "11111111111111111111111111111111"
+    },
+    {
+     "name": "pump_program",
+     "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P"
+    },
+    {
+     "name": "pump_event_authority",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         95,
+         95,
+         101,
+         118,
+         101,
+         110,
+         116,
+         95,
+         97,
+         117,
+         116,
+         104,
+         111,
+         114,
+         105,
+         116,
+         121
+        ]
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        1,
+        86,
+        224,
+        246,
+        147,
+        102,
+        90,
+        207,
+        68,
+        219,
+        21,
+        104,
+        191,
+        23,
+        91,
+        170,
+        81,
+        137,
+        203,
+        151,
+        245,
+        210,
+        255,
+        59,
+        101,
+        93,
+        43,
+        182,
+        253,
+        109,
+        24,
+        176
+       ]
+      }
+     }
+    },
+    {
+     "name": "pump_amm_program",
+     "address": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+    },
+    {
+     "name": "amm_event_authority",
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         95,
+         95,
+         101,
+         118,
+         101,
+         110,
+         116,
+         95,
+         97,
+         117,
+         116,
+         104,
+         111,
+         114,
+         105,
+         116,
+         121
+        ]
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        12,
+        20,
+        222,
+        252,
+        130,
+        94,
+        198,
+        118,
+        148,
+        37,
+        8,
+        24,
+        187,
+        101,
+        64,
+        101,
+        244,
+        41,
+        141,
+        49,
+        86,
+        213,
+        113,
+        180,
+        212,
+        248,
+        9,
+        12,
+        24,
+        233,
+        168,
+        99
+       ]
+      }
+     }
+    },
+    {
+     "name": "quote_mint"
+    },
+    {
+     "name": "token_program"
+    },
+    {
+     "name": "associated_token_program",
+     "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+    },
+    {
+     "name": "coin_creator_vault_authority",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "const",
+        "value": [
+         99,
+         114,
+         101,
+         97,
+         116,
+         111,
+         114,
+         95,
+         118,
+         97,
+         117,
+         108,
+         116
+        ]
+       },
+       {
+        "kind": "account",
+        "path": "sharing_config"
+       }
+      ],
+      "program": {
+       "kind": "const",
+       "value": [
+        12,
+        20,
+        222,
+        252,
+        130,
+        94,
+        198,
+        118,
+        148,
+        37,
+        8,
+        24,
+        187,
+        101,
+        64,
+        101,
+        244,
+        41,
+        141,
+        49,
+        86,
+        213,
+        113,
+        180,
+        212,
+        248,
+        9,
+        12,
+        24,
+        233,
+        168,
+        99
+       ]
+      }
+     }
+    },
+    {
+     "name": "coin_creator_vault_ata",
+     "writable": true,
+     "pda": {
+      "seeds": [
+       {
+        "kind": "account",
+        "path": "coin_creator_vault_authority"
+       },
+       {
+        "kind": "account",
+        "path": "token_program"
+       },
+       {
+        "kind": "account",
+        "path": "quote_mint"
+       }
+      ],
+      "program": {
+       "kind": "account",
+       "path": "associated_token_program"
+      }
+     }
+    }
+   ],
+   "args": [
+    {
+     "name": "shareholders",
+     "type": {
+      "vec": {
+       "defined": {
+        "name": "Shareholder"
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "accounts": [
+  {
+   "name": "SharingConfig",
+   "discriminator": [
+    216,
+    74,
+    9,
+    0,
+    56,
+    140,
+    93,
+    75
+   ]
+  }
+ ],
+ "types": [
+  {
+   "name": "ConfigStatus",
+   "type": {
+    "kind": "enum",
+    "variants": [
+     {
+      "name": "Paused"
+     },
+     {
+      "name": "Active"
+     }
+    ]
+   }
+  },
+  {
+   "name": "Shareholder",
+   "type": {
+    "kind": "struct",
+    "fields": [
+     {
+      "name": "address",
+      "type": "pubkey"
+     },
+     {
+      "name": "share_bps",
+      "type": "u16"
+     }
+    ]
+   }
+  },
+  {
+   "name": "SharingConfig",
+   "type": {
+    "kind": "struct",
+    "fields": [
+     {
+      "name": "bump",
+      "type": "u8"
+     },
+     {
+      "name": "version",
+      "type": "u8"
+     },
+     {
+      "name": "status",
+      "type": {
+       "defined": {
+        "name": "ConfigStatus"
+       }
+      }
+     },
+     {
+      "name": "mint",
+      "type": "pubkey"
+     },
+     {
+      "name": "admin",
+      "type": "pubkey"
+     },
+     {
+      "name": "admin_revoked",
+      "type": "bool"
+     },
+     {
+      "name": "shareholders",
+      "type": {
+       "vec": {
+        "defined": {
+         "name": "Shareholder"
+        }
+       }
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

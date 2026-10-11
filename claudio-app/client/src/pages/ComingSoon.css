@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap");
+
+.claudio-page {
+  /* v3 editorial: the app's near-black, hairlines, off-white ink and one rose accent. */
+  --night: #0a0b0d;
+  --night-soft: #111317;
+  --blue: #ff6fa5;
+  --blue-light: #ff6fa5;
+  --rose: #ff6fa5;
+  --sage: #3ddc97;
+  --paper: #ece9e2;
+  --line: #23262c;
+  --line-2: #353941;
+  --ink-2: #b4b7bc;
+  --ink-3: #868b92;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  padding: clamp(18px, 4vw, 54px);
+  color: var(--paper);
+  background: var(--night);
+  font-family: "DM Sans", sans-serif;
+}
+
+.claudio-page *,
+.claudio-page *::before,
+.claudio-page *::after {
+  box-sizing: border-box;
+}
+
+.claudio-atmosphere {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.claudio-haze {
+  display: none;
+  position: absolute;
+  width: min(72vw, 970px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: .16;
+  will-change: transform, opacity;
+}
+
+.claudio-haze-blue {
+  top: -42%;
+  left: -14%;
+  background: radial-gradient(circle, rgba(61, 117, 218, .9), rgba(61, 117, 218, 0) 69%);
+  animation: claudio-drift-blue 23s ease-in-out infinite alternate;
+}
+
+.claudio-haze-rose {
+  right: -25%;
+  bottom: -57%;
+  background: radial-gradient(circle, rgba(186, 93, 93, .75), rgba(186, 93, 93, 0) 70%);
+  animation: claudio-drift-rose 29s ease-in-out infinite alternate;
+}
+
+.claudio-haze-green {
+  top: 18%;
+  right: -41%;
+  width: min(58vw, 750px);
+  background: radial-gradient(circle, rgba(133, 162, 101, .62), rgba(133, 162, 101, 0) 68%);
+  animation: claudio-drift-green 26s ease-in-out infinite alternate;
+}
+
+.claudio-signal-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+}
+
+.claudio-signal-orbit {
+  stroke: rgba(236, 233, 226, .12);
+  stroke-width: 1;
+  stroke-dasharray: 2 9;
+  transform-origin: center;
+  animation: claudio-orbit-drift 52s linear infinite;
+}
+
+.claudio-signal-points {
+  fill: var(--rose);
+  opacity: .5;
+  animation: claudio-signal-breathe 8s ease-in-out infinite alternate;
+}
+
+.claudio-stage {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+  width: min(100%, 1190px);
+  min-height: min(700px, calc(100dvh - 88px));
+  border: 1px solid var(--line);
+  background: rgba(13, 14, 17, .92);
+  animation: claudio-arrive 1000ms cubic-bezier(.2,.72,.23,1) both;
+}
+
+.claudio-portrait {
+  position: relative;
+  min-height: 590px;
+  overflow: hidden;
+  background: #4778c4;
+  border-right: 1px solid var(--line);
+}
+
+.claudio-portrait::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(10, 11, 13, 0) 55%, rgba(10, 11, 13, .45));
+  pointer-events: none;
+}
+
+.claudio-portrait img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 39%;
+  animation: claudio-portrait-breathe 32s ease-in-out infinite alternate;
+}
+
+.claudio-photo-glint {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  inset: -45% auto -45% -75%;
+  width: 38%;
+  opacity: 0;
+  transform: skewX(-20deg);
+  background: linear-gradient(90deg, transparent, rgba(227, 235, 255, .14), transparent);
+  animation: claudio-glint 16s ease-in-out 2s infinite;
+  pointer-events: none;
+}
+
+.claudio-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(34px, 5.2vw, 76px);
+}
+
+.claudio-brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.6vw, 20px);
+  margin: 0 0 clamp(32px, 6vh, 62px);
+  padding-bottom: clamp(20px, 3.4vh, 30px);
+  border-bottom: 1px solid var(--line);
+}
+
+.claudio-mark {
+  flex: 0 0 auto;
+  width: clamp(44px, 4.4vw, 58px);
+  height: clamp(44px, 4.4vw, 58px);
+  border-radius: 3px;
+  object-fit: cover;
+  background: #4d86e8;
+}
+
+.claudio-wordmark {
+  color: var(--paper);
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-size: clamp(40px, 4.6vw, 64px);
+  font-weight: 700;
+  line-height: .9;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.claudio-hint {
+  margin: 0 0 19px;
+  color: var(--ink-3);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.claudio-hint span {
+  margin: 0 8px;
+  color: var(--rose);
+}
+
+.claudio-tease {
+  margin: 23px 0 0;
+  color: var(--ink-2);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.claudio-title {
+  margin: 0;
+  color: var(--paper);
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-size: clamp(64px, 9vw, 148px);
+  font-weight: 800;
+  letter-spacing: -.01em;
+  line-height: .86;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.claudio-title em {
+  color: var(--rose);
+  font-style: normal;
+}
+
+.claudio-ca {
+  margin-top: clamp(24px, 3vh, 32px);
+}
+
+.claudio-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.claudio-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 90px;
+  min-height: 44px;
+  padding: 9px 15px;
+  border: 1px solid var(--line-2);
+  border-radius: 3px;
+  color: var(--paper);
+  background: transparent;
+  font-family: "DM Mono", monospace;
+  font-size: 11.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: border-color 220ms ease, background-color 220ms ease;
+}
+
+.claudio-socials a:hover {
+  border-color: var(--ink-3);
+  background: var(--night-soft);
+}
+
+.claudio-socials img {
+  display: block;
+  object-fit: contain;
+}
+
+.claudio-ca-label span {
+  margin: 0 4px;
+  color: var(--rose);
+}
+
+.claudio-ca-label {
+  margin: 0 0 10px;
+  color: var(--ink-3);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.claudio-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 58px;
+  padding: 10px 11px 10px 15px;
+  border: 1px solid var(--line-2);
+  border-radius: 3px;
+  color: var(--paper);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+
+.claudio-copy:hover {
+  border-color: var(--ink-3);
+  background: var(--night-soft);
+}
+
+.claudio-copy:active {
+  transform: scale(.99);
+}
+
+.claudio-address {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--paper);
+  font-family: "DM Mono", monospace;
+  font-size: clamp(10px, .92vw, 12px);
+  line-height: 1.6;
+}
+
+.claudio-copy-icon {
+  display: grid;
+  flex: 0 0 36px;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line-2);
+  border-radius: 2px;
+  color: var(--paper);
+  background: transparent;
+  transition: color 220ms ease, background-color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+
+.claudio-copy:hover .claudio-copy-icon {
+  border-color: var(--rose);
+  color: var(--rose);
+}
+
+.claudio-copy-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.claudio-feedback {
+  min-height: 18px;
+  margin: 9px 0 0;
+  color: var(--ink-2);
+  font-size: 12px;
+}
+
+.claudio-feedback[data-state="success"] {
+  color: #3ddc97;
+}
+
+.claudio-feedback[data-state="error"] {
+  color: #ff5a52;
+}
+
+.claudio-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 14px;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.claudio-legal a {
+  color: var(--ink-3);
+  text-decoration: none;
+}
+
+.claudio-legal a:hover {
+  color: var(--paper);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.claudio-page button:focus-visible,
+.claudio-legal a:focus-visible,
+.claudio-socials a:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 4px;
+}
+
+@keyframes claudio-arrive {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes claudio-color-cycle {
+  0% { background-color: #11192d; }
+  38% { background-color: #24172d; }
+  72% { background-color: #142b30; }
+  100% { background-color: #19213b; }
+}
+
+@keyframes claudio-text-shift {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+@keyframes claudio-drift-blue {
+  from { opacity: .13; transform: translate3d(0, 0, 0) scale(.92); }
+  to { opacity: .26; transform: translate3d(14%, 9%, 0) scale(1.08); }
+}
+
+@keyframes claudio-drift-rose {
+  from { opacity: .1; transform: translate3d(0, 0, 0) scale(1.08); }
+  to { opacity: .23; transform: translate3d(-13%, -12%, 0) scale(.94); }
+}
+
+@keyframes claudio-drift-green {
+  from { opacity: .06; transform: translate3d(0, 0, 0) scale(.9); }
+  to { opacity: .18; transform: translate3d(-12%, 10%, 0) scale(1.12); }
+}
+
+@keyframes claudio-orbit-drift {
+  from { transform: rotate(-4deg) scale(1); }
+  to { transform: rotate(4deg) scale(1.03); }
+}
+
+@keyframes claudio-signal-breathe {
+  from { opacity: .25; }
+  to { opacity: .72; }
+}
+
+@keyframes claudio-portrait-breathe {
+  from { transform: scale(1.015); }
+  to { transform: scale(1.065); }
+}
+
+@keyframes claudio-glint {
+  0%, 24% { opacity: 0; transform: translateX(0) skewX(-20deg); }
+  34% { opacity: .65; }
+  48%, 100% { opacity: 0; transform: translateX(390%) skewX(-20deg); }
+}
+
+@media (min-width: 1500px) {
+  .claudio-stage { min-height: min(760px, calc(100dvh - 112px)); }
+}
+
+@media (max-width: 760px) {
+  .claudio-page {
+    display: block;
+    overflow: auto;
+    padding: 14px;
+  }
+
+  .claudio-haze {
+    width: 110vw;
+    filter: blur(70px);
+  }
+
+  .claudio-haze-blue { top: -28%; left: -50%; }
+  .claudio-haze-rose { right: -58%; bottom: -24%; }
+  .claudio-haze-green { top: 36%; right: -72%; width: 94vw; }
+
+  .claudio-signal-field {
+    width: 180%;
+    height: 100%;
+    left: -37%;
+    opacity: .31;
+  }
+
+  .claudio-stage {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100dvh - 28px);
+  }
+
+  .claudio-portrait {
+    display: none;
+  }
+
+  .claudio-portrait img { object-position: center 38%; }
+
+  .claudio-side {
+    flex: 1;
+    justify-content: center;
+    padding: clamp(23px, 6vw, 38px);
+  }
+
+  .claudio-brand {
+    margin-bottom: clamp(23px, 4.5vh, 38px);
+    padding-bottom: 18px;
+  }
+
+  .claudio-wordmark { font-size: clamp(34px, 10vw, 46px); }
+
+  .claudio-title {
+    font-size: clamp(64px, 18vw, 96px);
+  }
+
+  .claudio-ca {
+    margin-top: 24px;
+  }
+
+  /* Two even lines on phones: no stray last character on its own row. */
+  .claudio-address {
+    font-size: 12.5px;
+    line-height: 1.55;
+    letter-spacing: .02em;
+    white-space: normal;
+  }
+
+  .claudio-address > span { display: block; }
+  .claudio-address > wbr { display: none; }
+}
+
+@media (max-width: 390px) {
+  .claudio-page { padding: 9px; }
+  .claudio-stage { min-height: calc(100dvh - 18px); }
+  .claudio-side { padding: 20px; }
+  .claudio-title { font-size: clamp(60px, 18vw, 76px); }
+  .claudio-copy { gap: 8px; padding-left: 10px; }
+  .claudio-address { font-size: 11.5px; letter-spacing: 0; }
+  .claudio-wordmark { letter-spacing: .1em; }
+}
+
+@media (max-width: 330px) {
+  .claudio-address { font-size: 10.5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .claudio-page,
+  .claudio-title em,
+  .claudio-stage,
+  .claudio-haze,
+  .claudio-signal-orbit,
+  .claudio-signal-points,
+  .claudio-portrait img,
+  .claudio-photo-glint {
+    animation: none !important;
+  }
+
+  .claudio-photo-glint { display: none; }
+  .claudio-copy,
+  .claudio-copy-icon { transition: none; }
+  .claudio-copy:active { transform: none; }
+}

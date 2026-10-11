@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "claudio": {
+      "command": "npx",
+      "args": ["-y", "@useclaudio/mcp", "--server", "data"],
+      "env": { "CLAUDIO_MCP_READ_ONLY": "true" }
+    }
+  }
+}
