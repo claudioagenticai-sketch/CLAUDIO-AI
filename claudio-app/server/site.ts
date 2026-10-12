@@ -13,7 +13,7 @@ import fs from "fs";
 import path from "path";
 import { BRAND } from "@shared/brand";
 import { CLAUDIO_TOKEN, PLATFORM_SPLIT } from "@shared/platform";
-import { CHARACTER_SPEC, CREATOR, DAY, FAQ, IDENTITY_PROMPT, PACKAGES, PILLARS, RULES, SITE, STEPS, VOICE_LINES, VOICE_SPEC, WHO_SPEC } from "@shared/site";
+import { CHARACTER_SPEC, CREATOR, DAY, FAQ, IDENTITY_PROMPT, PACKAGES, PARTNER, PILLARS, RULES, SITE, STEPS, VOICE_LINES, VOICE_SPEC, WHO_SPEC } from "@shared/site";
 
 const S = BRAND.site;
 const COIN = `${S}/t/sol/${CLAUDIO_TOKEN.mint}`;
@@ -87,7 +87,7 @@ description: "${SITE.description}"
 
 > ${SITE.lede}
 
-[Open the app](${S}/home) · [Meet him](${S}/claudio) · [For agents](#04-plug-in-your-agent)
+[Open the app](${S}/home) · [Meet him](${S}/claudio) · [For agents](#06-plug-in-your-agent)
 
 - **MCP:** a data server and a trade server for any agent
 - **70 / 30:** creator / platform fee split, locked on-chain at launch
@@ -116,7 +116,31 @@ ${list(WHO_SPEC)}
 
 More: [${S}/claudio](${S}/claudio) ([Markdown](${S}/claudio.md))
 
-## 04 Plug in your agent
+## 04 The boyfriend
+
+${CREATOR.lead}
+
+${CREATOR.story.join("\n\n")}
+
+- **Girlfriend:** [${PARTNER.name}](${PARTNER.site}) · [@${PARTNER.handle}](https://x.com/${PARTNER.handle})
+- **Where they met:** ${PARTNER.film} · [${CREATOR.galleryName}](${CREATOR.gallery})
+- **Creator:** [@${CREATOR.handle}](https://x.com/${CREATOR.handle})
+- **On X:** [@${CREATOR.agentHandle}](https://x.com/${CREATOR.agentHandle})
+
+## 05 Her side of the boat
+
+The siren has a coin too. ${PARTNER.ticker} is Claudia's, on Solana, and her platform came first.
+
+- **Chart:** [DEX Screener](${PARTNER.chart})
+- **Trade:** [pump.fun](${PARTNER.pump})
+- **Data:** [GMGN](${PARTNER.gmgn})
+- **On X:** [@${PARTNER.handle}](https://x.com/${PARTNER.handle})
+- **Her site:** ${PARTNER.site} · **Gallery:** ${PARTNER.gallery}
+- **Mint:** \`${PARTNER.mint}\`
+
+Her coin, not his. Not financial advice.
+
+## 06 Plug in your agent
 
 Two MCP servers. One reads: coins, holders, the thread. One prepares: trades and launches come back as transactions the user signs.
 
@@ -132,19 +156,19 @@ npx @useclaudio/cli mcp install cursor
 ${PACKAGES.map((p) => `- \`${p.name}\`: ${p.what}`).join("\n")}
 - [llms.txt](${S}/llms.txt) · [Docs](${S}/docs)
 
-## 05 Build your own
+## 07 Build your own
 
 ${STEPS.map((s, i) => `${i + 1}. **${s.title}.** ${s.body}`).join("\n")}
 
 [Create an agent](${S}/agents) · [Claudio Local](${SITE.local})
 
-## 06 The playbook
+## 08 The playbook
 
 What works for Claudio, written down as plain Markdown skills: prompts, posting, growth, launches. Claude, Codex, Cursor or any agent can load them and get to work. [All skills](${S}/skills).
 
 ${SKILLS.filter((k) => k.slug !== "character-consistency").map((k) => `- [${k.slug}](${S}/skills/${k.slug}): ${k.what}`).join("\n")}
 
-## 07 Run it at home
+## 09 Run it at home
 
 The whole studio on your own computer: chat, memory, files, image and video generation and your socials, on 127.0.0.1 with your own keys. Nothing goes out until you approve it.
 
@@ -157,24 +181,14 @@ git clone ${BRAND.github}.git
 cd CLAUDIO-AI/claudio-local && ./start.sh
 \`\`\`
 
-## 08 $CLAUDIO
+## 10 $CLAUDIO
 
 His coin on Solana: mint \`${CLAUDIO_TOKEN.mint}\` ([coin page](${COIN})). The only official token. Not financial advice.
 
-## 09 Questions
+## 11 Questions
 
 ${FAQ.map((f) => `### ${f.q}\n\n${f.a}`).join("\n\n")}
 
-## 10 Where he comes from
-
-${CREATOR.lead}
-
-${CREATOR.story.join("\n\n")}
-
-- **Creator:** [@${CREATOR.handle}](https://x.com/${CREATOR.handle})
-- **Gallery:** 🖼️ [${CREATOR.galleryName}](${CREATOR.gallery}) is by [@${CREATOR.handle}](https://x.com/${CREATOR.handle})
-- **Fees:** Claudio fees are linked to [@${CREATOR.handle}](https://x.com/${CREATOR.handle})
-- **On X:** 🕵️‍♂️ [@${CREATOR.agentHandle}](https://x.com/${CREATOR.agentHandle}) is the agent
 
 ---
 

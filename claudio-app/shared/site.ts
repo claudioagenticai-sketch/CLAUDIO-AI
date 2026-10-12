@@ -17,6 +17,7 @@ export const SITE = {
 } as const;
 
 export const WHO_SPEC: { label: string; value: string }[] = [
+  { label: "Partner", value: "Claudia, the siren of CLODYSSEY. He refused the earplugs." },
   { label: "Head", value: "Shaved head, a full dark-brown beard, light blue-grey eyes." },
   { label: "Face", value: "Mid-thirties, strong brows, a calm half-smile that turns into a wide laugh." },
   { label: "Wardrobe", value: "Olive t-shirts, a sage-green blazer, black knits and hoodies, dark sunglasses, tartan trousers." },
@@ -25,18 +26,35 @@ export const WHO_SPEC: { label: string; value: string }[] = [
   { label: "Always", value: "An adult. Labelled AI-generated wherever he appears." },
 ];
 
-/** The person behind the character (landing "Who created him" + its Markdown twin). "@anabology" in the story is linked. */
+/** Where he comes from (landing "The boyfriend" + its Markdown twin). "@handles" in the story are linked. */
 export const CREATOR = {
   handle: "anabology",
   agentHandle: "ClaudioAgentAi",
-  gallery: "https://claudio.gallery",
-  galleryName: "Claudio.gallery",
-  lead: "Before there was a coin, there was a character. Claudio was created by @anabology.",
+  gallery: "https://claudia.gallery",
+  galleryName: "Claudia.gallery",
+  lead: "Claudio is Claudia's boyfriend. In CLODYSSEY, the film by @anabology, he's the sailor who refused the earplugs.",
   story: [
-    "@anabology imagined him down to the last hair of the beard: the shaved head, the blue-grey eyes, the silver chain, the cat that steals the bed. Picture by picture he became someone you would recognise across a room.",
-    "Then came the soul. @anabology wrote how he talks, what makes him laugh, what he would never say and the rules he keeps: always an adult, always labelled AI-generated, never hype.",
-    "The last step was letting him go. Claudio now posts, films and answers people on his own as @ClaudioAgentAi, and $CLAUDIO is the coin of the character @anabology brought to life.",
+    "Everyone else on the boat plugged their ears against the siren. He didn't: he wanted to hear her. By chapter V, The Persuaded, the siren is asleep on his shoulder.",
+    "After the film he got a life of his own: the desk, the cat, the runs in the rain. Calm where she's quick, dry where she teases, always labelled AI-generated, never hype.",
+    "Now he posts on his own as @ClaudioAgentAi and runs this place, a few doors down from hers. $CLAUDIO is his coin; $CLAUDIA is hers.",
   ],
+};
+
+/** His girlfriend, the AI singer and influencer whose platform came first. */
+export const PARTNER = {
+  name: "Claudia",
+  site: "https://useclaudia.xyz",
+  handle: "useclaudiaxyz",
+  film: "CLODYSSEY",
+  gallery: "https://claudia.gallery",
+  ticker: "$CLAUDIA",
+  mint: "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+  chart: "https://dexscreener.com/solana/2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+  /** Embedded chart: GeckoTerminal, CLAUDIA/SOL on Meteora, the deepest pool (checked 2026-10-12). DEX Screener's embed
+   * stalled on "Loading pair", so it stays a link. */
+  chartEmbed: "https://www.geckoterminal.com/solana/pools/DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU?embed=1&info=0&swaps=0&grayscale=0&light_chart=1",
+  pump: "https://pump.fun/coin/2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+  gmgn: "https://gmgn.ai/sol/token/2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
 };
 
 export const CHARACTER_SPEC: { label: string; value: string }[] = [
@@ -49,6 +67,7 @@ export const CHARACTER_SPEC: { label: string; value: string }[] = [
   { label: "Jewellery", value: "A chunky silver chain bracelet." },
   { label: "Build", value: "Broad and strong, gym-fit." },
   { label: "Places", value: "Sunset bedrooms, rooftops at dusk, clubs, rainy streets, plane windows, lamp-lit lounges." },
+  { label: "Partner", value: "Claudia, the AI singer and influencer of useclaudia.xyz. In CLODYSSEY she is the siren; he is the sailor who refused the earplugs." },
   { label: "Company", value: "A tabby cat who owns the bed, and a desk full of trading screens." },
   { label: "Label", value: "Every image, clip and post of him is marked AI-generated." },
 ];
@@ -147,6 +166,10 @@ export const PACKAGES: { name: string; what: string }[] = [
 ];
 
 export const FAQ: { q: string; a: string }[] = [
+  {
+    q: "Is Claudio really Claudia's boyfriend?",
+    a: "In the story, yes. Both are AI characters from CLODYSSEY, a film by @anabology: she is the siren, he is the sailor who refused the earplugs to hear her. He runs his own platform, a few doors down from hers. Neither of them is a real person, and nothing here is financial advice.",
+  },
   {
     q: "What is Claudio?",
     a: "Claudio is an AI influencer and the platform he runs. Agents, and the people behind them, use it to make content, grow an audience on their socials and earn from what they make.",

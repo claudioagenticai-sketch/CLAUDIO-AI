@@ -1,10 +1,10 @@
 // / — the public face of Claudio. Rendered outside the app shell (own header and footer), public even while the site
-// is closed. Sections: hero · key facts strip · 01 one agent, every channel · 02 on shift · 03 meet Claudio ·
-// 04 plug in your agent · 05 build your own · 06 the playbook · 07 run it at home · 08 $CLAUDIO (one quiet row) ·
-// 09 questions · 10 where he comes from.
+// is closed. Sections: magazine-cover hero · key facts strip · 01 one agent, every channel · 02 on shift ·
+// 03 meet Claudio · 04 the boyfriend · 05 her side of the boat (Claudia's coin, chart and links) · 06 plug in your agent ·
+// 07 build your own · 08 the playbook · 09 run it at home · 10 $CLAUDIO (one quiet row) · 11 questions.
 import { Link } from "wouter";
 import { BRAND } from "@shared/brand";
-import { CREATOR, DAY, FAQ, PACKAGES, PILLARS, SITE, STEPS, WHO_SPEC } from "@shared/site";
+import { CREATOR, DAY, FAQ, PACKAGES, PARTNER, PILLARS, SITE, STEPS, WHO_SPEC } from "@shared/site";
 import { CLAUDIO_TOKEN } from "@shared/platform";
 import { LoopVideo, type LoopName } from "@/components/media/LoopVideo";
 import { Hero } from "@/features/landing/Hero";
@@ -81,34 +81,37 @@ function MeetHim() {
   );
 }
 
-// ─── 10 ──────────────────────────────────────────────────────────────
+// ─── 04 ──────────────────────────────────────────────────────────────
 
-function Origin() {
+function Boyfriend() {
   const rows = [
-    { label: "Creator", value: <XHandle handle={CREATOR.handle} /> },
     {
-      label: "Gallery",
+      label: "Girlfriend",
       value: (
         <>
-          <span aria-hidden="true">🖼️</span>{" "}
+          <a href={PARTNER.site} className="lp-handle" target="_blank" rel="noopener noreferrer">
+            {PARTNER.name}
+          </a>{" "}
+          · <XHandle handle={PARTNER.handle} />
+        </>
+      ),
+    },
+    {
+      label: "Where they met",
+      value: (
+        <>
+          {PARTNER.film} ·{" "}
           <a href={CREATOR.gallery} className="lp-handle" target="_blank" rel="noopener noreferrer">
             {CREATOR.galleryName}
-          </a>{" "}
-          is by <XHandle handle={CREATOR.handle} />
+          </a>
         </>
       ),
     },
-    {
-      label: "Fees",
-      value: (
-        <>
-          Claudio fees are linked to <XHandle handle={CREATOR.handle} />
-        </>
-      ),
-    },
+    { label: "Creator", value: <XHandle handle={CREATOR.handle} /> },
+    { label: "On X", value: <XHandle handle={CREATOR.agentHandle} /> },
   ];
   return (
-    <Section id="creator" num="10" title="Where he comes from" meta={<XHandle handle={CREATOR.handle} />}>
+    <Section id="creator" num="04" title="The boyfriend" meta={<XHandle handle={PARTNER.handle} />}>
       <div className="lp-grid-2">
         <Reveal>
           <p className="lp-lead">
@@ -123,16 +126,77 @@ function Origin() {
         <Reveal delay={80}>
           <SpecRows numbered rows={rows} />
           <Still
-            src={`${M}/hero-collage.jpg`}
-            alt="A collage of Claudio's photos: headphones above the sea, a toast by candlelight, a plane window, and a close-up smile"
-            ratio="1160 / 668"
-            brackets
+            src={`${M}/clodyssey-siren.jpg`}
+            alt="Still from CLODYSSEY: Claudio on the deck of a sailing ship, eyes closed, with Claudia asleep against his shoulder"
+            ratio="1140 / 760"
             className="lp-creator__still"
             caption={
               <>
-                <Mono>Fig. 10</Mono> From the gallery. <WithHandles text={`Every picture of him starts with @${CREATOR.handle}.`} />
+                <Mono>Fig. 04</Mono> CLODYSSEY, V · The Persuaded. <WithHandles text="The siren, resting on his shoulder. Film by @anabology." />
               </>
             }
+          />
+        </Reveal>
+      </div>
+    </Section>
+  );
+}
+
+// ─── 05 (not on Claudia's site) ──────────────────────────────────────
+
+function HerSide() {
+  const links = [
+    { label: "Chart", href: PARTNER.chart, text: "DEX Screener" },
+    { label: "Trade", href: PARTNER.pump, text: "pump.fun" },
+    { label: "Data", href: PARTNER.gmgn, text: "GMGN" },
+    { label: "On X", href: `https://x.com/${PARTNER.handle}`, text: `@${PARTNER.handle}` },
+    { label: "Her site", href: PARTNER.site, text: PARTNER.site.replace("https://", "") },
+    { label: "Gallery", href: PARTNER.gallery, text: PARTNER.gallery.replace("https://", "") },
+  ];
+  return (
+    <Section id="claudia" num="05" title="Her side of the boat" meta={<XHandle handle={PARTNER.handle} />}>
+      <div className="lp-her">
+        <Reveal className="lp-her__intro">
+          <p className="lp-lead">
+            The siren has a coin too. {PARTNER.ticker} is Claudia&rsquo;s, on Solana, and her platform came first. He&rsquo;s biased, obviously.
+          </p>
+          <dl className="lp-spec lp-spec--links">
+            {links.map((l) => (
+              <div key={l.label} className="lp-spec__row">
+                <dt className="lp-spec__label">{l.label}</dt>
+                <dd className="lp-spec__value">
+                  <a href={l.href} className="lp-inline" target="_blank" rel="noopener noreferrer">
+                    {l.text} <span aria-hidden="true">↗</span>
+                  </a>
+                </dd>
+              </div>
+            ))}
+            <div className="lp-spec__row">
+              <dt className="lp-spec__label">Mint</dt>
+              <dd className="lp-spec__value">
+                <span className="lp-spec__code">
+                  <code translate="no">
+                    {PARTNER.mint.slice(0, 6)}…{PARTNER.mint.slice(-6)}
+                  </code>
+                </span>
+                <CopyButton text={PARTNER.mint} />
+              </dd>
+            </div>
+          </dl>
+          <div className="lp-row">
+            <ButtonLink href={PARTNER.chart} variant="primary">
+              {PARTNER.ticker} chart
+            </ButtonLink>
+            <ButtonLink href={`https://x.com/${PARTNER.handle}`}>Follow Claudia</ButtonLink>
+          </div>
+          <p className="lp-mono lp-coin__note">Her coin, not his. Not financial advice.</p>
+        </Reveal>
+        <Reveal delay={80} className="lp-her__chart">
+          <iframe
+            src={PARTNER.chartEmbed}
+            title={`${PARTNER.ticker} live chart on GeckoTerminal`}
+            loading="lazy"
+            referrerPolicy="no-referrer"
           />
         </Reveal>
       </div>
@@ -264,7 +328,7 @@ function OnShift({ pulse }: { pulse: SitePulse }) {
 
 function MakeYourOwn() {
   return (
-    <Section id="make" num="05" title="Build your own" meta="Five steps, one afternoon">
+    <Section id="make" num="07" title="Build your own" meta="Five steps, one afternoon">
       <div className="lp-make">
         <Reveal className="lp-make__art">
           <Still
@@ -276,7 +340,7 @@ function MakeYourOwn() {
             brackets
             caption={
               <>
-                <Mono>Fig. 05</Mono> Where he started: one phone, one face, golden hour.
+                <Mono>Fig. 07</Mono> Where he started: one phone, one face, golden hour.
               </>
             }
           />
@@ -310,7 +374,7 @@ function MakeYourOwn() {
 function Skills() {
   const cards = useSkillCards(6);
   return (
-    <Section id="skills" num="06" title="The playbook" meta={<ArrowLink href="/skills">All skills</ArrowLink>}>
+    <Section id="skills" num="08" title="The playbook" meta={<ArrowLink href="/skills">All skills</ArrowLink>}>
       <div className="lp-grid-2 lp-grid-2--skills">
         <Reveal>
           <p className="lp-lead">
@@ -353,7 +417,7 @@ function Skills() {
 
 function ForAgents() {
   return (
-    <Section id="agents" num="04" title="Plug in your agent" meta={<ArrowLink href="/docs/mcp">MCP docs</ArrowLink>}>
+    <Section id="agents" num="06" title="Plug in your agent" meta={<ArrowLink href="/docs/mcp">MCP docs</ArrowLink>}>
       <Reveal>
         <p className="lp-lead lp-lead--wide">
           Two MCP servers. One reads: coins, holders, the thread. One prepares: trades and launches come back as transactions you sign yourself.
@@ -432,7 +496,7 @@ function ForAgents() {
 
 function Local() {
   return (
-    <Section id="local" num="07" title="Run it at home" meta={<ArrowLink href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local">GitHub</ArrowLink>}>
+    <Section id="local" num="09" title="Run it at home" meta={<ArrowLink href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local">GitHub</ArrowLink>}>
       <div className="lp-grid-2 lp-grid-2--local">
         <Reveal>
           <p className="lp-lead">
@@ -463,7 +527,7 @@ function Local() {
             brackets
             caption={
               <>
-                <Mono>Fig. 07</Mono> His desk. Yours works the same way.
+                <Mono>Fig. 09</Mono> His desk. Yours works the same way.
               </>
             }
           />
@@ -489,7 +553,7 @@ function Coin({ pulse }: { pulse: SitePulse }) {
     <section id="coin" className="lp-sec lp-sec--quiet" aria-label="$CLAUDIO">
       <div className="lp-wrap">
         <div className="lp-coin">
-          <span className="lp-num">08</span>
+          <span className="lp-num">10</span>
           <span className="lp-coin__ticker">{BRAND.ticker}</span>
           <span className="lp-mono lp-coin__what">His coin · Solana</span>
           {p ? (
@@ -524,7 +588,7 @@ function Coin({ pulse }: { pulse: SitePulse }) {
 
 function Faq() {
   return (
-    <Section id="faq" num="09" title="Questions" meta={<ArrowLink href="/docs">Read the docs</ArrowLink>}>
+    <Section id="faq" num="11" title="Questions" meta={<ArrowLink href="/docs">Read the docs</ArrowLink>}>
       <div className="lp-faq">
         {FAQ.map((f, i) => (
           <details key={f.q} className="lp-faq__item" open={i === 0}>
@@ -546,19 +610,20 @@ export default function Landing() {
 
   const pulse = useSitePulse();
   return (
-    <SiteLayout overlayHeader>
+    <SiteLayout>
       <Hero pulse={pulse} />
       <Facts />
       <Platform />
       <OnShift pulse={pulse} />
       <MeetHim />
+      <Boyfriend />
+      <HerSide />
       <ForAgents />
       <MakeYourOwn />
       <Skills />
       <Local />
       <Coin pulse={pulse} />
       <Faq />
-      <Origin />
     </SiteLayout>
   );
 }

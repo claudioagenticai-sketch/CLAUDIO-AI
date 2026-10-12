@@ -1915,3 +1915,158 @@
     border-top: 1px solid var(--lp-line);
   }
 }
+
+/* ═══ Light edition ═══════════════════════════════════════════════════════════════════════════
+   Warm paper, ink-navy type, cobalt accent (the studio backdrop), clay for the star.
+   Only the public pages (.lp); the app keeps its dark theme. Contrast: ink 15.8:1, ink-2 8.8:1,
+   ink-3 5.2:1, cobalt 6.8:1 on the paper background.
+   ═════════════════════════════════════════════════════════════════════════════════════════════ */
+.lp {
+  --lp-bg: #f4efe7;
+  --lp-bg-2: #efe8dd;
+  --lp-bg-3: #ebe4d8;
+  --lp-panel: #fbf8f3;
+  --lp-panel-2: #f1ebe2;
+  --lp-line: #ddd3c4;
+  --lp-line-2: #c9bca9;
+  --lp-ink: #14161c;
+  --lp-ink-2: #3d4250;
+  --lp-ink-3: #5f6472;
+  --lp-accent: #2648b8;
+  --lp-accent-2: #a24c33;
+  --lp-clay: #c4664a;
+  --lp-up: #0f6e43;
+  --lp-down: #b0342d;
+  color-scheme: light;
+}
+.lp ::selection {
+  background: rgba(38, 72, 184, 0.18);
+}
+.lp-word__star {
+  background: var(--lp-clay);
+}
+.lp-head {
+  background: rgba(244, 239, 231, 0.9);
+  border-bottom-color: var(--lp-line);
+}
+.lp-btn--primary {
+  background: var(--lp-accent);
+  color: #fbf8f3 !important;
+}
+.lp-btn--primary:hover {
+  background: #1e3c9c;
+}
+.lp-btn--secondary {
+  background: transparent;
+  border-color: var(--lp-line-2);
+  color: var(--lp-ink);
+}
+.lp-btn--secondary:hover {
+  border-color: var(--lp-accent);
+  color: var(--lp-accent);
+}
+.lp-faq__item summary:hover {
+  color: var(--lp-accent);
+}
+.lp-still__frame::after {
+  box-shadow: inset 0 0 0 1px rgba(20, 22, 28, 0.08);
+}
+.lp-still__frame {
+  box-shadow: 0 14px 40px rgba(20, 22, 28, 0.12);
+}
+.lp-facts {
+  background: linear-gradient(180deg, rgba(38, 72, 184, 0.06), rgba(38, 72, 184, 0));
+}
+
+/* magazine-cover hero */
+.lp-cover-hero {
+  padding: clamp(28px, 5vw, 76px) 0 clamp(48px, 6vw, 96px);
+  background:
+    radial-gradient(ellipse at 88% 8%, rgba(38, 72, 184, 0.12), transparent 55%),
+    radial-gradient(ellipse at 8% 92%, rgba(196, 102, 74, 0.1), transparent 50%),
+    var(--lp-bg);
+}
+.lp-cover-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(28px, 4.5vw, 80px);
+  align-items: center;
+}
+.lp-cover-hero .lp-hero__lede {
+  color: var(--lp-ink-2);
+  max-width: 36ch;
+}
+.lp-mosaic {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 28px;
+}
+.lp-mosaic__tile {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--lp-panel-2);
+  box-shadow: 0 18px 50px rgba(20, 22, 28, 0.18);
+}
+.lp-mosaic__tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lp-mosaic__tile--a {
+  grid-row: 1 / 3;
+}
+.lp-mosaic__tile--a img {
+  object-position: 50% 20%;
+}
+.lp-mosaic__stamp {
+  position: absolute;
+  left: 2px;
+  bottom: -28px;
+  margin: 0;
+}
+@media (max-width: 819px) {
+  .lp-cover-hero__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .lp-mosaic {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* 05 — Claudia's coin, chart and links */
+.lp-her {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: clamp(24px, 3.5vw, 56px);
+  align-items: start;
+}
+.lp-her__intro .lp-row {
+  margin-top: 22px;
+}
+.lp-her__chart {
+  overflow: hidden;
+  border: 1px solid var(--lp-line);
+  border-radius: 18px;
+  background: var(--lp-panel);
+  box-shadow: 0 14px 40px rgba(20, 22, 28, 0.1);
+}
+.lp-her__chart iframe {
+  display: block;
+  width: 100%;
+  height: clamp(380px, 42vw, 520px);
+  border: 0;
+}
+@media (max-width: 1023px) {
+  .lp-her {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.lp-foot {
+  background: var(--lp-bg-3);
+}
