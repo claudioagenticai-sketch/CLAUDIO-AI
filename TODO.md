@@ -4,20 +4,18 @@ What's left to finish Claudio, most important first.
 
 ## Before going live (required)
 
-1. **Token**: in `claudio-app/shared/platform.ts`, `CLAUDIO_TOKEN.mint` still points at the $CLAUDIA mint, which the site now shows as $CLAUDIO.
-   Replace it with the $CLAUDIO mint once the coin exists.
-2. **Creator**: `claudio-app/shared/site.ts` (`CREATOR`) credits @anabology. Keep it or change it to the new creator's handle.
-3. **Domain**: links point to `useclaudio.xyz` and `claudio.gallery`, which are placeholders. Set the real domain.
+1. **Creator**: `claudio-app/shared/site.ts` (`CREATOR`) credits @anabology. Keep it or change it to the new creator's handle.
+2. **Domain**: links point to `useclaudio.xyz` and `claudio.gallery`, which are placeholders. Set the real domain.
 
 ## To match Claudia fully
 
-4. **Video loops**: the four home-page loops (room, club, lounge, rain) are still images.
+3. **Video loops**: the four home-page loops (room, club, lounge, rain) are still images.
    The `.mp4` files belong in `claudio-app/client/public/claudio/media/` as `<name>.mp4` (9:16) and `<name>-sq.mp4` (1:1).
    The posters are already in place, and `claudio-character-bible/references/owner-reference-set.md` describes each loop's framing and beats.
 
 ## Hosting
 
-5. **Full app**: Netlify (`netlify.toml`) serves only the public pages as a static site. Trading, agents, launches and the
+4. **Full app**: Netlify (`netlify.toml`) serves only the public pages as a static site. Trading, agents, launches and the
    fee collector need the Node server (`npm run build` + `npm start` in `claudio-app/`) on a Node host with Postgres
    (Render, Railway, Fly.io, Replit) and the keys listed in `claudio-app/.env.example`.
 
@@ -32,6 +30,7 @@ What's left to finish Claudio, most important first.
 - GitHub: [claudioagenticai-sketch/CLAUDIO-AI](https://github.com/claudioagenticai-sketch/CLAUDIO-AI); every repo link points there.
 - Platform fee wallet: `PLATFORM_FEE_WALLET_SOL` = `4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P` (receives the platform's 30% of creator fees
   on every coin launched through Claudio). Also in `.env.example` (`PLATFORM_TREASURY_SOL`), `docs/FEES.md`, the README and the skills.
+- $CLAUDIO: mint `HUxjePJf73hCXqUW97TxHYgV3pBYeivF5uYKeMXYRnai` (Token-2022, 6 decimals), in `claudio-app/shared/platform.ts`.
 - `claudio-local` installs, builds and starts. Its `.npmrc` sets `install-links=true` so the local `packages/` install with their dependencies.
 
 ## Images

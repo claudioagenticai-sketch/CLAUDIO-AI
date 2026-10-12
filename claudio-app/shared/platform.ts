@@ -12,7 +12,7 @@ export const PLATFORM_FEE_WALLET_SOL = "4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW
 export const CLAUDIO_TOKEN = {
   key: "claudio",
   chain: "sol" as ChainId,
-  mint: "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+  mint: "HUxjePJf73hCXqUW97TxHYgV3pBYeivF5uYKeMXYRnai",
   symbol: "CLAUDIO",
   name: "Claudio",
   decimals: 6,
