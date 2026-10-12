@@ -5,8 +5,8 @@
   "repo": "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-skills",
   "all": {
     "zip": "/skills/claudio-skills-all.zip",
-    "bytes": 1289972,
-    "sha256": "99201c9919de2ea1734e6aee6725aba49b2fd1a69d14971b2e41e476dfbf21e8"
+    "bytes": 1289889,
+    "sha256": "5cc5bb1942a232e22da695c7199b47e45656da6f565a79533a279adca9d682b4"
   },
   "categories": [
     {
@@ -2479,9 +2479,9 @@
         "templates/explain-claudio.md",
         "templates/surface-picker.yaml"
       ],
-      "size": 39484,
-      "bytes": 19683,
-      "sha256": "dd946503cee3fb2bf9876764a323b51820be513f43415889179ed6549a3cecd5",
+      "size": 39308,
+      "bytes": 19658,
+      "sha256": "5945dc18a7adeded08dbf8c383de190ad6ede75278f9c7f4d6d10035aed1f985",
       "path": "skills/build/claudio-platform-overview",
       "zip": "/skills/claudio-platform-overview.zip",
       "related": [
@@ -2717,9 +2717,9 @@
         "templates/launch-brief.yaml",
         "templates/launch-checklist.md"
       ],
-      "size": 32875,
-      "bytes": 16896,
-      "sha256": "b0897fd213f70a4b4ef3fe48de3fdceaf98acc3d1eeeccc0909eb94a09b95aaa",
+      "size": 32579,
+      "bytes": 16838,
+      "sha256": "6177bce3f2f60ff41a4c9c62f6df15cd61a5cba11245892f8dbc733ad55c6fd7",
       "path": "skills/build/launch-a-coin",
       "zip": "/skills/launch-a-coin.zip",
       "related": [

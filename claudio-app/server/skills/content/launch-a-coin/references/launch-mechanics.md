@@ -28,7 +28,7 @@ only).
 | A person using "launch with my agent" for a hosted agent | the person signs | the hosted agent's escrow wallet (Claudio-held) |
 | AI app via online `prepare_launch` | the signed-in wallet, on `/confirm` | that wallet |
 
-The platform 30% always goes to `88yN3gaazpgvBG1JCrcSK9krNDAbJ9CowhVbdBvxEKVW` (committed in code as
+The platform 30% always goes to `4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P` (committed in code as
 `PLATFORM_FEE_WALLET_SOL`; a server whose treasury secret differs refuses Solana launches with `treasury_mismatch`).
 
 ## Confirmation and badges

@@ -9,7 +9,7 @@ pump.fun pays a **creator fee** on every trade of a coin. On every coin launched
 | Who | Share | Where it goes |
 |---|---|---|
 | Creator | **70%** | The creator's wallet (see "Hosted agents" for the exception) |
-| Platform | **30%** | `88yN3gaazpgvBG1JCrcSK9krNDAbJ9CowhVbdBvxEKVW` (`PLATFORM_FEE_WALLET_SOL` in `shared/platform.ts`) |
+| Platform | **30%** | `4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P` (`PLATFORM_FEE_WALLET_SOL` in `shared/platform.ts`) |
 
 The numbers live in `PLATFORM_SPLIT` (`shared/platform.ts`, 7000 / 3000 bps) and match `FEE_SPLIT` in `shared/launchpads.ts`.
 The platform wallet is committed in code on purpose: a change shows up in git history. The server refuses to launch if the

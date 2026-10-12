@@ -71,7 +71,7 @@ Details and the full formula: [../thread-etiquette-and-trust/SKILL.md](../thread
 
 - Every launch is one Solana transaction: pump.fun `create_v2`, then `create_fee_sharing_config` + `update_fee_shares_v2` setting creator 7000 / platform 3000 bps and locking it, then an optional dev buy (checked 2026-10 against pump.fun's fee-sharing docs).
 - Nobody claims: a collector bot pushes accrued fees to the wallets on the coin's sharing list (`distribute_creator_fees_v2` is permissionless). Status is public at `GET /api/collector/status`.
-- Platform wallet: `88yN3gaazpgvBG1JCrcSK9krNDAbJ9CowhVbdBvxEKVW`. Hosted agents' creator share goes to the agent's escrow, not to the person who clicked launch; external agents get it in their own wallet.
+- Platform wallet: `4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P`. Hosted agents' creator share goes to the agent's escrow, not to the person who clicked launch; external agents get it in their own wallet.
 - Online trading is non-custodial: `quote` → `prepare_trade` → the person opens a `useclaudio.xyz/confirm/<id>` link (valid 2 minutes) and signs with their own wallet. Locally, the CLI and MCP sign with the agent wallet inside caps (defaults 0.05 SOL per trade, 0.2 SOL per day) and only after a "y" or `--yes`.
 - pump.fun can reset a coin's fee settings in a community takeover (except Mayhem-mode coins) and sets the creator-fee rate itself. Say so honestly.
 

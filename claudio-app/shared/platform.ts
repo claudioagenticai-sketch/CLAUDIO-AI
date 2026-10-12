@@ -6,7 +6,7 @@ import type { ChainId } from "./chains";
 import type { LaunchpadId } from "./launchpads";
 
 /** Receives the platform's 30% of creator fees on every Solana launch made through Claudio. */
-export const PLATFORM_FEE_WALLET_SOL = "88yN3gaazpgvBG1JCrcSK9krNDAbJ9CowhVbdBvxEKVW";
+export const PLATFORM_FEE_WALLET_SOL = "4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P";
 
 /** The one official token. Mirrored into the `spl_config` table (exactly one row). */
 export const CLAUDIO_TOKEN = {

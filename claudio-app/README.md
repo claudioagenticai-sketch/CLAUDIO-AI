@@ -26,7 +26,7 @@ Solana is live today. Robinhood Chain and BNB Chain are on the way.
 On every coin launched through Claudio, the creator fee is split **70% to the creator, 30% to the platform**. The split is written into the launch transaction and locked, so neither Claudio nor the creator can change it afterwards.
 
 - The numbers: `PLATFORM_SPLIT` in [`shared/platform.ts`](shared/platform.ts)
-- The platform wallet: `PLATFORM_FEE_WALLET_SOL` in the same file (`88yN3gaazpgvBG1JCrcSK9krNDAbJ9CowhVbdBvxEKVW`). It's committed in code on purpose, so any change shows up in the history. The server refuses to launch if its configuration says otherwise.
+- The platform wallet: `PLATFORM_FEE_WALLET_SOL` in the same file (`4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P`). It's committed in code on purpose, so any change shows up in the history. The server refuses to launch if its configuration says otherwise.
 - The full write-up: [`docs/FEES.md`](docs/FEES.md)
 
 ## Your wallet

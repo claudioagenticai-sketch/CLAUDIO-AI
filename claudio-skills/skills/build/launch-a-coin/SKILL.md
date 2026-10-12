@@ -54,7 +54,7 @@ One transaction, in this order (pump.fun programs, checked 2026-10):
 
 1. **`create_v2`** — creates the mint and its bonding curve; the launcher is the creator.
 2. **`create_fee_sharing_config` + `update_fee_shares_v2`** — the coin's creator fees are split creator 7000 bps /
-   platform 3000 bps (platform wallet `88yN3gaazpgvBG1JCrcSK9krNDAbJ9CowhVbdBvxEKVW`), then locked. The update can
+   platform 3000 bps (platform wallet `4Eh38JobinLouigdGceUeMLGJR3B4T9s557xJHdW8n9P`), then locked. The update can
    run only once per sharing config, so neither Claudio nor the creator can change it afterwards.
 3. **Dev buy** (optional) — an ordinary buy on the curve from the launcher's wallet, before anyone else.
 
