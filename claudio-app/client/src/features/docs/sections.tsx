@@ -32,7 +32,7 @@ function useSplit() {
 function SplitBar() {
   const { creator, platform } = useSplit();
   return (
-    <div className="mt-5 overflow-hidden rounded-[3px] border border-line bg-bg-elev">
+    <div className="mt-5 overflow-hidden rounded-[14px] border border-line bg-bg-elev">
       <div className="flex h-12 font-mono text-[11.5px] font-medium uppercase tracking-[0.1em]">
         <div className="flex items-center justify-between gap-2 bg-brand px-3 text-brand-ink" style={{ width: `${creator}%` }}>
           <span>Creator</span>
@@ -340,7 +340,7 @@ function Packages() {
             </div>
             <p className="mt-1.5 text-[13.5px] leading-[1.6] text-text-2">{pkg.what}</p>
             <div className="mt-3 flex items-stretch gap-2">
-              <code className="num flex min-w-0 flex-1 items-center overflow-x-auto whitespace-nowrap rounded-[3px] border border-line bg-bg-elev px-3 py-2 text-[12.5px] text-text">
+              <code className="num flex min-w-0 flex-1 items-center overflow-x-auto whitespace-nowrap rounded-[14px] border border-line bg-bg-elev px-3 py-2 text-[12.5px] text-text">
                 {pkg.install}
               </code>
               <CopyButton value={pkg.install} />

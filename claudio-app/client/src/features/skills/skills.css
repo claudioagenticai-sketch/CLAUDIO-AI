@@ -863,3 +863,38 @@ button.skmd-filelink {
 .skmd-table td:first-child {
   color: var(--text);
 }
+
+/* ═══ Deep-sea edition: rounded, pill controls, sea-green numbers ═══════════════════════════ */
+.sk-num {
+  color: var(--copper);
+}
+.sk-btn,
+.sk-btn-sm,
+.sk-mini,
+.sk-search,
+.sk-tab,
+.sk-chip,
+.sk-tag,
+.sk-install-tab {
+  border-radius: 999px;
+}
+.sk-section-head,
+.sk-spec,
+.sk-install,
+.sk-files,
+.sk-related {
+  border-radius: 18px;
+}
+.sk-row {
+  border-radius: 16px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.sk-row:hover {
+  background: var(--panel);
+}
+.sk-row-title,
+.sk-tab {
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: -0.005em;
+}

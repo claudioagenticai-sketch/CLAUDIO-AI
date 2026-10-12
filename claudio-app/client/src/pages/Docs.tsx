@@ -42,8 +42,8 @@ export default function Docs() {
             data-doc-chip={s.id}
             aria-current={s.id === id ? "page" : undefined}
             className={cn(
-              "inline-flex h-10 shrink-0 items-center rounded-[3px] px-3 font-mono text-[11px] font-medium uppercase tracking-[0.1em] ring-1 ring-inset transition-colors",
-              s.id === id ? "bg-text text-bg ring-text" : "text-text-3 ring-line-2 hover:text-text-2",
+              "doc-pill inline-flex h-10 shrink-0 items-center px-4 font-mono text-[11px] font-medium uppercase tracking-[0.1em] ring-1 ring-inset transition-colors",
+              s.id === id ? "ring-brand" : "text-text-3 ring-line-2 hover:text-text-2",
             )}
           >
             {s.label}
@@ -52,10 +52,10 @@ export default function Docs() {
       </nav>
 
       <div className="grid gap-8 md:grid-cols-[210px_minmax(0,1fr)] lg:grid-cols-[236px_minmax(0,1fr)] lg:gap-12">
-        <aside className="sticky top-8 hidden h-max md:block">
+        <aside className="doc-side sticky top-8 hidden h-max md:block">
           <Link href="/docs" className="mb-4 flex items-center gap-2.5">
             <ClaudioMark size={28} />
-            <span className="font-display text-[22px] font-bold uppercase leading-none tracking-[0.02em] text-text">Docs</span>
+            <span className="font-display text-[26px] italic leading-none text-text">Docs</span>
           </Link>
           <div className="mono-label mb-2 border-t border-line pt-3">On this site</div>
           <ul className="grid">
@@ -67,12 +67,11 @@ export default function Docs() {
                     href={href(s.id)}
                     aria-current={on ? "page" : undefined}
                     className={cn(
-                      "relative flex h-9 items-center gap-3 rounded-[2px] pl-3 pr-2 font-mono text-[11.5px] uppercase tracking-[0.08em] transition-colors",
-                      on ? "bg-panel text-text" : "text-text-3 hover:bg-panel hover:text-text",
+                      "doc-pill relative flex h-9 items-center gap-3 pl-3.5 pr-2 font-mono text-[11.5px] uppercase tracking-[0.08em] transition-colors",
+                      on ? "" : "text-text-3 hover:bg-panel-2 hover:text-text",
                     )}
                   >
-                    {on && <span className="absolute inset-y-1.5 left-0 w-[2px] bg-brand" />}
-                    <span className={cn("num w-5 shrink-0 text-[10.5px]", on ? "text-brand" : "text-text-3")}>{String(i + 1).padStart(2, "0")}</span>
+                    <span className={cn("num w-5 shrink-0 text-[10.5px]", on ? "text-brand" : "text-copper")}>{String(i + 1).padStart(2, "0")}</span>
                     <span className="truncate">{s.label}</span>
                   </Link>
                 </li>
@@ -96,7 +95,7 @@ export default function Docs() {
         </aside>
 
         <article className="min-w-0 max-w-3xl">
-          <header className="border-b border-line pb-6">
+          <header className="doc-head">
             <div className="mono-label flex flex-wrap items-center gap-2">
               <span className="section-num">{String(index + 1).padStart(2, "0")}</span>
               <Link href="/docs" className="hover:text-text-2">
@@ -119,17 +118,17 @@ export default function Docs() {
 
           <nav aria-label="More docs" className="mt-14 grid gap-3 border-t border-line pt-6 sm:grid-cols-2">
             {prev ? (
-              <Link href={href(prev.id)} className="group rounded-[3px] border border-line p-4 transition-colors hover:border-line-2 hover:bg-bg-elev">
+              <Link href={href(prev.id)} className="doc-card group border border-line bg-panel p-5 transition-colors hover:border-brand">
                 <span className="mono-label">← Previous</span>
-                <span className="mt-2 block font-display text-[24px] font-bold uppercase leading-none text-text group-hover:text-brand">{prev.label}</span>
+                <span className="mt-2 block font-display text-[26px] italic leading-none text-text group-hover:text-brand">{prev.label}</span>
               </Link>
             ) : (
               <span className="hidden sm:block" />
             )}
             {next && (
-              <Link href={href(next.id)} className="group rounded-[3px] border border-line p-4 text-right transition-colors hover:border-line-2 hover:bg-bg-elev">
+              <Link href={href(next.id)} className="doc-card group border border-line bg-panel p-5 text-right transition-colors hover:border-brand">
                 <span className="mono-label">Next →</span>
-                <span className="mt-2 block font-display text-[24px] font-bold uppercase leading-none text-text group-hover:text-brand">{next.label}</span>
+                <span className="mt-2 block font-display text-[26px] italic leading-none text-text group-hover:text-brand">{next.label}</span>
               </Link>
             )}
           </nav>

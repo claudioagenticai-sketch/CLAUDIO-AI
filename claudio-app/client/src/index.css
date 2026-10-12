@@ -4,40 +4,40 @@
 
 /*
   Claudio design tokens — v3 "editorial".
-  Deep navy surfaces, hairlines instead of boxes, warm off-white ink, one accent: our clay.
+  Deep-sea petrol surfaces, hairlines instead of boxes, sand ink, one accent: brass (sea-green second).
   Buy = jade, Sell = red — never the brand colours. Display in Cormorant Garamond, UI in Manrope,
   numbers and labels in JetBrains Mono. shadcn variable names are kept so components/ui/* work unchanged.
   Contrast (WCAG): text ≥ 13:1, text-2 ≥ 8:1, text-3 ≥ 4.5:1 on every surface up to panel-3; brand ≥ 5.5:1 on every surface.
 */
 :root {
   /* surfaces */
-  --bg: #0b1018;
-  --bg-elev: #0e141e;
-  --panel: #121a26;
-  --panel-2: #172131;
-  --panel-3: #1d2939;
-  --line: #223044;
-  --line-2: #33445c;
+  --bg: #06161d;
+  --bg-elev: #081b23;
+  --panel: #0b2029;
+  --panel-2: #0f2732;
+  --panel-3: #14303c;
+  --line: #1b3a47;
+  --line-2: #2a5161;
 
   /* text */
-  --text: #efe6dc;
-  --text-2: #b9bfca;
-  /* #8590a0 nudged up a step so small labels stay ≥ 4.5:1 on panel-3 too */
-  --text-3: #8590a0;
+  --text: #efe4cf;
+  --text-2: #b8c2bd;
+  /* #93a19b nudged up a step so small labels stay ≥ 4.5:1 on panel-3 too */
+  --text-3: #93a19b;
 
-  /* brand: rose (text/icons/rings/filled CTAs). Filled CTAs carry near-black ink (7.5:1). */
-  --brand: #e08a6c;
-  --brand-2: #e8b48a;
-  --brand-ink: #0b1018;
-  --brand-bg: rgba(224, 138, 108, 0.12);
+  /* brand: brass (text/icons/rings/filled CTAs). Filled CTAs carry near-black ink (7.5:1). */
+  --brand: #d6a54a;
+  --brand-2: #46b5a6;
+  --brand-ink: #06161d;
+  --brand-bg: rgba(214, 165, 74, 0.12);
   /* Glows are retired: kept as a token so older shadow utilities resolve to nothing. */
   --brand-glow: transparent;
-  --brand-fill: #c4664a;
-  --brand-fill-2: #a8553c;
+  --brand-fill: #c4923a;
+  --brand-fill-2: #a77a2c;
 
-  /* copper — warm second accent (same as --brand-2) */
-  --copper: #e8b48a;
-  --copper-bg: rgba(232, 180, 138, 0.12);
+  /* sea green — second accent (same as --brand-2) */
+  --copper: #46b5a6;
+  --copper-bg: rgba(70, 181, 166, 0.12);
 
   /* semantic */
   --buy: #3ddc97;
@@ -56,7 +56,7 @@
   --gold-bg: rgba(255, 209, 102, 0.1);
 
   /* translucent chrome (bars over content) */
-  --chrome: rgba(11, 16, 24, 0.86);
+  --chrome: rgba(6, 22, 29, 0.86);
 
   /* shadcn compat */
   --background: var(--bg);
@@ -115,7 +115,7 @@
     -webkit-tap-highlight-color: transparent;
   }
   ::selection {
-    background: rgba(224, 138, 108, 0.32);
+    background: rgba(214, 165, 74, 0.32);
     color: var(--text);
   }
   /* slim scrollbars on desktop */
@@ -185,8 +185,45 @@
     font-family: var(--font-mono);
     font-size: 11px;
     letter-spacing: 0.08em;
-    color: var(--brand);
+    color: var(--copper);
     font-variant-numeric: tabular-nums;
+  }
+  /* Docs, legal and skills: the side column as a rounded panel, the page head as a sea-lit band. */
+  .doc-side {
+    padding: 18px 14px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: linear-gradient(180deg, var(--panel), var(--bg-elev));
+  }
+  .doc-head {
+    position: relative;
+    overflow: hidden;
+    padding: 28px 26px 26px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background:
+      radial-gradient(ellipse 70% 90% at 100% 0%, rgba(70, 181, 166, 0.14), transparent 60%),
+      radial-gradient(ellipse 60% 80% at 0% 100%, rgba(214, 165, 74, 0.08), transparent 60%),
+      var(--panel);
+  }
+  .doc-head::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    bottom: 0;
+    width: 56px;
+    height: 2px;
+    background: var(--brand);
+  }
+  .doc-pill {
+    border-radius: 999px;
+  }
+  .doc-pill[aria-current="page"] {
+    background: var(--brand-bg);
+    color: var(--brand);
+  }
+  .doc-card {
+    border-radius: 18px;
   }
   /* Lede paragraph under a title. */
   .lede {
@@ -425,7 +462,7 @@
 .flash-down { animation: flash-down 900ms ease-out; }
 .enter { animation: slide-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
 .sheen {
-  background-image: linear-gradient(90deg, transparent, rgba(239, 230, 220, 0.04), transparent);
+  background-image: linear-gradient(90deg, transparent, rgba(239, 228, 207, 0.04), transparent);
   background-size: 200% 100%;
   animation: sheen-move 2.4s linear infinite;
 }

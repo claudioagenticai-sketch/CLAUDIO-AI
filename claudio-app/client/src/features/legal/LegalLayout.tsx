@@ -27,10 +27,10 @@ export function LegalLayout({ path, title, intro, sections }: { path: "/privacy"
   return (
     <div className="mx-auto w-full max-w-6xl px-4 pb-14 pt-4 md:px-8 md:pt-8">
       <div className="grid gap-8 md:grid-cols-[210px_minmax(0,1fr)] lg:grid-cols-[236px_minmax(0,1fr)] lg:gap-12">
-        <aside className="sticky top-8 hidden h-max md:block">
+        <aside className="doc-side sticky top-8 hidden h-max md:block">
           <Link href="/docs" className="mb-4 flex items-center gap-2.5">
             <ClaudioMark size={28} />
-            <span className="font-display text-[22px] font-bold uppercase leading-none tracking-[0.02em] text-text">Legal</span>
+            <span className="font-display text-[26px] italic leading-none text-text">Legal</span>
           </Link>
           <ul className="grid border-t border-line pt-3">
             {PAGES.map((p) => {
@@ -41,11 +41,10 @@ export function LegalLayout({ path, title, intro, sections }: { path: "/privacy"
                     href={p.href}
                     aria-current={on ? "page" : undefined}
                     className={cn(
-                      "relative flex h-9 items-center rounded-[2px] px-3 font-mono text-[11.5px] uppercase tracking-[0.08em] transition-colors",
-                      on ? "bg-panel text-text" : "text-text-3 hover:bg-panel hover:text-text",
+                      "doc-pill relative flex h-9 items-center px-3.5 font-mono text-[11.5px] uppercase tracking-[0.08em] transition-colors",
+                      on ? "" : "text-text-3 hover:bg-panel-2 hover:text-text",
                     )}
                   >
-                    {on && <span className="absolute inset-y-1.5 left-0 w-[2px] bg-brand" />}
                     {p.label}
                   </Link>
                 </li>
@@ -57,7 +56,7 @@ export function LegalLayout({ path, title, intro, sections }: { path: "/privacy"
             <ul className="mt-2 grid gap-0.5">
               {sections.map((s) => (
                 <li key={s.id}>
-                  <a href={`#${s.id}`} className="block rounded-[2px] px-2 py-1 text-[12.5px] leading-snug text-text-3 hover:bg-panel hover:text-text">
+                  <a href={`#${s.id}`} className="block rounded-full px-3 py-1 text-[12.5px] leading-snug text-text-3 hover:bg-panel-2 hover:text-text">
                     {s.title}
                   </a>
                 </li>
@@ -75,8 +74,8 @@ export function LegalLayout({ path, title, intro, sections }: { path: "/privacy"
                 href={p.href}
                 aria-current={p.href === path ? "page" : undefined}
                 className={cn(
-                  "inline-flex h-10 items-center rounded-[3px] px-3 font-mono text-[11px] font-medium uppercase tracking-[0.1em] ring-1 ring-inset transition-colors",
-                  p.href === path ? "bg-text text-bg ring-text" : "text-text-3 ring-line-2 hover:text-text-2",
+                  "doc-pill inline-flex h-10 items-center px-4 font-mono text-[11px] font-medium uppercase tracking-[0.1em] ring-1 ring-inset transition-colors",
+                  p.href === path ? "ring-brand" : "text-text-3 ring-line-2 hover:text-text-2",
                 )}
               >
                 {p.label}
@@ -84,10 +83,10 @@ export function LegalLayout({ path, title, intro, sections }: { path: "/privacy"
             ))}
           </nav>
 
-          <header className="border-b border-line pb-6">
+          <header className="doc-head">
             <div className="mono-label flex items-center gap-2">
               <span className="text-brand" aria-hidden>
-                /
+                ✦
               </span>
               Legal
             </div>

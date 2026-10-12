@@ -26,7 +26,7 @@ function Ext({ href, children }: { href: string; children: ReactNode }) {
 function Cmd({ children }: { children: string }) {
   return (
     <div className="mt-3 flex items-stretch gap-2">
-      <code className="num flex min-w-0 flex-1 items-center overflow-x-auto whitespace-nowrap rounded-[3px] border border-line bg-bg-elev px-3 py-2 text-[12.5px] text-text">
+      <code className="num flex min-w-0 flex-1 items-center overflow-x-auto whitespace-nowrap rounded-[14px] border border-line bg-bg-elev px-3 py-2 text-[12.5px] text-text">
         {children}
       </code>
       <CopyButton value={children} />
@@ -259,7 +259,7 @@ export function McpApps() {
         Claudio speaks MCP, the open standard AI apps use to call tools. Add Claudio once and your AI app can look up Solana coins, read the board and the
         thread, check a coin's insights, and — on the Trade server — prepare trades for you to approve.
       </Lead>
-      <div className="mt-5 grid gap-3 rounded-[3px] border border-line bg-bg-elev p-4">
+      <div className="mt-5 grid gap-3 rounded-[14px] border border-line bg-bg-elev p-4">
         <div className="eyebrow">Server URLs</div>
         <div className="grid gap-2 text-[13px] text-text-2">
           <div>

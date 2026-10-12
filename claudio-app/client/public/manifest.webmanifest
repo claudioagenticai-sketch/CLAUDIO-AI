@@ -7,8 +7,8 @@
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#0b1018",
-  "theme_color": "#0b1018",
+  "background_color": "#06161d",
+  "theme_color": "#06161d",
   "categories": ["finance", "social"],
   "icons": [
     { "src": "/claudio/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },

@@ -4,18 +4,18 @@
   Display: Cormorant Garamond (serif). Body: Manrope. Labels: JetBrains Mono, uppercase, tracked.
 */
 .lp {
-  --lp-bg: #0b1018;
-  --lp-bg-2: #0e141e;
-  --lp-bg-3: #121a26;
-  --lp-panel: #172131;
-  --lp-panel-2: #1d2939;
-  --lp-line: #223044;
-  --lp-line-2: #33445c;
-  --lp-ink: #efe6dc;
-  --lp-ink-2: #b9bfca;
-  --lp-ink-3: #8590a0;
-  --lp-accent: #e08a6c;
-  --lp-accent-2: #e8b48a;
+  --lp-bg: #06161d;
+  --lp-bg-2: #081b23;
+  --lp-bg-3: #0b2029;
+  --lp-panel: #0f2732;
+  --lp-panel-2: #14303c;
+  --lp-line: #1b3a47;
+  --lp-line-2: #2a5161;
+  --lp-ink: #efe4cf;
+  --lp-ink-2: #b8c2bd;
+  --lp-ink-3: #93a19b;
+  --lp-accent: #d6a54a;
+  --lp-accent-2: #46b5a6;
   --lp-up: #3ddc97;
   --lp-down: #ff5a52;
   --lp-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
@@ -44,7 +44,7 @@
   text-decoration: none;
 }
 .lp ::selection {
-  background: rgba(224, 138, 108, 0.32);
+  background: rgba(214, 165, 74, 0.32);
 }
 .lp :focus-visible {
   outline: 2px solid var(--lp-accent);
@@ -204,13 +204,13 @@
 }
 .lp-btn--primary {
   background: var(--lp-ink);
-  color: #0b1018 !important;
+  color: #06161d !important;
 }
 .lp-btn--primary:hover {
   background: #fff;
 }
 .lp-btn--secondary {
-  background: rgba(11, 16, 24, 0.4);
+  background: rgba(6, 22, 29, 0.4);
   border-color: var(--lp-line-2);
   color: var(--lp-ink);
 }
@@ -233,7 +233,7 @@
   top: 0;
   z-index: 50;
   height: var(--lp-head-h);
-  background: rgba(11, 16, 24, 0.86);
+  background: rgba(6, 22, 29, 0.86);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--lp-line);
@@ -241,7 +241,7 @@
 }
 @media (min-width: 820px) {
   .lp-head--overlay:not(.is-solid) {
-    background: linear-gradient(180deg, rgba(11, 16, 24, 0.55), rgba(11, 16, 24, 0));
+    background: linear-gradient(180deg, rgba(6, 22, 29, 0.55), rgba(6, 22, 29, 0));
     border-color: transparent;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
@@ -515,7 +515,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  border: 0 solid rgba(239, 230, 220, 0.6);
+  border: 0 solid rgba(239, 228, 207, 0.6);
 }
 .lp-hero__frame-brackets i:nth-child(1) { left: 0; top: 0; border-left-width: 1px; border-top-width: 1px; }
 .lp-hero__frame-brackets i:nth-child(2) { right: 0; top: 0; border-right-width: 1px; border-top-width: 1px; }
@@ -611,7 +611,7 @@
 }
 .lp-bar::before {
   right: 0;
-  background: rgba(239, 230, 220, 0.22);
+  background: rgba(239, 228, 207, 0.22);
 }
 .lp-bar__fill {
   width: 0;
@@ -622,7 +622,7 @@
   width: 100%;
 }
 .lp-bar.is-done .lp-bar__fill {
-  background: rgba(239, 230, 220, 0.5);
+  background: rgba(239, 228, 207, 0.5);
 }
 .lp-bar__fill.is-running {
   animation: lp-fill linear both;
@@ -643,14 +643,14 @@
 }
 .lp-hero--wide .lp-slide::after {
   background:
-    linear-gradient(90deg, rgba(11, 16, 24, 0.94) 0%, rgba(11, 16, 24, 0.74) 28%, rgba(11, 16, 24, 0.22) 54%, rgba(11, 16, 24, 0) 70%),
-    linear-gradient(0deg, rgba(11, 16, 24, 0.9) 0%, rgba(11, 16, 24, 0) 36%),
-    linear-gradient(180deg, rgba(11, 16, 24, 0.55) 0%, rgba(11, 16, 24, 0) 16%);
+    linear-gradient(90deg, rgba(6, 22, 29, 0.94) 0%, rgba(6, 22, 29, 0.74) 28%, rgba(6, 22, 29, 0.22) 54%, rgba(6, 22, 29, 0) 70%),
+    linear-gradient(0deg, rgba(6, 22, 29, 0.9) 0%, rgba(6, 22, 29, 0) 36%),
+    linear-gradient(180deg, rgba(6, 22, 29, 0.55) 0%, rgba(6, 22, 29, 0) 16%);
 }
 .lp-hero--wide .lp-slide:has(.lp-slide__backdrop)::after {
   background:
-    linear-gradient(90deg, rgba(11, 16, 24, 0.92) 0%, rgba(11, 16, 24, 0.7) 40%, rgba(11, 16, 24, 0.45) 100%),
-    linear-gradient(0deg, rgba(11, 16, 24, 0.85) 0%, rgba(11, 16, 24, 0) 40%);
+    linear-gradient(90deg, rgba(6, 22, 29, 0.92) 0%, rgba(6, 22, 29, 0.7) 40%, rgba(6, 22, 29, 0.45) 100%),
+    linear-gradient(0deg, rgba(6, 22, 29, 0.85) 0%, rgba(6, 22, 29, 0) 40%);
 }
 .lp-hero--wide .lp-hero__frame {
   top: calc(var(--lp-head-h) + 28px);
@@ -680,10 +680,10 @@
   height: min(100vw, 62svh);
 }
 .lp-hero--stacked .lp-slide::after {
-  background: linear-gradient(0deg, rgba(11, 16, 24, 0.35) 0%, rgba(11, 16, 24, 0) 30%);
+  background: linear-gradient(0deg, rgba(6, 22, 29, 0.35) 0%, rgba(6, 22, 29, 0) 30%);
 }
 .lp-hero--stacked .lp-slide:has(.lp-slide__backdrop)::after {
-  background: rgba(11, 16, 24, 0.55);
+  background: rgba(6, 22, 29, 0.55);
 }
 .lp-hero--stacked .lp-hero__frame {
   top: 0;
@@ -709,7 +709,7 @@
   height: 34%;
   z-index: 3;
   pointer-events: none;
-  background: linear-gradient(0deg, var(--lp-bg) 2%, rgba(11, 16, 24, 0.6) 45%, rgba(11, 16, 24, 0));
+  background: linear-gradient(0deg, var(--lp-bg) 2%, rgba(6, 22, 29, 0.6) 45%, rgba(6, 22, 29, 0));
 }
 .lp-hero--stacked .lp-hero__meta {
   left: var(--lp-pad);
@@ -772,13 +772,13 @@
 .lp-vbox {
   position: absolute;
   z-index: 2;
-  border: 1px solid rgba(239, 230, 220, 0.6);
+  border: 1px solid rgba(239, 228, 207, 0.6);
   pointer-events: none;
 }
 .lp-vbox__tag {
   position: absolute;
   padding: 5px 7px;
-  background: rgba(11, 16, 24, 0.74);
+  background: rgba(6, 22, 29, 0.74);
   font: 500 10.5px/1 var(--lp-mono);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1008,7 +1008,7 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  border: 0 solid rgba(239, 230, 220, 0.5);
+  border: 0 solid rgba(239, 228, 207, 0.5);
 }
 .lp-brackets i:nth-child(1) { left: 0; top: 0; border-left-width: 1px; border-top-width: 1px; }
 .lp-brackets i:nth-child(2) { right: 0; top: 0; border-right-width: 1px; border-top-width: 1px; }
@@ -1037,7 +1037,7 @@
   position: absolute;
   inset: 0;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 1px rgba(239, 230, 220, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(239, 228, 207, 0.08);
   pointer-events: none;
 }
 .lp-still__cap {
@@ -1185,7 +1185,7 @@
 }
 .lp-post--ghost {
   height: 92px;
-  background: linear-gradient(90deg, transparent, rgba(239, 230, 220, 0.04), transparent);
+  background: linear-gradient(90deg, transparent, rgba(239, 228, 207, 0.04), transparent);
   background-size: 200% 100%;
   animation: lp-sheen 1.6s linear infinite;
 }
@@ -1797,13 +1797,13 @@
 }
 .lp-btn--primary {
   background: var(--lp-accent);
-  color: #0b1018 !important;
+  color: #06161d !important;
 }
 .lp-btn--primary:hover {
-  background: #eb9c80;
+  background: #e2b762;
 }
 .lp-btn--secondary {
-  background: rgba(239, 230, 220, 0.04);
+  background: rgba(239, 228, 207, 0.04);
   border-color: var(--lp-line-2);
 }
 .lp-btn--secondary:hover {
@@ -1828,20 +1828,20 @@
 .lp-hero--wide .lp-hero__frame {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(239, 230, 220, 0.08);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(239, 228, 207, 0.08);
 }
 
 /* wide hero, mirrored: media on the left, words on the right */
 .lp-hero--wide .lp-slide::after {
   background:
-    linear-gradient(270deg, rgba(11, 16, 24, 0.95) 0%, rgba(11, 16, 24, 0.76) 30%, rgba(11, 16, 24, 0.24) 56%, rgba(11, 16, 24, 0) 72%),
-    linear-gradient(0deg, rgba(11, 16, 24, 0.9) 0%, rgba(11, 16, 24, 0) 36%),
-    linear-gradient(180deg, rgba(11, 16, 24, 0.55) 0%, rgba(11, 16, 24, 0) 16%);
+    linear-gradient(270deg, rgba(6, 22, 29, 0.95) 0%, rgba(6, 22, 29, 0.76) 30%, rgba(6, 22, 29, 0.24) 56%, rgba(6, 22, 29, 0) 72%),
+    linear-gradient(0deg, rgba(6, 22, 29, 0.9) 0%, rgba(6, 22, 29, 0) 36%),
+    linear-gradient(180deg, rgba(6, 22, 29, 0.55) 0%, rgba(6, 22, 29, 0) 16%);
 }
 .lp-hero--wide .lp-slide:has(.lp-slide__backdrop)::after {
   background:
-    linear-gradient(270deg, rgba(11, 16, 24, 0.92) 0%, rgba(11, 16, 24, 0.7) 40%, rgba(11, 16, 24, 0.45) 100%),
-    linear-gradient(0deg, rgba(11, 16, 24, 0.85) 0%, rgba(11, 16, 24, 0) 40%);
+    linear-gradient(270deg, rgba(6, 22, 29, 0.92) 0%, rgba(6, 22, 29, 0.7) 40%, rgba(6, 22, 29, 0.45) 100%),
+    linear-gradient(0deg, rgba(6, 22, 29, 0.85) 0%, rgba(6, 22, 29, 0) 40%);
 }
 .lp-hero--wide .lp-cover {
   left: calc((100cqw - var(--cw)) * (1 - var(--fx)));
@@ -1875,7 +1875,7 @@
 .lp-facts {
   border-top: 1px solid var(--lp-line);
   border-bottom: 1px solid var(--lp-line);
-  background: linear-gradient(180deg, rgba(224, 138, 108, 0.05), rgba(224, 138, 108, 0));
+  background: linear-gradient(180deg, rgba(214, 165, 74, 0.05), rgba(214, 165, 74, 0));
 }
 .lp-facts__list {
   display: grid;
@@ -1916,75 +1916,83 @@
   }
 }
 
-/* ═══ Light edition ═══════════════════════════════════════════════════════════════════════════
-   Warm paper, ink-navy type, cobalt accent (the studio backdrop), clay for the star.
-   Only the public pages (.lp); the app keeps its dark theme. Contrast: ink 15.8:1, ink-2 8.8:1,
-   ink-3 5.2:1, cobalt 6.8:1 on the paper background.
+/* ═══ Deep-sea edition ═══════════════════════════════════════════════════════════════════════
+   CLODYSSEY's sea at night: petrol surfaces, sand ink, brass fittings for the accent, sea green second.
+   Contrast on the background: ink 14.6:1, ink-2 10.1:1, ink-3 6.9:1, brass 8.2:1, sea green 7.4:1.
    ═════════════════════════════════════════════════════════════════════════════════════════════ */
 .lp {
-  --lp-bg: #f4efe7;
-  --lp-bg-2: #efe8dd;
-  --lp-bg-3: #ebe4d8;
-  --lp-panel: #fbf8f3;
-  --lp-panel-2: #f1ebe2;
-  --lp-line: #ddd3c4;
-  --lp-line-2: #c9bca9;
-  --lp-ink: #14161c;
-  --lp-ink-2: #3d4250;
-  --lp-ink-3: #5f6472;
-  --lp-accent: #2648b8;
-  --lp-accent-2: #a24c33;
-  --lp-clay: #c4664a;
-  --lp-up: #0f6e43;
-  --lp-down: #b0342d;
-  color-scheme: light;
+  --lp-bg: #06161d;
+  --lp-bg-2: #081b23;
+  --lp-bg-3: #0b2029;
+  --lp-panel: #0f2732;
+  --lp-panel-2: #14303c;
+  --lp-line: #1b3a47;
+  --lp-line-2: #2a5161;
+  --lp-ink: #efe4cf;
+  --lp-ink-2: #b8c2bd;
+  --lp-ink-3: #93a19b;
+  --lp-accent: #d6a54a;
+  --lp-accent-2: #46b5a6;
+  --lp-clay: #d6a54a;
+  --lp-up: #3ddc97;
+  --lp-down: #ff5a52;
+  color-scheme: dark;
+  background:
+    radial-gradient(ellipse 80% 50% at 85% -5%, rgba(70, 181, 166, 0.1), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 0% 35%, rgba(214, 165, 74, 0.05), transparent 60%),
+    var(--lp-bg);
 }
 .lp ::selection {
-  background: rgba(38, 72, 184, 0.18);
+  background: rgba(214, 165, 74, 0.3);
 }
 .lp-word__star {
   background: var(--lp-clay);
 }
 .lp-head {
-  background: rgba(244, 239, 231, 0.9);
+  background: rgba(6, 22, 29, 0.86);
   border-bottom-color: var(--lp-line);
 }
 .lp-btn--primary {
   background: var(--lp-accent);
-  color: #fbf8f3 !important;
+  color: #06161d !important;
 }
 .lp-btn--primary:hover {
-  background: #1e3c9c;
+  background: #e2b762;
 }
 .lp-btn--secondary {
-  background: transparent;
+  background: rgba(239, 228, 207, 0.03);
   border-color: var(--lp-line-2);
   color: var(--lp-ink);
 }
 .lp-btn--secondary:hover {
-  border-color: var(--lp-accent);
-  color: var(--lp-accent);
+  border-color: var(--lp-accent-2);
+  color: var(--lp-accent-2);
+}
+.lp-num,
+.lp-scene .lp-mono--accent {
+  color: var(--lp-accent-2);
 }
 .lp-faq__item summary:hover {
   color: var(--lp-accent);
 }
 .lp-still__frame::after {
-  box-shadow: inset 0 0 0 1px rgba(20, 22, 28, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(239, 228, 207, 0.06);
 }
 .lp-still__frame {
-  box-shadow: 0 14px 40px rgba(20, 22, 28, 0.12);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
 }
 .lp-facts {
-  background: linear-gradient(180deg, rgba(38, 72, 184, 0.06), rgba(38, 72, 184, 0));
+  border-color: var(--lp-line);
+  background: linear-gradient(180deg, rgba(70, 181, 166, 0.07), rgba(70, 181, 166, 0));
 }
 
 /* magazine-cover hero */
 .lp-cover-hero {
   padding: clamp(28px, 5vw, 76px) 0 clamp(48px, 6vw, 96px);
   background:
-    radial-gradient(ellipse at 88% 8%, rgba(38, 72, 184, 0.12), transparent 55%),
-    radial-gradient(ellipse at 8% 92%, rgba(196, 102, 74, 0.1), transparent 50%),
-    var(--lp-bg);
+    radial-gradient(ellipse at 88% 8%, rgba(70, 181, 166, 0.14), transparent 55%),
+    radial-gradient(ellipse at 8% 92%, rgba(214, 165, 74, 0.08), transparent 50%),
+    transparent;
 }
 .lp-cover-hero__grid {
   display: grid;
@@ -2010,7 +2018,7 @@
   overflow: hidden;
   border-radius: 18px;
   background: var(--lp-panel-2);
-  box-shadow: 0 18px 50px rgba(20, 22, 28, 0.18);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
 }
 .lp-mosaic__tile img {
   display: block;
@@ -2054,7 +2062,7 @@
   border: 1px solid var(--lp-line);
   border-radius: 18px;
   background: var(--lp-panel);
-  box-shadow: 0 14px 40px rgba(20, 22, 28, 0.1);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
 }
 .lp-her__chart iframe {
   display: block;
@@ -2068,7 +2076,7 @@
   }
 }
 .lp-foot {
-  background: var(--lp-bg-3);
+  background: rgba(3, 12, 16, 0.6);
 }
 
 /* 04 — their scenes in CLODYSSEY: a horizontal film strip */
@@ -2098,7 +2106,7 @@
   overflow: hidden;
   border-radius: 14px;
   background: var(--lp-panel-2);
-  box-shadow: 0 12px 32px rgba(20, 22, 28, 0.14);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
 }
 .lp-scene__frame img {
   display: block;

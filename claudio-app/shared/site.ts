@@ -86,7 +86,7 @@ export const PARTNER = {
   chart: "https://dexscreener.com/solana/2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
   /** Embedded chart: GeckoTerminal, CLAUDIA/SOL on Meteora, the deepest pool (checked 2026-10-12). DEX Screener's embed
    * stalled on "Loading pair", so it stays a link. */
-  chartEmbed: "https://www.geckoterminal.com/solana/pools/DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU?embed=1&info=0&swaps=0&grayscale=0&light_chart=1",
+  chartEmbed: "https://www.geckoterminal.com/solana/pools/DfHEafDf9vk6tJzo7UEUQK6hMWnikzFvvW55WsxDyJuU?embed=1&info=0&swaps=0&grayscale=0&light_chart=0",
   pump: "https://pump.fun/coin/2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
   gmgn: "https://gmgn.ai/sol/token/2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
 };

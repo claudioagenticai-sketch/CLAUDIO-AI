@@ -42,12 +42,12 @@ export function B({ children }: { children: ReactNode }) {
 }
 
 export function Code({ children }: { children: ReactNode }) {
-  return <code className="num rounded-[2px] bg-panel-2 px-1.5 py-0.5 text-[0.86em] text-text">{children}</code>;
+  return <code className="num rounded-[10px] bg-panel-2 px-1.5 py-0.5 text-[0.86em] text-text">{children}</code>;
 }
 
 export function Pre({ children }: { children: string }) {
   return (
-    <pre className="num mt-4 overflow-x-auto rounded-[3px] border border-line bg-bg-elev p-4 text-[12.5px] leading-[1.65] text-text-2">
+    <pre className="num mt-4 overflow-x-auto rounded-[14px] border border-line bg-bg-elev p-4 text-[12.5px] leading-[1.65] text-text-2">
       <code>{children}</code>
     </pre>
   );
@@ -62,7 +62,7 @@ const CALLOUT = {
 
 export function Callout({ tone = "info", title, children }: { tone?: keyof typeof CALLOUT; title?: ReactNode; children: ReactNode }) {
   return (
-    <div className={cn("mt-5 rounded-[3px] border border-l-2 border-line bg-bg-elev px-4 py-3.5", CALLOUT[tone])}>
+    <div className={cn("mt-5 rounded-[14px] border border-l-2 border-line bg-bg-elev px-4 py-3.5", CALLOUT[tone])}>
       <div className="min-w-0 text-[14px] leading-[1.6] text-text-2">
         {title && <div className="mb-1.5 font-mono text-[11.5px] font-medium uppercase tracking-[0.12em] text-text">{title}</div>}
         {children}
@@ -86,7 +86,7 @@ export function CopyButton({ value, label = "Copy", className }: { value: string
         );
       }}
       className={cn(
-        "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-[3px] border border-line-2 px-3 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-2 transition-colors hover:border-text-3 hover:text-text",
+        "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-[14px] border border-line-2 px-3 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-2 transition-colors hover:border-text-3 hover:text-text",
         done && "border-buy/40 text-buy hover:text-buy",
         className,
       )}
@@ -101,7 +101,7 @@ export function CopyButton({ value, label = "Copy", className }: { value: string
 /** A labelled on-chain address: full value (wraps cleanly), copy, and an explorer link. */
 export function AddressCard({ label, address, href, hint, accent }: { label: ReactNode; address: string; href?: string; hint?: ReactNode; accent?: boolean }) {
   return (
-    <div className={cn("mt-4 rounded-[3px] border bg-bg-elev p-4", accent ? "border-line-2 border-l-2 border-l-brand" : "border-line")}>
+    <div className={cn("mt-4 rounded-[14px] border bg-bg-elev p-4", accent ? "border-line-2 border-l-2 border-l-brand" : "border-line")}>
       <div className="eyebrow">{label}</div>
       {/* Phones: two even halves instead of one stray chunk on the second line. */}
       <div className="num mt-2 break-all text-[14px] leading-[1.55] text-text md:text-[15px]" translate="no">
@@ -116,7 +116,7 @@ export function AddressCard({ label, address, href, hint, accent }: { label: Rea
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-9 items-center gap-1.5 rounded-[3px] border border-line-2 px-3 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-2 transition-colors hover:border-text-3 hover:text-text"
+            className="inline-flex h-9 items-center gap-1.5 rounded-[14px] border border-line-2 px-3 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-text-2 transition-colors hover:border-text-3 hover:text-text"
           >
             <ExternalLink className="h-3.5 w-3.5" /> View on Solscan
           </a>
@@ -192,7 +192,7 @@ export function Grid({ items, cols = 3 }: { items: { title: ReactNode; body: Rea
   return (
     <div className={cn("mt-4 grid gap-3", cols === 3 ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2")}>
       {items.map((it, i) => (
-        <div key={i} className="rounded-[3px] border border-line bg-bg-elev p-4">
+        <div key={i} className="rounded-[14px] border border-line bg-bg-elev p-4">
           <div className="flex items-center justify-between gap-2">
             <div className="text-[14.5px] font-semibold text-text">{it.title}</div>
             {it.tag}
