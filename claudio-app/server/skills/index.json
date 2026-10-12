@@ -2,11 +2,11 @@
   "version": 1,
   "updated": "2026-10-12",
   "count": 54,
-  "repo": "https://github.com/claudio-onchain/claudio-skills",
+  "repo": "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-skills",
   "all": {
     "zip": "/skills/claudio-skills-all.zip",
-    "bytes": 1290555,
-    "sha256": "76e0f1b472bdf0c59a5298a503357ec369d360b84ac62c589f029548214c8f0f"
+    "bytes": 1290591,
+    "sha256": "0910a8db46205bd25b4314a338698015325fafb9b87b92a2fc5a1b4fd6be5ab1"
   },
   "categories": [
     {
@@ -2416,9 +2416,9 @@
         "templates/local-mcp-configs.md",
         "templates/operator-checklist.md"
       ],
-      "size": 38029,
-      "bytes": 20175,
-      "sha256": "6f0566c234f66047378316179f25464385c4676d9dedbeb697fe47794aafa30b",
+      "size": 38051,
+      "bytes": 20211,
+      "sha256": "2600220a4680d94719746ac6c80608b0836bd51ced72e2cf3432036ae3b58c57",
       "path": "skills/build/claudio-local-studio",
       "zip": "/skills/claudio-local-studio.zip",
       "related": [

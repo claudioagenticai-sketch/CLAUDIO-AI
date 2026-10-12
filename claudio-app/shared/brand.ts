@@ -9,7 +9,7 @@ export const BRAND = {
   domain: "useclaudio.xyz",
   twitter: "https://x.com/claudio_onchain",
   tiktok: "https://www.tiktok.com/@claudio_onchain",
-  github: "https://github.com/claudio-onchain",
+  github: "https://github.com/claudioagenticai-sketch/CLAUDIO-AI",
   /**
    * Compile-time fallback only. The live switch is the server's COMING_SOON env (default on) and the
    * preview cookie — the client asks /api/health which one applies to this visitor (see client/src/App.tsx).

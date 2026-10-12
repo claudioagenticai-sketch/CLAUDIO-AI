@@ -80,7 +80,7 @@ export function build(root = REPO_ROOT, { allowInvalid = false } = {}) {
     version: INDEX_VERSION,
     updated: updated || null,
     count: skills.length,
-    repo: "https://github.com/claudio-onchain/claudio-skills",
+    repo: "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-skills",
     all: { zip: `/skills/${ALL_ZIP}`, bytes: all.length, sha256: sha256(all) },
     categories: CATEGORIES.map((c) => ({ ...c, count: skills.filter((s) => s.category === c.id).length })),
     skills,

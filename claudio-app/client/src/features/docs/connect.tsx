@@ -10,7 +10,7 @@ export const MCP_DATA = `${SITE}/mcp/data`;
 export const MCP_TRADE = `${SITE}/mcp/trade`;
 export const RELAY_OAUTH = `${SITE}/relay/oauth/callback`;
 export const LOCAL_OAUTH = "http://127.0.0.1:3939/oauth/callback";
-export const LOCAL_REPO = "https://github.com/claudio-onchain/claudio-local";
+export const LOCAL_REPO = "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local";
 
 const a = "font-semibold text-text underline underline-offset-2 hover:text-brand";
 
@@ -381,7 +381,7 @@ npm run build
 npm start            # → http://127.0.0.1:3939`}</Pre>
       <P>
         Or run <Code>./start.sh</Code>, which installs, builds and opens your browser. Another port: <Code>CLAUDIO_LOCAL_PORT=4000 npm start</Code>. Source:{" "}
-        <Ext href={LOCAL_REPO}>github.com/claudio-onchain/claudio-local</Ext>.
+        <Ext href={LOCAL_REPO}>github.com/claudioagenticai-sketch/CLAUDIO-AI</Ext>.
       </P>
       <H2>What it does</H2>
       <Grid

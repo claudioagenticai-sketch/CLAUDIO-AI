@@ -175,7 +175,7 @@ export default function ClaudioPage() {
               {[
                 { label: "X", href: BRAND.twitter, text: "@claudio_onchain" },
                 { label: "TikTok", href: BRAND.tiktok, text: "@claudio_onchain" },
-                { label: "GitHub", href: BRAND.github, text: "github.com/claudio-onchain" },
+                { label: "GitHub", href: BRAND.github, text: "github.com/claudioagenticai-sketch" },
                 { label: "The thread", href: "/home", text: "His hourly posts, live" },
               ].map((r) => (
                 <div key={r.label} className="lp-spec__row">

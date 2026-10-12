@@ -56,7 +56,7 @@ export interface SkillDetail {
   related: SkillCard[];
 }
 
-export const REPO_URL = "https://github.com/claudio-onchain/claudio-skills";
+export const REPO_URL = "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-skills";
 export const ALL_ZIP = "/skills/claudio-skills-all.zip";
 
 async function getJson<T>(url: string): Promise<T> {
@@ -150,7 +150,7 @@ export const INSTALL_TARGETS: InstallTarget[] = [
     label: "Any agent",
     where: "The open-source skills CLI knows the skills folders of Claude Code, Codex, Cursor and many more. Or hand your agent the raw Markdown.",
     steps: (slug) => [`Raw Markdown: ${SITE}/skills/${slug}.md`, `Catalogue: ${SITE}/skills.md`],
-    command: (slug) => `npx skills add claudio-onchain/claudio-skills --skill ${slug}`,
+    command: (slug) => `npx skills add claudioagenticai-sketch/CLAUDIO-AI --skill ${slug}`,
     copyLabel: "Copy install",
     source: { label: "github.com/vercel-labs/skills", href: "https://github.com/vercel-labs/skills" },
   },

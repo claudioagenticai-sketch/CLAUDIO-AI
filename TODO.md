@@ -9,7 +9,7 @@ What's left to finish Claudio, most important first.
 2. **Token**: in the same file, `CLAUDIO_TOKEN.mint` still points at the $CLAUDIA mint, which the site now shows as $CLAUDIO.
    Replace it with the $CLAUDIO mint once the coin exists.
 3. **Creator**: `claudio-app/shared/site.ts` (`CREATOR`) credits @anabology. Keep it or change it to the new creator's handle.
-4. **Domain and socials**: links point to `useclaudio.xyz`, `@useclaudioxyz`, `claudio.gallery` and `github.com/claudio-onchain`, which are placeholders.
+4. **Domain and socials**: links point to `useclaudio.xyz`, `@useclaudioxyz`, and `claudio.gallery`, which are placeholders.
    Set the real domain and accounts.
 
 ## To match Claudia fully

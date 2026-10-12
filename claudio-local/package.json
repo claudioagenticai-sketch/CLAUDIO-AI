@@ -7,10 +7,11 @@
   "homepage": "https://useclaudio.xyz",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claudio-onchain/claudio-local.git"
+    "url": "git+https://github.com/claudioagenticai-sketch/CLAUDIO-AI.git",
+    "directory": "claudio-local"
   },
   "bugs": {
-    "url": "https://github.com/claudio-onchain/claudio-local/issues"
+    "url": "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/issues"
   },
   "type": "module",
   "engines": {

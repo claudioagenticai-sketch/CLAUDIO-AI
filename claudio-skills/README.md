@@ -86,9 +86,9 @@ Source: [cursor.com/docs/context/skills](https://cursor.com/docs/context/skills)
   Cursor and many more):
 
   ```sh
-  npx skills add claudio-onchain/claudio-skills --skill <slug>                 # asks which agents
-  npx skills add claudio-onchain/claudio-skills --skill <slug> -g -a claude-code -y
-  npx skills add claudio-onchain/claudio-skills --list                         # see everything
+  npx skills add claudioagenticai-sketch/CLAUDIO-AI --skill <slug>                 # asks which agents
+  npx skills add claudioagenticai-sketch/CLAUDIO-AI --skill <slug> -g -a claude-code -y
+  npx skills add claudioagenticai-sketch/CLAUDIO-AI --list                         # see everything
   ```
 
 - Or give the agent the raw file: `https://useclaudio.xyz/skills/<slug>.md` (Markdown), and the whole catalogue at

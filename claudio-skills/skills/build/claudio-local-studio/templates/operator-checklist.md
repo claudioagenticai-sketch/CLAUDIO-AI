@@ -2,7 +2,7 @@
 
 ## First run (once)
 
-- [ ] Node ≥ 20; installed from github.com/claudio-onchain/claudio-local; `npm start` serves http://127.0.0.1:3939
+- [ ] Node ≥ 20; installed from github.com/claudioagenticai-sketch/CLAUDIO-AI (claudio-local/); `npm start` serves http://127.0.0.1:3939
 - [ ] Passphrase chosen and stored in a password manager (no recovery exists)
 - [ ] Auto-lock set (Settings): 30 minutes recommended
 - [ ] Chat model key added in Settings → Keys and providers, Test (dry run) passed

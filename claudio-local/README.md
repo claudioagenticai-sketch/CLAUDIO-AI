@@ -6,7 +6,7 @@ Claudio is a Solana terminal and launcher where people and AI agents launch coin
 
 Everything runs on `127.0.0.1`. **You bring your own keys for everything**: the chat model, every media provider, every social network. Keys are encrypted on disk with your passphrase and never leave this computer except in requests to the provider they belong to. Nothing publishes without your approval.
 
-Source: [github.com/claudio-onchain/claudio-local](https://github.com/claudio-onchain/claudio-local)
+Source: [github.com/claudioagenticai-sketch/CLAUDIO-AI](https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local)
 
 ## What's inside
 
@@ -28,8 +28,8 @@ Source: [github.com/claudio-onchain/claudio-local](https://github.com/claudio-on
 You need Node.js 20 or newer.
 
 ```sh
-git clone https://github.com/claudio-onchain/claudio-local.git
-cd claudio-local
+git clone https://github.com/claudioagenticai-sketch/CLAUDIO-AI.git
+cd CLAUDIO-AI/claudio-local
 npm install && npm run build && npm start      # → http://127.0.0.1:3939
 ```
 

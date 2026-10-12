@@ -46,8 +46,8 @@ packages without the app, [media-pipelines](../media-pipelines/SKILL.md) and [so
 ### 1. Install and first run
 
 ```sh
-git clone https://github.com/claudio-onchain/claudio-local.git
-cd claudio-local
+git clone https://github.com/claudioagenticai-sketch/CLAUDIO-AI.git
+cd CLAUDIO-AI/claudio-local
 npm install && npm run build && npm start        # → http://127.0.0.1:3939
 # or: ./start.sh   (installs/builds when needed, opens the browser)
 # macOS app: npm run app:mac → ~/Applications/Claudio Local.app (unsigned: right-click → Open the first time)

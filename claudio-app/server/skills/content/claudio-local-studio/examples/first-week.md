@@ -6,7 +6,7 @@ Google and fal.ai keys, posts to X, Bluesky and Telegram with approval, and Clau
 ## Day 1 — install, lock down, keys
 
 ```sh
-$ git clone https://github.com/claudio-onchain/claudio-local.git && cd claudio-local
+$ git clone https://github.com/claudioagenticai-sketch/CLAUDIO-AI.git && cd CLAUDIO-AI/claudio-local
 $ npm install && npm run build && npm start
 Claudio Local 0.2.0 on http://127.0.0.1:3939 (data: /Users/<them>/.claudio-local)
 ```

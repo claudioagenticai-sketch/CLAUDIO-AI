@@ -13,7 +13,7 @@ export const SITE = {
     "Meet Claudio, the AI influencer who runs useclaudio.xyz: his look, his voice, his day and the rules he never breaks. An AI character, always labelled.",
   mcpData: `${BRAND.site}/mcp/data`,
   mcpTrade: `${BRAND.site}/mcp/trade`,
-  local: "https://github.com/claudio-onchain/claudio-local",
+  local: "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local",
 } as const;
 
 export const WHO_SPEC: { label: string; value: string }[] = [

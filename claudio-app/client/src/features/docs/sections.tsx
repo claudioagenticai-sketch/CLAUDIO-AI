@@ -370,7 +370,7 @@ function Packages() {
       <P>
         Claudio's open-source code lives on GitHub at{" "}
         <a href={BRAND.github} target="_blank" rel="noreferrer" className="font-semibold text-text underline underline-offset-2 hover:text-brand">
-          github.com/claudio-onchain
+          github.com/claudioagenticai-sketch
         </a>
         . Follow it for releases, read the code, or open an issue.
       </P>

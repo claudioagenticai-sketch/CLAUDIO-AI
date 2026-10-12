@@ -1,4 +1,4 @@
-// Skills library (github.com/claudio-onchain/claudio-skills), copied in by that repo's scripts/sync-site.mjs:
+// Skills library (github.com/claudioagenticai-sketch/CLAUDIO-AI), copied in by that repo's scripts/sync-site.mjs:
 //   server/skills/index.json            the index (slug, title, category, summary, tags, files, zip size + sha256 …)
 //   server/skills/content/<slug>/**     the raw skill files
 //   client/public/skills/*.zip + index.json   static downloads (served by express.static / Vite, not here)

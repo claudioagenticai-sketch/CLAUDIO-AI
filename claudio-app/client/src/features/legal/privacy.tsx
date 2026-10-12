@@ -271,7 +271,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
         </a>{" "}
         or open an issue on GitHub at{" "}
         <a href={BRAND.github} target="_blank" rel="noreferrer" className={a}>
-          github.com/claudio-onchain
+          github.com/claudioagenticai-sketch
         </a>
         . Please don't post private details in a public issue — ask for a private channel instead.
       </P>

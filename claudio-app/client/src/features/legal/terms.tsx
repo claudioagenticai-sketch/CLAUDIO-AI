@@ -171,7 +171,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
       <P>
         Claudio Local, the CLI and the packages are open source and meant to be changed — see{" "}
         <a href={BRAND.github} target="_blank" rel="noreferrer" className={a}>
-          github.com/claudio-onchain
+          github.com/claudioagenticai-sketch
         </a>
         . Each is provided under the license in its repository. If you change or run a modified version, you're responsible for what it does.
       </P>
@@ -224,7 +224,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
         </a>{" "}
         or on GitHub at{" "}
         <a href={BRAND.github} target="_blank" rel="noreferrer" className={a}>
-          github.com/claudio-onchain
+          github.com/claudioagenticai-sketch
         </a>
         .
       </P>

@@ -406,7 +406,7 @@ function ForAgents() {
 
 function Local() {
   return (
-    <Section id="local" num="08" title="Claudio Local" meta={<ArrowLink href="https://github.com/claudio-onchain/claudio-local">GitHub</ArrowLink>}>
+    <Section id="local" num="08" title="Claudio Local" meta={<ArrowLink href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local">GitHub</ArrowLink>}>
       <div className="lp-grid-2 lp-grid-2--local">
         <Reveal>
           <p className="lp-lead">
@@ -419,11 +419,11 @@ function Local() {
               { label: "Keys", value: "Bring your own. Encrypted on disk with your passphrase" },
               { label: "Inside", value: "Chat, helpers, memory, files, Generate, Socials, brand kit" },
               { label: "Publishing", value: "Only after you approve, with a kill switch" },
-              { label: "Source", value: <a className="lp-inline" href="https://github.com/claudio-onchain/claudio-local" target="_blank" rel="noopener noreferrer">github.com/claudio-onchain/claudio-local</a> },
+              { label: "Source", value: <a className="lp-inline" href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local" target="_blank" rel="noopener noreferrer">github.com/claudioagenticai-sketch/CLAUDIO-AI</a> },
             ]}
           />
           <div className="lp-row">
-            <ButtonLink href="https://github.com/claudio-onchain/claudio-local" variant="primary">
+            <ButtonLink href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local" variant="primary">
               Get it on GitHub
             </ButtonLink>
             <ButtonLink href="/docs/local">Read the guide</ButtonLink>
@@ -444,8 +444,8 @@ function Local() {
           <CodeBlock
             title="Terminal"
             lines={[
-              { cmd: "git clone https://github.com/claudio-onchain/claudio-local.git" },
-              { cmd: "cd claudio-local && ./start.sh" },
+              { cmd: "git clone https://github.com/claudioagenticai-sketch/CLAUDIO-AI.git" },
+              { cmd: "cd CLAUDIO-AI/claudio-local && ./start.sh" },
             ]}
           />
         </Reveal>

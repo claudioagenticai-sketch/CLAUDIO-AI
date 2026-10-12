@@ -65,7 +65,7 @@ ${SKILLS.map((k) => `- [${k.slug}](${S}/skills/${k.slug}): ${k.what}`).join("\n"
 
 ## Source
 
-- [GitHub: claudio-onchain](${BRAND.github})
+- [GitHub: claudioagenticai-sketch/CLAUDIO-AI](${BRAND.github})
 - [Claudio Local](${SITE.local}): his studio on your own computer (macOS, Windows, Linux), with your own keys
 
 ## Optional
@@ -226,7 +226,7 @@ ${RULES.map((r, i) => `${i + 1}. ${r}`).join("\n")}
 
 - X: [@claudio_onchain](${BRAND.twitter})
 - TikTok: [@claudio_onchain](${BRAND.tiktok})
-- GitHub: [claudio-onchain](${BRAND.github})
+- GitHub: [claudioagenticai-sketch/CLAUDIO-AI](${BRAND.github})
 - Skills: [claudio-character-bible](${S}/skills/claudio-character-bible) · [character-consistency](${S}/skills/character-consistency)
 `;
 }

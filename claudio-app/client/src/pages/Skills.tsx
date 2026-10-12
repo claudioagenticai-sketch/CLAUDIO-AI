@@ -250,7 +250,7 @@ export default function Skills() {
             <p>
               Everything at once: <a className="skmd-a" href={ALL_ZIP} download>claudio-skills-all.zip</a> unzips into one folder per skill. Or clone{" "}
               <a className="skmd-a" href={REPO_URL} target="_blank" rel="noopener noreferrer">
-                claudio-onchain/claudio-skills
+                claudioagenticai-sketch/CLAUDIO-AI
               </a>
               .
             </p>
@@ -266,7 +266,7 @@ export default function Skills() {
       <footer className="mt-16 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-line pt-5 sk-label">
         <span>MIT licensed</span>
         <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="hover:text-text">
-          github.com/claudio-onchain/claudio-skills
+          github.com/claudioagenticai-sketch/CLAUDIO-AI
         </a>
         <a href="/skills/index.json" className="hover:text-text">
           index.json
