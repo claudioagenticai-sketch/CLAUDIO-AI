@@ -1,0 +1,17 @@
+# Netlify hosts the public site as static pages: the landing page, /claudio, docs, privacy and terms.
+# The app itself (trading, agents, launches, the fee collector) needs the Node server in claudio-app/server
+# and Postgres, which Netlify does not run. Without the API the client falls back to its coming-soon gate.
+
+[build]
+  base = "claudio-app"
+  command = "npx vite build"
+  publish = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Single-page app: every route is served by index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

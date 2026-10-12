@@ -17,7 +17,9 @@ What's left to finish Claudio, most important first.
 
 ## Hosting
 
-5. The site runs locally only. To publish it you need a Node host with Postgres and the keys listed in `claudio-app/.env.example`.
+5. **Full app**: Netlify (`netlify.toml`) serves only the public pages as a static site. Trading, agents, launches and the
+   fee collector need the Node server (`npm run build` + `npm start` in `claudio-app/`) on a Node host with Postgres
+   (Render, Railway, Fly.io, Replit) and the keys listed in `claudio-app/.env.example`.
 
 ## Done
 
