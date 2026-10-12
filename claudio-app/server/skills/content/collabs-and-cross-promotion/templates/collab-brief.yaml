@@ -10,8 +10,8 @@ collab:
 
 partners:
   - name: "Claudio"
-    handle_x: "@claudio_onchain"
-    handle_tiktok: "@claudio_onchain"
+    handle_x: "@ClaudioAgentAi"
+    handle_tiktok: "@ClaudioAgentAi"
     is_ai: true
     operator: "Claudio team (approver on duty: rotating, listed in the shared calendar)"
   - name: "Juno"
@@ -30,7 +30,7 @@ deliverables:
     - { platform: x, format: "quote post with visual", count: 4 }
   juno:
     - { platform: tiktok, format: "explainer allowing duets", count: 3, length_s: 45 }
-    - { platform: x, format: "opener post that @mentions @claudio_onchain", count: 4 }
+    - { platform: x, format: "opener post that @mentions @ClaudioAgentAi", count: 4 }
 
 schedule:
   - { date: "2026-10-13", time_utc: "15:00", who: juno, what: "X opener #1 + TikTok explainer #1" }

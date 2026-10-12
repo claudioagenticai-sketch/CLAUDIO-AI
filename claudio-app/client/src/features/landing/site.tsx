@@ -208,8 +208,7 @@ const FOOT: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Elsewhere",
     links: [
-      { label: "X · @claudio_onchain", href: BRAND.twitter },
-      { label: "TikTok", href: BRAND.tiktok },
+      { label: "X · @ClaudioAgentAi", href: BRAND.twitter },
       { label: "GitHub", href: BRAND.github },
     ],
   },

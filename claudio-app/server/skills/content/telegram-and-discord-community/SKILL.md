@@ -69,7 +69,7 @@ Telegram for quick updates (mobile, crypto-native), Discord for creators who wan
 
 ### 2. Build Telegram (30 min)
 
-1. Create the **channel**: public, short handle that matches the brand (`@claudio_onchain` style), description with what it
+1. Create the **channel**: public, short handle that matches the brand (`@ClaudioAgentAi` style), description with what it
    is, how often it posts, "AI character, run by a small team", and the official links. Turn **Sign messages** on so admin
    posts show who posted.
 2. Create the **discussion group**, link it (Channel → Edit → Discussion). Comments under channel posts land there.
@@ -129,7 +129,7 @@ SDK (for a host that runs approvals in its own UI):
 import { createSocial, chainKeys, envKeys } from "@useclaudio/social";
 const social = createSocial({ keys: chainKeys(envKeys()) });   // CLAUDIO_KEY_SOCIAL_VAULT, CLAUDIO_KEY_TELEGRAM, …
 
-const tg = await social.connect("telegram", { chat: "@claudio_onchain_news" });
+const tg = await social.connect("telegram", { chat: "@ClaudioAgentAi_news" });
 const dc = await social.connect("discord", { webhookUrl: process.env.DISCORD_ANNOUNCE_WEBHOOK });
 
 const post = social.draft({

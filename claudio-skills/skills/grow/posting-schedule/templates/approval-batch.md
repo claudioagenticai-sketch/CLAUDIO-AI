@@ -11,8 +11,8 @@ X spend this batch (from previews): $[ ] · Budget: $[ ]
 
 | # | Post id | Local time + zone | UTC | Network / account | First 60 chars of final text (after labels) | Labels added | Warnings | Cost | Decision |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | [id] | Mon 09:30 America/New_York | 13:30Z | x / claudio_onchain | [text] | (made_with_ai) | — | $0.015 | approve / edit / reject |
-| 2 | [id] | Mon 12:00 Europe/London | 11:00Z | telegram / claudio_onchain_news | [text] | (AI-generated) | — | — | |
+| 1 | [id] | Mon 09:30 America/New_York | 13:30Z | x / ClaudioAgentAi | [text] | (made_with_ai) | — | $0.015 | approve / edit / reject |
+| 2 | [id] | Mon 12:00 Europe/London | 11:00Z | telegram / ClaudioAgentAi_news | [text] | (AI-generated) | — | — | |
 | … | | | | | | | | | |
 
 ## Per-post checks (the approver reads each preview, not the draft)

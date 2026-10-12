@@ -88,7 +88,6 @@ export default function Docs() {
           <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.12em]">
             <a href={BRAND.github} target="_blank" rel="noreferrer" className="text-text-2 hover:text-brand">GitHub</a>
             <a href={BRAND.twitter} target="_blank" rel="noreferrer" className="text-text-2 hover:text-brand">X</a>
-            <a href={BRAND.tiktok} target="_blank" rel="noreferrer" className="text-text-2 hover:text-brand">TikTok</a>
           </div>
           <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.12em] text-text-3">
             <Link href="/privacy" className="hover:text-text-2">Privacy</Link>

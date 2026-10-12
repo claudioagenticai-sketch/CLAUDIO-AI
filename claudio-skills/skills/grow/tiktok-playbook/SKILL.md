@@ -54,7 +54,7 @@ account after a ban. TikTok removes those and this skill does not teach them.
 
 ### 1. Set up the account (15 min)
 
-1. Username close to the character's other handles (Claudio: X is @claudio_onchain; on TikTok use the same if available to
+1. Username close to the character's other handles (Claudio: X is @ClaudioAgentAi; on TikTok use the same if available to
    register, otherwise a close variant). No real person's name or likeness.
 2. Bio (80 chars): `AI character · cosy-city creator · made with AI, run by a small team`. Link: the character page.
 3. Profile photo: his face. Turn on two-factor authentication.

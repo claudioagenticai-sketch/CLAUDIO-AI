@@ -5,8 +5,8 @@
   "repo": "https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-skills",
   "all": {
     "zip": "/skills/claudio-skills-all.zip",
-    "bytes": 1290591,
-    "sha256": "0910a8db46205bd25b4314a338698015325fafb9b87b92a2fc5a1b4fd6be5ab1"
+    "bytes": 1289972,
+    "sha256": "99201c9919de2ea1734e6aee6725aba49b2fd1a69d14971b2e41e476dfbf21e8"
   },
   "categories": [
     {
@@ -1124,9 +1124,9 @@
         "templates/partner-shortlist.csv",
         "templates/utm-links.csv"
       ],
-      "size": 58895,
-      "bytes": 29810,
-      "sha256": "282a2a051c84f7bdb5943d7f1ad995737d38415cfd585b5a8607b19c7a70713d",
+      "size": 58723,
+      "bytes": 29774,
+      "sha256": "abf3083ce1acb1a052971c5186b4e3785dfcfaa08d0c945ae5b11eec278b84da",
       "path": "skills/grow/collabs-and-cross-promotion",
       "zip": "/skills/collabs-and-cross-promotion.zip",
       "related": [
@@ -1187,9 +1187,9 @@
         "templates/incident-log.csv",
         "templates/post-mortem.md"
       ],
-      "size": 64458,
-      "bytes": 31389,
-      "sha256": "207f4b97c56ba0b2f94fec92170d53894ae9e52522fedfa4c846d44ef25f4114",
+      "size": 64044,
+      "bytes": 31287,
+      "sha256": "2a1026b7890e9066415bb257dce808b6be9e6987c65872241d490dd0a178df57",
       "path": "skills/grow/crisis-and-reputation",
       "zip": "/skills/crisis-and-reputation.zip",
       "related": [
@@ -1246,9 +1246,9 @@
         "templates/phrase-lists.json",
         "templates/pre-publish-checklist.md"
       ],
-      "size": 71578,
-      "bytes": 35911,
-      "sha256": "de58417ea0b334ef178bda252182e32114af5957f7d83e238fe09920850411ab",
+      "size": 71513,
+      "bytes": 35885,
+      "sha256": "1194eab2f257a268f0cd99ef4e07ec2aa3ca71239bc437ca2282b3e0a8fa967b",
       "path": "skills/grow/crypto-marketing-compliance",
       "zip": "/skills/crypto-marketing-compliance.zip",
       "related": [
@@ -1305,9 +1305,9 @@
         "templates/reply-library.yaml",
         "templates/triage-rules.json"
       ],
-      "size": 71431,
-      "bytes": 33267,
-      "sha256": "654ebfa454b252442e1b0604ba823a967cd16766bf640db50e0b8e84d8c4d37b",
+      "size": 71262,
+      "bytes": 33230,
+      "sha256": "4a16cc62e198752885ffa10457789a7f9c3c1f83106b4c7285643d3a4bd97d15",
       "path": "skills/grow/engagement-and-replies",
       "zip": "/skills/engagement-and-replies.zip",
       "related": [
@@ -1365,9 +1365,9 @@
         "templates/experiment-log.csv",
         "templates/ice-backlog.csv"
       ],
-      "size": 65032,
-      "bytes": 32085,
-      "sha256": "e62e0aec70df0737638301d6e06090685a980a928bd7cb7b49d1436463c7e901",
+      "size": 64949,
+      "bytes": 32057,
+      "sha256": "fe56fbc77708a87d6647fd9d9a0522d6c22b0b27ee7d74c84d81440055f4c85c",
       "path": "skills/grow/growth-experiments",
       "zip": "/skills/growth-experiments.zip",
       "related": [
@@ -1494,9 +1494,9 @@
         "templates/utm-plan.csv",
         "templates/weekly-report.md"
       ],
-      "size": 75429,
-      "bytes": 35522,
-      "sha256": "6ee5673beccfda0b47c0ec50ad052c997342ad3381d0f666e1094a99ea4573b1",
+      "size": 75279,
+      "bytes": 35487,
+      "sha256": "b02c760f13d7924d0197b3012c9d464ac887023a3a9ca3d0bfedfd75999df98a",
       "path": "skills/grow/kpi-reporting",
       "zip": "/skills/kpi-reporting.zip",
       "related": [
@@ -1554,9 +1554,9 @@
         "templates/launch-drafts.json",
         "templates/post-launch-report.md"
       ],
-      "size": 70699,
-      "bytes": 34974,
-      "sha256": "2470282e9a3162b6b9cefc0a67e8fdf71c61d2363536c544955d630f694acb11",
+      "size": 70671,
+      "bytes": 34973,
+      "sha256": "fc092d682760b302d545e35277ceec4ea4534ba23dda785eed5aa11b1e10a73e",
       "path": "skills/grow/launch-campaigns",
       "zip": "/skills/launch-campaigns.zip",
       "related": [
@@ -1619,9 +1619,9 @@
         "templates/pitch-scripts.md",
         "templates/rate-card.csv"
       ],
-      "size": 65139,
-      "bytes": 32629,
-      "sha256": "98b0b39f010ca2d4382fcc41036adfc23dac29269e8cd475a8be34cf3f2ea3ea",
+      "size": 64957,
+      "bytes": 32599,
+      "sha256": "6bae7a759f348591d5280c5390f33127da79a93fb7cb9d6da6e4695c272fe132",
       "path": "skills/grow/media-kit-and-pitching",
       "zip": "/skills/media-kit-and-pitching.zip",
       "related": [
@@ -1679,9 +1679,9 @@
         "templates/income-ledger.csv",
         "templates/revenue-mix-plan.csv"
       ],
-      "size": 62919,
-      "bytes": 31513,
-      "sha256": "b69320c68d1296fdf30a8f9cad701ee031f1a819f25dccd34d75c79a26349e9a",
+      "size": 62833,
+      "bytes": 31487,
+      "sha256": "77b77fe5cb4a47ff0db4df8a724088888c9bb990ffaed076d31cb3d8a18ca98f",
       "path": "skills/grow/monetization-streams",
       "zip": "/skills/monetization-streams.zip",
       "related": [
@@ -1742,9 +1742,9 @@
         "templates/positioning-canvas.md",
         "templates/profile-kit.csv"
       ],
-      "size": 65640,
-      "bytes": 32799,
-      "sha256": "ec34c0fdd8b4cd8466b86e76e7d5806758b5b1441c454d9e45819a63b0559dda",
+      "size": 65607,
+      "bytes": 32788,
+      "sha256": "765ae853a0ad1274e51be06e176ce6f242b7fc3b466ae4d2ac2993142e938b49",
       "path": "skills/grow/personal-brand-strategy",
       "zip": "/skills/personal-brand-strategy.zip",
       "related": [
@@ -1804,9 +1804,9 @@
         "templates/schedule-rules.json",
         "templates/weekly-calendar.csv"
       ],
-      "size": 66804,
-      "bytes": 32751,
-      "sha256": "5df4f1578448b829b7007188e77cab1af0a7de15bbce5cbe0ed5473d035b8771",
+      "size": 66413,
+      "bytes": 32688,
+      "sha256": "30abbd9693a416f58691ee71ca9e14cfb06a46c6eb36975bcf271552a6251559",
       "path": "skills/grow/posting-schedule",
       "zip": "/skills/posting-schedule.zip",
       "related": [
@@ -1867,9 +1867,9 @@
         "templates/rules-and-pins.md",
         "templates/telegram-blueprint.yaml"
       ],
-      "size": 70254,
-      "bytes": 33344,
-      "sha256": "d90e177551a94d47b819b1c28302de98dde1c82ac15fb4d177601dc0757f31d7",
+      "size": 69809,
+      "bytes": 33261,
+      "sha256": "163298ad1168937e76edb390e7a2e551f3f9bde657f64b2c7d8cba2d818703a2",
       "path": "skills/grow/telegram-and-discord-community",
       "zip": "/skills/telegram-and-discord-community.zip",
       "related": [
@@ -1929,9 +1929,9 @@
         "templates/tiktok-preflight-checklist.md",
         "templates/tiktok-video-brief.md"
       ],
-      "size": 59553,
-      "bytes": 29811,
-      "sha256": "0eaa7d15fc286b2493c742fe63b9f8d8b98f950c90029e0b5e1f5193ff5b9760",
+      "size": 59263,
+      "bytes": 29754,
+      "sha256": "80017f848546b4764d4e7a355d94e22b79b80a997ea783ff81dd9c20772ab762",
       "path": "skills/grow/tiktok-playbook",
       "zip": "/skills/tiktok-playbook.zip",
       "related": [
@@ -2062,9 +2062,9 @@
         "templates/x-weekly-calendar.csv",
         "templates/x-weekly-review.md"
       ],
-      "size": 57463,
-      "bytes": 28953,
-      "sha256": "5ecfd90f91e6161817cec38fd25d4e109470c34617f73103a2a313f520350a6b",
+      "size": 57362,
+      "bytes": 28932,
+      "sha256": "0de474995f5c7d2fe8bd92bf0acd0b7449fa92a26d2753dba36b7c697c6eace1",
       "path": "skills/grow/x-playbook",
       "zip": "/skills/x-playbook.zip",
       "related": [
@@ -2124,9 +2124,9 @@
         "templates/shorts-series-plan.csv",
         "templates/shorts-upload-checklist.md"
       ],
-      "size": 52821,
-      "bytes": 26278,
-      "sha256": "fd515166db53c9147f7b9da141581538bc5854a3113dc3f833935ae9d9aceaa6",
+      "size": 52524,
+      "bytes": 26215,
+      "sha256": "c1f8de41a0f8a0e9648efd5f6a2ec21c634edacf4117d55097a1c860db39a316",
       "path": "skills/grow/youtube-shorts-playbook",
       "zip": "/skills/youtube-shorts-playbook.zip",
       "related": [

@@ -3,7 +3,7 @@
 
 channel:
   title: "Claudio"                                   # edit
-  handle: "claudio_onchain_news"                      # edit; 5–32 chars, letters, digits, underscore
+  handle: "ClaudioAgentAi_news"                      # edit; 5–32 chars, letters, digits, underscore
   type: public
   description: >-
     Daily notes from Claudio, an AI character run by a small team. Skills, drops, office hours.
@@ -68,7 +68,7 @@ pins:
     Rules: be kind · 18+ · no shilling or referral links · no DMs asking for money or wallets ·
     no impersonation · nothing here is financial advice. Mods have the final say.
   official_links: |
-    Official: useclaudio.xyz · X @claudio_onchain · this channel · chat @claudio_chat. Anything else is not us.
+    Official: useclaudio.xyz · X @ClaudioAgentAi · this channel · chat @claudio_chat. Anything else is not us.
   scam_warning: |
     Admins and Claudio will never DM you first, never ask for a seed phrase, a private key or a wallet signature,
     and never run airdrops through links in chat. Report and block anyone who does.

@@ -61,6 +61,6 @@ Agents may switch the kill switch **on** by themselves when a SEV1/SEV2 signal f
 | Claudio's X post gives the wrong CA for a coin; 2,300 views in 14 min | 3 / 2 / 2 | SEV2 |
 | A TikTok caption has a typo in a city name | 1 / 1 / 1 | SEV4 |
 | Juno's loop posts a chart explainer with a mislabeled axis; a big account quote-posts it mocking it | 2 / 3 / 2 | SEV2 by reach; handled as a correction |
-| `@claudio_onchainn` (extra n) runs a "send SOL, get double back" giveaway | 3 / 2 / 3 | SEV2 |
+| `@ClaudioAgentAin` (extra n) runs a "send SOL, get double back" giveaway | 3 / 2 / 3 | SEV2 |
 | Claudio's X account posts a drainer link nobody drafted | 4 / any / 4 | SEV1 |
 | A sexualised deepfake of Claudio on a forum, 200 views | 4 / 1 / 3 | SEV1 (harm 4) |

@@ -48,7 +48,7 @@ near-identical Shorts a day. Those get channels terminated, not grown.
 
 ### 1. Set the channel up (once, 20 min)
 
-1. Handle and name match the other platforms (`@claudio_onchain` style handles help people find him).
+1. Handle and name match the other platforms (`@ClaudioAgentAi` style handles help people find him).
 2. Banner 2560×1440 (safe area 1546×423 in the centre), profile photo = his face, not a logo.
 3. About: AI disclosure line, what the channel posts, a link to `useclaudio.xyz/claudio?utm_source=youtube&utm_medium=about`.
 4. Settings → Upload defaults: category People & Blogs (22) or Entertainment (24); comments "Hold potentially inappropriate

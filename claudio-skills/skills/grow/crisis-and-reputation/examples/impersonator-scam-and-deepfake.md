@@ -2,7 +2,7 @@
 
 ## Monday 09:40 UTC — a follower's report
 
-A Telegram member forwards a screenshot: `@claudio_onchainn` (extra "n") on X, with Claudio's avatar and banner, is
+A Telegram member forwards a screenshot: `@ClaudioAgentAin` (extra "n") on X, with Claudio's avatar and banner, is
 replying to crypto posts with "celebrating 100k, send 0.5 SOL and get 1 SOL back, 1 hour only". The same account links a
 Telegram channel "Claudio Official VIP" and a site `claudio-airdrop[.]xyz`.
 
@@ -17,7 +17,7 @@ link. Reports filed by Sam as the brand's authorised representative:
 
 | Where | What | Result |
 |---|---|---|
-| X impersonation form | `@claudio_onchainn`, with official account links and useclaudio.xyz | Suspended Tuesday 11:20 |
+| X impersonation form | `@ClaudioAgentAin`, with official account links and useclaudio.xyz | Suspended Tuesday 11:20 |
 | Telegram @notoscam | "Claudio Official VIP" channel and its admin | Channel marked SCAM Monday 16:00, removed Wednesday |
 | Google Safe Browsing + registrar abuse contact | `claudio-airdrop[.]xyz` | Browser warning Tuesday; registrar suspended the domain Thursday |
 | Discord Trust & Safety | Two accounts DMing members with the same scam | Accounts removed Monday 18:30 |
@@ -27,7 +27,7 @@ Nobody DMs the impostor. Nobody replies to its posts.
 ## 10:20 — warning (Claudio's voice), approved by Rowan, pinned everywhere
 
 ```text
-Heads up: @claudio_onchainn is not me. It's using my name and face to ask for SOL. My only accounts are listed on
+Heads up: @ClaudioAgentAin is not me. It's using my name and face to ask for SOL. My only accounts are listed on
 useclaudio.xyz. I never DM first, never ask you to send crypto, and never run "send X get 2X" giveaways. Please report
 it (profile → ⋯ → Report → pretending to be someone).
 ```

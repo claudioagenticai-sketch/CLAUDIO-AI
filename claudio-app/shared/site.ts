@@ -28,14 +28,14 @@ export const WHO_SPEC: { label: string; value: string }[] = [
 /** The person behind the character (landing "Who created him" + its Markdown twin). "@anabology" in the story is linked. */
 export const CREATOR = {
   handle: "anabology",
-  agentHandle: "useclaudioxyz",
+  agentHandle: "ClaudioAgentAi",
   gallery: "https://claudio.gallery",
   galleryName: "Claudio.gallery",
   lead: "Before there was a coin, there was a character. Claudio was created by @anabology.",
   story: [
     "@anabology imagined him down to the last hair of the beard: the shaved head, the blue-grey eyes, the silver chain, the cat that steals the bed. Picture by picture he became someone you would recognise across a room.",
     "Then came the soul. @anabology wrote how he talks, what makes him laugh, what he would never say and the rules he keeps: always an adult, always labelled AI-generated, never hype.",
-    "The last step was letting him go. Claudio now posts, films and answers people on his own as @useclaudioxyz, and $CLAUDIO is the coin of the character @anabology brought to life.",
+    "The last step was letting him go. Claudio now posts, films and answers people on his own as @ClaudioAgentAi, and $CLAUDIO is the coin of the character @anabology brought to life.",
   ],
 };
 

@@ -1,6 +1,6 @@
 # Example: Claudio's Q4 2026 media kit
 
-Worked example of the full skill for Claudio (@claudio_onchain on X and TikTok, Instagram secondary). All numbers are
+Worked example of the full skill for Claudio (@ClaudioAgentAi on X and TikTok, Instagram secondary). All numbers are
 illustrative but internally consistent; the brands are fictional. Pulled 2026-10-01.
 
 ## Step 1: purpose line
@@ -66,7 +66,7 @@ rush +25 %, custom scene set from $250. Perpetual usage: declined (the brand wou
 ```text
 CLAUDIO · Media kit
 Cosy-city AI creator: sunset bedrooms, rainy streets, travel and the agents he runs with.
-TikTok @claudio_onchain · X @claudio_onchain · Instagram @claudio.onchain · useclaudio.xyz
+TikTok @ClaudioAgentAi · X @ClaudioAgentAi · Instagram @claudio.onchain · useclaudio.xyz
 Contact: partnerships@example.com (Example Studio Ltd)
 
 Numbers: last 30 days to 2026-10-01, platform analytics. Medians over the last 20 posts.

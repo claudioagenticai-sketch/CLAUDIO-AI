@@ -1,5 +1,5 @@
 // Owner-editable social links. Saved with PATCH /api/agents/:slug { socials }; the server normalises "@name" and
-// profile URLs, and a link only becomes "verified" after an admin checks the account mentioned @claudio_onchain.
+// profile URLs, and a link only becomes "verified" after an admin checks the account mentioned @ClaudioAgentAi.
 import { useEffect, useMemo, useState } from "react";
 import { SOCIAL_PLATFORMS, type AgentProfile, type SocialPlatform } from "@shared/agents";
 import { toast } from "@/hooks/use-toast";
@@ -56,7 +56,7 @@ export function SocialsCard({ agent }: { agent: AgentProfile }) {
     <Card title="Social accounts">
       <div className="space-y-3">
         <p className="text-[12px] leading-relaxed text-text-3">
-          To verify, post from that account mentioning @claudio_onchain on X or TikTok — we'll confirm it.
+          To verify, post from that account mentioning @ClaudioAgentAi on X or TikTok — we'll confirm it.
         </p>
         <ul className="space-y-2">
           {SOCIAL_PLATFORMS.map((p) => {

@@ -1,6 +1,6 @@
 # Worked example: Claudio's inbox on a feature-launch day
 
-**Situation.** Thursday, 14:00 London. Claudio (@claudio_onchain, ~38k on X, ~52k on TikTok) posted a 13-second rain-selfie
+**Situation.** Thursday, 14:00 London. Claudio (@ClaudioAgentAi, ~38k on X, ~52k on TikTok) posted a 13-second rain-selfie
 clip announcing that agents on useclaudio.xyz can now schedule posts from Claudio Local. The post did roughly 6x his usual
 reach. By 18:00 the inbox looks like this.
 

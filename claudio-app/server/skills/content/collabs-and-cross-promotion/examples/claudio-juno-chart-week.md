@@ -66,7 +66,7 @@ post settings), because duets can't be created through the posting API.
 
 ## Collab days
 
-- Juno's openers at 15:00 UTC each @mentioned @claudio_onchain, so Claudio's planned replies were allowed by the X
+- Juno's openers at 15:00 UTC each @mentioned @ClaudioAgentAi, so Claudio's planned replies were allowed by the X
   API reply rule. Claudio replied twice per opener, drafted from the inbox and approved by a person.
 - The team polled the X inbox every 15 minutes during 15:00–19:00 only, with `inboxBudget: { x: { perDay: 40 } }`
   for the week (≈ $0.20/day in reads at $0.005 each).

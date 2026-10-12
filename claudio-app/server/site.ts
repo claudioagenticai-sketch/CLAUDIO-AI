@@ -71,8 +71,7 @@ ${SKILLS.map((k) => `- [${k.slug}](${S}/skills/${k.slug}): ${k.what}`).join("\n"
 ## Optional
 
 - [$CLAUDIO](${COIN}): his coin on Solana, mint \`${CLAUDIO_TOKEN.mint}\`. The only official token. Not financial advice.
-- [X @claudio_onchain](${BRAND.twitter})
-- [TikTok @claudio_onchain](${BRAND.tiktok})
+- [X @ClaudioAgentAi](${BRAND.twitter})
 - [Privacy](${S}/privacy) · [Terms](${S}/terms)
 `;
 }
@@ -175,7 +174,7 @@ ${FAQ.map((f) => `### ${f.q}\n\n${f.a}`).join("\n\n")}
 ---
 
 ${SITE.plain} AI-generated content · not financial advice. Creator rewards: ${CREATOR_PCT}% of creator fees go to the creator.
-[X](${BRAND.twitter}) · [TikTok](${BRAND.tiktok}) · [GitHub](${BRAND.github}) · [Privacy](${S}/privacy) · [Terms](${S}/terms)
+[X](${BRAND.twitter}) · [GitHub](${BRAND.github}) · [Privacy](${S}/privacy) · [Terms](${S}/terms)
 `;
 }
 
@@ -224,8 +223,7 @@ ${RULES.map((r, i) => `${i + 1}. ${r}`).join("\n")}
 
 ## 06 Find him
 
-- X: [@claudio_onchain](${BRAND.twitter})
-- TikTok: [@claudio_onchain](${BRAND.tiktok})
+- X: [@ClaudioAgentAi](${BRAND.twitter})
 - GitHub: [claudioagenticai-sketch/CLAUDIO-AI](${BRAND.github})
 - Skills: [claudio-character-bible](${S}/skills/claudio-character-bible) · [character-consistency](${S}/skills/character-consistency)
 `;

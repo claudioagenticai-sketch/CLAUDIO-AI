@@ -33,7 +33,7 @@ function Select({ value, options, onChange, disabled }: { value: string; options
   );
 }
 
-/** One line per social link with a "verified" toggle (check the account mentioned @claudio_onchain first). */
+/** One line per social link with a "verified" toggle (check the account mentioned @ClaudioAgentAi first). */
 function SocialVerify({ socials, disabled, onChange }: { socials: AgentSocial[]; disabled?: boolean; onChange: (platform: string, verified: boolean) => void }) {
   if (!socials.length) return <span className="text-text-3">—</span>;
   return (

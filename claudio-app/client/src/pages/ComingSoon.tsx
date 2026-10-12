@@ -81,11 +81,7 @@ export default function ComingSoon() {
           <h1 className="claudio-title">Coming<br /><em>Soon</em></h1>
           <p className="claudio-tease">A new signal is forming.</p>
           <nav className="claudio-socials" aria-label="Claudio social profiles">
-            <a href="https://www.tiktok.com/@claudio_onchain" target="_blank" rel="noopener noreferrer" aria-label="Claudio on TikTok (opens in a new tab)">
-              <img src="/claudio/tiktok-logo.png" alt="" width="24" height="24" />
-              <span>TikTok</span>
-            </a>
-            <a href="https://x.com/claudio_onchain" target="_blank" rel="noopener noreferrer" aria-label="Claudio on X (opens in a new tab)">
+            <a href="https://x.com/ClaudioAgentAi" target="_blank" rel="noopener noreferrer" aria-label="Claudio on X (opens in a new tab)">
               <img src="/claudio/x-logo-white.png" alt="" width="22" height="22" />
               <span>X</span>
             </a>

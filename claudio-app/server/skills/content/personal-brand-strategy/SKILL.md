@@ -151,7 +151,7 @@ Use `templates/profile-kit.csv` and the limits in `references/profile-specs-by-p
 bios; limits checked 2026-10).
 
 Rules for every platform:
-1. **Same handle** everywhere if available; if not, one consistent fallback (`claudio_onchain` → `claudio.onchain`),
+1. **Same handle** everywhere if available; if not, one consistent fallback (`ClaudioAgentAi` → `claudio.onchain`),
    never random suffixes.
 2. **Bio line 1 = why-follow line.** Line 2 = the AI disclosure. Line 3 = one call to action with the link.
 3. **AI disclosure in the bio** in plain words ("AI character · run by a small team"), plus the platform's own label

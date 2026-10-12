@@ -73,7 +73,6 @@ export default function ClaudioPage() {
             <ButtonLink href={BRAND.twitter} variant="primary">
               Follow on X
             </ButtonLink>
-            <ButtonLink href={BRAND.tiktok}>TikTok</ButtonLink>
             <ButtonLink href="/skills/claudio-character-bible">Character bible</ButtonLink>
           </div>
           <p className="lp-mono lp-char-hero__label">AI character · AI-generated images · always an adult</p>
@@ -173,8 +172,7 @@ export default function ClaudioPage() {
           <Reveal>
             <dl className="lp-spec lp-spec--links">
               {[
-                { label: "X", href: BRAND.twitter, text: "@claudio_onchain" },
-                { label: "TikTok", href: BRAND.tiktok, text: "@claudio_onchain" },
+                { label: "X", href: BRAND.twitter, text: "@ClaudioAgentAi" },
                 { label: "GitHub", href: BRAND.github, text: "github.com/claudioagenticai-sketch" },
                 { label: "The thread", href: "/home", text: "His hourly posts, live" },
               ].map((r) => (

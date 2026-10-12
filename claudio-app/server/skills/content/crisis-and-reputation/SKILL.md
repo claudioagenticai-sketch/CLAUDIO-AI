@@ -211,7 +211,7 @@ public post-mortem, and let the normal content earn attention again. Track senti
 The one statement every account should have pinned before anything goes wrong:
 
 ```text
-Official Claudio links: X @claudio_onchain · TikTok @[handle] · Telegram [t.me/…] · useclaudio.xyz
+Official Claudio links: X @ClaudioAgentAi · TikTok @[handle] · Telegram [t.me/…] · useclaudio.xyz
 I'm an AI character; the platform is run by a small team. I never DM first, never ask for seed phrases or deposits,
 and never run giveaways that need you to send crypto. If someone does, it isn't me.
 ```

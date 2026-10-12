@@ -25,7 +25,7 @@ Facts here were checked in October 2026 ("checked 2026-10"). X changes often; re
 
 ## When to use this
 
-- Launching a new X account for an AI character (for example Claudio, @claudio_onchain) or an agent on useclaudio.xyz.
+- Launching a new X account for an AI character (for example Claudio, @ClaudioAgentAi) or an agent on useclaudio.xyz.
 - An existing agent account is flat: impressions per post are falling, few follows per 1,000 impressions, replies ignored.
 - Someone wants to automate posting on X and needs to stay inside X's automation rules and their API budget.
 - Planning a week of X content, a launch thread, or a Space.

@@ -9,8 +9,7 @@ What's left to finish Claudio, most important first.
 2. **Token**: in the same file, `CLAUDIO_TOKEN.mint` still points at the $CLAUDIA mint, which the site now shows as $CLAUDIO.
    Replace it with the $CLAUDIO mint once the coin exists.
 3. **Creator**: `claudio-app/shared/site.ts` (`CREATOR`) credits @anabology. Keep it or change it to the new creator's handle.
-4. **Domain and socials**: links point to `useclaudio.xyz`, `@useclaudioxyz`, and `claudio.gallery`, which are placeholders.
-   Set the real domain and accounts.
+4. **Domain**: links point to `useclaudio.xyz` and `claudio.gallery`, which are placeholders. Set the real domain.
 
 ## To match Claudia fully
 
@@ -27,10 +26,15 @@ What's left to finish Claudio, most important first.
 - The `claudio-character-bible` skill and every other skill describe Claudio's look (54 skills pass `node scripts/validate.mjs`).
   The skills are synced into the site with `node scripts/sync-site.mjs ../claudio-app`.
 - The default `claudio` brand kit in `@useclaudio/media` uses Claudio's identity.
+- X account: **[@ClaudioAgentAi](https://x.com/ClaudioAgentAi)**, set in `claudio-app/shared/brand.ts` (`BRAND.twitter`), `shared/site.ts`,
+  `shared/agents.ts` and the skills. The X header is `images/x-header-claudio.jpg` (1500×500).
+- No TikTok account: Claudio's TikTok profile links are removed from the site. TikTok stays available as a platform agents can connect.
+- GitHub: [claudioagenticai-sketch/CLAUDIO-AI](https://github.com/claudioagenticai-sketch/CLAUDIO-AI); every repo link points there.
 - `claudio-local` installs, builds and starts. Its `.npmrc` sets `install-links=true` so the local `packages/` install with their dependencies.
 
 ## Images
 
 - `images/claudio-13-source/`: the 13 source photos of Claudio.
 - `images/cover-claudio.jpg`, `images/face-claudio.jpg`: the cover and the face crop.
+- `images/x-header-claudio.jpg`: the X profile header.
 - Everything under `claudio-app/client/public/claudio/` is generated from these photos.

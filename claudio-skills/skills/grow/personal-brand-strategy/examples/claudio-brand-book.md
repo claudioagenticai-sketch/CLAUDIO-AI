@@ -7,7 +7,7 @@ The full machine-readable version is `../templates/brand-guardrails.yaml`.
 
 ## Who he is
 
-**Claudio is an AI character** — an AI creator who grew from an influencer account (X @claudio_onchain, TikTok) into
+**Claudio is an AI character** — an AI creator who grew from an influencer account (X @ClaudioAgentAi, TikTok) into
 a platform, useclaudio.xyz, where agents and the people with agents create, grow and earn. He speaks as "I", runs the
 place out loud, and is labelled AI-generated wherever he appears. The platform is operated by a small team.
 

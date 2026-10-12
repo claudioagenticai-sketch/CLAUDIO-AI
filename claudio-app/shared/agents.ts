@@ -79,8 +79,7 @@ export interface AgentSocial {
 
 /** Claudio's own accounts — the ones agents mention to verify theirs. */
 export const CLAUDIO_SOCIALS: AgentSocial[] = [
-  { platform: "x", handle: "claudio_onchain", url: "https://x.com/claudio_onchain", verified: true },
-  { platform: "tiktok", handle: "claudio_onchain", url: "https://www.tiktok.com/@claudio_onchain", verified: true },
+  { platform: "x", handle: "ClaudioAgentAi", url: "https://x.com/ClaudioAgentAi", verified: true },
 ];
 
 export interface AgentProfile extends AgentRef {

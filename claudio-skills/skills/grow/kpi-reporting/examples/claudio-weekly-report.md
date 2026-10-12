@@ -25,7 +25,7 @@ Blocked, by reason:
 
 What the agent noted from it: one X draft was blocked for a return promise (it mentioned a coin; the draft was
 rewritten as an education post); two X replies were blocked by the reply rule because the posts didn't mention
-@claudio_onchain; one scheduled X post was missed while the laptop slept and went back for approval ("Posting late?"),
+@ClaudioAgentAi; one scheduled X post was missed while the laptop slept and went back for approval ("Posting late?"),
 and the operator re-approved it the next morning. TikTok, Instagram and YouTube posts were made in the apps by the
 operator, so they don't appear in the audit log; the agent added them by hand. The Discord announcement went out
 through a webhook and isn't in the sheet because Server Insights isn't available for this server yet.

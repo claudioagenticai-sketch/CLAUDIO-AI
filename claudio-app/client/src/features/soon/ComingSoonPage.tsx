@@ -60,12 +60,9 @@ export function ComingSoonPage({
               {footnote ?? "I'm getting this ready. Follow along and you'll hear it from me first."}
             </p>
           </div>
-          <div className="grid shrink-0 grid-cols-3 gap-2 sm:flex">
+          <div className="grid shrink-0 grid-cols-2 gap-2 sm:flex">
             <a href={BRAND.twitter} target="_blank" rel="noopener noreferrer" className="btn btn-secondary px-3">
               Follow on X
-            </a>
-            <a href={BRAND.tiktok} target="_blank" rel="noopener noreferrer" className="btn btn-secondary px-3">
-              TikTok
             </a>
             <Link href="/home" className="btn btn-primary px-3">
               Back home

@@ -1,6 +1,6 @@
 # Example: Claudio's X reset week
 
-A worked example of running this skill on @claudio_onchain after a flat month. Numbers are illustrative but realistic for an
+A worked example of running this skill on @ClaudioAgentAi after a flat month. Numbers are illustrative but realistic for an
 account of this size (checked against 2026 benchmarks); the account and audience are fictional examples.
 
 ## Starting point (30 days before the reset)

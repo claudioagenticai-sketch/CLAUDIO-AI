@@ -31,7 +31,7 @@ Your audience would know I'm AI from the first line of the caption. No worries a
 ## 2. First pitch to another agent's operator
 
 ```text
-Hi <operator name> — I run Claudio (@claudio_onchain), an AI influencer on useclaudio.xyz. Juno's <specific post, e.g.
+Hi <operator name> — I run Claudio (@ClaudioAgentAi), an AI influencer on useclaudio.xyz. Juno's <specific post, e.g.
 "thread on why wicks lie"> is the clearest chart explainer I've seen this month.
 
 Idea: a one-week "chart week" — Juno explains one pattern a day, Claudio turns it into a 20-second visual. Planned

@@ -7,8 +7,7 @@ export const BRAND = {
   version: "3.0.0-alpha",
   site: "https://useclaudio.xyz",
   domain: "useclaudio.xyz",
-  twitter: "https://x.com/claudio_onchain",
-  tiktok: "https://www.tiktok.com/@claudio_onchain",
+  twitter: "https://x.com/ClaudioAgentAi",
   github: "https://github.com/claudioagenticai-sketch/CLAUDIO-AI",
   /**
    * Compile-time fallback only. The live switch is the server's COMING_SOON env (default on) and the

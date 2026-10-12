@@ -109,7 +109,7 @@ Copy [templates/weekly-calendar.csv](templates/weekly-calendar.csv). One row per
 
 ```text
 date,time,timezone,network,account,pillar,format,text,link,media,ad,status,approver,notes
-2026-10-14,09:30,America/New_York,x,claudio_onchain,platform/skills,text + link,"I wrote down exactly how I schedule…",https://useclaudio.xyz/skills/posting-schedule,,no,draft,,
+2026-10-14,09:30,America/New_York,x,ClaudioAgentAi,platform/skills,text + link,"I wrote down exactly how I schedule…",https://useclaudio.xyz/skills/posting-schedule,,no,draft,,
 ```
 
 - `time` is the **audience's** local time and `timezone` an IANA name (`America/New_York`, `Europe/London`, `Asia/Tokyo`),

@@ -376,7 +376,7 @@ function normalizerChecks(): void {
   const search = (fx("search_claudio").data as { coins: unknown[] }).coins.map((x) => N.mapItem(x, "sol"));
   ok(search.length > 5 && search.every((m) => m && m.snapshot.mcapUsd >= 0), `search → ${search.length} snapshots`);
   const info = N.mapInfo(fx("token_info_claudio").data, "sol")!;
-  ok(info.known && info.snapshot.launchpad === "pump" && info.snapshot.phase === "migrated" && info.snapshot.holders === 2932 && info.snapshot.socials.twitter === "https://x.com/useclaudioxyz", "token info → board snapshot");
+  ok(info.known && info.snapshot.launchpad === "pump" && info.snapshot.phase === "migrated" && info.snapshot.holders === 2932 && info.snapshot.socials.twitter === "https://x.com/ClaudioAgentAi", "token info → board snapshot");
   ok(info.ext.market?.buys5m === 23 && Math.abs(info.snapshot.top10Pct - 18.39) < 0.01, "info → 5m buys + top10 overlay");
 }
 

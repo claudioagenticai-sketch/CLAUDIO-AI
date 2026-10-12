@@ -18,11 +18,11 @@
   },
   "window": { "label": "Last 30 days", "from": "2026-09-01", "to": "2026-09-30", "pulledOn": "2026-10-01", "medianOverPosts": 20 },
   "stats": [
-    { "platform": "tiktok", "handle": "@claudio_onchain", "followers": 41200, "medianViews": 12400, "engagementRate": 0.058, "erFormula": "(likes+comments+shares+saves)/views", "postsPer30d": 18 },
-    { "platform": "x", "handle": "@claudio_onchain", "followers": 18900, "medianViews": 3100, "engagementRate": 0.021, "erFormula": "engagements/impressions (X definition)", "postsPer30d": 240 },
+    { "platform": "tiktok", "handle": "@ClaudioAgentAi", "followers": 41200, "medianViews": 12400, "engagementRate": 0.058, "erFormula": "(likes+comments+shares+saves)/views", "postsPer30d": 18 },
+    { "platform": "x", "handle": "@ClaudioAgentAi", "followers": 18900, "medianViews": 3100, "engagementRate": 0.021, "erFormula": "engagements/impressions (X definition)", "postsPer30d": 240 },
     { "platform": "instagram", "handle": "@claudio.onchain", "followers": 9400, "medianViews": 9800, "engagementRate": 0.046, "erFormula": "(likes+comments+saves+shares)/accounts reached", "postsPer30d": 12 }
   ],
-  "topPost": { "platform": "tiktok", "url": "https://www.tiktok.com/@claudio_onchain/video/0000000000000000000", "views": 412000, "multipleOfMedian": 33.2, "includedInMedians": false },
+  "topPost": { "platform": "tiktok", "url": "https://www.tiktok.com/@ClaudioAgentAi/video/0000000000000000000", "views": 412000, "multipleOfMedian": 33.2, "includedInMedians": false },
   "audience": {
     "source": "platform analytics, last 30 days",
     "countries": [ { "code": "US", "pct": 0.38 }, { "code": "GB", "pct": 0.17 }, { "code": "DE", "pct": 0.07 } ],
@@ -31,9 +31,9 @@
     "note": "Audience is concentrated in English-speaking markets and 18-34."
   },
   "pillars": [
-    { "name": "Sunset room talks", "format": "9:16 talking-to-camera, 30-60 s", "exampleUrl": "https://www.tiktok.com/@claudio_onchain/video/0000000000000000001", "why": "Direct address plus a question hook; 71% watched past 3 s" },
+    { "name": "Sunset room talks", "format": "9:16 talking-to-camera, 30-60 s", "exampleUrl": "https://www.tiktok.com/@ClaudioAgentAi/video/0000000000000000001", "why": "Direct address plus a question hook; 71% watched past 3 s" },
     { "name": "Rainy-city nights", "format": "9:16 selfie run, 8-15 s loops", "exampleUrl": "https://www.instagram.com/reel/EXAMPLE1/", "why": "High sends: people forward it to friends" },
-    { "name": "Agents at work", "format": "X thread + screen clip", "exampleUrl": "https://x.com/claudio_onchain/status/0000000000000000002", "why": "Explains a real agent workflow; most new follows per post" }
+    { "name": "Agents at work", "format": "X thread + screen clip", "exampleUrl": "https://x.com/ClaudioAgentAi/status/0000000000000000002", "why": "Explains a real agent workflow; most new follows per post" }
   ],
   "caseStudies": [
     { "brand": "Organic test", "period": "2026-08", "platform": "tiktok", "goal": "Drive sign-ups to the creator skills library", "deliverable": "1 video + 1 X thread", "result": "38k views (3.1x median), 4.4% ER by views, 1,120 link clicks, 96 sign-ups via UTM", "learned": "A how-to with a visible result outperformed the vibe edit 3:1", "quote": null }

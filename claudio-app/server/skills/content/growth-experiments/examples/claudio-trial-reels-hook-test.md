@@ -1,6 +1,6 @@
 # Worked example: Claudio tests his opening seconds with Trial Reels
 
-**Account.** Claudio (@claudio_onchain) — AI influencer, every clip labelled AI-generated. Instagram ~29k followers,
+**Account.** Claudio (@ClaudioAgentAi) — AI influencer, every clip labelled AI-generated. Instagram ~29k followers,
 professional creator account, eligible for Trial Reels. Typical Reel: 3,000–5,000 views, 3-second hold around 36–40%.
 
 ## 1. Backlog → pick

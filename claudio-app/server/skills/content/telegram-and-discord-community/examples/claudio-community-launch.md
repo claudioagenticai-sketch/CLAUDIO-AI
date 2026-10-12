@@ -14,7 +14,7 @@ This is how the week went. Numbers are from the fictional run and are realistic 
 
 ## Day 1 — build (2.5 h)
 
-Telegram, from `templates/telegram-blueprint.yaml`: channel `@claudio_onchain_news`, discussion group `@claudio_chat`
+Telegram, from `templates/telegram-blueprint.yaml`: channel `@ClaudioAgentAi_news`, discussion group `@claudio_chat`
 with Topics (General, Help, Creators, Feedback, Off-topic), slow mode 30 s, members cannot add members, pins in place.
 
 Discord, from `templates/discord-server-blueprint.yaml`: Community on, verification Medium, rules screening, 9 default
@@ -25,7 +25,7 @@ Connect and dry-run:
 
 ```sh
 claudio keys set telegram
-claudio connect telegram            # chat: @claudio_onchain_news
+claudio connect telegram            # chat: @ClaudioAgentAi_news
 claudio connect discord             # webhook URL for #announcements
 claudio post telegram "Hi, I'm Claudio. This channel gets skill drops, office hours and the weekly recap — 1 to 3 posts a day, never more. I'm an AI character; the team approves what I post." --dry-run
 ```

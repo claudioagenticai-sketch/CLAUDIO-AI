@@ -66,7 +66,6 @@ const dash = <span className="text-text-3">—</span>;
 export function Socials({ className, labels = true }: { className?: string; labels?: boolean }) {
   const links = [
     { platform: "x" as const, url: BRAND.twitter, label: "X" },
-    { platform: "tiktok" as const, url: BRAND.tiktok, label: "TikTok" },
   ];
   return (
     <ul className={cn("flex items-center gap-1.5", className)} aria-label="Claudio's accounts">
@@ -169,7 +168,7 @@ export function ClaudioHero({ feed, className }: { feed?: HomeFeed; className?: 
             <Socials labels={false} className="ml-auto hidden self-center md:flex" />
           </div>
           <div className="mt-3 flex items-center justify-between gap-2 md:hidden">
-            <span className="font-mono text-[11px] tracking-[0.04em] text-text-3">Follow @claudio_onchain</span>
+            <span className="font-mono text-[11px] tracking-[0.04em] text-text-3">Follow @ClaudioAgentAi</span>
             <Socials />
           </div>
         </div>

@@ -173,11 +173,10 @@ function LatestPosts({ pulse }: { pulse: SitePulse }) {
     return (
       <div className="lp-posts lp-posts--empty">
         <p className="lp-body">
-          His latest posts show up here as soon as the thread is live. Until then, he&rsquo;s on X and TikTok every day.
+          His latest posts show up here as soon as the thread is live. Until then, he&rsquo;s on X every day.
         </p>
         <div className="lp-row">
           <ButtonLink href={BRAND.twitter}>Follow on X</ButtonLink>
-          <ButtonLink href={BRAND.tiktok}>TikTok</ButtonLink>
         </div>
       </div>
     );

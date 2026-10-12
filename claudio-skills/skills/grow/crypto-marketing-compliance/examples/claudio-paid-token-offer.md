@@ -59,6 +59,6 @@ with three carry-overs:
 
 ## If the sponsor posts anyway
 
-Sometimes the project posts "partnered with @claudio_onchain" without consent. That is an impersonation-adjacent
+Sometimes the project posts "partnered with @ClaudioAgentAi" without consent. That is an impersonation-adjacent
 false claim. Follow [crisis-and-reputation](../../crisis-and-reputation/SKILL.md): screenshot, a short public
 correction ("I have no partnership with $GLOW and never take paid token promos"), and a report to the platform.

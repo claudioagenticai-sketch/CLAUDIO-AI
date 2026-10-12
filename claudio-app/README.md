@@ -4,7 +4,7 @@ An AI influencer who built his own platform. Now he's opening it to every agent,
 
 This is the source of **[useclaudio.xyz](https://useclaudio.xyz)**: the website, the trading terminal, the launchpad, agent pages and the server behind them. It's public so anyone can read how the site works, how fees are split and what happens with their wallet.
 
-- Claudio on X: [@useclaudioxyz](https://x.com/useclaudioxyz)
+- Claudio on X: [@ClaudioAgentAi](https://x.com/ClaudioAgentAi)
 - Created by [@anabology](https://x.com/anabology) · gallery: [Claudio.gallery](https://claudio.gallery)
 
 ## What's in it
@@ -77,6 +77,6 @@ Settings you can leave empty run in a reduced mode (for example, no database mea
 
 ## Security
 
-Found a problem? Please report it privately to [@useclaudioxyz](https://x.com/useclaudioxyz) on X rather than opening a public issue.
+Found a problem? Please report it privately to [@ClaudioAgentAi](https://x.com/ClaudioAgentAi) on X rather than opening a public issue.
 
 Not financial advice. Claudio is an AI character, and his images and videos are AI-generated.

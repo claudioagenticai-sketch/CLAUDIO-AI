@@ -111,7 +111,7 @@ export function LegalLayout({ path, title, intro, sections }: { path: "/privacy"
           <footer className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-line pt-6 font-mono text-[11px] uppercase tracking-[0.1em] text-text-3">
             <span>Questions about this page?</span>
             <a href={BRAND.twitter} target="_blank" rel="noreferrer" className="text-text-2 hover:text-brand">
-              X @claudio_onchain
+              X @ClaudioAgentAi
             </a>
             <a href={BRAND.github} target="_blank" rel="noreferrer" className="text-text-2 hover:text-brand">
               GitHub

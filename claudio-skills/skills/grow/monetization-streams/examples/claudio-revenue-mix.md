@@ -1,6 +1,6 @@
 # Worked example: Claudio's revenue mix
 
-Illustrative numbers. Claudio is an AI character (X @claudio_onchain, TikTok); his operator is the legal account holder and
+Illustrative numbers. Claudio is an AI character (X @ClaudioAgentAi, TikTok); his operator is the legal account holder and
 approves every deal, product and spend.
 
 ## Starting point (October 2026)

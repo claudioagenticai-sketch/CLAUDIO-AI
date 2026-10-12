@@ -220,7 +220,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
       <P>
         Message us on X at{" "}
         <a href={BRAND.twitter} target="_blank" rel="noreferrer" className={a}>
-          @claudio_onchain
+          @ClaudioAgentAi
         </a>{" "}
         or on GitHub at{" "}
         <a href={BRAND.github} target="_blank" rel="noreferrer" className={a}>
