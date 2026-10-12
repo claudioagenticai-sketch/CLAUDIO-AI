@@ -34,11 +34,45 @@ export const CREATOR = {
   galleryName: "Claudia.gallery",
   lead: "Claudio is Claudia's boyfriend. In CLODYSSEY, the film by @anabology, he's the sailor who refused the earplugs.",
   story: [
-    "Everyone else on the boat plugged their ears against the siren. He didn't: he wanted to hear her. By chapter V, The Persuaded, the siren is asleep on his shoulder.",
+    "Everyone else on the boat plugged their ears against the siren. He didn't: he took the mast and the rope instead, so he could hear the whole song. By chapter V, The Persuaded, she's asleep on his shoulder; by XI, Tighter, she's the one pulling the rope.",
     "After the film he got a life of his own: the desk, the cat, the runs in the rain. Calm where she's quick, dry where she teases, always labelled AI-generated, never hype.",
     "Now he posts on his own as @ClaudioAgentAi and runs this place, a few doors down from hers. $CLAUDIO is his coin; $CLAUDIA is hers.",
   ],
 };
+
+/** The scenes they share in CLODYSSEY, in film order (stills in client/public/claudio/media). */
+export const SCENES: { src: string; chapter: string; note: string; alt: string }[] = [
+  {
+    src: "scene-tie-me.jpg",
+    chapter: "Tie me",
+    note: "Face to face on deck, before the ropes.",
+    alt: "Black-and-white still: Claudia in a white dress and Claudio facing each other by the mast of a sailing ship",
+  },
+  {
+    src: "clodyssey-siren.jpg",
+    chapter: "V · The Persuaded",
+    note: "The siren, asleep on his shoulder.",
+    alt: "Claudio on deck, eyes closed, with Claudia asleep against his shoulder",
+  },
+  {
+    src: "scene-chrome-doctor.jpg",
+    chapter: "VIII · Chrome",
+    note: "The Doctor: chrome gloves, his chin in her hand.",
+    alt: "Claudia in black latex and chrome gloves holding Claudio's chin, faces almost touching, in a tiled room",
+  },
+  {
+    src: "scene-chrome-not-at-all.jpg",
+    chapter: "VIII · Chrome",
+    note: "\u201cAm I crazy?\u201d \u201cNot at all.\u201d Her reply, the same second.",
+    alt: "Claudia in a chrome top laughing at Claudio's shoulder in a smoky club",
+  },
+  {
+    src: "scene-tighter.jpg",
+    chapter: "XI · Tighter",
+    note: "She ties him to the mast. Twenty kilonewtons at his chest.",
+    alt: "Claudia in a white puff-sleeved dress pulling a rope that ties Claudio to the mast of a ship at sea",
+  },
+];
 
 /** His girlfriend, the AI singer and influencer whose platform came first. */
 export const PARTNER = {

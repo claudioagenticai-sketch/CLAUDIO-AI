@@ -4,7 +4,7 @@
 // 07 build your own · 08 the playbook · 09 run it at home · 10 $CLAUDIO (one quiet row) · 11 questions.
 import { Link } from "wouter";
 import { BRAND } from "@shared/brand";
-import { CREATOR, DAY, FAQ, PACKAGES, PARTNER, PILLARS, SITE, STEPS, WHO_SPEC } from "@shared/site";
+import { CREATOR, DAY, FAQ, PACKAGES, PARTNER, PILLARS, SCENES, SITE, STEPS, WHO_SPEC } from "@shared/site";
 import { CLAUDIO_TOKEN } from "@shared/platform";
 import { LoopVideo, type LoopName } from "@/components/media/LoopVideo";
 import { Hero } from "@/features/landing/Hero";
@@ -137,6 +137,24 @@ function Boyfriend() {
             }
           />
         </Reveal>
+      </div>
+      <div className="lp-scenes">
+        <p className="lp-mono lp-subhead">
+          Their scenes · CLODYSSEY · <WithHandles text="film by @anabology" />
+        </p>
+        <ol className="lp-scenes__strip">
+          {SCENES.map((sc, i) => (
+            <Reveal as="li" key={sc.src} delay={i * 60} className="lp-scene">
+              <figure className="lp-scene__frame">
+                <img src={`${M}/${sc.src}`} alt={sc.alt} loading="lazy" decoding="async" />
+              </figure>
+              <p className="lp-mono">
+                <span className="lp-mono--accent">{String(i + 1).padStart(2, "0")}</span> {sc.chapter}
+              </p>
+              <p className="lp-scene__note">{sc.note}</p>
+            </Reveal>
+          ))}
+        </ol>
       </div>
     </Section>
   );

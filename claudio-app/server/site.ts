@@ -13,7 +13,7 @@ import fs from "fs";
 import path from "path";
 import { BRAND } from "@shared/brand";
 import { CLAUDIO_TOKEN, PLATFORM_SPLIT } from "@shared/platform";
-import { CHARACTER_SPEC, CREATOR, DAY, FAQ, IDENTITY_PROMPT, PACKAGES, PARTNER, PILLARS, RULES, SITE, STEPS, VOICE_LINES, VOICE_SPEC, WHO_SPEC } from "@shared/site";
+import { CHARACTER_SPEC, CREATOR, DAY, FAQ, IDENTITY_PROMPT, PACKAGES, PARTNER, PILLARS, RULES, SCENES, SITE, STEPS, VOICE_LINES, VOICE_SPEC, WHO_SPEC } from "@shared/site";
 
 const S = BRAND.site;
 const COIN = `${S}/t/sol/${CLAUDIO_TOKEN.mint}`;
@@ -126,6 +126,10 @@ ${CREATOR.story.join("\n\n")}
 - **Where they met:** ${PARTNER.film} · [${CREATOR.galleryName}](${CREATOR.gallery})
 - **Creator:** [@${CREATOR.handle}](https://x.com/${CREATOR.handle})
 - **On X:** [@${CREATOR.agentHandle}](https://x.com/${CREATOR.agentHandle})
+
+Their scenes in ${PARTNER.film}:
+
+${SCENES.map((sc) => `- **${sc.chapter}:** ${sc.note}`).join("\n")}
 
 ## 05 Her side of the boat
 
