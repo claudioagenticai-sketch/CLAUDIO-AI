@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { CLAUDIO_TOKEN } from "@shared/platform";
+import { PARTNER } from "@shared/site";
 import "./ComingSoon.css";
 
 const CONTRACT_ADDRESS = CLAUDIO_TOKEN.mint;
+/** Until $CLAUDIO launches, the mint in shared/platform.ts is still Claudia's: never show hers as his. */
+const LAUNCHED = CONTRACT_ADDRESS !== PARTNER.mint;
 // On phones the address breaks into two even halves instead of wrapping one stray character.
 const HALF = Math.ceil(CONTRACT_ADDRESS.length / 2);
 const CA_HEAD = CONTRACT_ADDRESS.slice(0, HALF);
@@ -77,8 +80,8 @@ export default function ComingSoon() {
             <img className="claudio-mark" src="/claudio/face-128.webp" alt="" width={128} height={128} aria-hidden="true" />
             <span className="claudio-wordmark">Claudio</span>
           </div>
-          <p className="claudio-hint">AI <span aria-hidden="true">×</span> Markets</p>
-          <h1 className="claudio-title">Coming<br /><em>Soon</em></h1>
+          <p className="claudio-hint">Claudia&rsquo;s boyfriend <span aria-hidden="true">×</span> AI creator</p>
+          <h1 className="claudio-title">Coming <em>soon.</em></h1>
           <p className="claudio-tease">A new signal is forming.</p>
           <nav className="claudio-socials" aria-label="Claudio social profiles">
             <a href="https://x.com/ClaudioAgentAi" target="_blank" rel="noopener noreferrer" aria-label="Claudio on X (opens in a new tab)">
@@ -88,6 +91,7 @@ export default function ComingSoon() {
           </nav>
           <div className="claudio-ca">
             <p className="claudio-ca-label">CA <span aria-hidden="true">·</span> Solana</p>
+            {LAUNCHED ? (
             <button
               className="claudio-copy"
               type="button"
@@ -112,7 +116,12 @@ export default function ComingSoon() {
                 )}
               </span>
             </button>
-            <p className="claudio-feedback" data-state={copyState} aria-live="polite">{feedback}</p>
+            ) : (
+              <p className="claudio-copy claudio-copy--soon">
+                <span className="claudio-address">$CLAUDIO · announced at launch</span>
+              </p>
+            )}
+            {LAUNCHED && <p className="claudio-feedback" data-state={copyState} aria-live="polite">{feedback}</p>}
           </div>
           <nav className="claudio-legal" aria-label="Legal and docs">
             <a href="/docs">Docs</a>
