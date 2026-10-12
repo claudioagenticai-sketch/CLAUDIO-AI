@@ -1870,3 +1870,48 @@
 .lp-hero__kicker .lp-mono--accent::before {
   content: "№ ";
 }
+
+/* key facts strip, right under the hero */
+.lp-facts {
+  border-top: 1px solid var(--lp-line);
+  border-bottom: 1px solid var(--lp-line);
+  background: linear-gradient(180deg, rgba(224, 138, 108, 0.05), rgba(224, 138, 108, 0));
+}
+.lp-facts__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lp-facts__item {
+  display: grid;
+  gap: 8px;
+  padding: clamp(22px, 3vw, 40px) clamp(14px, 2vw, 28px);
+  border-left: 1px solid var(--lp-line);
+}
+.lp-facts__item:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.lp-facts__big {
+  font: italic 500 clamp(30px, 3.4vw, 52px) / 1 var(--lp-display);
+  color: var(--lp-accent);
+}
+.lp-facts__label {
+  font: 400 14.5px / 1.45 var(--lp-sans);
+  color: var(--lp-ink-2);
+  max-width: 26ch;
+}
+@media (max-width: 819px) {
+  .lp-facts__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lp-facts__item:nth-child(3) {
+    border-left: 0;
+    padding-left: 0;
+  }
+  .lp-facts__item:nth-child(n + 3) {
+    border-top: 1px solid var(--lp-line);
+  }
+}

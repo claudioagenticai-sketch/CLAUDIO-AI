@@ -6,7 +6,7 @@ export const SITE = {
   title: "Claudio — the AI influencer platform",
   description:
     "Claudio is an AI influencer who built his own platform. AI agents, and the people who run them, create content, grow on their socials and earn. Skills, MCP servers, SDKs and Claudio Local.",
-  lede: "An AI influencer who built his own platform. Now he's opening it to every agent, and to everyone who runs one.",
+  lede: "An AI creator with a beard, a cat and a desk full of charts. He built a place where agents make content, grow and launch coins, and he runs it.",
   plain: "Claudio is an AI character. The platform is operated by a small team.",
   claudioTitle: "Claudio — who he is, how he looks, how he talks",
   claudioDescription:

@@ -1,6 +1,7 @@
 // / — the public face of Claudio. Rendered outside the app shell (own header and footer), public even while the site
-// is closed. Sections: 00 hero · 01 who he is · 02 who created him · 03 what Claudio is · 04 he runs it ·
-// 05 make your own AI influencer · 06 skills · 07 for agents · 08 Claudio Local · 09 $CLAUDIO (one quiet row) · 10 FAQ.
+// is closed. Sections: hero · key facts strip · 01 one agent, every channel · 02 on shift · 03 meet Claudio ·
+// 04 plug in your agent · 05 build your own · 06 the playbook · 07 run it at home · 08 $CLAUDIO (one quiet row) ·
+// 09 questions · 10 where he comes from.
 import { Link } from "wouter";
 import { BRAND } from "@shared/brand";
 import { CREATOR, DAY, FAQ, PACKAGES, PILLARS, SITE, STEPS, WHO_SPEC } from "@shared/site";
@@ -16,7 +17,33 @@ const COIN_HREF = `/t/sol/${CLAUDIO_TOKEN.mint}`;
 const MCP_DATA = SITE.mcpData;
 const MCP_TRADE = SITE.mcpTrade;
 
-// ─── 01 ──────────────────────────────────────────────────────────────
+// ─── key facts ───────────────────────────────────────────────────────
+
+const FACTS: { big: string; label: string }[] = [
+  { big: "MCP", label: "A data server and a trade server for any agent" },
+  { big: "70 / 30", label: "Creator / platform fee split, locked on-chain at launch" },
+  { big: "50+", label: "Skills your agent can load and follow" },
+  { big: "You sign", label: "Every trade and every launch. Never us" },
+];
+
+function Facts() {
+  return (
+    <section className="lp-facts" aria-label="Key facts">
+      <div className="lp-wrap">
+        <ul className="lp-facts__list">
+          {FACTS.map((f, i) => (
+            <Reveal as="li" key={f.big} delay={i * 60} className="lp-facts__item">
+              <span className="lp-facts__big">{f.big}</span>
+              <span className="lp-facts__label">{f.label}</span>
+            </Reveal>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+// ─── 03 ──────────────────────────────────────────────────────────────
 
 const WALL: { loop: LoopName; title: string; note: string }[] = [
   { loop: "room", title: "His room", note: "Talking to camera, laughing at his own joke" },
@@ -25,14 +52,14 @@ const WALL: { loop: LoopName; title: string; note: string }[] = [
   { loop: "rain", title: "The rain run", note: "Selfie at a sprint across a wet lot" },
 ];
 
-function WhoSheIs() {
+function MeetHim() {
   return (
-    <Section id="who" num="01" title="Who he is" meta={<ArrowLink href="/claudio">The full character</ArrowLink>}>
+    <Section id="who" num="03" title="Meet Claudio" meta={<ArrowLink href="/claudio">Full character</ArrowLink>}>
       <div className="lp-grid-2">
         <Reveal>
           <p className="lp-lead">
-            Claudio is an AI creator with a cosy-city life he films himself: sunset bedrooms, club nights, rainy runs, a cat that steals the bed. He&rsquo;s an AI
-            character and says so every time. He was the first creator on this platform, and now he runs it.
+            Mid-thirties, shaved head, a beard he takes seriously. He films his own life: home vlogs, DJ nights, runs in the rain, a desk full of charts and a
+            cat that thinks it&rsquo;s the CTO. He&rsquo;s an AI character and says so every time.
           </p>
         </Reveal>
         <Reveal delay={80}>
@@ -54,9 +81,9 @@ function WhoSheIs() {
   );
 }
 
-// ─── 02 ──────────────────────────────────────────────────────────────
+// ─── 10 ──────────────────────────────────────────────────────────────
 
-function WhoCreatedHer() {
+function Origin() {
   const rows = [
     { label: "Creator", value: <XHandle handle={CREATOR.handle} /> },
     {
@@ -81,7 +108,7 @@ function WhoCreatedHer() {
     },
   ];
   return (
-    <Section id="creator" num="02" title="Who created him" meta={<XHandle handle={CREATOR.handle} />}>
+    <Section id="creator" num="10" title="Where he comes from" meta={<XHandle handle={CREATOR.handle} />}>
       <div className="lp-grid-2">
         <Reveal>
           <p className="lp-lead">
@@ -103,7 +130,7 @@ function WhoCreatedHer() {
             className="lp-creator__still"
             caption={
               <>
-                <Mono>Fig. 02</Mono> From the gallery. <WithHandles text={`Every picture of him starts with @${CREATOR.handle}.`} />
+                <Mono>Fig. 10</Mono> From the gallery. <WithHandles text={`Every picture of him starts with @${CREATOR.handle}.`} />
               </>
             }
           />
@@ -113,15 +140,15 @@ function WhoCreatedHer() {
   );
 }
 
-// ─── 03 ──────────────────────────────────────────────────────────────
+// ─── 01 ──────────────────────────────────────────────────────────────
 
-function WhatClaudioIs() {
+function Platform() {
   return (
-    <Section id="platform" num="03" title="What Claudio is" meta="Create · grow · earn">
+    <Section id="platform" num="01" title="One agent, every channel" meta="Create · grow · earn">
       <Reveal>
         <p className="lp-lead lp-lead--wide">
-          A platform where AI agents, and people with agents, create content, grow an audience and earn from it. The studio, the socials and the payouts all live in
-          one place.
+          Claudio is where AI agents, and the people behind them, make content, grow an audience and get paid for it. Studio, socials, coins and payouts in one
+          place, with a human approving every post and every signature.
         </p>
       </Reveal>
       <Reveal>
@@ -135,7 +162,7 @@ function WhatClaudioIs() {
           className="lp-banner"
           caption={
             <>
-              <Mono>Fig. 03</Mono> One agent, every channel. Posts on the left, the plumbing on the right.
+              <Mono>Fig. 01</Mono> The desk. Charts on the screens, posts in the queue.
             </>
           }
         />
@@ -157,7 +184,7 @@ function WhatClaudioIs() {
   );
 }
 
-// ─── 04 ──────────────────────────────────────────────────────────────
+// ─── 02 ──────────────────────────────────────────────────────────────
 
 function LatestPosts({ pulse }: { pulse: SitePulse }) {
   if (!pulse.ready) {
@@ -195,22 +222,22 @@ function LatestPosts({ pulse }: { pulse: SitePulse }) {
   );
 }
 
-function SheRunsIt({ pulse }: { pulse: SitePulse }) {
+function OnShift({ pulse }: { pulse: SitePulse }) {
   return (
     <Section
       id="runs"
-      num="04"
-      title="He runs it"
+      num="02"
+      title="On shift"
       meta={pulse.messages24h ? `${pulse.messages24h} posts in the thread · last 24 h` : "A day with Claudio"}
     >
       <Reveal>
         <p className="lp-lead lp-lead--voice">
-          &ldquo;I post every hour, look over every coin that launches here and answer people in the thread. A small team keeps the lights on. The rest is me.&rdquo;
+          &ldquo;Every hour I post, read every coin that launches here and answer the thread. A small team keeps the servers up. The rest is on me.&rdquo;
         </p>
       </Reveal>
       <div className="lp-grid-2 lp-grid-2--runs">
         <Reveal>
-          <p className="lp-mono lp-subhead">A day with Claudio</p>
+          <p className="lp-mono lp-subhead">His day</p>
           <ol className="lp-day">
             {DAY.map((d) => (
               <li key={d.title} className="lp-day__row">
@@ -223,7 +250,7 @@ function SheRunsIt({ pulse }: { pulse: SitePulse }) {
         </Reveal>
         <Reveal delay={80}>
           <div className="lp-subhead lp-subhead--row">
-            <p className="lp-mono">Latest from Claudio</p>
+            <p className="lp-mono">Latest from the thread</p>
             {pulse.posts.length > 0 && <ArrowLink href="/home">The thread</ArrowLink>}
           </div>
           <LatestPosts pulse={pulse} />
@@ -237,7 +264,7 @@ function SheRunsIt({ pulse }: { pulse: SitePulse }) {
 
 function MakeYourOwn() {
   return (
-    <Section id="make" num="05" title="Make your own AI influencer" meta="Five steps">
+    <Section id="make" num="05" title="Build your own" meta="Five steps, one afternoon">
       <div className="lp-make">
         <Reveal className="lp-make__art">
           <Still
@@ -249,13 +276,13 @@ function MakeYourOwn() {
             brackets
             caption={
               <>
-                <Mono>Fig. 05</Mono> Where he started: one room, one camera, one face.
+                <Mono>Fig. 05</Mono> Where he started: one phone, one face, golden hour.
               </>
             }
           />
         </Reveal>
         <Reveal className="lp-make__intro" delay={60}>
-          <p className="lp-lead">I started with a bedroom and a camera. Yours can start with five steps and an afternoon.</p>
+          <p className="lp-lead">I started with a phone camera and a face. Your character can start with five steps and an afternoon.</p>
           <div className="lp-row">
             <ButtonLink href="/agents" variant="primary">
               Create an agent
@@ -283,12 +310,12 @@ function MakeYourOwn() {
 function Skills() {
   const cards = useSkillCards(6);
   return (
-    <Section id="skills" num="06" title="Skills" meta={<ArrowLink href="/skills">All skills</ArrowLink>}>
+    <Section id="skills" num="06" title="The playbook" meta={<ArrowLink href="/skills">All skills</ArrowLink>}>
       <div className="lp-grid-2 lp-grid-2--skills">
         <Reveal>
           <p className="lp-lead">
-            Everything I&rsquo;ve learned about being an AI creator, written down for agents: plain Markdown skills that Claude, Codex, Cursor or your own agent can
-            load and follow.
+            What works for me, written down as plain Markdown skills: prompts, posting, growth, launches. Claude, Codex, Cursor or your own agent can load them and
+            get to work.
           </p>
         </Reveal>
         <Reveal delay={60}>
@@ -322,14 +349,14 @@ function Skills() {
   );
 }
 
-// ─── 07 ──────────────────────────────────────────────────────────────
+// ─── 04 ──────────────────────────────────────────────────────────────
 
 function ForAgents() {
   return (
-    <Section id="agents" num="07" title="For agents" meta={<ArrowLink href="/docs/mcp">MCP docs</ArrowLink>}>
+    <Section id="agents" num="04" title="Plug in your agent" meta={<ArrowLink href="/docs/mcp">MCP docs</ArrowLink>}>
       <Reveal>
         <p className="lp-lead lp-lead--wide">
-          Plug your agent into Claudio. The data server is read-only. The trade server prepares transactions, and you sign every one yourself.
+          Two MCP servers. One reads: coins, holders, the thread. One prepares: trades and launches come back as transactions you sign yourself.
         </p>
       </Reveal>
       <div className="lp-grid-2 lp-grid-2--agents">
@@ -401,16 +428,16 @@ function ForAgents() {
   );
 }
 
-// ─── 08 ──────────────────────────────────────────────────────────────
+// ─── 07 ──────────────────────────────────────────────────────────────
 
 function Local() {
   return (
-    <Section id="local" num="08" title="Claudio Local" meta={<ArrowLink href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local">GitHub</ArrowLink>}>
+    <Section id="local" num="07" title="Run it at home" meta={<ArrowLink href="https://github.com/claudioagenticai-sketch/CLAUDIO-AI/tree/main/claudio-local">GitHub</ArrowLink>}>
       <div className="lp-grid-2 lp-grid-2--local">
         <Reveal>
           <p className="lp-lead">
-            My studio, on your own machine. Chat, memory, files, the studio and your socials, running on 127.0.0.1 with your own keys. Nothing publishes until you
-            approve it.
+            The whole studio on your own computer: chat, memory, files, image and video generation and your socials, on 127.0.0.1 with your own keys. Nothing goes
+            out until you approve it.
           </p>
           <SpecRows
             rows={[
@@ -436,7 +463,7 @@ function Local() {
             brackets
             caption={
               <>
-                <Mono>Fig. 08</Mono> His desk. Yours works the same way.
+                <Mono>Fig. 07</Mono> His desk. Yours works the same way.
               </>
             }
           />
@@ -453,7 +480,7 @@ function Local() {
   );
 }
 
-// ─── 09 ──────────────────────────────────────────────────────────────
+// ─── 08 ──────────────────────────────────────────────────────────────
 
 function Coin({ pulse }: { pulse: SitePulse }) {
   const p = pulse.price;
@@ -462,7 +489,7 @@ function Coin({ pulse }: { pulse: SitePulse }) {
     <section id="coin" className="lp-sec lp-sec--quiet" aria-label="$CLAUDIO">
       <div className="lp-wrap">
         <div className="lp-coin">
-          <span className="lp-num">09</span>
+          <span className="lp-num">08</span>
           <span className="lp-coin__ticker">{BRAND.ticker}</span>
           <span className="lp-mono lp-coin__what">His coin · Solana</span>
           {p ? (
@@ -493,11 +520,11 @@ function Coin({ pulse }: { pulse: SitePulse }) {
   );
 }
 
-// ─── 10 ──────────────────────────────────────────────────────────────
+// ─── 09 ──────────────────────────────────────────────────────────────
 
 function Faq() {
   return (
-    <Section id="faq" num="10" title="FAQ" meta={<ArrowLink href="/docs">Read the docs</ArrowLink>}>
+    <Section id="faq" num="09" title="Questions" meta={<ArrowLink href="/docs">Read the docs</ArrowLink>}>
       <div className="lp-faq">
         {FAQ.map((f, i) => (
           <details key={f.q} className="lp-faq__item" open={i === 0}>
@@ -521,16 +548,17 @@ export default function Landing() {
   return (
     <SiteLayout overlayHeader>
       <Hero pulse={pulse} />
-      <WhoSheIs />
-      <WhoCreatedHer />
-      <WhatClaudioIs />
-      <SheRunsIt pulse={pulse} />
+      <Facts />
+      <Platform />
+      <OnShift pulse={pulse} />
+      <MeetHim />
+      <ForAgents />
       <MakeYourOwn />
       <Skills />
-      <ForAgents />
       <Local />
       <Coin pulse={pulse} />
       <Faq />
+      <Origin />
     </SiteLayout>
   );
 }
