@@ -235,12 +235,10 @@ function Platform() {
       </Reveal>
       <Reveal>
         <Still
-          src={`${M}/banner-network-2000.jpg`}
-          srcSet={`${M}/banner-network-800.jpg 800w, ${M}/banner-network-1200.jpg 1200w, ${M}/banner-network-2000.jpg 2000w`}
-          sizes="(max-width: 1680px) 100vw, 1680px"
+          src={`${M}/desk-wide.jpg`}
           alt="Claudio at his desk at night in thin round glasses, chin on his hand, trading screens with candle charts and token lists behind him"
           ratio="3 / 1"
-          brackets
+          position="50% 32%"
           className="lp-banner"
           caption={
             <>
@@ -350,12 +348,9 @@ function MakeYourOwn() {
       <div className="lp-make">
         <Reveal className="lp-make__art">
           <Still
-            src={`${M}/banner-sunset-1200.jpg`}
-            srcSet={`${M}/banner-sunset-800.jpg 800w, ${M}/banner-sunset-1200.jpg 1200w, ${M}/banner-sunset-2000.jpg 2000w`}
-            sizes="(max-width: 1023px) 100vw, 50vw"
-            alt="Claudio smiling on his bed at sunset, the city skyline through the window"
-            ratio="3 / 1"
-            brackets
+            src={`${M}/hero-sunset.jpg`}
+            alt="Claudio resting his chin on his arm in golden light, the city skyline at dusk beside him"
+            ratio="1160 / 668"
             caption={
               <>
                 <Mono>Fig. 07</Mono> Where he started: one phone, one face, golden hour.
@@ -402,12 +397,9 @@ function Skills() {
         </Reveal>
         <Reveal delay={60}>
           <Still
-            src={`${M}/banner-collage-1200.jpg`}
-            srcSet={`${M}/banner-collage-800.jpg 800w, ${M}/banner-collage-1200.jpg 1200w, ${M}/banner-collage-2000.jpg 2000w`}
-            sizes="(max-width: 1023px) 100vw, 50vw"
-            alt="A collage of Claudio's life: travel, nights out, his desk and his cat"
-            ratio="3 / 1"
-            brackets
+            src={`${M}/hero-collage.jpg`}
+            alt="A collage of Claudio's photos: headphones above the sea, a toast by candlelight, a plane window, the cat, and a laughing selfie at home"
+            ratio="1160 / 668"
           />
         </Reveal>
       </div>

@@ -1056,13 +1056,13 @@
     aspect-ratio: 16 / 10 !important;
   }
   .lp-banner .lp-still__frame > img {
-    object-position: 47% 50%;
+    object-position: 78% 35% !important;
   }
   .lp-make__art .lp-still__frame > img {
-    object-position: 58% 50%;
+    object-position: 80% 40% !important;
   }
   .lp-grid-2--skills .lp-still__frame > img {
-    object-position: 40% 50%;
+    object-position: 80% 30% !important;
   }
 }
 
@@ -2138,4 +2138,19 @@
   width: auto;
   max-width: none;
   height: 100%;
+}
+
+/* cards and small titles in the same voice as the section heads */
+.lp-h4 {
+  font: italic 500 clamp(22px, 1.8vw, 27px) / 1.05 var(--lp-display);
+  text-transform: none;
+  letter-spacing: -0.005em;
+}
+.lp-skill,
+.lp-step,
+.lp-pillar,
+.lp-post,
+.lp-code {
+  border-radius: 16px;
+  overflow: hidden;
 }

@@ -11,3 +11,6 @@ dist/
 
 # local reference copies of the original Claudia sources (not part of Claudio)
 _riferimento/
+
+# X launch kit (marketing copies, not part of the site)
+x-launch/
