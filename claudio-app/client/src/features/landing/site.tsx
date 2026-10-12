@@ -6,13 +6,13 @@ import { BRAND } from "@shared/brand";
 import { cx, jumpTo, Mono, SplitFlap } from "./parts";
 import "./landing.css";
 
-/** Barlow Condensed for the display type. index.html may already load it (the app restyle); never twice. */
+/** Cormorant Garamond for the display type. index.html may already load it; never twice. */
 function useDisplayFont(): void {
   useEffect(() => {
-    if (document.querySelector('link[href*="Barlow+Condensed"]')) return;
+    if (document.querySelector('link[href*="Cormorant+Garamond"]')) return;
     const l = document.createElement("link");
     l.rel = "stylesheet";
-    l.href = "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&display=swap";
+    l.href = "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap";
     document.head.appendChild(l);
   }, []);
 }

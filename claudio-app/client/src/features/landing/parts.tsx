@@ -1,5 +1,5 @@
-// Building blocks of the public pages: split-flap wordmark, numbered sections, spec rows, machine-vision box,
-// corner brackets, copy buttons, scroll-in reveal and link buttons. Styles: ./landing.css (lp-*).
+// Building blocks of the public pages: serif wordmark, numbered sections, spec rows, copy buttons, scroll-in reveal
+// and link buttons. Styles: ./landing.css (lp-*).
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 
@@ -7,17 +7,16 @@ export function cx(...c: (string | false | null | undefined)[]): string {
   return c.filter(Boolean).join(" ");
 }
 
-/** CLAUDIO in split-flap tiles that flip in one by one on load (CSS only; static with reduced motion). */
+/** The CLAUDIO wordmark: tracked serif capitals with the clay star, as on the cover and the X header. */
 export function SplitFlap({ text = "CLAUDIO", size = "hero", className, as = "span" }: { text?: string; size?: "hero" | "page" | "compact"; className?: string; as?: "span" | "h1" }) {
   const Tag = as;
   return (
-    <Tag className={cx("lp-flap", `lp-flap--${size}`, className)}>
+    <Tag className={cx("lp-word", `lp-word--${size}`, className)}>
       <span className="lp-sr">{text.charAt(0) + text.slice(1).toLowerCase()}</span>
-      {text.split("").map((ch, i) => (
-        <span key={i} className="lp-flap__tile" aria-hidden="true" style={{ "--i": i } as CSSProperties}>
-          <span className="lp-flap__ch">{ch}</span>
-        </span>
-      ))}
+      <span className="lp-word__star" aria-hidden="true" />
+      <span className="lp-word__text" aria-hidden="true">
+        {text}
+      </span>
     </Tag>
   );
 }
@@ -79,16 +78,9 @@ export function SpecRows({ rows, numbered, className }: { rows: { label: string;
   );
 }
 
-/** 8 px L-shaped corner brackets around featured media (the parent must be position: relative). */
-export function Brackets({ inset = -7 }: { inset?: number }) {
-  return (
-    <span aria-hidden="true" className="lp-brackets" style={{ inset }}>
-      <i />
-      <i />
-      <i />
-      <i />
-    </span>
-  );
+/** Corner brackets were part of the old look; kept as a no-op so callers stay unchanged. */
+export function Brackets(_props: { inset?: number }) {
+  return null;
 }
 
 export interface FaceBox {
@@ -98,20 +90,9 @@ export interface FaceBox {
   h: number;
 }
 
-/** Thin hairline bounding box with mono tags, positioned in % of its (relative) parent. */
-export function VisionBox({ box, top, bottom, drift, className }: { box: FaceBox; top: ReactNode; bottom?: ReactNode; drift?: boolean; className?: string }) {
-  return (
-    <div
-      aria-hidden="true"
-      className={cx("lp-vbox", drift && "lp-vbox--drift", className)}
-      style={{ left: `${box.l}%`, top: `${box.t}%`, width: `${box.w}%`, height: `${box.h}%` }}
-    >
-      <span className="lp-vbox__tag lp-vbox__tag--top">{top}</span>
-      {bottom && <span className="lp-vbox__tag lp-vbox__tag--bottom">{bottom}</span>}
-      <i className="lp-vbox__c lp-vbox__c--tl" />
-      <i className="lp-vbox__c lp-vbox__c--br" />
-    </div>
-  );
+/** The machine-vision face box was part of the old look; kept as a no-op so callers stay unchanged. */
+export function VisionBox(_props: { box: FaceBox; top: ReactNode; bottom?: ReactNode; drift?: boolean; className?: string }) {
+  return null;
 }
 
 async function copyText(text: string): Promise<boolean> {
@@ -226,7 +207,7 @@ export function Reveal({ children, className, as = "div", delay = 0 }: { childre
   );
 }
 
-/** Square-ish button link. Internal paths use client-side navigation; hashes and external URLs are plain anchors. */
+/** Pill button link. Internal paths use client-side navigation; hashes and external URLs are plain anchors. */
 export function ButtonLink({
   href,
   children,

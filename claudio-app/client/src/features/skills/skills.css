@@ -3,8 +3,8 @@
    global restyle lands. */
 
 .sk {
-  --sk-display: var(--font-display, "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif);
-  --sk-mono: var(--font-mono, "DM Mono", ui-monospace, monospace);
+  --sk-display: var(--font-display, "Cormorant Garamond", Georgia, "Times New Roman", serif);
+  --sk-mono: var(--font-mono, "JetBrains Mono", ui-monospace, monospace);
   --sk-r: 3px;
   color: var(--text);
 }
@@ -26,11 +26,12 @@
 
 .sk-display {
   font-family: var(--sk-display);
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 0.9;
-  letter-spacing: -0.01em;
-  /* Arial Narrow (the fallback) has no 800: keep it from faux-bolding into mush. */
+  font-weight: 500;
+  font-style: italic;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  /* Cormorant has no 800: keep the browser from faux-bolding it. */
   font-synthesis: none;
 }
 .sk-hero-title {

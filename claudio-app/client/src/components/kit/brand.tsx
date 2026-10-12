@@ -42,7 +42,7 @@ export function ClaudioMark({
   );
 }
 
-/** "CLAUDIO" in Barlow Condensed caps with open tracking; `tagline` adds the line underneath. */
+/** "CLAUDIO" in Cormorant Garamond caps with open tracking; `tagline` adds the line underneath. */
 export function Wordmark({ className, tagline = false, size = 15 }: { className?: string; tagline?: boolean; size?: number }) {
   return (
     <span className={cn("inline-flex flex-col leading-none", className)}>

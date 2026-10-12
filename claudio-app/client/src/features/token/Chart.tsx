@@ -150,7 +150,7 @@ export default function Chart({ token, trades, myTrades, className, height }: Ch
     if (!el) return;
     const text2 = cssVar("--text-3", "#8b96ae");
     const line = cssVar("--line", "#222e47");
-    const panel = cssVar("--bg-elev", "#0d0e11");
+    const panel = cssVar("--bg-elev", "#0e141e");
     const up = cssVar("--buy", "#3ddc97");
     const down = cssVar("--sell", "#f4506f");
     colorsRef.current = { up, down, upVol: hexA(up, 0.35), downVol: hexA(down, 0.35) };
@@ -280,7 +280,7 @@ export default function Chart({ token, trades, myTrades, className, height }: Ch
     const times = new Set(barsRef.current.map((b) => b.t));
     const { up, down } = colorsRef.current;
     const gold = cssVar("--gold", "#ffd166");
-    const brandColor = cssVar("--brand", "#ff6fa5");
+    const brandColor = cssVar("--brand", "#e08a6c");
     const seen = new Set<string>();
     const markers: SeriesMarker<Time>[] = [];
     const add = (tsMs: number, side: "buy" | "sell", kind: "dev" | "sniper" | "you") => {

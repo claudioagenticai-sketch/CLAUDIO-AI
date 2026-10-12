@@ -4,40 +4,40 @@
 
 /*
   Claudio design tokens — v3 "editorial".
-  Near-black neutral surfaces (no tint), hairlines instead of boxes, warm off-white ink, one accent: our rose.
-  Buy = jade, Sell = red — never the brand colours. Display in Barlow Condensed (uppercase), UI in DM Sans,
-  numbers and labels in DM Mono. shadcn variable names are kept so components/ui/* work unchanged.
-  Contrast (WCAG): text ≥ 13:1, text-2 ≥ 8:1, text-3 ≥ 4.5:1 on every surface up to panel-3; brand ≥ 6:1 on every surface.
+  Deep navy surfaces, hairlines instead of boxes, warm off-white ink, one accent: our clay.
+  Buy = jade, Sell = red — never the brand colours. Display in Cormorant Garamond, UI in Manrope,
+  numbers and labels in JetBrains Mono. shadcn variable names are kept so components/ui/* work unchanged.
+  Contrast (WCAG): text ≥ 13:1, text-2 ≥ 8:1, text-3 ≥ 4.5:1 on every surface up to panel-3; brand ≥ 5.5:1 on every surface.
 */
 :root {
   /* surfaces */
-  --bg: #0a0b0d;
-  --bg-elev: #0d0e11;
-  --panel: #111317;
-  --panel-2: #16181d;
-  --panel-3: #1d2026;
-  --line: #23262c;
-  --line-2: #353941;
+  --bg: #0b1018;
+  --bg-elev: #0e141e;
+  --panel: #121a26;
+  --panel-2: #172131;
+  --panel-3: #1d2939;
+  --line: #223044;
+  --line-2: #33445c;
 
   /* text */
-  --text: #ece9e2;
-  --text-2: #b4b7bc;
-  /* #80858c nudged up a step so small labels stay ≥ 4.5:1 on panel-3 too */
-  --text-3: #868b92;
+  --text: #efe6dc;
+  --text-2: #b9bfca;
+  /* #8590a0 nudged up a step so small labels stay ≥ 4.5:1 on panel-3 too */
+  --text-3: #8590a0;
 
   /* brand: rose (text/icons/rings/filled CTAs). Filled CTAs carry near-black ink (7.5:1). */
-  --brand: #ff6fa5;
-  --brand-2: #ff9a6b;
-  --brand-ink: #0a0b0d;
-  --brand-bg: rgba(255, 111, 165, 0.12);
+  --brand: #e08a6c;
+  --brand-2: #e8b48a;
+  --brand-ink: #0b1018;
+  --brand-bg: rgba(224, 138, 108, 0.12);
   /* Glows are retired: kept as a token so older shadow utilities resolve to nothing. */
   --brand-glow: transparent;
-  --brand-fill: #d63a76;
-  --brand-fill-2: #b92e63;
+  --brand-fill: #c4664a;
+  --brand-fill-2: #a8553c;
 
   /* copper — warm second accent (same as --brand-2) */
-  --copper: #ff9a6b;
-  --copper-bg: rgba(255, 154, 107, 0.12);
+  --copper: #e8b48a;
+  --copper-bg: rgba(232, 180, 138, 0.12);
 
   /* semantic */
   --buy: #3ddc97;
@@ -56,7 +56,7 @@
   --gold-bg: rgba(255, 209, 102, 0.1);
 
   /* translucent chrome (bars over content) */
-  --chrome: rgba(10, 11, 13, 0.86);
+  --chrome: rgba(11, 16, 24, 0.86);
 
   /* shadcn compat */
   --background: var(--bg);
@@ -80,10 +80,10 @@
   --ring: var(--brand);
   --radius: 0.375rem;
 
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
-  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 
   /* layout */
   --topbar-h: 56px;
@@ -115,7 +115,7 @@
     -webkit-tap-highlight-color: transparent;
   }
   ::selection {
-    background: rgba(255, 111, 165, 0.32);
+    background: rgba(224, 138, 108, 0.32);
     color: var(--text);
   }
   /* slim scrollbars on desktop */
@@ -150,13 +150,14 @@
   }
 
   /* ── Editorial type ─────────────────────────────────────────────
-     Display: Barlow Condensed, uppercase, tight. `font-display` (Tailwind) only sets the family; these set the whole voice. */
+     Display: Cormorant Garamond, italic serif. `font-display` (Tailwind) only sets the family; these set the whole voice. */
   .display {
     font-family: var(--font-display);
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 0.9;
-    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: -0.005em;
   }
   /* Page titles inside the app (smaller than landing heroes so the data stays above the fold). */
   .display-page {
@@ -424,7 +425,7 @@
 .flash-down { animation: flash-down 900ms ease-out; }
 .enter { animation: slide-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
 .sheen {
-  background-image: linear-gradient(90deg, transparent, rgba(236, 233, 226, 0.04), transparent);
+  background-image: linear-gradient(90deg, transparent, rgba(239, 230, 220, 0.04), transparent);
   background-size: 200% 100%;
   animation: sheen-move 2.4s linear infinite;
 }

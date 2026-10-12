@@ -66,7 +66,7 @@ export function PriceChart({ tokenKey, className, height = 168, fullHref }: { to
     if (!node) return;
     const text3 = cssVar("--text-3", "#a48b96");
     const line = cssVar("--line", "#34222e");
-    const panel = cssVar("--bg-elev", "#0d0e11");
+    const panel = cssVar("--bg-elev", "#0e141e");
     const up = cssVar("--buy", "#3ddc97");
     const down = cssVar("--sell", "#ff5a52");
     const c = createChart(node, {

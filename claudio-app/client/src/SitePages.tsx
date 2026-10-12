@@ -9,7 +9,7 @@ const ClaudioPage = lazy(() => import("@/pages/ClaudioPage"));
 
 export default function SitePages() {
   return (
-    <Suspense fallback={<div style={{ minHeight: "100vh", background: "#0a0b0d" }} />}>
+    <Suspense fallback={<div style={{ minHeight: "100vh", background: "#0b1018" }} />}>
       <Switch>
         <Route path="/claudio" component={ClaudioPage} />
         <Route path="/claudio/" component={ClaudioPage} />

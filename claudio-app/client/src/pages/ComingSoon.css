@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400..800&display=swap");
 
 .claudio-page {
   /* v3 editorial: the app's near-black, hairlines, off-white ink and one rose accent. */
-  --night: #0a0b0d;
-  --night-soft: #111317;
-  --blue: #ff6fa5;
-  --blue-light: #ff6fa5;
-  --rose: #ff6fa5;
+  --night: #0b1018;
+  --night-soft: #121a26;
+  --blue: #e08a6c;
+  --blue-light: #e08a6c;
+  --rose: #e08a6c;
   --sage: #3ddc97;
-  --paper: #ece9e2;
-  --line: #23262c;
-  --line-2: #353941;
-  --ink-2: #b4b7bc;
-  --ink-3: #868b92;
+  --paper: #efe6dc;
+  --line: #223044;
+  --line-2: #33445c;
+  --ink-2: #b9bfca;
+  --ink-3: #8590a0;
   position: relative;
   isolation: isolate;
   display: grid;
@@ -23,7 +23,7 @@
   padding: clamp(18px, 4vw, 54px);
   color: var(--paper);
   background: var(--night);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .claudio-page *,
@@ -82,7 +82,7 @@
 }
 
 .claudio-signal-orbit {
-  stroke: rgba(236, 233, 226, .12);
+  stroke: rgba(239, 230, 220, .12);
   stroke-width: 1;
   stroke-dasharray: 2 9;
   transform-origin: center;
@@ -121,7 +121,7 @@
   z-index: 1;
   content: "";
   background:
-    linear-gradient(180deg, rgba(10, 11, 13, 0) 55%, rgba(10, 11, 13, .45));
+    linear-gradient(180deg, rgba(11, 16, 24, 0) 55%, rgba(11, 16, 24, .45));
   pointer-events: none;
 }
 
@@ -178,7 +178,7 @@
 
 .claudio-wordmark {
   color: var(--paper);
-  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: clamp(40px, 4.6vw, 64px);
   font-weight: 700;
   line-height: .9;
@@ -190,7 +190,7 @@
 .claudio-hint {
   margin: 0 0 19px;
   color: var(--ink-3);
-  font-family: "DM Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -211,7 +211,7 @@
 .claudio-title {
   margin: 0;
   color: var(--paper);
-  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: clamp(64px, 9vw, 148px);
   font-weight: 800;
   letter-spacing: -.01em;
@@ -247,7 +247,7 @@
   border-radius: 3px;
   color: var(--paper);
   background: transparent;
-  font-family: "DM Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11.5px;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -273,7 +273,7 @@
 .claudio-ca-label {
   margin: 0 0 10px;
   color: var(--ink-3);
-  font-family: "DM Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: .14em;
@@ -313,7 +313,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   color: var(--paper);
-  font-family: "DM Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: clamp(10px, .92vw, 12px);
   line-height: 1.6;
 }
@@ -361,7 +361,7 @@
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 14px;
-  font-family: "DM Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   letter-spacing: .14em;
   text-transform: uppercase;
